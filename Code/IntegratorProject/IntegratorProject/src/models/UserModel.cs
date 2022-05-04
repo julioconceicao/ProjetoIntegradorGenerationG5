@@ -1,12 +1,14 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace IntegratorProject.src.models
 {/// <summary>
- /// <para>Creating user attributes</para>
+ /// <para>Creating user attributes.</para>
  /// <para>By: José Vinicius</para>
  /// <para>v 1.0</para>
- /// <para>Apr.29.2022</para>
+ /// <para>04.05.2022</para>
  /// </summary>
 
     [Table("tb_User")]
@@ -15,10 +17,10 @@ namespace IntegratorProject.src.models
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
-        [Required,StringLength(20)]
+        [Required, StringLength(20)]
         public string Name { get; set; }
 
-        [Required,StringLength(15)]
+        [Required, StringLength(15)]
         public int CPF_CNPJ { get; set; }
 
         [Required, StringLength(30)]
@@ -33,14 +35,15 @@ namespace IntegratorProject.src.models
         public string Documents { get; set; }
 
 
+ /// <summary>
+ /// <para>Creating orders list.</para>
+ /// <para>By: Julio Conceicao</para>
+ /// <para>v 1.0</para>
+ /// <para>04.05.2022</para>
+ /// </summary>
 
+        [JsonIgnore]
 
-
-
-
-
-
-
-
+        public List<OrderModel> MyOrders { get; set; }
     }
 }
