@@ -13,13 +13,13 @@
     <SourceRoot Include="C:\Users\julio\.nuget\packages\" />
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)microsoft.extensions.apidescription.server\3.0.0\build\Microsoft.Extensions.ApiDescription.Server.props" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.apidescription.server\3.0.0\build\Microsoft.Extensions.ApiDescription.Server.props')" />
-    <Import Project="$(NuGetPackageRoot)swashbuckle.aspnetcore\5.6.3\build\Swashbuckle.AspNetCore.props" Condition="Exists('$(NuGetPackageRoot)swashbuckle.aspnetcore\5.6.3\build\Swashbuckle.AspNetCore.props')" />
-    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore.design\5.0.13\build\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore.design\5.0.13\build\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.props')" />
+    <Import Project="$(NuGetPackageRoot)mstest.testadapter\2.2.3\build\netcoreapp1.0\MSTest.TestAdapter.props" Condition="Exists('$(NuGetPackageRoot)mstest.testadapter\2.2.3\build\netcoreapp1.0\MSTest.TestAdapter.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.testplatform.testhost\16.9.4\build\netcoreapp2.1\Microsoft.TestPlatform.TestHost.props" Condition="Exists('$(NuGetPackageRoot)microsoft.testplatform.testhost\16.9.4\build\netcoreapp2.1\Microsoft.TestPlatform.TestHost.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.codecoverage\16.9.4\build\netstandard1.0\Microsoft.CodeCoverage.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codecoverage\16.9.4\build\netstandard1.0\Microsoft.CodeCoverage.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.net.test.sdk\16.9.4\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.props" Condition="Exists('$(NuGetPackageRoot)microsoft.net.test.sdk\16.9.4\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">C:\Users\julio\.nuget\packages\newtonsoft.json\10.0.1</PkgNewtonsoft_Json>
     <PkgMicrosoft_Extensions_ApiDescription_Server Condition=" '$(PkgMicrosoft_Extensions_ApiDescription_Server)' == '' ">C:\Users\julio\.nuget\packages\microsoft.extensions.apidescription.server\3.0.0</PkgMicrosoft_Extensions_ApiDescription_Server>
-    <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\julio\.nuget\packages\microsoft.entityframeworkcore.tools\5.0.13</PkgMicrosoft_EntityFrameworkCore_Tools>
   </PropertyGroup>
 </Project>
