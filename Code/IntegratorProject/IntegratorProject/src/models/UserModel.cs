@@ -35,19 +35,32 @@ namespace IntegratorProject.src.models
         [StringLength(30)]
         public string NameAgent { get; set; }
 
-        [StringLength(255)]
-        public string Documents { get; set; }
 
 
- /// <summary>
- /// <para>Creating orders list.</para>
- /// <para>By: Julio Conceicao</para>
- /// <para>v 1.0</para>
- /// <para>04.05.2022</para>
- /// </summary>
+
+        /// <summary>
+        /// <para>Creating orders list.</para>
+        /// <para>By: Julio Conceicao</para>
+        /// <para>v 1.0</para>
+        /// <para>04.05.2022</para>
+        /// </summary>
 
         [JsonIgnore]
 
         public List<OrderModel> MyOrders { get; set; }
+    }
+
+    /// <summary>
+    /// <para>Creating user type.</para>
+    /// <para>By: everyone</para>
+    /// <para>v 1.0</para>
+    /// <para>04.05.2022</para>
+    /// </summary>
+
+    [JsonConverter(typeof(JsonStringEnumConverter))]
+    public enum UserType
+    {
+        Ong,
+        Donor
     }
 }
