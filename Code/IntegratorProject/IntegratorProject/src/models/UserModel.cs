@@ -20,18 +20,22 @@ namespace IntegratorProject.src.models
         [Required, StringLength(20)]
         public string Name { get; set; }
 
-        [Required, StringLength(15)]
+        [Required, StringLength(14)]
         public int CPF_CNPJ { get; set; }
 
         [Required, StringLength(30)]
         public string Email { get; set; }
+
         [Required, StringLength(20)]
         public string Password { get; set; }
+
         [Required, StringLength(50)]
         public string Adress { get; set; }
-        [Required, StringLength(30)]
+
+        [StringLength(30)]
         public string NameAgent { get; set; }
-        [Required, StringLength(255)]
+
+        [StringLength(255)]
         public string Documents { get; set; }
 
 
