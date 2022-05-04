@@ -10,15 +10,14 @@ namespace IntegratorProject.src.data
     /// <para>Versão: 1.0</para>
     /// <para>Data: 04/05/2022</para>
     /// </summary>
-    public class ProjectIntegratorContext : DbContext
+    public class IntegratorProjectContext : DbContext
     {
-        public DbSet<UserModel> UserModel { get; set; }
-        public DbSet<OrderModel> OrderModel { get; set; }
-        public DbSet<KitModel> KitModel { get; set; }
+        public DbSet<UserModel> Users { get; set; }
+        public DbSet<OrderModel> Orders { get; set; }
+        public DbSet<KitModel> Kits { get; set; }
 
-        public ProjectIntegratorContext(DbContextOptions<ProjectIntegratorContext> opt) : base(opt)
+        public IntegratorProjectContext(DbContextOptions<IntegratorProjectContext> opt) : base(opt)
         {
-
         }
     }
 }
