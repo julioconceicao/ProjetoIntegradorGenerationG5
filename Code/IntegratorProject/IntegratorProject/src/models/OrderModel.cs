@@ -2,6 +2,12 @@
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace IntegratorProject.src.models
+/// <summary>
+/// <para>Creating order attributes.</para>
+/// <para>By: Joaoms98</para>
+/// <para>v 1.0</para>
+/// <para>04.05.2022</para>
+/// </summary>
 {
     [Table("tb_Order")]
     public class OrderModel
