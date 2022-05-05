@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "GxRyrUAD4DwLFcfUJpGOWW9APUIrIfpvXb2w2dLALBs1aT+HhW6MOD2dh2sG4OCDRT0eFEKWoZi0xqhUNWqYVw==",
   "success": true,
   "projectFilePath": "C:\\Users\\admin\\Desktop\\ProjetoFinal\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\IntegratorProjectTest.csproj",
+=======
+  "dgSpecHash": "2MwLwMnzRUrFgKZOc8g4XdkFhfZEEdiYfvyCvqErOzixGpNq3ZIgPfH6V0g6jUHdVmgXtuj4VcSKjPy5iKCv9A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\User\\Desktop\\Generation\\ProjetoFinalGen\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\IntegratorProjectTest.csproj",
+>>>>>>> 7d8ea3430e46077717db2ee271697ec19cb45f51
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.codecoverage\\16.11.0\\microsoft.codecoverage.16.11.0.nupkg.sha512",
@@ -154,7 +160,11 @@
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
+<<<<<<< HEAD
       "message": "Problema ao ler o arquivo de cache C:\\Users\\admin\\Desktop\\ProjetoFinal\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+=======
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\User\\Desktop\\Generation\\ProjetoFinalGen\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+>>>>>>> 7d8ea3430e46077717db2ee271697ec19cb45f51
     }
   ]
 }

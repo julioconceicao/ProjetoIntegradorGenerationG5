@@ -19,8 +19,10 @@ namespace IntegratorProject.src.repositories
 
         void DeleteUser(int id);
 
-        List<UserModel> GetOngByUserType();
-        List<UserModel> GetOngByAdress(string adress);
+        List<UserModel> GetAllOngs();
+        UserModel GetUserById(int id);
+
+        List<UserModel> GetUserByAdress(string adress);
     }
 
 }

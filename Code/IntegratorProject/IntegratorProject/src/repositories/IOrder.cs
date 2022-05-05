@@ -12,7 +12,7 @@ using System.Collections.Generic;
 
 namespace IntegratorProject.src.repositories
 {
-    public class IOrder
+    public interface IOrder
     {
         List<OrderModel> GetAllOrders();
         OrderModel GetOrderById(int id);
