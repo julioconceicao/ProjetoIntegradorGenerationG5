@@ -17,6 +17,12 @@ using System.Threading.Tasks;
 
 namespace IntegratorProject
 {
+    /// <summary>
+    /// <para>Resume> Creating connection string</para>
+    /// <para>By: José Vinicius</para>
+    /// <para>Version: 1.0</para>
+    /// <para>Date: 05/05/2022</para>
+    /// </summary>
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -26,7 +32,6 @@ namespace IntegratorProject
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             IConfigurationRoot config = new ConfigurationBuilder()
@@ -40,8 +45,12 @@ namespace IntegratorProject
             services.AddScoped<IOrder,OrderRepository>();
             services.AddScoped<IKit,KitRepository>();
         }
-   
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        /// <summary>
+        /// <para>Resume> Configure database initialize from context</para>
+        /// <para>By: José Vinicius</para>
+        /// <para>Version: 1.0</para>
+        /// <para>Date: 05/05/2022</para>
+        /// </summary>
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IntegratorProjectContext context)
         {
             if (env.IsDevelopment())

@@ -13,11 +13,11 @@ using System.Threading.Tasks;
 namespace IntegratorProjectTest.Test.repositories
 {
     [TestClass]
-    public class UserRepositoryTest 
+    public class KitRepositoryTest
     {
         private IntegratorProjectContext _context;
-        private IUser _repository;
-        
+        private IKit _repository;
+
         [TestInitialize]
         public void InitialSettings()
         {
@@ -25,19 +25,21 @@ namespace IntegratorProjectTest.Test.repositories
             .UseInMemoryDatabase(databaseName: "db_IntergratorProject")
             .Options;
             _context = new IntegratorProjectContext(opt);
-            _repository = new UserRepository(_context); 
+            _repository = new KitRepository(_context);
         }
         [TestMethod]
-        public void CreateThreeUsersReturnThreeUsers()
+        public void CreateNewKitReturnNameKitWhenSearchForName()
         {
-            _repository.AddNewUser(
-            new NewUserDTO("Joao", 471867894,"joao@gmail","123456","Av.psicodaliaaa","",IntegratorProject.src.models.UserType.Donor));
-            _repository.AddNewUser(
-            new NewUserDTO("Zimerer", 754898745, "zimerer@gmail", "batatinhafrita", "Av.osasco", "", IntegratorProject.src.models.UserType.Donor));
-            _repository.AddNewUser(
-            new NewUserDTO("ONGAjudaNois", 895246321, "ongaajudanois@gmail", "123456", "Av.nosenhora", "", IntegratorProject.src.models.UserType.Ong));
+            _repository.NewKit(
+            new NewKitDTO("Kit Mulher", "Produtos basicos para mulher", 15, "27/04/2022"));
+            _repository.NewKit(
+            new NewKitDTO("Kit Higiene", "Produtos basicos para saúde", 35, "27/04/2022"));
+            _repository.NewKit(
+            new NewKitDTO("Kit Cesta Basica", "Produtos basicos para alimentação", 1000, "27/04/2022"));
+
+            var kit = _repository.GetKitById(2);
+            Assert.IsNotNull(kit);
             
-            Assert.AreEqual(3, _context.Users.Count());
         }
     }
 }

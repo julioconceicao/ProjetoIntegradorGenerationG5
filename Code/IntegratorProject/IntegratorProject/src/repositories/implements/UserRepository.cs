@@ -18,14 +18,12 @@ namespace IntegratorProject.src.repositories.implements
         private readonly IntegratorProjectContext _context;
         #endregion attributes
 
-
         #region constructors
         public UserRepository(IntegratorProjectContext context)
         {
             _context = context;
         }
         #endregion constructors
-
 
         #region methods
         public void AddNewUser(NewUserDTO user)
@@ -46,11 +44,13 @@ namespace IntegratorProject.src.repositories.implements
             _context.Users.Remove(GetUserById(id));
             _context.SaveChanges();
         }
+
         public UserModel GetUserById(int id)
         {
             return _context.Users
                 .FirstOrDefault(u => u.Id == id);
         }
+
         public void UpDateUser(UpDateUserDTO user)
         {
             var userModel = GetUserById(user.Id);
@@ -67,7 +67,6 @@ namespace IntegratorProject.src.repositories.implements
             return _context.Users
                 .Where(u => u.Adress.Contains(adress))
                 .ToList();
-
         }
 
         public List<UserModel> GetAllOngs()
@@ -75,7 +74,6 @@ namespace IntegratorProject.src.repositories.implements
             return _context.Users
                 .Where(u => u.Type == UserType.Ong)
                 .ToList();
-
         }
         #endregion methods
     }

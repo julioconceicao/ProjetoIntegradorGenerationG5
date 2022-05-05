@@ -4,7 +4,6 @@ using IntegratorProject.src.repositories;
 using IntegratorProject.src.repositories.implements;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,11 +12,11 @@ using System.Threading.Tasks;
 namespace IntegratorProjectTest.Test.repositories
 {
     [TestClass]
-    public class UserRepositoryTest 
+    public class OrderRepositoryTest
     {
         private IntegratorProjectContext _context;
-        private IUser _repository;
-        
+        private IOrder _repository;
+
         [TestInitialize]
         public void InitialSettings()
         {
@@ -25,19 +24,19 @@ namespace IntegratorProjectTest.Test.repositories
             .UseInMemoryDatabase(databaseName: "db_IntergratorProject")
             .Options;
             _context = new IntegratorProjectContext(opt);
-            _repository = new UserRepository(_context); 
+            _repository = new OrderRepository(_context);
         }
+
         [TestMethod]
-        public void CreateThreeUsersReturnThreeUsers()
+
+        public void CreateTwoOrdersReturnTwoOrders()
         {
-            _repository.AddNewUser(
-            new NewUserDTO("Joao", 471867894,"joao@gmail","123456","Av.psicodaliaaa","",IntegratorProject.src.models.UserType.Donor));
-            _repository.AddNewUser(
-            new NewUserDTO("Zimerer", 754898745, "zimerer@gmail", "batatinhafrita", "Av.osasco", "", IntegratorProject.src.models.UserType.Donor));
-            _repository.AddNewUser(
-            new NewUserDTO("ONGAjudaNois", 895246321, "ongaajudanois@gmail", "123456", "Av.nosenhora", "", IntegratorProject.src.models.UserType.Ong));
-            
-            Assert.AreEqual(3, _context.Users.Count());
+            _repository.AddNewOrder(
+            new NewOrderDTO("grupo5@email.com",1));
+            _repository.AddNewOrder(
+            new NewOrderDTO("generation@email.com",2));
+
+            Assert.AreEqual(2, _context.Orders.Count());
         }
     }
 }

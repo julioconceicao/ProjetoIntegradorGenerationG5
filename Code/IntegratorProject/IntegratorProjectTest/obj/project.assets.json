@@ -8842,11 +8842,16 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\Usuario\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\paulo\\.nuget\\packages\\": {}
+>>>>>>> 5e4912bd86c694bc8c97e0b0aace066260c2ea7c
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Usuario\\OneDrive\\Área de Trabalho\\Generation\\ProjetoFinal\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\IntegratorProjectTest.csproj",
       "projectName": "IntegratorProjectTest",
       "projectPath": "C:\\Users\\Usuario\\OneDrive\\Área de Trabalho\\Generation\\ProjetoFinal\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\IntegratorProjectTest.csproj",
@@ -8855,21 +8860,35 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+      "projectUniqueName": "E:\\Generetion\\ProjetoIntegrador\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\IntegratorProjectTest.csproj",
+      "projectName": "IntegratorProjectTest",
+      "projectPath": "E:\\Generetion\\ProjetoIntegrador\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\IntegratorProjectTest.csproj",
+      "packagesPath": "C:\\Users\\paulo\\.nuget\\packages\\",
+      "outputPath": "E:\\Generetion\\ProjetoIntegrador\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\paulo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 5e4912bd86c694bc8c97e0b0aace066260c2ea7c
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+<<<<<<< HEAD
             "C:\\Users\\Usuario\\OneDrive\\Área de Trabalho\\Generation\\ProjetoFinal\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj": {
               "projectPath": "C:\\Users\\Usuario\\OneDrive\\Área de Trabalho\\Generation\\ProjetoFinal\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj"
+=======
+            "E:\\Generetion\\ProjetoIntegrador\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj": {
+              "projectPath": "E:\\Generetion\\ProjetoIntegrador\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj"
+>>>>>>> 5e4912bd86c694bc8c97e0b0aace066260c2ea7c
             }
           }
         }
@@ -8927,6 +8946,7 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
+<<<<<<< HEAD
   },
   "logs": [
     {
@@ -8936,4 +8956,7 @@
       "message": "Problema ao ler o arquivo de cache C:\\Users\\Usuario\\OneDrive\\Área de Trabalho\\Generation\\ProjetoFinal\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
     }
   ]
+=======
+  }
+>>>>>>> 5e4912bd86c694bc8c97e0b0aace066260c2ea7c
 }
