@@ -1,27 +1,7 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
     "C:\\Users\\User\\Desktop\\Generation\\ProjetoFinalGen\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj": {}
-=======
-<<<<<<< HEAD
-    "C:\\Users\\julio\\Documents\\.Projetos\\GenerationBrasil\\ProjetoIntegrador\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\julio\\Documents\\.Projetos\\GenerationBrasil\\ProjetoIntegrador\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\julio\\Documents\\.Projetos\\GenerationBrasil\\ProjetoIntegrador\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj",
-        "projectName": "IntegratorProject",
-        "projectPath": "C:\\Users\\julio\\Documents\\.Projetos\\GenerationBrasil\\ProjetoIntegrador\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj",
-        "packagesPath": "C:\\Users\\julio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\julio\\Documents\\.Projetos\\GenerationBrasil\\ProjetoIntegrador\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\julio\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-    "C:\\Users\\jvm18\\Desktop\\prograhmaisaoção\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj": {}
->>>>>>> 7b75bba306653b1ba783da2f3387fc33f0d56f0c
   },
   "projects": {
     "C:\\Users\\User\\Desktop\\Generation\\ProjetoFinalGen\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj": {
@@ -34,12 +14,7 @@
         "outputPath": "C:\\Users\\User\\Desktop\\Generation\\ProjetoFinalGen\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-<<<<<<< HEAD
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-          "C:\\Users\\jvm18\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 47e6f2f44d35c5ea27d84d5dafb1ad051198750b
->>>>>>> 7b75bba306653b1ba783da2f3387fc33f0d56f0c
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
