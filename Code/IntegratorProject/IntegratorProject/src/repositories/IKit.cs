@@ -18,6 +18,6 @@ namespace IntegratorProject.src.repositories
         void DeleteKit(int id);
         KitModel GetKitById(int id);
         List<KitModel> GetAllKits();
-        List<KitModel> GetAllKitsBySearch(string name, string productClass, float price, string expirationDate);
+        List<KitModel> GetAllBySearch(string nameKit, string productClass, float price = 0);
     }
 }

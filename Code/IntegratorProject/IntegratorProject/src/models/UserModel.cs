@@ -4,12 +4,13 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
 
 namespace IntegratorProject.src.models
-{/// <summary>
- /// <para>Creating user attributes.</para>
- /// <para>By: José Vinicius</para>
- /// <para>v 1.0</para>
- /// <para>04.05.2022</para>
- /// </summary>
+{
+    /// <summary>
+    /// <para>Implementing User Interface at UserRepository.</para>
+    /// <para>By: João Vitor, Julio Conceição, José Vinicius</para>
+    /// <para>v 1.0</para>
+    /// <para>05.05.2022</para>
+    /// </summary>
 
     [Table("tb_User")]
     public class UserModel
@@ -34,6 +35,10 @@ namespace IntegratorProject.src.models
 
         [StringLength(30)]
         public string NameAgent { get; set; }
+
+        [Required]
+        public UserType Type { get; set; }
+
 
 
 
