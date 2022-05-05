@@ -1,5 +1,6 @@
 using IntegratorProject.src.data;
 using IntegratorProject.src.repositories;
+using IntegratorProject.src.repositories.implements;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
