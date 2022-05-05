@@ -17,9 +17,17 @@ namespace IntegratorProject.src.dtos
         public string EmailCreator { get; set; }
 
         [Required]
+<<<<<<< HEAD
+        public int Id { get; set; }
+
+        [Required, StringLength(100)]
+        public string Description { get; set; }
+        public UpdateOrderDTO(int id, string description)
+=======
         public int KitId { get; set; }
 
         public NewOrderDTO(string emailCreator, int kitId)
+>>>>>>> 24ae18c0055746a4fdef1580b5ba36c7b4f0b91f
         {
             EmailCreator = emailCreator;
             KitId = kitId;
