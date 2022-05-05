@@ -7,8 +7,4 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = IntegratorProject
-<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\julio\Documents\.Projetos\GenerationBrasil\ProjetoIntegrador\ProjetoIntegradorGenerationG5\Code\IntegratorProject\IntegratorProject\
-=======
-build_property.ProjectDir = C:\Users\jvm18\Desktop\prograhmaisaoção\ProjetoIntegradorGenerationG5\Code\IntegratorProject\IntegratorProject\
->>>>>>> 47e6f2f44d35c5ea27d84d5dafb1ad051198750b
