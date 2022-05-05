@@ -1,4 +1,5 @@
 using IntegratorProject.src.data;
+using IntegratorProject.src.repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -33,6 +34,10 @@ namespace IntegratorProject
                 .Build();
             services.AddDbContext<IntegratorProjectContext>(opt => opt.UseSqlServer(config.GetConnectionString("DefaultConnection")));
             services.AddControllers();
+
+            services.AddScoped<IUser,UserRepository>();
+            services.AddScoped<IOrder,OrderRepository>();
+            services.AddScoped<IKit,KitRepository>();
         }
    
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
