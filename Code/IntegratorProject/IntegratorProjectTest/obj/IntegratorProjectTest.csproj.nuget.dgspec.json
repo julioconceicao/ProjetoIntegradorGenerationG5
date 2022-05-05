@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\User\\Desktop\\Generation\\ProjetoFinalGen\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\IntegratorProjectTest.csproj": {}
   },
   "projects": {
@@ -15,6 +16,22 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "C:\\Users\\jvm18\\Desktop\\prograhmaisaoção\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\IntegratorProjectTest.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\jvm18\\Desktop\\prograhmaisaoção\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\IntegratorProjectTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\jvm18\\Desktop\\prograhmaisaoção\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\IntegratorProjectTest.csproj",
+        "projectName": "IntegratorProjectTest",
+        "projectPath": "C:\\Users\\jvm18\\Desktop\\prograhmaisaoção\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\IntegratorProjectTest.csproj",
+        "packagesPath": "C:\\Users\\jvm18\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jvm18\\Desktop\\prograhmaisaoção\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jvm18\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 24ae18c0055746a4fdef1580b5ba36c7b4f0b91f
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +45,13 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\User\\Desktop\\Generation\\ProjetoFinalGen\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj": {
                 "projectPath": "C:\\Users\\User\\Desktop\\Generation\\ProjetoFinalGen\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj"
+=======
+              "C:\\Users\\jvm18\\Desktop\\prograhmaisaoção\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj": {
+                "projectPath": "C:\\Users\\jvm18\\Desktop\\prograhmaisaoção\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj"
+>>>>>>> 24ae18c0055746a4fdef1580b5ba36c7b4f0b91f
               }
             }
           }
@@ -88,6 +110,7 @@
         }
       }
     },
+<<<<<<< HEAD
     "C:\\Users\\User\\Desktop\\Generation\\ProjetoFinalGen\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -99,6 +122,19 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "C:\\Users\\jvm18\\Desktop\\prograhmaisaoção\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\jvm18\\Desktop\\prograhmaisaoção\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj",
+        "projectName": "IntegratorProject",
+        "projectPath": "C:\\Users\\jvm18\\Desktop\\prograhmaisaoção\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj",
+        "packagesPath": "C:\\Users\\jvm18\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jvm18\\Desktop\\prograhmaisaoção\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jvm18\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 24ae18c0055746a4fdef1580b5ba36c7b4f0b91f
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
