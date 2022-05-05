@@ -5980,6 +5980,7 @@
   },
   "packageFolders": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "C:\\Users\\Usuario\\.nuget\\packages\\": {}
 =======
 <<<<<<< HEAD
@@ -5988,10 +5989,14 @@
     "C:\\Users\\jvm18\\.nuget\\packages\\": {}
 >>>>>>> 47e6f2f44d35c5ea27d84d5dafb1ad051198750b
 >>>>>>> 7b75bba306653b1ba783da2f3387fc33f0d56f0c
+=======
+    "C:\\Users\\jvm18\\.nuget\\packages\\": {}
+>>>>>>> 62dfaee2905098744bd708e5275074d52a2587c0
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
 <<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Usuario\\OneDrive\\Área de Trabalho\\Generation\\ProjetoFinal\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj",
 =======
@@ -6005,6 +6010,8 @@
       "configFilePaths": [
         "C:\\Users\\julio\\AppData\\Roaming\\NuGet\\NuGet.Config",
 =======
+=======
+>>>>>>> 62dfaee2905098744bd708e5275074d52a2587c0
       "projectUniqueName": "C:\\Users\\jvm18\\Desktop\\prograhmaisaoção\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj",
 >>>>>>> 7b75bba306653b1ba783da2f3387fc33f0d56f0c
       "projectName": "IntegratorProject",
@@ -6017,8 +6024,11 @@
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
 =======
         "C:\\Users\\jvm18\\AppData\\Roaming\\NuGet\\NuGet.Config",
+<<<<<<< HEAD
 >>>>>>> 47e6f2f44d35c5ea27d84d5dafb1ad051198750b
 >>>>>>> 7b75bba306653b1ba783da2f3387fc33f0d56f0c
+=======
+>>>>>>> 62dfaee2905098744bd708e5275074d52a2587c0
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6084,5 +6094,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\jvm18\\Desktop\\prograhmaisaoção\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

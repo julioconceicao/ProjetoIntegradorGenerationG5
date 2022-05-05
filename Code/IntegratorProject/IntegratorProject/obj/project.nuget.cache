@@ -1,6 +1,7 @@
 {
   "version": 2,
 <<<<<<< HEAD
+<<<<<<< HEAD
   "dgSpecHash": "kr46JTyeb004coVUG1XUFqjjDTkzXVdXVBhUU5Rba65mEHfWoN+RQXphIRy196tgDQLbQQ90+bDsMRTMbOlckg==",
 =======
 <<<<<<< HEAD
@@ -112,6 +113,8 @@
     "C:\\Users\\julio\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\julio\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
 =======
+=======
+>>>>>>> 62dfaee2905098744bd708e5275074d52a2587c0
   "dgSpecHash": "VGbDs4dhqWFjQGBfkcFNFWdXasxuCMkiAB2AdrkIRp3+U0e2sE8/C0Fz35hABkML8Rq6ec57+LaBwTd6yyCCFg==",
 >>>>>>> 7b75bba306653b1ba783da2f3387fc33f0d56f0c
   "success": true,
@@ -325,8 +328,18 @@
     "C:\\Users\\jvm18\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\jvm18\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\jvm18\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+<<<<<<< HEAD
 >>>>>>> 47e6f2f44d35c5ea27d84d5dafb1ad051198750b
 >>>>>>> 7b75bba306653b1ba783da2f3387fc33f0d56f0c
+=======
+>>>>>>> 62dfaee2905098744bd708e5275074d52a2587c0
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\jvm18\\Desktop\\prograhmaisaoção\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
