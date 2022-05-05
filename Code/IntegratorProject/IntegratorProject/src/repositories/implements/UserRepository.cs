@@ -6,20 +6,28 @@ using System.Linq;
 
 namespace IntegratorProject.src.repositories.implements
 {
+    /// <summary>
+    /// <para>Implementing User Interface at UserRepository.</para>
+    /// <para>By: João Vitor, Julio Conceição, José Vinicius</para>
+    /// <para>v 1.0</para>
+    /// <para>05.05.2022</para>
+    /// </summary>
     public class UserRepository : IUser
     {
-        #region atributes
+        #region attributes
         private readonly IntegratorProjectContext _context;
-        #endregion atributes
+        #endregion attributes
 
-        #region Constructors
+
+        #region constructors
         public UserRepository(IntegratorProjectContext context)
         {
             _context = context;
         }
-        #endregion Constructors
-        
-        #region métods
+        #endregion constructors
+
+
+        #region methods
         public void AddNewUser(NewUserDTO user)
         {
             _context.Users.Add(new UserModel
@@ -43,17 +51,6 @@ namespace IntegratorProject.src.repositories.implements
             return _context.Users
                 .FirstOrDefault(u => u.Id == id);
         }
-
-        public List<UserModel> GetOngByAdress(string adress)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public List<UserModel> GetOngByUserType()
-        {
-            throw new System.NotImplementedException();
-        }
-
         public void UpDateUser(UpDateUserDTO user)
         {
             var userModel = GetUserById(user.Id);
@@ -64,6 +61,22 @@ namespace IntegratorProject.src.repositories.implements
             _context.Users.Update(userModel);
             _context.SaveChanges();
         }
-        #endregion métods
+
+        public List<UserModel> GetUserByAdress(string adress)
+        {
+            return _context.Users
+                .Where(u => u.Adress.Contains(adress))
+                .ToList();
+
+        }
+
+        public List<UserModel> GetAllOngs()
+        {
+            return _context.Users
+                .Where(u => u.Type == UserType.Ong)
+                .ToList();
+
+        }
+        #endregion methods
     }
 }
