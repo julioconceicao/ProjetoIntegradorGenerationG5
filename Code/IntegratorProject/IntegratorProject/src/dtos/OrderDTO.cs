@@ -31,7 +31,7 @@ namespace IntegratorProject.src.dtos
     {
         [Required]
         public int Id { get; set; }
-        
+
         [Required, StringLength(100)]
         public string Description { get; set; }
         public UpdateOrderDTO(int id, string description)
