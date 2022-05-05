@@ -11,24 +11,19 @@ namespace IntegratorProject.src.repositories.implements
     /// <para>Resume> Creating Kit Implements</para>
     /// <para>By: Leticia Zimerer, Michelli Oliveira and Paulo Almeida </para>
     /// <para>Version: 1.0</para>
-    /// <para>Data: 05/05/2022</para>
+    /// <para>Date: 05/05/2022</para>
     /// </summary>
     public class KitRepository : IKit
     {
-
         #region Attributes
-
         private readonly IntegratorProjectContext _context;
-
         #endregion Attributes
 
         #region Constructors
-
         public KitRepository(IntegratorProjectContext context)
         {
             _context = context;
         }
-
         public void DeleteKit(int id)
         {
             _context.Kits.Remove(GetKitById(id));
@@ -36,32 +31,31 @@ namespace IntegratorProject.src.repositories.implements
         }
         #endregion Constructors
 
-        #region Method
-
+        #region Methods
         public KitModel GetKitById(int id)
         {
             return _context.Kits.FirstOrDefault(u => u.Id == id);
         }
 
-        public void NewKit(NewKitDTO kit)
+        public void NewKit(NewKitDTO newkit)
         {
             _context.Kits.Add(new KitModel
             {
-                Name = kit.Name,
-                ProductClass = kit.ProductClass,
-                Price = kit.Price,
-                ExpirationDate = kit.ExpirationDate,
+                Name = newkit.Name,
+                ProductClass = newkit.ProductClass,
+                Price = newkit.Price,
+                ExpirationDate = newkit.ExpirationDate,
             });
             _context.SaveChanges();
         }
 
-        public void UpDateKit(NewKitDTO.UpDateKitDTO kit)
+        public void UpDateKit(UpDateKitDTO upkit)
         {
-            var KitModel = GetKitById(kit.Id);
-            KitModel.Name = kit.Name;
-            KitModel.ProductClass = kit.ProductClass;
-            KitModel.Price = kit.Price;
-            KitModel.ExpirationDate = kit.ExpirationDate;
+            var KitModel = GetKitById(upkit.Id);
+            KitModel.Name = upkit.Name;
+            KitModel.ProductClass = upkit.ProductClass;
+            KitModel.Price = upkit.Price;
+            KitModel.ExpirationDate = upkit.ExpirationDate;
 
             _context.Kits.Update(KitModel);
             _context.SaveChanges();
@@ -94,7 +88,6 @@ namespace IntegratorProject.src.repositories.implements
                     return _context.Kits
                         .Where(k => k.Name.Contains(namekit) & k.ProductClass.Contains(productClass) & k.Price == price)
                         .ToList();
-
             }
         }
 
@@ -102,10 +95,7 @@ namespace IntegratorProject.src.repositories.implements
         {
             return _context.Kits.ToList();
         }
-
-        #endregion Method
-
-
+        #endregion Methods
     }
 }
 
