@@ -1,7 +1,6 @@
 ﻿using IntegratorProject.src.models;
 using Microsoft.EntityFrameworkCore;
 
-
 namespace IntegratorProject.src.data
 {
     /// <summary>
@@ -15,7 +14,6 @@ namespace IntegratorProject.src.data
         public DbSet<UserModel> Users { get; set; }
         public DbSet<OrderModel> Orders { get; set; }
         public DbSet<KitModel> Kits { get; set; }
-
         public IntegratorProjectContext(DbContextOptions<IntegratorProjectContext> opt) : base(opt)
         {
         }
