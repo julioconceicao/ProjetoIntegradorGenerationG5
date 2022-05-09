@@ -1,6 +1,9 @@
 ﻿using IntegratorProject.src.dtos;
+using IntegratorProject.src.models;
 using IntegratorProject.src.repositories;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace IntegratorProject.src.controllers
 {
@@ -10,15 +13,7 @@ namespace IntegratorProject.src.controllers
     public class UserController : ControllerBase
     {
         #region Attributes
-<<<<<<< HEAD
-        #endregion Attributes
 
-        #region Constructors
-        #endregion Constructors
-
-        #region Methods
-        #endregion Methods
-=======
         private readonly IUser _repository;
 
         #endregion Attributes
@@ -28,10 +23,10 @@ namespace IntegratorProject.src.controllers
         {
             _repository = repository;
         }
-
         #endregion Constructors
 
         #region Methods
+
         [HttpPost]
         public IActionResult NewUser([FromBody] NewUserDTO user)
         {
@@ -58,10 +53,35 @@ namespace IntegratorProject.src.controllers
             return NoContent();
         }
 
+        [HttpGet]
+        public IActionResult GetAllOngs()
+        {
+            var list = _repository.GetAllOngs();
+            if (list.Count < 1) return NoContent();
+            return Ok(list);
+        }
+
+        [HttpGet("adress/{userAdress}")]
+        public IActionResult GetUserByAdress([FromRoute] string adress)
+        {
+            var user = _repository.GetUserByAdress(adress);
+
+            if (user == null) return NotFound();
+
+            return Ok(user);
+        }
+    
+        [HttpGet("id/{idUser}")]
+        public IActionResult GetUserById([FromRoute]int idUser)
+        {
+            var user = _repository.GetUserById(idUser);
+
+            if (user == null) return NotFound();
+
+            return Ok(user);
+        }
 
         #endregion Methods
-
->>>>>>> cedfaf76b37b0a15ac785f856e0acac0ceff5abb
 
     }
 }
