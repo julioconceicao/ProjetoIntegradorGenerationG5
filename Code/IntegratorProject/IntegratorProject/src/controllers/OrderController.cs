@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using IntegratorProject.src.dtos;
+using IntegratorProject.src.repositories;
+using Microsoft.AspNetCore.Mvc;
 
 namespace IntegratorProject.src.controllers
 {
@@ -10,12 +12,14 @@ namespace IntegratorProject.src.controllers
         #region Atributes
         private readonly IOrder _repository;
         #endregion
+
         #region Builders
         public OrderController(IOrder repository)
         {
             _repository = repository;
         }
         #endregion
+
         #region Methods
         [HttpGet]
         public IActionResult GetAllOrders()
@@ -23,6 +27,24 @@ namespace IntegratorProject.src.controllers
             var list = _repository.GetAllOrders();
             if (list.Count < 1) return NoContent();
             return Ok(list);
+        }
+
+        [HttpGet("id/{idOrder}")]
+        public IActionResult GetOrderById([FromRoute] int idOrder)
+        {
+            var order = _repository.GetOrderById(idOrder);
+            if (order == null) return NotFound();
+            return Ok(order);
+        }
+
+        [HttpPost]
+        public IActionResult AddNewOrder([FromBody] NewOrderDTO order)
+        {
+            if (!ModelState.IsValid) return BadRequest();
+
+            _repository.AddNewOrder(order);
+
+            return Created($"api/orders", order);
         }
         #endregion
     }
