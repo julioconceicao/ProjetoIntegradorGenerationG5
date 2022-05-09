@@ -8,14 +8,12 @@ namespace IntegratorProject.src.models
     /// <summary>
     /// <para>Resume> Creating Kits Attributes</para>
     /// <para>By: Leticia Zimerer, Michelli Oliveira and Paulo Almeida </para>
-    /// <para>Versão: 1.0</para>
-    /// <para>Data: 04/05/2022</para>
+    /// <para>Version: 1.0</para>
+    /// <para>Date:04/05/2022</para>
     /// </summary>
-
     [Table("tb_Kit")]
     public class KitModel
     {
-
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
@@ -31,6 +29,5 @@ namespace IntegratorProject.src.models
 
         [Required, StringLength(30)]
         public string ExpirationDate { get; set; }
-
     }
 }
