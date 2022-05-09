@@ -44,6 +44,10 @@ namespace IntegratorProject
             services.AddScoped<IUser,UserRepository>();
             services.AddScoped<IOrder,OrderRepository>();
             services.AddScoped<IKit,KitRepository>();
+
+            // Controllers
+            services.AddCors();
+            services.AddControllers();
         }
         /// <summary>
         /// <para>Resume> Configure database initialize from context</para>
@@ -59,14 +63,18 @@ namespace IntegratorProject
                 app.UseDeveloperExceptionPage();              
             }
 
+            // Production Environment
+            // Routes
             app.UseRouting();
-
-            app.UseAuthorization();
-
+            app.UseCors(c => c
+            .AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader());
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
+
         }
     }
 }
