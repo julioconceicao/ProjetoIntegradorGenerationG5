@@ -7,6 +7,14 @@ namespace IntegratorProject.src.controllers
     [Produces("application/json")]
     public class UserController : ControllerBase
     {
+        #region Attributes
+        #endregion Attributes
+
+        #region Constructors
+        #endregion Constructors
+
+        #region Methods
+        #endregion Methods
 
     }
 }
