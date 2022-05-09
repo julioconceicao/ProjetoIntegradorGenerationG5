@@ -8842,21 +8842,11 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
-<<<<<<< HEAD
     "C:\\Users\\admin\\.nuget\\packages\\": {}
-=======
-    "C:\\Users\\jvm18\\.nuget\\packages\\": {}
->>>>>>> 80cbbe69e55002fb3f1336b9bff76edb78428b5c
-=======
-    "C:\\Users\\paulo\\.nuget\\packages\\": {}
->>>>>>> 5e4912bd86c694bc8c97e0b0aace066260c2ea7c
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\admin\\Desktop\\ProjetoFinal\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\IntegratorProjectTest.csproj",
       "projectName": "IntegratorProjectTest",
       "projectPath": "C:\\Users\\admin\\Desktop\\ProjetoFinal\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\IntegratorProjectTest.csproj",
@@ -8865,47 +8855,21 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-      "projectUniqueName": "C:\\Users\\jvm18\\Desktop\\prograhmaisaoção\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\IntegratorProjectTest.csproj",
-=======
-      "projectUniqueName": "E:\\Generetion\\ProjetoIntegrador\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\IntegratorProjectTest.csproj",
->>>>>>> 5e4912bd86c694bc8c97e0b0aace066260c2ea7c
-      "projectName": "IntegratorProjectTest",
-      "projectPath": "E:\\Generetion\\ProjetoIntegrador\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\IntegratorProjectTest.csproj",
-      "packagesPath": "C:\\Users\\paulo\\.nuget\\packages\\",
-      "outputPath": "E:\\Generetion\\ProjetoIntegrador\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\obj\\",
-      "projectStyle": "PackageReference",
-      "configFilePaths": [
-<<<<<<< HEAD
-        "C:\\Users\\jvm18\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 80cbbe69e55002fb3f1336b9bff76edb78428b5c
-=======
-        "C:\\Users\\paulo\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 5e4912bd86c694bc8c97e0b0aace066260c2ea7c
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-<<<<<<< HEAD
-<<<<<<< HEAD
             "C:\\Users\\admin\\Desktop\\ProjetoFinal\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj": {
               "projectPath": "C:\\Users\\admin\\Desktop\\ProjetoFinal\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj"
-=======
-            "C:\\Users\\jvm18\\Desktop\\prograhmaisaoção\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj": {
-              "projectPath": "C:\\Users\\jvm18\\Desktop\\prograhmaisaoção\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj"
->>>>>>> 80cbbe69e55002fb3f1336b9bff76edb78428b5c
-=======
-            "E:\\Generetion\\ProjetoIntegrador\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj": {
-              "projectPath": "E:\\Generetion\\ProjetoIntegrador\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj"
->>>>>>> 5e4912bd86c694bc8c97e0b0aace066260c2ea7c
             }
           }
         }
@@ -8963,7 +8927,6 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
-<<<<<<< HEAD
   },
   "logs": [
     {
@@ -8973,7 +8936,4 @@
       "message": "Problema ao ler o arquivo de cache C:\\Users\\admin\\Desktop\\ProjetoFinal\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
     }
   ]
-=======
-  }
->>>>>>> 80cbbe69e55002fb3f1336b9bff76edb78428b5c
 }
