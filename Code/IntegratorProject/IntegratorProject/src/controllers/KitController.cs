@@ -27,9 +27,9 @@ namespace IntegratorProject.src.controllers
         #region Methods
 
         [HttpGet("id/{idKit}")]
-        public IActionResult GetKitById([FromRoute] int id)
+        public IActionResult GetKitById([FromRoute] int idKit)
         {
-            var kits = _repository.GetKitById(id);
+            var kits = _repository.GetKitById(idKit);
             if (kits == null) return NotFound();
             return Ok(kits);
         }
@@ -67,11 +67,6 @@ namespace IntegratorProject.src.controllers
             _repository.DeleteKit(idkit);
             return NoContent();
         }
-
-
         #endregion Methods
-
-
     }
-
 }
