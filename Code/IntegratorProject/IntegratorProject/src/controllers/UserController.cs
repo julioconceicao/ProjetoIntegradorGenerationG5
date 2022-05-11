@@ -1,6 +1,7 @@
 ﻿using IntegratorProject.src.dtos;
 using IntegratorProject.src.models;
 using IntegratorProject.src.repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,6 +29,7 @@ namespace IntegratorProject.src.controllers
         #region Methods
 
         [HttpPost]
+        [AllowAnonymous]
         public IActionResult NewUser([FromBody] NewUserDTO user)
         {
             if (!ModelState.IsValid) return BadRequest();
@@ -36,6 +38,7 @@ namespace IntegratorProject.src.controllers
         }
 
         [HttpPut]
+        [Authorize(Roles = "USER, ADMIN, ONG")]
         public IActionResult UpDateUser([FromBody] UpDateUserDTO user)
         {
             if (!ModelState.IsValid) return BadRequest();
@@ -46,6 +49,7 @@ namespace IntegratorProject.src.controllers
         }
 
         [HttpDelete("delete/{idUser}")]
+        [Authorize(Roles = "USER, ADMIN, ONG")]
         public IActionResult DeleteUser([FromRoute] int idUser)
         {
             _repository.DeleteUser(idUser);
@@ -54,6 +58,7 @@ namespace IntegratorProject.src.controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "USER")]
         public IActionResult GetAllOngs()
         {
             var list = _repository.GetAllOngs();
@@ -62,6 +67,7 @@ namespace IntegratorProject.src.controllers
         }
 
         [HttpGet("adress/{userAdress}")]
+        [Authorize(Roles = "USER, ONG")]
         public IActionResult GetUserByAdress([FromRoute] string adress)
         {
             var user = _repository.GetUserByAdress(adress);
@@ -72,6 +78,7 @@ namespace IntegratorProject.src.controllers
         }
     
         [HttpGet("id/{idUser}")]
+        [Authorize(Roles = "USER, ONG")]
         public IActionResult GetUserById([FromRoute]int idUser)
         {
             var user = _repository.GetUserById(idUser);
@@ -80,7 +87,6 @@ namespace IntegratorProject.src.controllers
 
             return Ok(user);
         }
-
         #endregion Methods
 
     }

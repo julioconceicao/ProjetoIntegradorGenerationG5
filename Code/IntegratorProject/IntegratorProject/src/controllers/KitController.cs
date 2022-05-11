@@ -1,5 +1,6 @@
 ﻿using IntegratorProject.src.dtos;
 using IntegratorProject.src.repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace IntegratorProject.src.controllers
@@ -27,6 +28,7 @@ namespace IntegratorProject.src.controllers
         #region Methods
 
         [HttpGet("id/{idKit}")]
+        [Authorize]
         public IActionResult GetKitById([FromRoute] int idKit)
         {
             var kits = _repository.GetKitById(idKit);
@@ -34,6 +36,7 @@ namespace IntegratorProject.src.controllers
             return Ok(kits);
         }
         [HttpGet("search")]
+        [Authorize]
         public IActionResult GetAllBySearch([FromQuery] string nameKit, string productClass, float price)
         {
             var list = _repository.GetAllBySearch(nameKit, productClass, price);
@@ -41,6 +44,7 @@ namespace IntegratorProject.src.controllers
             return Ok(list);
         }
         [HttpGet]
+        [Authorize]
         public IActionResult GetAllKits()
         {
             var list = _repository.GetAllKits();
@@ -48,6 +52,7 @@ namespace IntegratorProject.src.controllers
             return Ok(list);
         }
         [HttpPost]
+        [Authorize(Roles = "ADMIN")]
         public IActionResult NewKit([FromBody] NewKitDTO kit)
         {
             if (!ModelState.IsValid) return BadRequest();
@@ -55,6 +60,7 @@ namespace IntegratorProject.src.controllers
             return Created($"api/Kits", kit);
         }
         [HttpPut]
+        [Authorize(Roles = "ADMIN")]
         public IActionResult UpDatekit([FromBody] UpDateKitDTO kit)
         {
             if (!ModelState.IsValid) return BadRequest();
@@ -62,6 +68,7 @@ namespace IntegratorProject.src.controllers
             return Ok(kit);
         }
         [HttpDelete("delete/{idKit}")]
+        [Authorize(Roles = "ADMIN")]
         public IActionResult DeleteKit([FromRoute] int idkit)
         {
             _repository.DeleteKit(idkit);

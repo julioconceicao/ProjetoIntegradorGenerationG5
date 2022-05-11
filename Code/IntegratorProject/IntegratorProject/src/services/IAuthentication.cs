@@ -1,4 +1,5 @@
-﻿using IntegratorProject.src.models;
+﻿using IntegratorProject.src.dtos;
+using IntegratorProject.src.models;
 
 namespace IntegratorProject.src.services
 {
@@ -12,7 +13,7 @@ namespace IntegratorProject.src.services
     public interface IAuthentication
     {
         string EncodePassword(string password);
-        void CreateUserNotDuplicated(UserDTO user);
+        void CreateUserNotDuplicated(NewUserDTO user);
         string GenerateToken(UserModel user);
         AuthorizationDTO GetAuthorization(AuthenticateDTO authentication);
 

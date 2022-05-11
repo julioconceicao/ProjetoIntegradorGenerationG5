@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using IntegratorProject.src.utilities;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
@@ -46,16 +47,5 @@ namespace IntegratorProject.src.models
         [JsonIgnore]
         public List<OrderModel> MyOrders { get; set; }
     }
-    /// <summary>
-    /// <para>Creating user type.</para>
-    /// <para>By: everyone</para>
-    /// <para>v 1.0</para>
-    /// <para>04.05.2022</para>
-    /// </summary>
-    [JsonConverter(typeof(JsonStringEnumConverter))]
-    public enum UserType
-    {
-        Ong,
-        Donor
-    }
+ 
 }

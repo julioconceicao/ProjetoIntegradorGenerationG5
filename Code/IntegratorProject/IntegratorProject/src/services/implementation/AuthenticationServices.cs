@@ -1,4 +1,5 @@
-﻿using IntegratorProject.src.models;
+﻿using IntegratorProject.src.dtos;
+using IntegratorProject.src.models;
 using IntegratorProject.src.repositories;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
@@ -15,29 +16,30 @@ namespace IntegratorProject.src.services
         #region Attributes
         private readonly IUser _repository;
         public IConfiguration Configuration { get; }
+
         #endregion
 
         #region Constructors
-
-        #endregion
-
-        #region Method
         public AuthenticationServices(IUser repository, IConfiguration configuration)
         {
             _repository = repository;
             Configuration = configuration;
         }
-        public void CreateUserNotDuplicated(UserDTO user)
-        {
-            var user = _repository.GetUserByEmail(dto.Email);
-            if (user != null) throw new Exception("This email is already being used");
-            dto.Password = EncodePassword(dto.Password);
-            _repository.NewUser(dto);
-        }
+
+        #endregion
+
+        #region Method
         public string EncodePassword(string password)
         {
             var bytes = Encoding.UTF8.GetBytes(password);
             return Convert.ToBase64String(bytes);
+        }
+        public void CreateUserNotDuplicated(NewUserDTO dto)
+        {
+            var user = _repository.GetUserByEmail(dto.Email);
+            if (user != null) throw new Exception("This email is already being used");
+            dto.Password = EncodePassword(dto.Password);
+            _repository.AddNewUser(dto);
         }
         public string GenerateToken(UserModel user)
         {
@@ -64,7 +66,7 @@ namespace IntegratorProject.src.services
         {
             var user = _repository.GetUserByEmail(authentication.Email);
             if (user == null) throw new Exception("User not found");
-            if (user.Token != EncodePassword(authentication.Password)) throw new Exception("Incorrect Password ");
+            if (user.Password != EncodePassword(authentication.Password)) throw new Exception("Incorrect Password ");
             return new AuthorizationDTO(user.Id, user.Email, user.Type, GenerateToken(user));
         }
         #endregion method
