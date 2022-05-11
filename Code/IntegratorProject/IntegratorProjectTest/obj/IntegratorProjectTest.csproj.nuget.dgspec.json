@@ -1,20 +1,28 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\julio\\Documents\\.Projetos\\GenerationBrasil\\ProjetoIntegrador\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\IntegratorProjectTest.csproj": {}
+=======
+    "D:\\Biblioteca\\Documents\\Coisinhas do joao iudsjqooashdfuhsdufdhfadhf\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\IntegratorProjectTest.csproj": {}
+>>>>>>> 7b8e7581f8a05f5724776783cf6de7890e1514d1
   },
   "projects": {
-    "C:\\Users\\julio\\Documents\\.Projetos\\GenerationBrasil\\ProjetoIntegrador\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\IntegratorProjectTest.csproj": {
+    "D:\\Biblioteca\\Documents\\Coisinhas do joao iudsjqooashdfuhsdufdhfadhf\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\IntegratorProjectTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\julio\\Documents\\.Projetos\\GenerationBrasil\\ProjetoIntegrador\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\IntegratorProjectTest.csproj",
+        "projectUniqueName": "D:\\Biblioteca\\Documents\\Coisinhas do joao iudsjqooashdfuhsdufdhfadhf\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\IntegratorProjectTest.csproj",
         "projectName": "IntegratorProjectTest",
-        "projectPath": "C:\\Users\\julio\\Documents\\.Projetos\\GenerationBrasil\\ProjetoIntegrador\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\IntegratorProjectTest.csproj",
-        "packagesPath": "C:\\Users\\julio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\julio\\Documents\\.Projetos\\GenerationBrasil\\ProjetoIntegrador\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\obj\\",
+        "projectPath": "D:\\Biblioteca\\Documents\\Coisinhas do joao iudsjqooashdfuhsdufdhfadhf\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\IntegratorProjectTest.csproj",
+        "packagesPath": "C:\\Users\\Victor\\.nuget\\packages\\",
+        "outputPath": "D:\\Biblioteca\\Documents\\Coisinhas do joao iudsjqooashdfuhsdufdhfadhf\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\julio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\Victor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 7b8e7581f8a05f5724776783cf6de7890e1514d1
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +36,13 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\julio\\Documents\\.Projetos\\GenerationBrasil\\ProjetoIntegrador\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj": {
                 "projectPath": "C:\\Users\\julio\\Documents\\.Projetos\\GenerationBrasil\\ProjetoIntegrador\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj"
+=======
+              "D:\\Biblioteca\\Documents\\Coisinhas do joao iudsjqooashdfuhsdufdhfadhf\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj": {
+                "projectPath": "D:\\Biblioteca\\Documents\\Coisinhas do joao iudsjqooashdfuhsdufdhfadhf\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj"
+>>>>>>> 7b8e7581f8a05f5724776783cf6de7890e1514d1
               }
             }
           }
@@ -84,21 +97,29 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
+<<<<<<< HEAD
     "C:\\Users\\julio\\Documents\\.Projetos\\GenerationBrasil\\ProjetoIntegrador\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj": {
+=======
+    "D:\\Biblioteca\\Documents\\Coisinhas do joao iudsjqooashdfuhsdufdhfadhf\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj": {
+>>>>>>> 7b8e7581f8a05f5724776783cf6de7890e1514d1
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\julio\\Documents\\.Projetos\\GenerationBrasil\\ProjetoIntegrador\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj",
+        "projectUniqueName": "D:\\Biblioteca\\Documents\\Coisinhas do joao iudsjqooashdfuhsdufdhfadhf\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj",
         "projectName": "IntegratorProject",
-        "projectPath": "C:\\Users\\julio\\Documents\\.Projetos\\GenerationBrasil\\ProjetoIntegrador\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj",
-        "packagesPath": "C:\\Users\\julio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\julio\\Documents\\.Projetos\\GenerationBrasil\\ProjetoIntegrador\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\obj\\",
+        "projectPath": "D:\\Biblioteca\\Documents\\Coisinhas do joao iudsjqooashdfuhsdufdhfadhf\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj",
+        "packagesPath": "C:\\Users\\Victor\\.nuget\\packages\\",
+        "outputPath": "D:\\Biblioteca\\Documents\\Coisinhas do joao iudsjqooashdfuhsdufdhfadhf\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\julio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\Victor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 7b8e7581f8a05f5724776783cf6de7890e1514d1
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -161,7 +182,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -5979,19 +5979,31 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\julio\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\Victor\\.nuget\\packages\\": {}
+>>>>>>> 7b8e7581f8a05f5724776783cf6de7890e1514d1
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\julio\\Documents\\.Projetos\\GenerationBrasil\\ProjetoIntegrador\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj",
+=======
+      "projectUniqueName": "D:\\Biblioteca\\Documents\\Coisinhas do joao iudsjqooashdfuhsdufdhfadhf\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj",
+>>>>>>> 7b8e7581f8a05f5724776783cf6de7890e1514d1
       "projectName": "IntegratorProject",
-      "projectPath": "C:\\Users\\julio\\Documents\\.Projetos\\GenerationBrasil\\ProjetoIntegrador\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj",
-      "packagesPath": "C:\\Users\\julio\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\julio\\Documents\\.Projetos\\GenerationBrasil\\ProjetoIntegrador\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\obj\\",
+      "projectPath": "D:\\Biblioteca\\Documents\\Coisinhas do joao iudsjqooashdfuhsdufdhfadhf\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj",
+      "packagesPath": "C:\\Users\\Victor\\.nuget\\packages\\",
+      "outputPath": "D:\\Biblioteca\\Documents\\Coisinhas do joao iudsjqooashdfuhsdufdhfadhf\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\julio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\Victor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 7b8e7581f8a05f5724776783cf6de7890e1514d1
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6054,7 +6066,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   },
@@ -6063,7 +6075,11 @@
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
+<<<<<<< HEAD
       "message": "Problema ao ler o arquivo de cache C:\\Users\\julio\\Documents\\.Projetos\\GenerationBrasil\\ProjetoIntegrador\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+=======
+      "message": "Problem reading the cache file D:\\Biblioteca\\Documents\\Coisinhas do joao iudsjqooashdfuhsdufdhfadhf\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+>>>>>>> 7b8e7581f8a05f5724776783cf6de7890e1514d1
     }
   ]
 }
