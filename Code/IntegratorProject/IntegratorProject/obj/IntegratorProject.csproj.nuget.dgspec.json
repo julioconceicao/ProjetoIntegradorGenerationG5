@@ -1,7 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
     "C:\\Users\\julio\\Documents\\.Projetos\\GenerationBrasil\\ProjetoIntegrador\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj": {}
   },
   "projects": {
@@ -16,22 +15,6 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\julio\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-    "C:\\Users\\Usuario\\OneDrive\\Área de Trabalho\\Generation\\ProjetoFinal\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\Usuario\\OneDrive\\Área de Trabalho\\Generation\\ProjetoFinal\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\OneDrive\\Área de Trabalho\\Generation\\ProjetoFinal\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj",
-        "projectName": "IntegratorProject",
-        "projectPath": "C:\\Users\\Usuario\\OneDrive\\Área de Trabalho\\Generation\\ProjetoFinal\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\OneDrive\\Área de Trabalho\\Generation\\ProjetoFinal\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> b508eb7f69593ac090c4856270da06180cea8e70
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -102,11 +85,7 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
->>>>>>> b508eb7f69593ac090c4856270da06180cea8e70
         }
       }
     }
