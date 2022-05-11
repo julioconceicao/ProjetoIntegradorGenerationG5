@@ -1,27 +1,7 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
     "C:\\Users\\User\\Documents\\GENERATION\\.NET\\PROJETO INTEGRADOR\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj": {}
-=======
-<<<<<<< HEAD
-    "C:\\Users\\admin\\Desktop\\ProjetoFinal\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\admin\\Desktop\\ProjetoFinal\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\Desktop\\ProjetoFinal\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj",
-        "projectName": "IntegratorProject",
-        "projectPath": "C:\\Users\\admin\\Desktop\\ProjetoFinal\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\Desktop\\ProjetoFinal\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-    "C:\\Users\\vinic\\OneDrive\\Área de Trabalho\\ProjetoIntegrador\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj": {}
->>>>>>> de54b0f5000f05cca92690168379ef93e92dae96
   },
   "projects": {
     "C:\\Users\\User\\Documents\\GENERATION\\.NET\\PROJETO INTEGRADOR\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj": {
@@ -34,12 +14,7 @@
         "outputPath": "C:\\Users\\User\\Documents\\GENERATION\\.NET\\PROJETO INTEGRADOR\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-<<<<<<< HEAD
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-          "C:\\Users\\vinic\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 9d32b646a99a1bac54c44e5811dc6fe80985ae48
->>>>>>> de54b0f5000f05cca92690168379ef93e92dae96
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
