@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace IntegratorProject.src.controllers
 {
     [ApiController]
-    [Route("api/Order")]
+    [Route("api/Orders")]
     [Produces("application/json")]
     public class OrderController : ControllerBase
     {
