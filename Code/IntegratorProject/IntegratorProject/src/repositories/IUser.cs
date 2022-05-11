@@ -1,6 +1,7 @@
 ﻿using IntegratorProject.src.dtos;
 using IntegratorProject.src.models;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace IntegratorProject.src.repositories
 {
@@ -12,11 +13,11 @@ namespace IntegratorProject.src.repositories
     /// </summary>
     public interface IUser
     {
-        void AddNewUser(NewUserDTO user);
-        void UpDateUser(UpDateUserDTO user);
-        void DeleteUser(int id);
-        List<UserModel> GetAllOngs();
-        List<UserModel> GetUserByAdress(string adress);
-        UserModel GetUserById(int id);
+        Task AddNewUserAsync(NewUserDTO user);
+        Task UpDateUserAsync(UpDateUserDTO user);
+        Task DeleteUserAsync(int id);
+        Task<List<UserModel>> GetAllOngsAsync();
+        Task<List<UserModel>> GetUserByAdressAsync(string adress);
+        UserModel GetUserByIdAsync(int id);
     }
 }
