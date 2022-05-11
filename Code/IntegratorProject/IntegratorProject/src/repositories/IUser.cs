@@ -18,5 +18,6 @@ namespace IntegratorProject.src.repositories
         List<UserModel> GetAllOngs();
         List<UserModel> GetUserByAdress(string adress);
         UserModel GetUserById(int id);
+        object GetUserByEmail(object email);
     }
 }
