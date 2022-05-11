@@ -17,7 +17,6 @@ namespace IntegratorProject.src.dtos
             Password = password;
         }
     }
-
     public class AuthorizationDTO
     {
             public int Id { get; set; }
@@ -29,7 +28,7 @@ namespace IntegratorProject.src.dtos
             {
                 Id = id;
                 Email = email;
-                UserType = type;
+                Type = type;
                 Token = token;
             }
     }
