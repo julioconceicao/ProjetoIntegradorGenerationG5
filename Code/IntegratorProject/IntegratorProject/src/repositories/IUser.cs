@@ -1,6 +1,7 @@
 ﻿using IntegratorProject.src.dtos;
 using IntegratorProject.src.models;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace IntegratorProject.src.repositories
 {
@@ -18,5 +19,6 @@ namespace IntegratorProject.src.repositories
         List<UserModel> GetAllOngs();
         List<UserModel> GetUserByAdress(string adress);
         UserModel GetUserById(int id);
+        UserModel GetUserByEmail(string email);
     }
 }
