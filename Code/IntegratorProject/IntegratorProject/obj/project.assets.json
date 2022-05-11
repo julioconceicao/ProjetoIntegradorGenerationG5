@@ -6182,19 +6182,46 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\User\\.nuget\\packages\\": {}
+=======
+<<<<<<< HEAD
+    "C:\\Users\\admin\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\vinic\\.nuget\\packages\\": {}
+>>>>>>> 9d32b646a99a1bac54c44e5811dc6fe80985ae48
+>>>>>>> de54b0f5000f05cca92690168379ef93e92dae96
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\User\\Documents\\GENERATION\\.NET\\PROJETO INTEGRADOR\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj",
+=======
+<<<<<<< HEAD
+      "projectUniqueName": "C:\\Users\\admin\\Desktop\\ProjetoFinal\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj",
+      "projectName": "IntegratorProject",
+      "projectPath": "C:\\Users\\admin\\Desktop\\ProjetoFinal\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj",
+      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\admin\\Desktop\\ProjetoFinal\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+      "projectUniqueName": "C:\\Users\\vinic\\OneDrive\\Área de Trabalho\\ProjetoIntegrador\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj",
+>>>>>>> de54b0f5000f05cca92690168379ef93e92dae96
       "projectName": "IntegratorProject",
       "projectPath": "C:\\Users\\User\\Documents\\GENERATION\\.NET\\PROJETO INTEGRADOR\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\User\\Documents\\GENERATION\\.NET\\PROJETO INTEGRADOR\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\vinic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 9d32b646a99a1bac54c44e5811dc6fe80985ae48
+>>>>>>> de54b0f5000f05cca92690168379ef93e92dae96
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6268,5 +6295,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
+<<<<<<< HEAD
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\admin\\Desktop\\ProjetoFinal\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
+=======
   }
+>>>>>>> 9d32b646a99a1bac54c44e5811dc6fe80985ae48
 }
