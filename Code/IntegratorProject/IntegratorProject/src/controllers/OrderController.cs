@@ -1,5 +1,6 @@
 ﻿using IntegratorProject.src.dtos;
 using IntegratorProject.src.repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace IntegratorProject.src.controllers
@@ -22,6 +23,7 @@ namespace IntegratorProject.src.controllers
 
         #region Methods
         [HttpGet]
+        [Authorize]
         public IActionResult GetAllOrders()
         {
             var list = _repository.GetAllOrders();
@@ -30,6 +32,7 @@ namespace IntegratorProject.src.controllers
         }
 
         [HttpGet("id/{idOrder}")]
+        [Authorize]
         public IActionResult GetOrderById([FromRoute] int idOrder)
         {
             var order = _repository.GetOrderById(idOrder);
@@ -38,6 +41,7 @@ namespace IntegratorProject.src.controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "ADMIN")]
         public IActionResult AddNewOrder([FromBody] NewOrderDTO order)
         {
             if (!ModelState.IsValid) return BadRequest();
