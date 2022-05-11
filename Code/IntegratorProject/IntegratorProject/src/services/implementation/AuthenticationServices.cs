@@ -45,7 +45,7 @@ namespace IntegratorProject.src.services
         {
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(Configuration["Settings:Secret"]);
-            var tokenDescription = new SecurityTokenDescription
+            var tokenDescription = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(
             new Claim[]
