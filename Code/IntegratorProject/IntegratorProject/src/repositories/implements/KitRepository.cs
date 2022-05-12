@@ -4,6 +4,7 @@ using IntegratorProject.src.models;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace IntegratorProject.src.repositories.implements
 {
@@ -32,68 +33,68 @@ namespace IntegratorProject.src.repositories.implements
         #endregion Constructors
 
         #region Methods
-        public KitModel GetKitById(int id)
+        public async Task<KitModel> GetKitByIdAsync(int id)
         {
-            return _context.Kits.FirstOrDefault(u => u.Id == id);
+            return await _context.Kits.FirstOrDefaultAsync(u => u.Id == id);
         }
 
-        public void NewKit(NewKitDTO newkit)
+        public async Task NewKitAsync(NewKitDTO newkit)
         {
-            _context.Kits.Add(new KitModel
+            await _context.Kits.AddAsync(new KitModel
             {
                 Name = newkit.Name,
                 ProductClass = newkit.ProductClass,
                 Price = newkit.Price,
                 ExpirationDate = newkit.ExpirationDate,
             });
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
 
-        public void UpDateKit(UpdateKitDTO upkit)
+        public async Task UpdateKitAsync(UpdateKitDTO upkit)
         {
-            var KitModel = GetKitById(upkit.Id);
+            var KitModel = await GetKitByIdAsync(upkit.Id);
             KitModel.Name = upkit.Name;
             KitModel.ProductClass = upkit.ProductClass;
             KitModel.Price = upkit.Price;
             KitModel.ExpirationDate = upkit.ExpirationDate;
 
             _context.Kits.Update(KitModel);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
 
-        public List<KitModel> GetAllBySearch(string namekit, string productClass, double price)
+        public async Task<List<KitModel>> GetAllBySearchAsync(string namekit, string productClass, double price)
         {
             switch (namekit, productClass, price)
             {
                 case (null, null, 0):
-                    return _context.Kits
-                        .ToList();
+                    return await _context.Kits
+                        .ToListAsync();
 
                 case (null, null, _):
-                    return _context.Kits
+                    return await _context.Kits
                         .Where(k => k.Price == price)
-                        .ToList();
+                        .ToListAsync();
 
                 case (null, _, _):
-                    return _context.Kits
+                    return await _context.Kits
                         .Where(k => k.ProductClass.Contains(productClass) & k.Price == price)
-                        .ToList();
+                        .ToListAsync();
 
                 case (_, null, _):
-                    return _context.Kits
+                    return await _context.Kits
                         .Where(k => k.Name.Contains(namekit) & k.Price == price)
-                        .ToList();
+                        .ToListAsync();
 
                 case (_, _, _):
-                    return _context.Kits
+                    return await _context.Kits
                         .Where(k => k.Name.Contains(namekit) & k.ProductClass.Contains(productClass) & k.Price == price)
-                        .ToList();
+                        .ToListAsync();
             }
         }
 
-        public List<KitModel> GetAllKits()
+        public async Task<List<KitModel>> GetAllKitsAsync()
         {
-            return _context.Kits.ToList();
+            return await _context.Kits.ToListAsync();
         }
         #endregion Methods
     }

@@ -41,7 +41,7 @@ namespace IntegratorProject.src.controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = "ADMIN, USER")]                    //Este método deve ser acesso por Admin e user, estava apenas admin
+        [Authorize(Roles = "ADMIN, USER")]    //Este método deve ser acesso por Admin e user, estava apenas admin
         public IActionResult AddNewOrder([FromBody] NewOrderDTO order)
         {
             if (!ModelState.IsValid) return BadRequest();

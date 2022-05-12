@@ -14,10 +14,8 @@ namespace IntegratorProject.src.services
     public interface IAuthentication
     {
         string EncodePassword(string password);
-        void CreateUserNotDuplicated(NewUserDTO user);
+        Task CreateUserNotDuplicatedAsync(NewUserDTO user);
         string GenerateToken(UserModel user);
-        AuthorizationDTO GetAuthorization(AuthenticateDTO authentication);
-        
-        //Task GetAuthorizationAsync(AuthenticateDTO authentication);  este método está duplicado com o método acima na linha 19
+        Task<AuthorizationDTO> GetAuthorizationAsync(AuthenticateDTO authentication);
     }
 }   
