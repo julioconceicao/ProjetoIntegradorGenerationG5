@@ -1,6 +1,7 @@
 ﻿using IntegratorProject.src.data;
 using IntegratorProject.src.dtos;
 using IntegratorProject.src.models;
+using IntegratorProject.src.utilities;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -26,54 +27,62 @@ namespace IntegratorProject.src.repositories.implements
         #endregion constructors
 
         #region methods
-        public void AddNewUser(NewUserDTO user)
+        public async Task AddNewUserAsync(NewUserDTO user)
         {
-            _context.Users.Add(new UserModel
+           await _context.Users.Add(new UserModel
             {
                 Name = user.Name,
                 CPF_CNPJ = user.CPF_CNPJ,
                 Email = user.Email,
+                Password = user.Password,           
                 Adress = user.Adress,
                 NameAgent = user.NameAgent,
+                Type = user.Type
             });
-            _context.SaveChanges();
+           await _context.SaveChangesAsync();
         }
 
-        public void DeleteUser(int id)
+        public async Task DeleteUserAsync(int id)
         {
-            _context.Users.Remove(GetUserById(id));
-            _context.SaveChanges();
+            _context.Users.Remove(await GetUserByIdAsync(id));
+           await _context.SaveChangesAsync();
         }
 
-        public UserModel GetUserById(int id)
+        public async Task<UserModel> GetUserByIdAsync(int id)
         {
-            return _context.Users
-                .FirstOrDefault(u => u.Id == id);
+            return await _context.Users
+                .FirstOrDefaultAsync(u => u.Id == id);
         }
 
-        public void UpDateUser(UpDateUserDTO user)
+        public async Task UpdateUser(UpdateUserDTO user)
         {
-            var userModel = GetUserById(user.Id);
+            var userModel = await GetUserByIdAsync(user.Id);
             userModel.Name = user.Name;
             userModel.Password = user.Password;
             userModel.Adress = user.Adress;
             userModel.NameAgent = user.NameAgent;
             _context.Users.Update(userModel);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
 
-        public List<UserModel> GetUserByAdress(string adress)
+        public List<UserModel> GetUserByAdressAsync(string adress)
         {
-            return _context.Users
+            return await _context.Users
                 .Where(u => u.Adress.Contains(adress))
-                .ToList();
+                .ToListAsync();
         }
 
-        public List<UserModel> GetAllOngs()
+        public async Task<List<UserModel>> GetAllOngsAsync()
         {
-            return _context.Users
-                .Where(u => u.Type == UserType.Ong)
-                .ToList();
+            return await _context.Users
+                .Where(u => u.Type == UserType.ONG)
+                .ToListAsync();
+        }
+
+        public async Task<UserModel> GetUserByEmailAsync(string email)  
+        {
+            return await _context.Users
+                .FirstOrDefaultAsync(u => u.Email == email);
         }
         #endregion methods
     }

@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using IntegratorProject.src.dtos;
+using IntegratorProject.src.services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Threading.Tasks;
@@ -11,8 +13,6 @@ namespace IntegratorProject.src.controllers
     /// <para>Version: 1.0</para>
     /// <para>04/05/2022</para>
     /// </summary>
-
-
     [ApiController]
     [Route("api/Authentication")]
     [Produces("application/json")]
@@ -36,10 +36,9 @@ namespace IntegratorProject.src.controllers
         #region Methods
 
         [HttpPost, AllowAnonymous]
-        public async Task<ActionResult> Authentication([FromBody] AuthenticationDTO authentication)
+        public async Task<ActionResult> AuthenticationSync([FromBody] AuthenticateDTO authentication)
         {
             if (!ModelState.IsValid) return BadRequest();
-
             try
             {
                 var authorization = await _services.GetAuthorizationAsync(authentication);
@@ -50,7 +49,6 @@ namespace IntegratorProject.src.controllers
                 return Unauthorized(ex.Message);
             }
         }
-
         #endregion
     }
 }

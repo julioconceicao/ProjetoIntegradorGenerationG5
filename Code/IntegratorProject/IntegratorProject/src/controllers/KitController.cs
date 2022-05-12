@@ -2,6 +2,7 @@
 using IntegratorProject.src.repositories;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace IntegratorProject.src.controllers
 {
@@ -29,49 +30,49 @@ namespace IntegratorProject.src.controllers
 
         [HttpGet("id/{idKit}")]
         [Authorize]
-        public IActionResult GetKitById([FromRoute] int idKit)
+        public async Task<ActionResult> GetKitByIdAsync([FromRoute] int idKit)
         {
-            var kits = _repository.GetKitById(idKit);
+            var kits = await _repository.GetKitByIdAsync(idKit);
             if (kits == null) return NotFound();
             return Ok(kits);
         }
         [HttpGet("search")]
         [Authorize]
-        public IActionResult GetAllBySearch([FromQuery] string nameKit, string productClass, float price)
+        public async Task<ActionResult> GetAllBySearchAsync([FromQuery] string nameKit, string productClass, double price)
         {
-            var list = _repository.GetAllBySearch(nameKit, productClass, price);
+            var list = await _repository.GetAllBySearchAsync(nameKit, productClass, price);
             if (list.Count < 1) return NoContent();
             return Ok(list);
         }
         [HttpGet]
         [Authorize]
-        public IActionResult GetAllKits()
+        public async Task<ActionResult> GetAllKitsAsync()
         {
-            var list = _repository.GetAllKits();
+            var list = await _repository.GetAllKitsAsync();
             if (list.Count < 1) return NoContent();
             return Ok(list);
         }
         [HttpPost]
         [Authorize(Roles = "ADMIN")]
-        public IActionResult NewKit([FromBody] NewKitDTO kit)
+        public async Task<ActionResult> NewKitAsync([FromBody] NewKitDTO kit)
         {
             if (!ModelState.IsValid) return BadRequest();
-            _repository.NewKit(kit);
+            await _repository.NewKitAsync(kit);
             return Created($"api/Kits", kit);
         }
         [HttpPut]
         [Authorize(Roles = "ADMIN")]
-        public IActionResult UpDatekit([FromBody] UpDateKitDTO kit)
+        public async Task<ActionResult> UpDatekitAsync([FromBody] UpdateKitDTO kit)
         {
             if (!ModelState.IsValid) return BadRequest();
-            _repository.UpDateKit(kit);
+            await _repository.UpDatekit(kit);
             return Ok(kit);
         }
         [HttpDelete("delete/{idKit}")]
         [Authorize(Roles = "ADMIN")]
-        public IActionResult DeleteKit([FromRoute] int idkit)
+        public async ActionResult DeleteKitAsync([FromRoute] int idkit)
         {
-            _repository.DeleteKit(idkit);
+            await _repository.DeleteKitAsync(idkit);
             return NoContent();
         }
         #endregion Methods
