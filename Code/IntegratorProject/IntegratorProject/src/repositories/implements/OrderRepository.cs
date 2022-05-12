@@ -32,8 +32,8 @@ namespace IntegratorProject.src.repositories.implements
         {
            await _context.Orders.AddAsync(new OrderModel
             {
-                Kit = _context.Kits.FirstOrDefault(k => k.Id == order.Kit),
-                User = _context.Users.FirstOrDefault(u => u.Email == order.EmailCreator)
+                Kit = await _context.Kits.FirstOrDefaultAsync(k => k.Id == order.IdKit),
+                User = await _context.Users.FirstOrDefaultAsync(u => u.Email == order.EmailCreator)
             });
            await _context.SaveChangesAsync();
         }

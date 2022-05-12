@@ -27,7 +27,7 @@ namespace IntegratorProject.src.models
         [Required, StringLength(30)]
         public string Email { get; set; }
 
-        [Required, StringLength(20)]
+        [Required]
         public string Password { get; set; }
 
         [Required, StringLength(50)]

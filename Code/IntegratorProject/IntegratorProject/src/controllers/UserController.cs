@@ -35,20 +35,20 @@ namespace IntegratorProject.src.controllers
 
         [HttpPost]
         [AllowAnonymous]
-        public async Task<ActionResult> NewUserAsync([FromBody] NewUserDTO user)
+        public async Task<ActionResult> AddNewUserAsync([FromBody] NewUserDTO user)
         {
             if (!ModelState.IsValid) return BadRequest();
-
+            
             try
             {
-               await _services.CreateUserNotDuplicatedAsync(user);
-
-                return Created($"api/Users/{user.Email}", user);
+                await _services.CreateUserNotDuplicatedAsync(user);
+                return Created($"api/Users", user);
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 return Unauthorized(ex.Message);
             }
+
         }
 
         [HttpPut]

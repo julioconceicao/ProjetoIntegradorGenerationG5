@@ -46,8 +46,9 @@ namespace IntegratorProject.src.controllers
         public async Task<ActionResult> AddNewOrderAsync([FromBody] NewOrderDTO order)
         {
             if (!ModelState.IsValid) return BadRequest();
+
             await _repository.AddNewOrderAsync(order);
-                return Created($"api/orders", order);
+            return Ok(order);
         }
         #endregion
     }
