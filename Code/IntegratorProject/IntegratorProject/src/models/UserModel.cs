@@ -22,7 +22,7 @@ namespace IntegratorProject.src.models
         public string Name { get; set; }
 
         [Required, StringLength(14)] 
-        public string CPF_CNPJ { get; set; }          //alterado o tipo de dado para string
+        public string CPF_CNPJ { get; set; }
 
         [Required, StringLength(30)]
         public string Email { get; set; }

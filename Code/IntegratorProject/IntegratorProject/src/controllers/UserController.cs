@@ -19,7 +19,7 @@ namespace IntegratorProject.src.controllers
         #region Attributes
 
         private readonly IUser _repository;
-        private readonly IAuthentication _services;  // não havia o atributo autenticação para proteger o método de criação de usuário
+        private readonly IAuthentication _services;
 
         #endregion Attributes
 
@@ -62,7 +62,7 @@ namespace IntegratorProject.src.controllers
         }
 
         [HttpDelete("delete/{idUser}")]
-        [Authorize(Roles = "ADMIN")]  // apenas admin deve ser capaz de acessar este método, alterado para ADMIN
+        [Authorize(Roles = "ADMIN")]
         public async Task<ActionResult> DeleteUserAsync([FromRoute] int idUser)
         {
            await _repository.DeleteUserAsync(idUser);
@@ -70,7 +70,7 @@ namespace IntegratorProject.src.controllers
         }
 
         [HttpGet]
-        [Authorize(Roles = "USER, ADMIN")] // seria interessante o administrador também ter acesso a este método, add ADMIN
+        [Authorize(Roles = "USER, ADMIN")]
         public async Task<ActionResult> GetAllOngsAsync()
         {
             var list = await _repository.GetAllOngsAsync();
