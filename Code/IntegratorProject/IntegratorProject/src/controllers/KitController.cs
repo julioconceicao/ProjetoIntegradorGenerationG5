@@ -65,12 +65,12 @@ namespace IntegratorProject.src.controllers
         public async Task<ActionResult> UpDatekitAsync([FromBody] UpdateKitDTO kit)
         {
             if (!ModelState.IsValid) return BadRequest();
-            await _repository.UpDatekit(kit);
+            await _repository.UpDateKitAsync(kit);
             return Ok(kit);
         }
         [HttpDelete("delete/{idKit}")]
         [Authorize(Roles = "ADMIN")]
-        public async ActionResult DeleteKitAsync([FromRoute] int idkit)
+        public async Task<ActionResult> DeleteKitAsync([FromRoute] int idkit)
         {
             await _repository.DeleteKitAsync(idkit);
             return NoContent();
