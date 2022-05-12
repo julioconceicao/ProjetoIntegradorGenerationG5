@@ -3,8 +3,12 @@ build_property.TargetFramework = net5.0
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
-build_property.PublishSingleFile = 
-build_property.IncludeAllContentForSelfExtract = 
-build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = IntegratorProject
-build_property.ProjectDir = D:\Biblioteca\Documents\Coisinhas do joao iudsjqooashdfuhsdufdhfadhf\ProjetoIntegradorGenerationG5\Code\IntegratorProject\IntegratorProject\
+<<<<<<< HEAD
+build_property.ProjectDir = C:\Users\User\Desktop\Generation\ProjetoFinalGen\ProjetoIntegradorGenerationG5\ProjetoIntegradorGenerationG5\Code\IntegratorProject\IntegratorProject\
+=======
+build_property.ProjectDir = C:\Users\vinic\OneDrive\Área de Trabalho\ProjetoIntegrador\ProjetoIntegradorGenerationG5\Code\IntegratorProject\IntegratorProject\
+>>>>>>> 04e0cb407d36e491e1390235fd7ad104c91738b7
