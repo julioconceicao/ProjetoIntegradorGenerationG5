@@ -42,8 +42,13 @@ namespace IntegratorProject.src.controllers
         }
 
         [HttpPost]
+<<<<<<< HEAD
         [Authorize(Roles = "ADMIN, USER")]                
         public async Task<ActionResult> AddNewOrderAsync([FromBody] NewOrderDTO order)
+=======
+        [Authorize(Roles = "ADMIN, USER")]    //Este método deve ser acesso por Admin e user, estava apenas admin
+        public IActionResult AddNewOrder([FromBody] NewOrderDTO order)
+>>>>>>> a60c39ed07b2cb7bf0cff9d968f74034021e7491
         {
             if (!ModelState.IsValid) return BadRequest();
             await _repository.AddNewOrderAsync(order);
