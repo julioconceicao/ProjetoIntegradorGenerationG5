@@ -14,7 +14,7 @@ namespace IntegratorProject.src.repositories
     public interface IKit
     {
         Task NewKitAsync(NewKitDTO newkit);
-        Task UpDateKitAsync(UpdateKitDTO upkit);
+        Task UpdateKitAsync(UpdateKitDTO upkit);
         Task DeleteKitAsync(int id);
         Task<KitModel> GetKitByIdAsync(int id);
         Task<List<KitModel>> GetAllKitsAsync();
