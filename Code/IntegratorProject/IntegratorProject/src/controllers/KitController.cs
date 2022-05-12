@@ -62,15 +62,19 @@ namespace IntegratorProject.src.controllers
         }
         [HttpPut]
         [Authorize(Roles = "ADMIN")]
-        public async Task<ActionResult> UpDatekitAsync([FromBody] UpdateKitDTO kit)
+        public async Task<ActionResult> UpdatekitAsync([FromBody] UpdateKitDTO kit)
         {
             if (!ModelState.IsValid) return BadRequest();
-            await _repository.UpDatekit(kit);
+<<<<<<< HEAD
+            await _repository.UpdateKitAsync(kit);
+=======
+            await _repository.UpDateKitAsync(kit);
+>>>>>>> 98fd297e10066764a29c9a7ea7602c59bcf665e6
             return Ok(kit);
         }
         [HttpDelete("delete/{idKit}")]
         [Authorize(Roles = "ADMIN")]
-        public async ActionResult DeleteKitAsync([FromRoute] int idkit)
+        public async Task<ActionResult> DeleteKitAsync([FromRoute] int idkit)
         {
             await _repository.DeleteKitAsync(idkit);
             return NoContent();

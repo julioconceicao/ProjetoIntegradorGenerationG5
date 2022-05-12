@@ -7,6 +7,7 @@ using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace IntegratorProject.src.services
 {
@@ -32,12 +33,12 @@ namespace IntegratorProject.src.services
             var bytes = Encoding.UTF8.GetBytes(password);
             return Convert.ToBase64String(bytes);
         }
-        public void CreateUserNotDuplicated(NewUserDTO dto)
+        public async Task CreateUserNotDuplicatedAsync(NewUserDTO dto)
         {
-            var user = _repository.GetUserByEmail(dto.Email);
+            var user = await _repository.GetUserByEmailAsync(dto.Email);
             if (user != null) throw new Exception("This email is already being used");
             dto.Password = EncodePassword(dto.Password);
-            _repository.AddNewUser(dto);
+            await _repository.AddNewUserAsync(dto);
         }
         public string GenerateToken(UserModel user)
         {
@@ -60,9 +61,9 @@ namespace IntegratorProject.src.services
             var token = tokenHandler.CreateToken(tokenDescription);
             return tokenHandler.WriteToken(token);
         }
-        public AuthorizationDTO GetAuthorization(AuthenticateDTO authentication)
+        public async Task <AuthorizationDTO> GetAuthorizationAsync(AuthenticateDTO authentication)
         {
-            var user = _repository.GetUserByEmail(authentication.Email);
+            var user = await _repository.GetUserByEmailAsync(authentication.Email);
             if (user == null) throw new Exception("User not found");
             if (user.Password != EncodePassword(authentication.Password)) throw new Exception("Incorrect Password ");
             return new AuthorizationDTO(user.Id, user.Email, user.Type, GenerateToken(user));

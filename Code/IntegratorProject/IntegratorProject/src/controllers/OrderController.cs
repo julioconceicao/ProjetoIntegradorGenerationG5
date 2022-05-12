@@ -2,6 +2,7 @@
 using IntegratorProject.src.repositories;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace IntegratorProject.src.controllers
 {
@@ -24,28 +25,33 @@ namespace IntegratorProject.src.controllers
         #region Methods
         [HttpGet]
         [Authorize]
-        public IActionResult GetAllOrders()
+        public async Task<ActionResult> GetAllOrdersAsync()
         {
-            var list = _repository.GetAllOrders();
+            var list = await _repository.GetAllOrdersAsync();
             if (list.Count < 1) return NoContent();
             return Ok(list);
         }
 
         [HttpGet("id/{idOrder}")]
         [Authorize]
-        public IActionResult GetOrderById([FromRoute] int idOrder)
+        public async Task<ActionResult> GetOrderByIdAsync([FromRoute] int idOrder)
         {
-            var order = _repository.GetOrderById(idOrder);
+            var order = await _repository.GetOrderByIdAsync(idOrder);
             if (order == null) return NotFound();
             return Ok(order);
         }
 
         [HttpPost]
-        [Authorize(Roles = "ADMIN, USER")]                    //Este método deve ser acesso por Admin e user, estava apenas admin
+<<<<<<< HEAD
+        [Authorize(Roles = "ADMIN, USER")]                
+        public async Task<ActionResult> AddNewOrderAsync([FromBody] NewOrderDTO order)
+=======
+        [Authorize(Roles = "ADMIN, USER")]    //Este método deve ser acesso por Admin e user, estava apenas admin
         public IActionResult AddNewOrder([FromBody] NewOrderDTO order)
+>>>>>>> a60c39ed07b2cb7bf0cff9d968f74034021e7491
         {
             if (!ModelState.IsValid) return BadRequest();
-            _repository.AddNewOrder(order);
+            await _repository.AddNewOrderAsync(order);
                 return Created($"api/orders", order);
         }
         #endregion

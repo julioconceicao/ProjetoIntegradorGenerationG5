@@ -1,6 +1,9 @@
 ﻿using IntegratorProject.src.dtos;
 using IntegratorProject.src.models;
+<<<<<<< HEAD
+=======
 using System.Threading.Tasks;
+>>>>>>> 25661dc6be9a42fc99e95f1fd1aa309455bdf07a
 
 namespace IntegratorProject.src.services
 {
@@ -14,10 +17,12 @@ namespace IntegratorProject.src.services
     public interface IAuthentication
     {
         string EncodePassword(string password);
+<<<<<<< HEAD
         void CreateUserNotDuplicated(NewUserDTO user);
+=======
+        Task CreateUserNotDuplicatedAsync(NewUserDTO user);
+>>>>>>> 25661dc6be9a42fc99e95f1fd1aa309455bdf07a
         string GenerateToken(UserModel user);
-        AuthorizationDTO GetAuthorization(AuthenticateDTO authentication);
-        
-        //Task GetAuthorizationAsync(AuthenticateDTO authentication);  este método está duplicado com o método acima na linha 19
+        Task<AuthorizationDTO> GetAuthorizationAsync(AuthenticateDTO authentication);
     }
 }   

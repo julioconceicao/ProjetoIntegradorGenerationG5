@@ -36,12 +36,12 @@ namespace IntegratorProject.src.controllers
         #region Methods
 
         [HttpPost, AllowAnonymous]
-        public IActionResult Authentication([FromBody] AuthenticateDTO authentication)  // aqui havia o async que conflitava com o método que esta sem o async
+        public async Task<ActionResult> AuthenticationSync([FromBody] AuthenticateDTO authentication)
         {
             if (!ModelState.IsValid) return BadRequest();
             try
             {
-                var authorization = _services.GetAuthorization(authentication);
+                var authorization = await _services.GetAuthorizationAsync(authentication);
                 return Ok(authorization);
             }
             catch (Exception ex)
