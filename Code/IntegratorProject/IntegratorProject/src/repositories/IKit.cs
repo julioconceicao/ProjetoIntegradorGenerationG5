@@ -13,10 +13,10 @@ namespace IntegratorProject.src.repositories
     public interface IKit
     {
         void NewKit(NewKitDTO newkit);
-        void UpDateKit(UpDateKitDTO upkit);
+        void UpDateKit(UpdateKitDTO upkit);
         void DeleteKit(int id);
         KitModel GetKitById(int id);
         List<KitModel> GetAllKits();
-        List<KitModel> GetAllBySearch(string nameKit, string productClass, float price = 0);
+        List<KitModel> GetAllBySearch(string nameKit, string productClass, double price = 0);
     }
 }
