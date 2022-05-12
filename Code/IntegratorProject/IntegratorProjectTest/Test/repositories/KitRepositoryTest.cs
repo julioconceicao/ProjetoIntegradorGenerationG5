@@ -19,7 +19,7 @@ namespace IntegratorProjectTest.Test.repositories
         private IKit _repository;
 
         [TestInitialize]
-        public void InitialSettings()
+        public void InitialSettins()
         {
             var opt = new DbContextOptionsBuilder<IntegratorProjectContext>()
             .UseInMemoryDatabase(databaseName: "db_IntergratorProject")
@@ -28,16 +28,16 @@ namespace IntegratorProjectTest.Test.repositories
             _repository = new KitRepository(_context);
         }
         [TestMethod]
-        public void CreateNewKitReturnNameKitWhenSearchForName()
+        public async Task CreateNewKitReturnNameKitWhenSearchForName()
         {
-            _repository.NewKit(
+            await _repository.NewKitAsync(
             new NewKitDTO("Kit Mulher", "Produtos basicos para mulher", 15, "27/04/2022"));
-            _repository.NewKit(
+            await _repository.NewKitAsync(
             new NewKitDTO("Kit Higiene", "Produtos basicos para saúde", 35, "27/04/2022"));
-            _repository.NewKit(
+            await _repository.NewKitAsync(
             new NewKitDTO("Kit Cesta Basica", "Produtos basicos para alimentação", 1000, "27/04/2022"));
 
-            var kit = _repository.GetKitById(2);
+            var kit = await _repository.GetKitByIdAsync(2);
             Assert.IsNotNull(kit);
             
         }
