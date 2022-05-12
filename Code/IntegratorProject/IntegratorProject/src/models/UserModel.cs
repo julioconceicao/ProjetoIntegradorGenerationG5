@@ -12,6 +12,7 @@ namespace IntegratorProject.src.models
     /// <para>v 1.0</para>
     /// <para>05.05.2022</para>
     /// </summary>
+    
     [Table("tb_User")]
     public class UserModel
     {
@@ -38,12 +39,14 @@ namespace IntegratorProject.src.models
 
         [Required]
         public UserType Type { get; set; }
+
         /// <summary>
         /// <para>Creating orders list.</para>
         /// <para>By: Julio Conceicao</para>
         /// <para>v 1.0</para>
         /// <para>04.05.2022</para>
         /// </summary>
+        
         [JsonIgnore]
         public List<OrderModel> MyOrders { get; set; }
     }

@@ -34,14 +34,10 @@ namespace IntegratorProject.src.repositories.implements
             {
                 Kit = _context.Kits.FirstOrDefault(k => k.Id == order.Kit),
                 User = _context.Users.FirstOrDefault(u => u.Email == order.EmailCreator)
-<<<<<<< HEAD
+
             }
             );
              await _context.SaveChangesAsync();
-=======
-            });
-           await _context.SaveChangesAsync();
->>>>>>> 1ecfb92effc792294e58f118aa9d6dd472c39b3a
         }
             
         public async Task<List<OrderModel>>GetAllOrdersAsync()
