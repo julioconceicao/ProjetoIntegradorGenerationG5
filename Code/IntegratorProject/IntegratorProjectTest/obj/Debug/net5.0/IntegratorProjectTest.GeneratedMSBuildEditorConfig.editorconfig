@@ -8,7 +8,11 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = IntegratorProjectTest
 <<<<<<< HEAD
+build_property.ProjectDir = C:\Users\Usuario\OneDrive\Área de Trabalho\Generation\ProjetoFinal\ProjetoIntegradorGenerationG5\Code\IntegratorProject\IntegratorProjectTest\
+=======
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\User\Desktop\Generation\ProjetoFinalGen\ProjetoIntegradorGenerationG5\ProjetoIntegradorGenerationG5\Code\IntegratorProject\IntegratorProjectTest\
 =======
 build_property.ProjectDir = C:\Users\vinic\OneDrive\Área de Trabalho\ProjetoIntegrador\ProjetoIntegradorGenerationG5\Code\IntegratorProject\IntegratorProjectTest\
 >>>>>>> 04e0cb407d36e491e1390235fd7ad104c91738b7
+>>>>>>> 37c97a512ff407f0c8a8dbbf024e1cfed42c6432
