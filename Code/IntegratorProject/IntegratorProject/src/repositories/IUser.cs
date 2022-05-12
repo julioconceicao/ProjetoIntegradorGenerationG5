@@ -13,12 +13,12 @@ namespace IntegratorProject.src.repositories
     /// </summary>
     public interface IUser
     {
-        void AddNewUser(NewUserDTO user);
-        void UpdateUser(UpdateUserDTO user);
-        void DeleteUser(int id);
-        List<UserModel> GetAllOngs();
-        List<UserModel> GetUserByAdress(string adress);
-        UserModel GetUserById(int id);
-        UserModel GetUserByEmail(string email);
+        Task AddNewUserAsync(NewUserDTO user);
+        Task UpdateUserAsync(UpdateUserDTO user);
+        Task DeleteUserAsync(int id);
+        Task<List<UserModel>> GetAllOngs();
+        Task<List<UserModel>> GetUserByAdressAsync(string adress);
+        Task<UserModel> GetUserByIdAsync(int id);
+        Task<UserModel> GetUserByEmailAsync(string email);
     }
 }
