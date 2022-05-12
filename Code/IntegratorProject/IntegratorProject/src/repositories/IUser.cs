@@ -16,7 +16,7 @@ namespace IntegratorProject.src.repositories
         Task AddNewUserAsync(NewUserDTO user);
         Task UpdateUserAsync(UpdateUserDTO user);
         Task DeleteUserAsync(int id);
-        Task<List<UserModel>> GetAllOngs();
+        Task<List<UserModel>> GetAllOngsAsync();
         Task<List<UserModel>> GetUserByAdressAsync(string adress);
         Task<UserModel> GetUserByIdAsync(int id);
         Task<UserModel> GetUserByEmailAsync(string email);
