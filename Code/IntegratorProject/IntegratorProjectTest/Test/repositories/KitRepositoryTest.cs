@@ -22,7 +22,7 @@ namespace IntegratorProjectTest.Test.repositories
         public void InitialSettins()
         {
             var opt = new DbContextOptionsBuilder<IntegratorProjectContext>()
-            .UseInMemoryDatabase(databaseName: "db_IntergratorProject")
+            .UseInMemoryDatabase(databaseName: "db_IntegratorProject")
             .Options;
             _context = new IntegratorProjectContext(opt);
             _repository = new KitRepository(_context);

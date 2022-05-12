@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace IntegratorProject.src.controllers
 {
@@ -18,7 +19,7 @@ namespace IntegratorProject.src.controllers
         #region Attributes
 
         private readonly IUser _repository;
-        private readonly IAuthentication _services;  // não havia o atributo autenticação para proteger o método de criação de usuário
+        private readonly IAuthentication _services;
 
         #endregion Attributes
 
@@ -34,13 +35,14 @@ namespace IntegratorProject.src.controllers
 
         [HttpPost]
         [AllowAnonymous]
-        public IActionResult NewUser([FromBody] NewUserDTO user)
+        public async Task<ActionResult> NewUserAsync([FromBody] NewUserDTO user)
         {
             if (!ModelState.IsValid) return BadRequest();
 
             try
             {
-                _services.CreateUserNotDuplicated(user);
+               await _services.CreateUserNotDuplicatedAsync(user);
+
                 return Created($"api/Users/{user.Email}", user);
             }
             catch (Exception ex)
@@ -51,36 +53,36 @@ namespace IntegratorProject.src.controllers
 
         [HttpPut]
         [Authorize(Roles = "USER, ADMIN, ONG")]
-        public IActionResult UpdateUser([FromBody] UpdateUserDTO user)
+        public async Task<ActionResult> UpdateUserAsync([FromBody] UpdateUserDTO user)
         {
             if (!ModelState.IsValid) return BadRequest();
 
-            _repository.UpdateUser(user);
+           await _repository.UpdateUserAsync(user);
                 return Ok(user);
         }
 
         [HttpDelete("delete/{idUser}")]
-        [Authorize(Roles = "ADMIN")]  // apenas admin deve ser capaz de acessar este método, alterado para ADMIN
-        public IActionResult DeleteUser([FromRoute] int idUser)
+        [Authorize(Roles = "ADMIN")]
+        public async Task<ActionResult> DeleteUserAsync([FromRoute] int idUser)
         {
-            _repository.DeleteUser(idUser);
+           await _repository.DeleteUserAsync(idUser);
             return NoContent();
         }
 
         [HttpGet]
-        [Authorize(Roles = "USER, ADMIN")] // seria interessante o administrador também ter acesso a este método, add ADMIN
-        public IActionResult GetAllOngs()
+        [Authorize(Roles = "USER, ADMIN")]
+        public async Task<ActionResult> GetAllOngsAsync()
         {
-            var list = _repository.GetAllOngs();
+            var list = await _repository.GetAllOngsAsync();
             if (list.Count < 1) return NoContent();
             return Ok(list);
         }
 
         [HttpGet("adress/{userAdress}")]
         [Authorize(Roles = "USER, ONG, ADMIN")]
-        public IActionResult GetUserByAdress([FromRoute] string adress)
+        public async Task<ActionResult> GetUserByAdressAsync([FromRoute] string adress)
         {
-            var user = _repository.GetUserByAdress(adress);
+            var user = await _repository.GetUserByAdressAsync(adress);
 
             if (user == null) return NotFound();
                 return Ok(user);
@@ -88,9 +90,9 @@ namespace IntegratorProject.src.controllers
     
         [HttpGet("id/{idUser}")]
         [Authorize(Roles = "USER, ONG, ADMIN")]
-        public IActionResult GetUserById([FromRoute]int idUser)
+        public async Task<ActionResult> GetUserByIdAsync([FromRoute]int idUser)
         {
-            var user = _repository.GetUserById(idUser);
+            var user = await _repository.GetUserByIdAsync(idUser);
 
             if (user == null) return NotFound();
                 return Ok(user);
