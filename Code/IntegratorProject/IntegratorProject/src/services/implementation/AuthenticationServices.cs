@@ -16,7 +16,6 @@ namespace IntegratorProject.src.services
         #region Attributes
         private readonly IUser _repository;
         public IConfiguration Configuration { get; }
-
         #endregion
 
         #region Constructors
@@ -25,7 +24,6 @@ namespace IntegratorProject.src.services
             _repository = repository;
             Configuration = configuration;
         }
-
         #endregion
 
         #region Method

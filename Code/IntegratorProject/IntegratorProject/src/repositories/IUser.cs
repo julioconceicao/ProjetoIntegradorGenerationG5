@@ -14,7 +14,7 @@ namespace IntegratorProject.src.repositories
     public interface IUser
     {
         void AddNewUser(NewUserDTO user);
-        void UpDateUser(UpDateUserDTO user);
+        void UpdateUser(UpdateUserDTO user);
         void DeleteUser(int id);
         List<UserModel> GetAllOngs();
         List<UserModel> GetUserByAdress(string adress);

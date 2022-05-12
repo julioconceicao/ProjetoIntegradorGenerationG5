@@ -21,8 +21,8 @@ namespace IntegratorProject.src.models
         [Required, StringLength(20)]
         public string Name { get; set; }
 
-        [Required, StringLength(14)]
-        public int CPF_CNPJ { get; set; }
+        [Required, StringLength(14)] 
+        public string CPF_CNPJ { get; set; }          //alterado o tipo de dado para string
 
         [Required, StringLength(30)]
         public string Email { get; set; }
@@ -47,5 +47,4 @@ namespace IntegratorProject.src.models
         [JsonIgnore]
         public List<OrderModel> MyOrders { get; set; }
     }
- 
 }
