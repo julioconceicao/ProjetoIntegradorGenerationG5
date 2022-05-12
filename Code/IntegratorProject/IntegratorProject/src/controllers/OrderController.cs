@@ -41,14 +41,12 @@ namespace IntegratorProject.src.controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = "ADMIN")]
+        [Authorize(Roles = "ADMIN, USER")]                    //Este método deve ser acesso por Admin e user, estava apenas admin
         public IActionResult AddNewOrder([FromBody] NewOrderDTO order)
         {
             if (!ModelState.IsValid) return BadRequest();
-
             _repository.AddNewOrder(order);
-
-            return Created($"api/orders", order);
+                return Created($"api/orders", order);
         }
         #endregion
     }

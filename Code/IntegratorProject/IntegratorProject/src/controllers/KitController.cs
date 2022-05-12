@@ -37,7 +37,7 @@ namespace IntegratorProject.src.controllers
         }
         [HttpGet("search")]
         [Authorize]
-        public IActionResult GetAllBySearch([FromQuery] string nameKit, string productClass, float price)
+        public IActionResult GetAllBySearch([FromQuery] string nameKit, string productClass, double price)
         {
             var list = _repository.GetAllBySearch(nameKit, productClass, price);
             if (list.Count < 1) return NoContent();
@@ -61,7 +61,7 @@ namespace IntegratorProject.src.controllers
         }
         [HttpPut]
         [Authorize(Roles = "ADMIN")]
-        public IActionResult UpDatekit([FromBody] UpDateKitDTO kit)
+        public IActionResult UpDatekit([FromBody] UpdateKitDTO kit)
         {
             if (!ModelState.IsValid) return BadRequest();
             _repository.UpDateKit(kit);

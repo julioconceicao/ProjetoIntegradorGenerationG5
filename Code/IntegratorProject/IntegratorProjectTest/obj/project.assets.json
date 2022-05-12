@@ -9441,19 +9441,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vinic\\.nuget\\packages\\": {}
+    "C:\\Users\\Victor\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vinic\\OneDrive\\Área de Trabalho\\ProjetoIntegrador\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\IntegratorProjectTest.csproj",
+      "projectUniqueName": "D:\\Biblioteca\\Documents\\Coisinhas do joao iudsjqooashdfuhsdufdhfadhf\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\IntegratorProjectTest.csproj",
       "projectName": "IntegratorProjectTest",
-      "projectPath": "C:\\Users\\vinic\\OneDrive\\Área de Trabalho\\ProjetoIntegrador\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\IntegratorProjectTest.csproj",
-      "packagesPath": "C:\\Users\\vinic\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vinic\\OneDrive\\Área de Trabalho\\ProjetoIntegrador\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\obj\\",
+      "projectPath": "D:\\Biblioteca\\Documents\\Coisinhas do joao iudsjqooashdfuhsdufdhfadhf\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\IntegratorProjectTest.csproj",
+      "packagesPath": "C:\\Users\\Victor\\.nuget\\packages\\",
+      "outputPath": "D:\\Biblioteca\\Documents\\Coisinhas do joao iudsjqooashdfuhsdufdhfadhf\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\vinic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Victor\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9467,8 +9467,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\vinic\\OneDrive\\Área de Trabalho\\ProjetoIntegrador\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj": {
-              "projectPath": "C:\\Users\\vinic\\OneDrive\\Área de Trabalho\\ProjetoIntegrador\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj"
+            "D:\\Biblioteca\\Documents\\Coisinhas do joao iudsjqooashdfuhsdufdhfadhf\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj": {
+              "projectPath": "D:\\Biblioteca\\Documents\\Coisinhas do joao iudsjqooashdfuhsdufdhfadhf\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj"
             }
           }
         }
@@ -9523,16 +9523,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema ao ler o arquivo de cache C:\\Users\\vinic\\OneDrive\\Área de Trabalho\\ProjetoIntegrador\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

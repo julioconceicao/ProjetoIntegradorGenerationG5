@@ -18,12 +18,12 @@ namespace IntegratorProject.src.dtos
         public string ProductClass { get; set; }
 
         [Required]
-        public float Price { get; set; }
+        public double Price { get; set; }
 
         [Required, StringLength(50)]
         public string ExpirationDate { get; set; }
 
-        public NewKitDTO(string name, string productClass, float price, string expirationDate)
+        public NewKitDTO(string name, string productClass, double price, string expirationDate)
         {
             Name = name;
             ProductClass = productClass;
@@ -37,7 +37,7 @@ namespace IntegratorProject.src.dtos
     /// <para>Version: 1.0</para>
     /// <para>Date: 05/05/2022</para>
     /// </summary>
-    public class UpDateKitDTO
+    public class UpdateKitDTO //Joao: alterado o nome do DTO de UpDate para Update em todas as referências.
     {            
         [Required]
         public int Id { get; set; }
@@ -49,12 +49,12 @@ namespace IntegratorProject.src.dtos
         public string ProductClass { get; set; }
 
         [Required]
-        public float Price { get; set; }
+        public double Price { get; set; }        // joao: alterado o tipo de dado para double
 
         [Required, StringLength(50)]
         public string ExpirationDate { get; set; }
 
-        public UpDateKitDTO(int id, string name, string productClass, float price, string expirationDate)
+        public UpdateKitDTO(int id, string name, string productClass, double price, string expirationDate)
         {
                 Id = id;
                 Name = name;
