@@ -1,9 +1,9 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace BlogPessoal.src.utilidades
+namespace IntegratorProject.src.utilities
 {
     [JsonConverter(typeof(JsonStringEnumConverter))]
-    public enum PublicType
+    public enum UserType
     {
         USER,
         ADMIN,

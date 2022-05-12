@@ -1,6 +1,8 @@
 using IntegratorProject.src.data;
 using IntegratorProject.src.repositories;
 using IntegratorProject.src.repositories.implements;
+using IntegratorProject.src.services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -9,10 +11,12 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace IntegratorProject
@@ -25,30 +29,45 @@ namespace IntegratorProject
     /// </summary>
     public class Startup
     {
+        public IConfiguration Configuration { get; }
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
-        }
-
-        public IConfiguration Configuration { get; }
+        }        
 
         public void ConfigureServices(IServiceCollection services)
         {
-            IConfigurationRoot config = new ConfigurationBuilder()
-                .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
-                .AddJsonFile("appsettings.json")
-                .Build();
-            services.AddDbContext<IntegratorProjectContext>(opt => opt.UseSqlServer(config.GetConnectionString("DefaultConnection")));
-            services.AddControllers();
-
+            
+            services.AddDbContext<IntegratorProjectContext>(opt => opt.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"]));  
+            
             services.AddScoped<IUser,UserRepository>();
             services.AddScoped<IOrder,OrderRepository>();
-            services.AddScoped<IKit,KitRepository>();
+            services.AddScoped<IKit,KitRepository>();            
 
-            // Controllers
             services.AddCors();
             services.AddControllers();
-        }
+
+            services.AddScoped<IAuthentication, AuthenticationServices>();
+
+            var key = Encoding.ASCII.GetBytes(Configuration["Settings:Secret"]);
+            services.AddAuthentication(a =>
+            {
+                a.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                a.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(b =>
+            {
+                b.RequireHttpsMetadata = false;
+                b.SaveToken = true;
+                b.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(key),
+                    ValidateIssuer = false,
+                    ValidateAudience = false
+                };
+            });
+        }    
+
         /// <summary>
         /// <para>Resume> Configure database initialize from context</para>
         /// <para>By: José Vinicius</para>
@@ -66,10 +85,17 @@ namespace IntegratorProject
             // Production Environment
             // Routes
             app.UseRouting();
+
+
             app.UseCors(c => c
             .AllowAnyOrigin()
             .AllowAnyMethod()
-            .AllowAnyHeader());
+            .AllowAnyHeader()
+            );
+
+            app.UseAuthentication();
+            app.UseAuthorization();
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

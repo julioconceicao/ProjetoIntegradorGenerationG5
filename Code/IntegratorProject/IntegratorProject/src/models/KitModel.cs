@@ -25,7 +25,7 @@ namespace IntegratorProject.src.models
         public string ProductClass { get; set; }
 
         [Required]
-        public float Price { get; set; }
+        public double Price { get; set; }
 
         [Required, StringLength(30)]
         public string ExpirationDate { get; set; }

@@ -1,6 +1,7 @@
 ﻿using IntegratorProject.src.dtos;
 using IntegratorProject.src.models;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace IntegratorProject.src.repositories
 {
@@ -13,10 +14,11 @@ namespace IntegratorProject.src.repositories
     public interface IUser
     {
         void AddNewUser(NewUserDTO user);
-        void UpDateUser(UpDateUserDTO user);
+        void UpdateUser(UpdateUserDTO user);
         void DeleteUser(int id);
         List<UserModel> GetAllOngs();
         List<UserModel> GetUserByAdress(string adress);
         UserModel GetUserById(int id);
+        UserModel GetUserByEmail(string email);
     }
 }

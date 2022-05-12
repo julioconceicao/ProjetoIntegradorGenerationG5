@@ -49,7 +49,7 @@ namespace IntegratorProject.src.repositories.implements
             _context.SaveChanges();
         }
 
-        public void UpDateKit(UpDateKitDTO upkit)
+        public void UpDateKit(UpdateKitDTO upkit)
         {
             var KitModel = GetKitById(upkit.Id);
             KitModel.Name = upkit.Name;
@@ -61,7 +61,7 @@ namespace IntegratorProject.src.repositories.implements
             _context.SaveChanges();
         }
 
-        public List<KitModel> GetAllBySearch(string namekit, string productClass, float price)
+        public List<KitModel> GetAllBySearch(string namekit, string productClass, double price)
         {
             switch (namekit, productClass, price)
             {
