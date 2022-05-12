@@ -27,7 +27,7 @@ namespace IntegratorProjectTest.Test.data
             UserModel user = new UserModel();
 
             user.Name = "Michelli Oliveira";
-            user.CPF_CNPJ = 123;
+            user.CPF_CNPJ = "123";
             user.Email = "michelli@gmail";
             user.Password = "123456";
             user.Adress = "Rua das Flores";
@@ -43,7 +43,7 @@ namespace IntegratorProjectTest.Test.data
             UserModel user = new UserModel();
 
             user.Name = "Michelli Oliveira";
-            user.CPF_CNPJ = 123;
+            user.CPF_CNPJ = "123";
             user.Email = "michelli@gmail";
             user.Password = "123456";
             user.Adress = "Rua das Flores";
