@@ -7,12 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = IntegratorProject
-<<<<<<< HEAD
 build_property.ProjectDir = D:\Biblioteca\Documents\Coisinhas do joao iudsjqooashdfuhsdufdhfadhf\ProjetoIntegradorGenerationG5\Code\IntegratorProject\IntegratorProject\
-=======
-<<<<<<< HEAD
-build_property.ProjectDir = C:\Users\Usuario\OneDrive\Área de Trabalho\Generation\ProjetoFinal\ProjetoIntegradorGenerationG5\Code\IntegratorProject\IntegratorProject\
-=======
-build_property.ProjectDir = E:\Generetion\ProjetoIntegrador\ProjetoIntegradorGenerationG5\Code\IntegratorProject\IntegratorProject\
->>>>>>> 98fd297e10066764a29c9a7ea7602c59bcf665e6
->>>>>>> e2908739a3089b2812a1c1df4850d6d54de8e326
