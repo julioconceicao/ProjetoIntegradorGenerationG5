@@ -1,8 +1,10 @@
 ﻿using IntegratorProject.src.data;
 using IntegratorProject.src.dtos;
 using IntegratorProject.src.models;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace IntegratorProject.src.repositories.implements
 {
@@ -26,26 +28,25 @@ namespace IntegratorProject.src.repositories.implements
         #endregion Constructors
 
         #region Methods
-        public void AddNewOrder(NewOrderDTO order)
+        public async Task AddNewOrderAsync(NewOrderDTO order)
         {
-            _context.Orders.Add(new OrderModel
-
+           await _context.Orders.AddAsync(new OrderModel
             {
-                Kit = _context.Kits.FirstOrDefault(k => k.Id == order.Kit),
-                User = _context.Users.FirstOrDefault(u => u.Email == order.EmailCreator)
+                Kit = _context.Kits.FirstOrDefaultAsync(k => k.Id == order.Kit),
+                User = _context.Users.FirstOrDefaultAsync(u => u.Email == order.EmailCreator)
             }
             );
-             _context.SaveChanges();
+             await _context.SaveChangesAsync();
+        }
+            
+        public async Task<List<OrderModel>>GetAllOrdersAsync()
+        {
+            return await _context.Orders.ToListAsync();
         }
 
-        public List<OrderModel> GetAllOrders()
+        public async Task<OrderModel> GetOrderByIdAsync(int id)
         {
-            return _context.Orders.ToList();
-        }
-
-        public OrderModel GetOrderById(int id)
-        {
-            return _context.Orders.FirstOrDefault(u => u.Id == id);
+            return await _context.Orders.FirstOrDefaultAsync(u => u.Id == id);
         }
         #endregion Methods
     }

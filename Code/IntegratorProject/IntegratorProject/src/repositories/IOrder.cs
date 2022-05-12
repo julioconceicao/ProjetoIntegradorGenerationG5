@@ -1,6 +1,7 @@
 ﻿using IntegratorProject.src.dtos;
 using IntegratorProject.src.models;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace IntegratorProject.src.repositories
 {
@@ -12,8 +13,8 @@ namespace IntegratorProject.src.repositories
     /// </summary>
     public interface IOrder
     {
-        List<OrderModel> GetAllOrders();
-        OrderModel GetOrderById(int id);
-        void AddNewOrder(NewOrderDTO order);
+        Task<List<OrderModel>> GetAllOrdersAsync();
+        Task<OrderModel> GetOrderByIdAsync(int id);
+        Task AddNewOrderAsync(NewOrderDTO order);
     }
 }
