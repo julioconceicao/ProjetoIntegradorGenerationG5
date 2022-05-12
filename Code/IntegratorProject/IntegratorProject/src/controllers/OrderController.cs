@@ -2,6 +2,7 @@
 using IntegratorProject.src.repositories;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace IntegratorProject.src.controllers
 {
@@ -24,18 +25,18 @@ namespace IntegratorProject.src.controllers
         #region Methods
         [HttpGet]
         [Authorize]
-        public IActionResult GetAllOrders()
+        public async Task<ActionResult> GetAllOrdersAsync()
         {
-            var list = _repository.GetAllOrders();
+            var list = await _repository.GetAllOrdersAsync();
             if (list.Count < 1) return NoContent();
             return Ok(list);
         }
 
         [HttpGet("id/{idOrder}")]
         [Authorize]
-        public IActionResult GetOrderById([FromRoute] int idOrder)
+        public async Task<ActionResult> GetOrderByIdAsync([FromRoute] int idOrder)
         {
-            var order = _repository.GetOrderById(idOrder);
+            var order = await _repository.GetOrderByIdAsync(idOrder);
             if (order == null) return NotFound();
             return Ok(order);
         }
