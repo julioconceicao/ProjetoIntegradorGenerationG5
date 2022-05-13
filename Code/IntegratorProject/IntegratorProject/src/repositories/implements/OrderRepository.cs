@@ -32,11 +32,19 @@ namespace IntegratorProject.src.repositories.implements
         {
            await _context.Orders.AddAsync(new OrderModel
             {
-                Kit = _context.Kits.FirstOrDefaultAsync(k => k.Id == order.Kit),
-                User = _context.Users.FirstOrDefaultAsync(u => u.Email == order.EmailCreator)
+<<<<<<< HEAD
+                Kit = await _context.Kits.FirstOrDefaultAsync(k => k.Id == order.IdKit),
+                User = await _context.Users.FirstOrDefaultAsync(u => u.Email == order.EmailCreator)
+            });
+           await _context.SaveChangesAsync();
+=======
+                Kit = _context.Kits.FirstOrDefault(k => k.Id == order.Kit),
+                User = _context.Users.FirstOrDefault(u => u.Email == order.EmailCreator)
+
             }
             );
              await _context.SaveChangesAsync();
+>>>>>>> bc5a530440f2fffa41fef3ca482d284f338772f8
         }
             
         public async Task<List<OrderModel>>GetAllOrdersAsync()

@@ -2,8 +2,10 @@
 using IntegratorProject.src.dtos;
 using IntegratorProject.src.models;
 using IntegratorProject.src.utilities;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace IntegratorProject.src.repositories.implements
 {
@@ -29,7 +31,7 @@ namespace IntegratorProject.src.repositories.implements
         #region methods
         public async Task AddNewUserAsync(NewUserDTO user)
         {
-           await _context.Users.Add(new UserModel
+           await _context.Users.AddAsync(new UserModel
             {
                 Name = user.Name,
                 CPF_CNPJ = user.CPF_CNPJ,
@@ -54,7 +56,7 @@ namespace IntegratorProject.src.repositories.implements
                 .FirstOrDefaultAsync(u => u.Id == id);
         }
 
-        public async Task UpdateUser(UpdateUserDTO user)
+        public async Task UpdateUserAsync(UpdateUserDTO user)
         {
             var userModel = await GetUserByIdAsync(user.Id);
             userModel.Name = user.Name;
@@ -65,7 +67,7 @@ namespace IntegratorProject.src.repositories.implements
             await _context.SaveChangesAsync();
         }
 
-        public List<UserModel> GetUserByAdressAsync(string adress)
+        public async Task<List<UserModel>> GetUserByAdressAsync(string adress)
         {
             return await _context.Users
                 .Where(u => u.Adress.Contains(adress))
