@@ -35,8 +35,9 @@ namespace IntegratorProject.src.controllers
 
         #region Methods
 
-        [HttpPost, AllowAnonymous]
-        public async Task<ActionResult> AuthenticationSync([FromBody] AuthenticateDTO authentication)
+        [HttpPost]
+        [AllowAnonymous]
+        public async Task<ActionResult> AuthenticationAsync([FromBody] AuthenticateDTO authentication)
         {
             if (!ModelState.IsValid) return BadRequest();
             try
@@ -49,6 +50,7 @@ namespace IntegratorProject.src.controllers
                 return Unauthorized(ex.Message);
             }
         }
+
         #endregion
     }
 }
