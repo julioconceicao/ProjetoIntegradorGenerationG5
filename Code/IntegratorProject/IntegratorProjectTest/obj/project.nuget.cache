@@ -1,14 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "s+zvMpFVD8STieU7Hjnpe3ZzzRCcZLybhxx5BPVL/nbBQexLeTlddEmzg43ZmQl5Zxj+e6RQjXf3I08HWrpGBA==",
   "success": true,
   "projectFilePath": "C:\\Users\\User\\Desktop\\Generation\\ProjetoFinalGen\\ProjetoIntegradorGenerationG5\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\IntegratorProjectTest.csproj",
-=======
-  "dgSpecHash": "xL3417ax6iLmSwByR9F7y10SjsrrbApcUVE5bfCIO1eZS9UO1ln0iiaywwuD8KcJnmF11BEuRjs0mKcBTc9Rqg==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\User\\Documents\\GENERATION\\.NET\\PROJETO INTEGRADOR\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\IntegratorProjectTest.csproj",
->>>>>>> 07972b3fc6dbdbc6a555d9c702964b2bf31fd744
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
@@ -177,20 +171,12 @@
     "C:\\Users\\User\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-<<<<<<< HEAD
-  "logs": []
-=======
   "logs": [
     {
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
-<<<<<<< HEAD
       "message": "Problema ao ler o arquivo de cache C:\\Users\\User\\Desktop\\Generation\\ProjetoFinalGen\\ProjetoIntegradorGenerationG5\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-=======
-      "message": "Problema ao ler o arquivo de cache C:\\Users\\User\\Documents\\GENERATION\\.NET\\PROJETO INTEGRADOR\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProjectTest\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
->>>>>>> 07972b3fc6dbdbc6a555d9c702964b2bf31fd744
     }
   ]
->>>>>>> bc5a530440f2fffa41fef3ca482d284f338772f8
 }

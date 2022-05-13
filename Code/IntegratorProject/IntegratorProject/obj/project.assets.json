@@ -6187,17 +6187,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\User\\Desktop\\Generation\\ProjetoFinalGen\\ProjetoIntegradorGenerationG5\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj",
       "projectName": "IntegratorProject",
       "projectPath": "C:\\Users\\User\\Desktop\\Generation\\ProjetoFinalGen\\ProjetoIntegradorGenerationG5\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj",
-=======
-      "projectUniqueName": "C:\\Users\\User\\Documents\\GENERATION\\.NET\\PROJETO INTEGRADOR\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj",
-      "projectName": "IntegratorProject",
-      "projectPath": "C:\\Users\\User\\Documents\\GENERATION\\.NET\\PROJETO INTEGRADOR\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\IntegratorProject.csproj",
->>>>>>> 07972b3fc6dbdbc6a555d9c702964b2bf31fd744
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Documents\\GENERATION\\.NET\\PROJETO INTEGRADOR\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\Generation\\ProjetoFinalGen\\ProjetoIntegradorGenerationG5\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6274,21 +6268,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
-<<<<<<< HEAD
-  }
-=======
   },
   "logs": [
     {
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
-<<<<<<< HEAD
       "message": "Problema ao ler o arquivo de cache C:\\Users\\User\\Desktop\\Generation\\ProjetoFinalGen\\ProjetoIntegradorGenerationG5\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-=======
-      "message": "Problema ao ler o arquivo de cache C:\\Users\\User\\Documents\\GENERATION\\.NET\\PROJETO INTEGRADOR\\ProjetoIntegradorGenerationG5\\Code\\IntegratorProject\\IntegratorProject\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
->>>>>>> 07972b3fc6dbdbc6a555d9c702964b2bf31fd744
     }
   ]
->>>>>>> bc5a530440f2fffa41fef3ca482d284f338772f8
 }
