@@ -24,12 +24,7 @@ namespace IntegratorProject.src.repositories.implements
         public KitRepository(IntegratorProjectContext context)
         {
             _context = context;
-        }
-        public void DeleteKit(int id)
-        {
-            _context.Kits.Remove(GetKitById(id));
-            _context.SaveChanges();
-        }
+        }     
         #endregion Constructors
 
         #region Methods
@@ -49,7 +44,6 @@ namespace IntegratorProject.src.repositories.implements
             });
             await _context.SaveChangesAsync();
         }
-
         public async Task UpdateKitAsync(UpdateKitDTO upkit)
         {
             var KitModel = await GetKitByIdAsync(upkit.Id);
@@ -61,7 +55,6 @@ namespace IntegratorProject.src.repositories.implements
             _context.Kits.Update(KitModel);
             await _context.SaveChangesAsync();
         }
-
         public async Task<List<KitModel>> GetAllBySearchAsync(string namekit, string productClass, double price)
         {
             switch (namekit, productClass, price)
@@ -91,11 +84,17 @@ namespace IntegratorProject.src.repositories.implements
                         .ToListAsync();
             }
         }
-
         public async Task<List<KitModel>> GetAllKitsAsync()
         {
             return await _context.Kits.ToListAsync();
         }
+        public async Task DeleteKitAsync(int id) 
+        { 
+            _context.Kits.Remove(await GetKitByIdAsync(id));
+            await _context.SaveChangesAsync();
+        }
+
+
         #endregion Methods
     }
 }

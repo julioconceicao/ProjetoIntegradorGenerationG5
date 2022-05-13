@@ -46,7 +46,7 @@ namespace IntegratorProject.src.services
             var key = Encoding.ASCII.GetBytes(Configuration["Settings:Secret"]);
             var tokenDescription = new SecurityTokenDescriptor
             {
-                Subject = new ClaimsIdentity(
+                Subject = new ClaimsIdentity(   
             new Claim[]
             {
                 new Claim(ClaimTypes.Email, user.Email.ToString()),
@@ -68,6 +68,6 @@ namespace IntegratorProject.src.services
             if (user.Password != EncodePassword(authentication.Password)) throw new Exception("Incorrect Password ");
             return new AuthorizationDTO(user.Id, user.Email, user.Type, GenerateToken(user));
         }
-        #endregion method
+        #endregion methodz  
     }
 }

@@ -15,12 +15,12 @@ namespace IntegratorProject.src.dtos
         public string EmailCreator { get; set; }
 
         [Required]
-        public int Kit { get; set; }
+        public int IdKit { get; set; }
 
-        public NewOrderDTO(string emailCreator, int kitId)
+        public NewOrderDTO(string emailCreator, int idKit)
         {
             EmailCreator = emailCreator;
-            Kit = kitId;
+            IdKit = idKit;
         }
     }
 }

@@ -49,7 +49,7 @@ namespace IntegratorProject.src.dtos
         public string ProductClass { get; set; }
 
         [Required]
-        public double Price { get; set; }        // joao: alterado o tipo de dado para double
+        public double Price { get; set; }
 
         [Required, StringLength(50)]
         public string ExpirationDate { get; set; }

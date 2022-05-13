@@ -50,7 +50,7 @@ namespace IntegratorProject.src.dtos
     /// <para>Version 1.0</para>
     /// <para>05.05.2020</para>
     /// </summary>
-    public class UpdateUserDTO   //Joao: alterado o nome do DTO de UpDate para Update em todas as referências.
+    public class UpdateUserDTO
     {
         [Required]
         public int Id { get; set; }
@@ -73,9 +73,6 @@ namespace IntegratorProject.src.dtos
         [StringLength(50)]
         public string NameAgent { get; set; }
 
-        //Joao: Alteração do atributo Type do UpdateDTO pois o tipo de usuário não pode ser alterado pelo mesmo. 
-        //[Required]
-        //public UserType Type { get; set; }
 
         public UpdateUserDTO(string name, int cpf_cnpj, string email, string password, string adress, string nameAgent)
         {

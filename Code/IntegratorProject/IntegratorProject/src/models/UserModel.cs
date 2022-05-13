@@ -7,11 +7,12 @@ using System.Text.Json.Serialization;
 namespace IntegratorProject.src.models
 {
     /// <summary>
-    /// <para>Implementing User Interface at UserRepository.</para>
-    /// <para>By: João Vitor, Julio Conceição, José Vinicius</para>
-    /// <para>v 1.0</para>
-    /// <para>05.05.2022</para>
+    /// <para>Summary: Class responsible for representing tb_users in the database.</para>
+    /// <para>created por: Julio Conseição, João Vitor, José Vinicus</para>
+    /// <para>Version: 1.0</para>
+    /// <para>Date: 12/05/2022</para>
     /// </summary>
+
     [Table("tb_User")]
     public class UserModel
     {
@@ -22,12 +23,12 @@ namespace IntegratorProject.src.models
         public string Name { get; set; }
 
         [Required, StringLength(14)] 
-        public string CPF_CNPJ { get; set; }          //alterado o tipo de dado para string
+        public string CPF_CNPJ { get; set; }
 
         [Required, StringLength(30)]
         public string Email { get; set; }
 
-        [Required, StringLength(20)]
+        [Required]
         public string Password { get; set; }
 
         [Required, StringLength(50)]
@@ -38,12 +39,7 @@ namespace IntegratorProject.src.models
 
         [Required]
         public UserType Type { get; set; }
-        /// <summary>
-        /// <para>Creating orders list.</para>
-        /// <para>By: Julio Conceicao</para>
-        /// <para>v 1.0</para>
-        /// <para>04.05.2022</para>
-        /// </summary>
+
         [JsonIgnore]
         public List<OrderModel> MyOrders { get; set; }
     }

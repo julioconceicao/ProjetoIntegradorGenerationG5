@@ -62,10 +62,10 @@ namespace IntegratorProject.src.controllers
         }
         [HttpPut]
         [Authorize(Roles = "ADMIN")]
-        public async Task<ActionResult> UpDatekitAsync([FromBody] UpdateKitDTO kit)
+        public async Task<ActionResult> UpdatekitAsync([FromBody] UpdateKitDTO kit)
         {
             if (!ModelState.IsValid) return BadRequest();
-            await _repository.UpDateKitAsync(kit);
+            await _repository.UpdateKitAsync(kit);
             return Ok(kit);
         }
         [HttpDelete("delete/{idKit}")]
