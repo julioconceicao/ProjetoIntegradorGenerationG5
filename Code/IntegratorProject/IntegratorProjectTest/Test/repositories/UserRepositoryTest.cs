@@ -28,14 +28,14 @@ namespace IntegratorProjectTest.Test.repositories
             _repository = new UserRepository(_context); 
         }
         [TestMethod]
-        public void CreateThreeUsersReturnThreeUsers()
+        public async Task CreateThreeUsersReturnThreeUsersAsync()
         {
-            _repository.AddNewUser(
-            new NewUserDTO("Joao", 471867894,"joao@gmail","123456","Av.psicodaliaaa","",IntegratorProject.src.models.UserType.Donor));
-            _repository.AddNewUser(
-            new NewUserDTO("Zimerer", 754898745, "zimerer@gmail", "batatinhafrita", "Av.osasco", "", IntegratorProject.src.models.UserType.Donor));
-            _repository.AddNewUser(
-            new NewUserDTO("ONGAjudaNois", 895246321, "ongaajudanois@gmail", "123456", "Av.nosenhora", "", IntegratorProject.src.models.UserType.Ong));
+            _repository.AddNewUserAsync(
+            new NewUserDTO("Joao", "471867894","joao@gmail","123456","Av.psicodaliaaa","",IntegratorProject.src.models.UserModel.Donor));
+            _repository.AddNewUserAsync(
+            new NewUserDTO("Zimerer", "754898745", "zimerer@gmail", "batatinhafrita", "Av.osasco", "",IntegratorProject.src.models.UserModel.Donor));
+            _repository.AddNewUserAsync(
+            new NewUserDTO("ONGAjudaNois", "895246321", "ongaajudanois@gmail", "123456", "Av.nosenhora", "",IntegratorProject.src.models.UserModel.Ong));
             
             Assert.AreEqual(3, _context.Users.Count());
         }
