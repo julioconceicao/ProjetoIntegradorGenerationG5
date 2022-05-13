@@ -15,6 +15,7 @@ namespace IntegratorProject.src.repositories.implements
     /// <para>v 1.0</para>
     /// <para>05.05.2022</para>
     /// </summary>
+    
     public class UserRepository : IUser
     {
         #region attributes

@@ -1,6 +1,9 @@
 ﻿using IntegratorProject.src.data;
 using IntegratorProject.src.dtos;
 using IntegratorProject.src.models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,30 +31,34 @@ namespace IntegratorProject.src.repositories.implements
         #endregion Constructors
 
         #region Methods
+
+        /// <summary>
+        /// <para>Resume: Asynchronous Method to Add a New Order</para>
+        /// </summary>
+        /// <param name="order">OrderDTO</param>
         public async Task AddNewOrderAsync(NewOrderDTO order)
         {
-           await _context.Orders.AddAsync(new OrderModel
+            await _context.Orders.AddAsync(new OrderModel
             {
-<<<<<<< HEAD
                 Kit = await _context.Kits.FirstOrDefaultAsync(k => k.Id == order.IdKit),
                 User = await _context.Users.FirstOrDefaultAsync(u => u.Email == order.EmailCreator)
             });
-           await _context.SaveChangesAsync();
-=======
-                Kit = _context.Kits.FirstOrDefault(k => k.Id == order.Kit),
-                User = _context.Users.FirstOrDefault(u => u.Email == order.EmailCreator)
-
-            }
-            );
-             await _context.SaveChangesAsync();
->>>>>>> bc5a530440f2fffa41fef3ca482d284f338772f8
+            await _context.SaveChangesAsync();
         }
-            
-        public async Task<List<OrderModel>>GetAllOrdersAsync()
+
+        /// <summary>
+        /// <para>Resume: Asynchronous Method to Get All Orders</para>
+        /// </summary>
+        /// <param name="idOrder">int</param>
+        public async Task<List<OrderModel>> GetAllOrdersAsync()
         {
             return await _context.Orders.ToListAsync();
         }
 
+        /// <summary>
+        /// <para>Resume: Asynchronous Method to Get Order by Id</para>
+        /// </summary>
+        /// <param name="idOrder">int</param>
         public async Task<OrderModel> GetOrderByIdAsync(int id)
         {
             return await _context.Orders.FirstOrDefaultAsync(u => u.Id == id);
@@ -59,3 +66,4 @@ namespace IntegratorProject.src.repositories.implements
         #endregion Methods
     }
 }
+
