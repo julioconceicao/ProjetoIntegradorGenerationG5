@@ -31,8 +31,8 @@ namespace IntegratorProject.src.controllers
         /// </summary>
         /// <param name="idOrder">int</param>
         /// <returns>ActionResult</returns>
-        /// <response code="200">Return list???????????</response>
-        /// <response code="204">No Content</response>
+        /// <response code="200">Order List</response>
+        /// <response code="204">Empty List</response>
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(OrderModel))]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [HttpGet]

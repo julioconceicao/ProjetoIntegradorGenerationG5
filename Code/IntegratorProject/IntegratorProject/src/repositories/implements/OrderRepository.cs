@@ -33,18 +33,9 @@ namespace IntegratorProject.src.repositories.implements
         #region Methods
 
         /// <summary>
-        /// Add New Order
+        /// <para>Resume: Asynchronous Method to Add a New Order</para>
         /// </summary>
         /// <param name="order">OrderDTO</param>
-        /// <returns>ActionResult</returns>
-        /// <response code="201">Order created</response>
-        /// <response code="400">Request error</response>
-        /// <response code="401">Order already created</response>
-        [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(OrderModel))]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
-        [HttpPost]
-        [Authorize(Roles = "ADMIN, USER")]
         public async Task AddNewOrderAsync(NewOrderDTO order)
         {
             await _context.Orders.AddAsync(new OrderModel
@@ -56,32 +47,18 @@ namespace IntegratorProject.src.repositories.implements
         }
 
         /// <summary>
-        /// Get all Orders
+        /// <para>Resume: Asynchronous Method to Get All Orders</para>
         /// </summary>
         /// <param name="idOrder">int</param>
-        /// <returns>ActionResult</returns>
-        /// <response code="200">Return list???????????</response>
-        /// <response code="204">No Content</response>
-        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(OrderModel))]
-        [ProducesResponseType(StatusCodes.Status204NoContent)]
-        [HttpGet]
-        [Authorize]
         public async Task<List<OrderModel>> GetAllOrdersAsync()
         {
             return await _context.Orders.ToListAsync();
         }
 
         /// <summary>
-        /// Get Order by Id
+        /// <para>Resume: Asynchronous Method to Get Order by Id</para>
         /// </summary>
         /// <param name="idOrder">int</param>
-        /// <returns>ActionResult</returns>
-        /// <response code="200">Return Order</response>
-        /// <response code="404">Order not found</response>
-        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(OrderModel))]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [HttpGet("id/{idOrder}")]
-        [Authorize]
         public async Task<OrderModel> GetOrderByIdAsync(int id)
         {
             return await _context.Orders.FirstOrDefaultAsync(u => u.Id == id);
