@@ -28,13 +28,17 @@ namespace IntegratorProject.src.services
         #endregion
 
         #region Method
+        /// <summary>
+        /// <para>Resumo: Asynchronous method responsible for encoding the password</para>
+        /// </summary>
+        /// <param name="password">AuthenticationServices</param>
         public string EncodePassword(string password)
         {
             var bytes = Encoding.UTF8.GetBytes(password);
             return Convert.ToBase64String(bytes);
         }
         /// <summary>
-        /// <para>Resumo: Asynchronous method responsible for creating user without duplicating in the database  </para>
+        /// <para>Resumo: Asynchronous method responsible for creating user without duplicating in the database</para>
         /// </summary>
         /// <param name="dto">NewUserDTO</param>
         public async Task CreateUserNotDuplicatedAsync(NewUserDTO dto)
