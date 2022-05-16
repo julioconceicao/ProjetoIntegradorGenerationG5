@@ -30,6 +30,31 @@ namespace IntegratorProject.src.repositories.implements
         #endregion constructors
 
         #region methods
+        /// <summary>
+        /// <para>Summary: Class responsible for listing ONGs</para>
+        /// </summary>
+        public async Task<List<UserModel>> GetAllOngsAsync()
+        {
+            return await _context.Users
+                .Where(u => u.Type == UserType.ONG)
+                .ToListAsync();
+        }
+
+        /// <summary>
+        /// <para>Summary:Asynchronous method to get a user by Id</para>
+        /// </summary>
+        /// <param name="id">Id of user</param>
+        /// <return>UserModel</return>
+        public async Task<UserModel> GetUserByIdAsync(int id)
+        {
+            return await _context.Users
+                .FirstOrDefaultAsync(u => u.Id == id);
+        }
+
+        /// <summary>
+        /// <para>Summary: Asynchronous method to add a new user</para>
+        /// </summary>
+        /// <param name="user">NewUserDTO</param>
         public async Task AddNewUserAsync(NewUserDTO user)
         {
            await _context.Users.AddAsync(new UserModel
@@ -45,18 +70,32 @@ namespace IntegratorProject.src.repositories.implements
            await _context.SaveChangesAsync();
         }
 
-        public async Task DeleteUserAsync(int id)
-        {
-            _context.Users.Remove(await GetUserByIdAsync(id));
-           await _context.SaveChangesAsync();
-        }
-
-        public async Task<UserModel> GetUserByIdAsync(int id)
+        /// <summary>
+        /// <para>Summary: asynchronous method to get user by address </para>
+        /// </summary>
+        /// <param name="user">NewUserDTO</param>
+        public async Task<List<UserModel>> GetUserByAdressAsync(string adress)
         {
             return await _context.Users
-                .FirstOrDefaultAsync(u => u.Id == id);
+                .Where(u => u.Adress.Contains(adress))
+                .ToListAsync();
         }
 
+        /// <summary>
+        /// <para>Summary: Asynchronous method to get a user by email</para>
+        /// </summary>
+        /// <param name="email">Email of user</param>
+        /// <return>UsuarioModelo</return>
+        public async Task<UserModel> GetUserByEmailAsync(string email)  
+        {
+            return await _context.Users
+                .FirstOrDefaultAsync(u => u.Email == email);
+        }
+
+        /// <summary>
+        /// <para>Summary:Asynchronous method to update a user</para>
+        /// </summary>
+        /// <param name="user">UpdateUserDTO</param>
         public async Task UpdateUserAsync(UpdateUserDTO user)
         {
             var userModel = await GetUserByIdAsync(user.Id);
@@ -68,24 +107,14 @@ namespace IntegratorProject.src.repositories.implements
             await _context.SaveChangesAsync();
         }
 
-        public async Task<List<UserModel>> GetUserByAdressAsync(string adress)
+        /// <summary>
+        /// <para>Summary: Asynchronous method to delete a user</para>
+        /// </summary>
+        /// <param name="id">Id of user</param>
+        public async Task DeleteUserAsync(int id)
         {
-            return await _context.Users
-                .Where(u => u.Adress.Contains(adress))
-                .ToListAsync();
-        }
-
-        public async Task<List<UserModel>> GetAllOngsAsync()
-        {
-            return await _context.Users
-                .Where(u => u.Type == UserType.ONG)
-                .ToListAsync();
-        }
-
-        public async Task<UserModel> GetUserByEmailAsync(string email)  
-        {
-            return await _context.Users
-                .FirstOrDefaultAsync(u => u.Email == email);
+            _context.Users.Remove(await GetUserByIdAsync(id));
+            await _context.SaveChangesAsync();
         }
         #endregion methods
     }

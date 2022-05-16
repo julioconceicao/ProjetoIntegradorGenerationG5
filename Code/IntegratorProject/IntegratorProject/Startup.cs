@@ -23,7 +23,7 @@ namespace IntegratorProject
 {
     /// <summary>
     /// <para>Resume> Creating connection string</para>
-    /// <para>By: José Vinicius</para>
+    /// <para>By: Jose Vinicius</para>
     /// <para>Version: 1.0</para>
     /// <para>Date: 05/05/2022</para>
     /// </summary>
@@ -70,7 +70,7 @@ namespace IntegratorProject
 
         /// <summary>
         /// <para>Resume> Configure database initialize from context</para>
-        /// <para>By: José Vinicius</para>
+        /// <para>By: Josï¿½ Vinicius</para>
         /// <para>Version: 1.0</para>
         /// <para>Date: 05/05/2022</para>
         /// </summary>

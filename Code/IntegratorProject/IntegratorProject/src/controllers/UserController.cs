@@ -3,6 +3,7 @@ using IntegratorProject.src.models;
 using IntegratorProject.src.repositories;
 using IntegratorProject.src.services;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
