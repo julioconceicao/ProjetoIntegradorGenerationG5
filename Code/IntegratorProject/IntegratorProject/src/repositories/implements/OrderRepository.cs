@@ -32,6 +32,20 @@ namespace IntegratorProject.src.repositories.implements
 
         #region Methods
 
+        public async Task AddNewOrderAsync(NewOrderDTO order)
+        {
+           await _context.Orders.AddAsync(new OrderModel
+            {
+                Kit = _context.Kits.FirstOrDefault(k => k.Id == order.Kit),
+                User = _context.Users.FirstOrDefault(u => u.Email == order.EmailCreator)
+
+            }
+            );
+             await _context.SaveChangesAsync();
+        }
+            
+        public async Task<List<OrderModel>>GetAllOrdersAsync()
+
         /// <summary>
         /// <para>Resume: Asynchronous Method to Add a New Order</para>
         /// </summary>
@@ -51,6 +65,7 @@ namespace IntegratorProject.src.repositories.implements
         /// </summary>
         /// <param name="idOrder">int</param>
         public async Task<List<OrderModel>> GetAllOrdersAsync()
+
         {
             return await _context.Orders.ToListAsync();
         }
@@ -66,4 +81,3 @@ namespace IntegratorProject.src.repositories.implements
         #endregion Methods
     }
 }
-
