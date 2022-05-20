@@ -39,7 +39,7 @@ namespace IntegratorProject.src.controllers
         public async Task<ActionResult> GetAllOrdersAsync()
         {
             var list = await _repository.GetAllOrdersAsync();
-            if (list.Count < 1) return NoContent();
+            if (list.Count == 0) return NoContent();
             return Ok(list);
         }
 
@@ -57,7 +57,7 @@ namespace IntegratorProject.src.controllers
         public async Task<ActionResult> GetOrderByIdAsync([FromRoute] int idOrder)
         {
             var order = await _repository.GetOrderByIdAsync(idOrder);
-            if (order == null) return NotFound();
+            if (order == _repository) return NotFound();
             return Ok(order);
         }
 
