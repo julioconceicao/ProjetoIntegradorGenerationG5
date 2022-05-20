@@ -30,6 +30,7 @@ namespace IntegratorProject.src.repositories.implements
         #endregion constructors
 
         #region methods
+
         /// <summary>
         /// <para>Summary: Class responsible for listing ONGs</para>
         /// </summary>

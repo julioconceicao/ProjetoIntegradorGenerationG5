@@ -18,10 +18,8 @@ namespace IntegratorProject.src.controllers
     public class UserController : ControllerBase
     {
         #region Attributes
-
         private readonly IUser _repository;
         private readonly IAuthentication _services;
-
         #endregion Attributes
 
         #region Constructors

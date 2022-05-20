@@ -74,7 +74,6 @@ namespace IntegratorProject.src.dtos
         [StringLength(50)]
         public string NameAgent { get; set; }
 
-
         public UpdateUserDTO(string name, int cpf_cnpj, string email, string password, string adress, string nameAgent)
         {
             Name = name;

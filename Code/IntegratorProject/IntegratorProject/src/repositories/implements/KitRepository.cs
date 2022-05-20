@@ -28,6 +28,7 @@ namespace IntegratorProject.src.repositories.implements
         #endregion Constructors
 
         #region Methods
+
         /// <summary>
         /// <para>Resume: Asynchronous methods to get a kit by Id</para>
         /// </summary>
@@ -69,6 +70,7 @@ namespace IntegratorProject.src.repositories.implements
             _context.Kits.Update(KitModel);
             await _context.SaveChangesAsync();
         }
+
         /// <summary>
         /// <para>Resume: Asynchronous methods to get all kits by search</para>
         /// </summary>
