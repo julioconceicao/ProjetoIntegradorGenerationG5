@@ -149,16 +149,16 @@ namespace IntegratorProject.src.controllers
         /// <param name="adress">string</param>
         /// <returns>ActionResult</returns>
         /// <response code="200">Returns user</response>
-        /// <response code="404">Email not found</response>
+        /// <response code="404">adress not found</response>
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(UserModel))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [HttpGet("adress/{userAdress}")]
+        [HttpGet("adress")]
         [Authorize(Roles = "USER, ONG, ADMIN")]
-        public async Task<ActionResult> GetUserByAdressAsync([FromRoute] string adress)
+        public async Task<ActionResult<UserModel>> GetUserByAdressAsync([FromQuery] string adress)
         {
             var user = await _repository.GetUserByAdressAsync(adress);
 
-            if (user == null) return NotFound();
+            if (user.Count < 1) return NotFound();
                 return Ok(user);
         }
     
