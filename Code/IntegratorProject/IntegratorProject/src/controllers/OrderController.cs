@@ -39,7 +39,7 @@ namespace IntegratorProject.src.controllers
         public async Task<ActionResult> GetAllOrdersAsync()
         {
             var list = await _repository.GetAllOrdersAsync();
-            if (list.Count < 1) return NoContent();
+            if (list.Count == 0) return NoContent();
             return Ok(list);
         }
 
