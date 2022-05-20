@@ -132,6 +132,8 @@ namespace IntegratorProject.src.controllers
         /// <returns>ActionResult</returns>
         /// <response code="200">Returns list</response>
         /// <response code="204">Empty list</response>
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(UserModel))]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
         [HttpGet]
         [Authorize(Roles = "USER, ADMIN")]
         public async Task<ActionResult> GetAllOngsAsync()

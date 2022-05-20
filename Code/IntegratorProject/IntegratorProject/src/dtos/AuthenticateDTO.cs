@@ -3,6 +3,12 @@ using IntegratorProject.src.utilities;
 
 namespace IntegratorProject.src.dtos
 {
+    /// <summary>
+    /// <para>Resume: Mirror class responsible for authenticate</para>
+    /// <para>Created by: Joaoms98</para>
+    /// <para>Version: 1.0</para>
+    /// <para>Date: 05/05/2022</para>
+    /// </summary>
     public class AuthenticateDTO
     {
         [Required]
@@ -17,6 +23,12 @@ namespace IntegratorProject.src.dtos
             Password = password;
         }
     }
+    /// <summary>
+    /// <para>Resume: Mirror class responsible for authorization</para>
+    /// <para>Created by: Joaoms98</para>
+    /// <para>Version: 1.0</para>
+    /// <para>Date: 05/05/2022</para>
+    /// </summary>
     public class AuthorizationDTO
     {
             public int Id { get; set; }
