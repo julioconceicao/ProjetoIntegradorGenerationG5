@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace IntegratorProject.src.models
@@ -9,6 +10,7 @@ namespace IntegratorProject.src.models
     /// <para>v 1.0</para>
     /// <para>04.05.2022</para>
     /// </summary>
+    
     [Table("tb_Order")]
     public class OrderModel
     {

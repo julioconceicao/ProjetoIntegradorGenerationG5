@@ -49,7 +49,7 @@ namespace IntegratorProject.src.controllers
         }
 
         /// <summary>
-        ///  Get kit by ID
+        ///  Get All Kits by Search
         /// </summary>
         /// <param name="nameKit">int</param>
         /// <param name="productClass">int</param>
@@ -116,7 +116,7 @@ namespace IntegratorProject.src.controllers
         }
 
         /// <summary>
-        ///  Method for update new user
+        /// Update Kit
         /// </summary>
         /// <param name="kit">UpdateKitDTO</param>
         /// <returns>ActionResult</returns>
@@ -147,18 +147,18 @@ namespace IntegratorProject.src.controllers
         }
 
         /// <summary>
-        ///  Method for delete kit
+        /// Delete kit
         /// </summary>
-        /// <param name="idkit">int</param>
+        /// <param name="id">int</param>
         /// <returns>ActionResult</returns>
         /// <response code="204">deleted kit </response>
         /// <response code="404">kit not found </response>
         [ProducesResponseType(StatusCodes.Status204NoContent)]
-        [HttpDelete("delete/{idKit}")]
+        [HttpDelete("delete/{id}")]
         [Authorize(Roles = "ADMIN")]
-        public async Task<ActionResult> DeleteKitAsync([FromRoute] int idkit)
+        public async Task<ActionResult> DeleteKitAsync([FromRoute] int id)
         {
-            await _repository.DeleteKitAsync(idkit);
+            await _repository.DeleteKitAsync(id);
             return NoContent();
         }
         #endregion Methods

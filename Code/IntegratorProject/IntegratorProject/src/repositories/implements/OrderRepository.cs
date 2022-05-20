@@ -53,7 +53,7 @@ namespace IntegratorProject.src.repositories.implements
         public async Task<List<OrderModel>> GetAllOrdersAsync()
 
         {
-            return await _context.Orders.ToListAsync();
+            return await _context.Orders.Include("Kits").Include("Users").ToListAsync();
         }
 
         /// <summary>
