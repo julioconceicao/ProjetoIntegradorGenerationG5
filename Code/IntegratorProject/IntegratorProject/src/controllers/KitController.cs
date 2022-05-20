@@ -49,7 +49,7 @@ namespace IntegratorProject.src.controllers
         }
 
         /// <summary>
-        ///  Get kit by ID
+        ///  Get All Kits by Search
         /// </summary>
         /// <param name="nameKit">int</param>
         /// <param name="productClass">int</param>
@@ -116,7 +116,7 @@ namespace IntegratorProject.src.controllers
         }
 
         /// <summary>
-        ///  Method for update new user
+        /// Update Kit
         /// </summary>
         /// <param name="kit">UpdateKitDTO</param>
         /// <returns>ActionResult</returns>
@@ -147,7 +147,7 @@ namespace IntegratorProject.src.controllers
         }
 
         /// <summary>
-        ///  Method for delete kit
+        /// Delete kit
         /// </summary>
         /// <param name="id">int</param>
         /// <returns>ActionResult</returns>
