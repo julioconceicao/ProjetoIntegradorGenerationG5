@@ -149,16 +149,16 @@ namespace IntegratorProject.src.controllers
         /// <summary>
         ///  Method for delete kit
         /// </summary>
-        /// <param name="idkit">int</param>
+        /// <param name="id">int</param>
         /// <returns>ActionResult</returns>
         /// <response code="204">deleted kit </response>
         /// <response code="404">kit not found </response>
         [ProducesResponseType(StatusCodes.Status204NoContent)]
-        [HttpDelete("delete/{idKit}")]
+        [HttpDelete("delete/{id}")]
         [Authorize(Roles = "ADMIN")]
-        public async Task<ActionResult> DeleteKitAsync([FromRoute] int idkit)
+        public async Task<ActionResult> DeleteKitAsync([FromRoute] int id)
         {
-            await _repository.DeleteKitAsync(idkit);
+            await _repository.DeleteKitAsync(id);
             return NoContent();
         }
         #endregion Methods
