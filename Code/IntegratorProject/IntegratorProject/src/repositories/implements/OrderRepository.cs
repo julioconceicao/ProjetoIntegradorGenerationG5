@@ -53,7 +53,7 @@ namespace IntegratorProject.src.repositories.implements
         public async Task<List<OrderModel>> GetAllOrdersAsync()
 
         {
-            return await _context.Orders.Include("Kits").Include("Users").ToListAsync();
+            return await _context.Orders.Include("Kit").Include("User").ToListAsync();
         }
 
         /// <summary>
@@ -63,7 +63,7 @@ namespace IntegratorProject.src.repositories.implements
         /// <return>OrderModel</return>
         public async Task<OrderModel> GetOrderByIdAsync(int id)
         {
-            return await _context.Orders.FirstOrDefaultAsync(u => u.Id == id);
+            return await _context.Orders.Include("Kit").Include("User").FirstOrDefaultAsync(u => u.Id == id);
         }
         #endregion Methods
     }
