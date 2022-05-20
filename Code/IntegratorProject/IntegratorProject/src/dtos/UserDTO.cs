@@ -5,8 +5,8 @@ using System.ComponentModel.DataAnnotations;
 namespace IntegratorProject.src.dtos
 {
     /// <summary>
-    /// <para>Resumo:Mirror Class for create new user</para>
-    /// <para>Created by: Joaoms98, Julio Conceicão,José Vinicius</para>
+    /// <para>Mirror Class for create new user</para>
+    /// <para>Created by: Joaoms98, Julio Conceicao, José Vinicius</para>
     /// <para>Version 1.0</para>
     /// <para>05.05.2020</para>
     /// </summary>
@@ -44,6 +44,7 @@ namespace IntegratorProject.src.dtos
             Type = type;
         }
     }
+    
     /// <summary>
     /// <para>Resumo:Mirror Class for create for update user</para>
     /// <para>Created by: Joaoms98, Julio Conceicão,José Vinicius</para>

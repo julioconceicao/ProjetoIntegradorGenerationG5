@@ -37,7 +37,7 @@ namespace IntegratorProject.src.dtos
     /// <para>Version: 1.0</para>
     /// <para>Date: 05/05/2022</para>
     /// </summary>
-    public class UpdateKitDTO //Joao: alterado o nome do DTO de UpDate para Update em todas as referências.
+    public class UpdateKitDTO
     {            
         [Required]
         public int Id { get; set; }
