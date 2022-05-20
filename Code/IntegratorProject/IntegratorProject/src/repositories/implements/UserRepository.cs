@@ -73,7 +73,8 @@ namespace IntegratorProject.src.repositories.implements
         /// <summary>
         /// <para>Summary: asynchronous method to get user by address </para>
         /// </summary>
-        /// <param name="user">NewUserDTO</param>
+        /// <param name="adress">NewUserDTO</param>
+        /// <return>UserModel</return>
         public async Task<List<UserModel>> GetUserByAdressAsync(string adress)
         {
             return await _context.Users
@@ -85,7 +86,7 @@ namespace IntegratorProject.src.repositories.implements
         /// <para>Summary: Asynchronous method to get a user by email</para>
         /// </summary>
         /// <param name="email">Email of user</param>
-        /// <return>UsuarioModelo</return>
+        /// <return>UserModel</return>
         public async Task<UserModel> GetUserByEmailAsync(string email)  
         {
             return await _context.Users

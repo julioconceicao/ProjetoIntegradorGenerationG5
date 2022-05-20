@@ -29,7 +29,6 @@ namespace IntegratorProject.src.controllers
         /// <summary>
         /// Get all Orders
         /// </summary>
-        /// <param name="idOrder">int</param>
         /// <returns>ActionResult</returns>
         /// <response code="200">Order List</response>
         /// <response code="204">Empty List</response>
