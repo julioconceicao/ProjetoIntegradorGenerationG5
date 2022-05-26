@@ -88,10 +88,10 @@ namespace IntegratorProject.src.controllers
         ///        "id": 1,    
         ///        "nome": "José Vinicius",
         ///        "cpf_cnpj": "43328758010"
-        ///         "email": "julio@outlook.com"
-        ///         "password": "134652",
+        ///        "email": "julio@outlook.com"
+        ///        "password": "134652",
         ///        "adress": "Mauá"
-        ///         "nameAgent": " "
+        ///        "nameAgent": " "
         ///     }
         ///
         /// </remarks>
