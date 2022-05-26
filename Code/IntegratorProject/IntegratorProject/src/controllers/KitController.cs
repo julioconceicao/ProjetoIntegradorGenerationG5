@@ -51,9 +51,9 @@ namespace IntegratorProject.src.controllers
         /// <summary>
         ///  Get All Kits by Search
         /// </summary>
-        /// <param name="nameKit">int</param>
-        /// <param name="productClass">int</param>
-        /// <param name="price">int</param>
+        /// <param name="price">double</param>
+        /// <param name="nameKit">string</param>
+        /// <param name="productClass">string</param>
         /// <returns>ActionResult</returns>
         /// <response code="200">return ok </response>
         /// <response code="404">kit does not exist</response>
@@ -61,9 +61,9 @@ namespace IntegratorProject.src.controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [HttpGet("search")]
         [Authorize]
-        public async Task<ActionResult> GetAllBySearchAsync([FromQuery] string nameKit, string productClass, double price)
+        public async Task<ActionResult> GetAllBySearchAsync([FromQuery] double price, string nameKit, string productClass)
         {
-            var list = await _repository.GetAllBySearchAsync(nameKit, productClass, price);
+            var list = await _repository.GetAllBySearchAsync(price, nameKit, productClass);
             if (list.Count < 1) return NoContent();
             return Ok(list);
         }
