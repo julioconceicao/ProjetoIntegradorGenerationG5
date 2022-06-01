@@ -13,7 +13,6 @@ namespace IntegratorProject.src.services
 {
     public class AuthenticationServices : IAuthentication
     {
-
         #region Attributes
         private readonly IUser _repository;
         public IConfiguration Configuration { get; }
@@ -28,6 +27,7 @@ namespace IntegratorProject.src.services
         #endregion
 
         #region Method
+
         /// <summary>
         /// <para>Resumo: Asynchronous method responsible for enconding password</para>
         /// </summary>
@@ -37,6 +37,7 @@ namespace IntegratorProject.src.services
             var bytes = Encoding.UTF8.GetBytes(password);
             return Convert.ToBase64String(bytes);
         }
+
         /// <summary>
         /// <para>Resumo: Asynchronous method responsible for creating user without duplicating in the database</para>
         /// </summary>
@@ -48,6 +49,7 @@ namespace IntegratorProject.src.services
             dto.Password = EncodePassword(dto.Password);
             await _repository.AddNewUserAsync(dto);
         }
+
         /// <summary>
         /// <para>Resumo: Method responsible for generating JWT token</para>
         /// </summary>
@@ -74,6 +76,7 @@ namespace IntegratorProject.src.services
             var token = tokenHandler.CreateToken(tokenDescription);
             return tokenHandler.WriteToken(token);
         }
+
         /// <summary>
         /// <para>Resumo: Responsible async method return authorization to authenticated user</para>
         /// </summary>

@@ -18,10 +18,8 @@ namespace IntegratorProject.src.controllers
     public class UserController : ControllerBase
     {
         #region Attributes
-
         private readonly IUser _repository;
         private readonly IAuthentication _services;
-
         #endregion Attributes
 
         #region Constructors
@@ -90,10 +88,10 @@ namespace IntegratorProject.src.controllers
         ///        "id": 1,    
         ///        "nome": "José Vinicius",
         ///        "cpf_cnpj": "43328758010"
-        ///         "email": "julio@outlook.com"
-        ///         "password": "134652",
+        ///        "email": "julio@outlook.com"
+        ///        "password": "134652",
         ///        "adress": "Mauá"
-        ///         "nameAgent": " "
+        ///        "nameAgent": " "
         ///     }
         ///
         /// </remarks>

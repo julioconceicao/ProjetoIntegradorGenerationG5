@@ -59,8 +59,8 @@ namespace IntegratorProject.src.dtos
         [Required, StringLength(20)]
         public string Name { get; set; }
 
-        [Required, StringLength(14)]
-        public int CPF_CNPJ { get; set; }
+        [Required]
+        public string CPF_CNPJ { get; set; }
 
         [Required, StringLength(30)]
         public string Email { get; set; }
@@ -74,9 +74,9 @@ namespace IntegratorProject.src.dtos
         [StringLength(50)]
         public string NameAgent { get; set; }
 
-
-        public UpdateUserDTO(string name, int cpf_cnpj, string email, string password, string adress, string nameAgent)
+        public UpdateUserDTO(int id, string name, string cpf_cnpj, string email, string password, string adress, string nameAgent)
         {
+            Id = id;
             Name = name;
             CPF_CNPJ = cpf_cnpj;
             Email = email;

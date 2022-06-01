@@ -28,6 +28,7 @@ namespace IntegratorProject.src.repositories.implements
         #endregion Constructors
 
         #region Methods
+
         /// <summary>
         /// <para>Resume: Asynchronous methods to get a kit by Id</para>
         /// </summary>
@@ -69,6 +70,7 @@ namespace IntegratorProject.src.repositories.implements
             _context.Kits.Update(KitModel);
             await _context.SaveChangesAsync();
         }
+
         /// <summary>
         /// <para>Resume: Asynchronous methods to get all kits by search</para>
         /// </summary>
@@ -76,33 +78,34 @@ namespace IntegratorProject.src.repositories.implements
         /// <param name="productClass"></param>
         /// <param name="price"></param>
         /// <returns>List</returns>
-        public async Task<List<KitModel>> GetAllBySearchAsync(string namekit, string productClass, double price)
+        public async Task<List<KitModel>> GetAllBySearchAsync(double price, string namekit, string productClass)
         {
-            switch (namekit, productClass, price)
+            switch (price, namekit, productClass)
             {
-                case (null, null, 0):
-                    return await _context.Kits
-                        .ToListAsync();
-
-                case (null, null, _):
+                case (_, null, null):
                     return await _context.Kits
                         .Where(k => k.Price == price)
                         .ToListAsync();
-
-                case (null, _, _):
+                case (0.0, _, null):
                     return await _context.Kits
-                        .Where(k => k.ProductClass.Contains(productClass) & k.Price == price)
+                        .Where(k => k.Name.Contains(namekit))
                         .ToListAsync();
-
-                case (_, null, _):
+                case (0.0, null, _):
                     return await _context.Kits
-                        .Where(k => k.Name.Contains(namekit) & k.Price == price)
+                        .Where(k => k.ProductClass.Contains(productClass))
                         .ToListAsync();
-
+                case (_, _, null):
+                    return await _context.Kits
+                        .Where(k => k.Price == price & k.Name.Contains(namekit))
+                        .ToListAsync();
+                case (0.0, _, _):
+                    return await _context.Kits
+                        .Where(k => k.Name.Contains(namekit) & k.ProductClass.Contains(productClass))
+                        .ToListAsync();
                 case (_, _, _):
                     return await _context.Kits
-                        .Where(k => k.Name.Contains(namekit) & k.ProductClass.Contains(productClass) & k.Price == price)
-                        .ToListAsync();
+                        .Where(k => k.Price == price & k.Name.Contains(namekit) & k.ProductClass.Contains(productClass))
+                       .ToListAsync();
             }
         }
 
