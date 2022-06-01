@@ -1,0 +1,16 @@
+.Textconfigures{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    justify-content: center;
+}
+.navbar {
+    height: 80px;
+    display: flex;
+    background-color: transparent; 
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    font-size: 1.3rem;
+    border-bottom: 1px solid white; 
+}
