@@ -31,6 +31,7 @@ namespace IntegratorProject.src.dtos
             ExpirationDate = expirationDate;
         }
     }
+
     /// <summary>
     /// <para>Resume: Mirror class responsible for Update a kit</para>
     /// <para>Created by: Paulo Almeida, Leticia Zimerer and Michelli Oliveira</para>

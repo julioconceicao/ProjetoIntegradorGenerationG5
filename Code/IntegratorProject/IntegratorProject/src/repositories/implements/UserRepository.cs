@@ -30,6 +30,7 @@ namespace IntegratorProject.src.repositories.implements
         #endregion constructors
 
         #region methods
+
         /// <summary>
         /// <para>Summary: Class responsible for listing ONGs</para>
         /// </summary>
@@ -41,7 +42,7 @@ namespace IntegratorProject.src.repositories.implements
         }
 
         /// <summary>
-        /// <para>Summary:Asynchronous method to get a user by Id</para>
+        /// <para>Summary:Asynchronous method to get an user by Id</para>
         /// </summary>
         /// <param name="id">Id of user</param>
         /// <return>UserModel</return>
@@ -71,7 +72,7 @@ namespace IntegratorProject.src.repositories.implements
         }
 
         /// <summary>
-        /// <para>Summary: asynchronous method to get user by address </para>
+        /// <para>Summary: asynchronous method to get an user by address </para>
         /// </summary>
         /// <param name="adress">NewUserDTO</param>
         /// <return>UserModel</return>
@@ -83,9 +84,9 @@ namespace IntegratorProject.src.repositories.implements
         }
 
         /// <summary>
-        /// <para>Summary: Asynchronous method to get a user by email</para>
+        /// <para>Summary: Asynchronous method to get an user by email</para>
         /// </summary>
-        /// <param name="email">Email of user</param>
+        /// <param name="email">User email</param>
         /// <return>UserModel</return>
         public async Task<UserModel> GetUserByEmailAsync(string email)  
         {
@@ -94,7 +95,7 @@ namespace IntegratorProject.src.repositories.implements
         }
 
         /// <summary>
-        /// <para>Summary:Asynchronous method to update a user</para>
+        /// <para>Summary:Asynchronous method to update an user</para>
         /// </summary>
         /// <param name="user">UpdateUserDTO</param>
         public async Task UpdateUserAsync(UpdateUserDTO user)
@@ -111,7 +112,7 @@ namespace IntegratorProject.src.repositories.implements
         /// <summary>
         /// <para>Summary: Asynchronous method to delete a user</para>
         /// </summary>
-        /// <param name="id">Id of user</param>
+        /// <param name="id">User id</param>
         public async Task DeleteUserAsync(int id)
         {
             _context.Users.Remove(await GetUserByIdAsync(id));

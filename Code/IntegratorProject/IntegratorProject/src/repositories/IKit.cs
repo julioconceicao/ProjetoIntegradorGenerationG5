@@ -18,6 +18,6 @@ namespace IntegratorProject.src.repositories
         Task DeleteKitAsync(int id);
         Task<KitModel> GetKitByIdAsync(int id);
         Task<List<KitModel>> GetAllKitsAsync();
-        Task<List<KitModel>> GetAllBySearchAsync(string nameKit, string productClass, double price = 0);
+        Task<List<KitModel>> GetAllBySearchAsync(double price, string nameKit, string productClass);
     }
 }
