@@ -26,8 +26,8 @@
     font-size: medium;
     transition: 200ms;
     border-radius: 10px;
-    padding: 10px 5px;
+    padding: 10px 30px;
 }
 button:hover{
-    background-color: rgba(128, 128, 128, 0.397);
+    background-color: rgba(216, 214, 214, 0.589);
 }
