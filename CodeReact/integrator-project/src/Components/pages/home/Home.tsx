@@ -23,6 +23,9 @@ function Home() {
                         <button>Cadastre-se</button>
                     </div>
                 </div>
+                <div>
+                    <img className="logo" src="https://imgur.com/fqAed38.png" alt="" width="250"/>
+                </div>
             </Grid>
         </>
     );
