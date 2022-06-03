@@ -6,11 +6,13 @@ import Registration from '../src/Components/pages/registration/Registration';
 import Home from './Components/pages/home/Home'
 import Footer from './Components/statics/footer/Footer'
 import Login from './Components/pages/login/Login';
+import Team from './Components/pages/team/Team'
 
 
 function App() {
   return (
     <>
+    
       <Router>
 
           <Routes>
@@ -21,6 +23,7 @@ function App() {
             <Route path='/cadastro' element={ <Registration />} />
              
           </Routes>
+          <Team/>
           <Footer />
       </Router >
     </>
