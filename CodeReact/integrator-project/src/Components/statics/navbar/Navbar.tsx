@@ -26,19 +26,8 @@ export default function ButtonAppBar() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <AppBar position="static" >
-        <Toolbar className="navbar">
-          <IconButton edge="start" className={classes.menuButton} aria-label="menu">
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" className={classes.title}>
-            MENU
-          </Typography>
-          <Button className='Textconfigures'>Login</Button>
-          <Button className='Textconfigures'>Cadastre-se</Button>
-        </Toolbar>
-      </AppBar>
-    </div>
+    <>
+    
+    </>
   );
 }
