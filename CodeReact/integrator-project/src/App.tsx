@@ -7,28 +7,20 @@ import Home from './Components/pages/home/Home';
 import Footer from './Components/statics/footer/Footer'
 import Login from './Components/pages/login/Login';
 
-
-
 function App() {
   return (
-    <>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/home" element={<Home />} />
 
-      <Home />
-      
-      <Router>
+        <Route path="/login" element={<Login />} />
 
-          <Routes>
-            <Route path='/' element={<Home />} />
-            
-            <Route path='/login' element={ <Login />} />
+        <Route path="/cadastro" element={<Registration />} />
 
-            <Route path='/cadastro' element={ <Registration />} />
-             
-          </Routes>
-          <Footer />
-      </Router >
-
-    </>
+      </Routes>
+      <Footer />
+    </Router >
   );
 }
 export default App;
