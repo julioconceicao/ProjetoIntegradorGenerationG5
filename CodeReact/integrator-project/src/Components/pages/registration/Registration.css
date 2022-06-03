@@ -1,0 +1,16 @@
+.image2{
+    background-image: url(https://imgur.com/cps58Bf.jpg);
+    background-repeat: no-repeat;
+    width: 150vh;
+    min-height: 150vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.text2{
+    font-weight: bold !important;
+}
+
+.btnCancel{
+    margin-right: 20px !important;
+}

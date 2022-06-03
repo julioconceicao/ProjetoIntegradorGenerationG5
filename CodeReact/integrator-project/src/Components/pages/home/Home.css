@@ -31,3 +31,7 @@
 button:hover{
     background-color: rgba(128, 128, 128, 0.397);
 }
+.logo{
+    padding-left: 170px;
+    padding-top: 100px;
+}
