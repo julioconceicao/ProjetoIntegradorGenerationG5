@@ -10,8 +10,8 @@ function Home() {
     return (
         <>
             <Grid item xs={12} style={{
-                background: `url(https://cdn.discordapp.com/attachments/966414382747754577/981920086510161980/Preto_e_Vermelho_Geometrico_Tecnologia_Apresentacao_para_Conferencias.png)`,
-                backgroundRepeat:'no-repeat', width: '100%' , height: '100vh' , backgroundSize: 'cover'}}> 
+                background: `url(https://media.discordapp.net/attachments/966414382747754577/981608527841873920/elaine-casap-qgHGDbbSNm8-unsplash.jpg?width=698&height=465)`,
+                backgroundRepeat:'no-repeat', width: '100%' , height: '100%' , backgroundSize: 'cover'}}> 
                 <div className="navbarmenu">
                     <IconButton edge="start" aria-label="menu">
                         <MenuIcon />
