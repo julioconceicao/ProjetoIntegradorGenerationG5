@@ -1,0 +1,14 @@
+.foto{
+    background: url(https://imgur.com/UE21Lb9.png);
+    background-repeat:no-repeat !important;
+    width: 100%;
+    height: 100vh;
+    background-size: cover !important;
+}
+.textos1{
+    font-weight: bold !important;
+}
+
+.decorator{
+    text-decoration: none !important;
+}
