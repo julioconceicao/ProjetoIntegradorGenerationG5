@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 5px;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 2rem;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+    gap: 2rem;
+    justify-content: center;    
+    border-radius: 5px;
+    border: 1px
+    
+}
+
+.card {
+    transition: 200ms ease-in, color 200ms ease-in;    
+    box-shadow: 0 2px 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 200ms ease-in;
+    width: 100%;
+    height: 100%;
+    border: 2px none;
+    transform: scale(1.02);
+    background: transparent;
+}
+
+.cardImage {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    justify-content: end;
+    
+}
+
+
+
+.cardTitle {
+    padding: 1rem;
+    justify-content: center;
+}
+
+.cardDescription {
+    padding: 0 1rem;
+}
+
+.cardBtn {
+    padding: 1rem;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 1rem;
+    border: 2px none;
+    background: transparent;
+    color: #0b0b0b;
+    border-radius: 5px;
+    transition: background 200ms ease-in, color 200ms ease-in;
+    cursor: pointer;
+}
+
