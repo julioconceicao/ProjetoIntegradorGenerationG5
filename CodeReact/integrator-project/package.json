@@ -17,18 +17,8 @@
     "@types/node": "^16.11.22",
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
     "axios": "^0.27.2",
-=======
-<<<<<<< HEAD
->>>>>>> c1d128ca35f45b699eb3aa0bbf1fa4e2d43fde1f
     "@types/react-router-dom": "5.1.8",
->>>>>>> 4ad5fde7495c1fb06846e8b9558539c75f06075f
-=======
->>>>>>> 25fcfc529fdbec6106b81961bd4f1e552507fd02
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "6",
