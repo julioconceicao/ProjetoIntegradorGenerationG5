@@ -1,8 +1,7 @@
-import React, { useEffect } from 'react';
-import { Typography, Box, Grid, Button } from '@material-ui/core';
+import React from 'react';
+
 import './Kit.css';
-import { useNavigate } from 'react-router';
-import useLocalStorage from 'react-use-localstorage';
+
 
 function Kit() {
     return (
