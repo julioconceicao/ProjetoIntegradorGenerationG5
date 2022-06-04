@@ -10,7 +10,7 @@ function Home() {
     return (
         <>
             <Grid item xs={12} style={{
-                background: `url(https://imgur.com/cps58Bf.jpg)`,
+                background: `url(https://media.discordapp.net/attachments/966414382747754577/981608527841873920/elaine-casap-qgHGDbbSNm8-unsplash.jpg?width=698&height=465)`,
                 backgroundRepeat:'no-repeat', width: '100%' , height: '100vh' , backgroundSize: 'cover'}}> 
                 <div className="navbarmenu">
                     <IconButton edge="start" aria-label="menu">

@@ -12,6 +12,7 @@
 }
 .navbarbutton{
     display: flex;
+    width: 550px;
     background-color: transparent;
     justify-content: right;
     padding-left: 870px;
@@ -29,9 +30,9 @@
     padding: 10px 5px;
 }
 button:hover{
-    background-color: rgba(128, 128, 128, 0.397);
+    background-color: rgba(160, 159, 159, 0.397);
 }
 .logo{
     padding-left: 170px;
-    padding-top: 100px;
+    padding-top: 50px;
 }
