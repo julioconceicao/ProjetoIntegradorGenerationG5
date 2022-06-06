@@ -9,6 +9,7 @@ import Login from './pages/login/Login';
 import Team from './pages/team/Team';
 import Kit from './pages/kit/Kit';
 import AboutUs from './pages/aboutUs/AboutUs';
+import ListOrder from './Components/orders/listOrder/ListOrder';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path='/home' element={<Home />} />
           <Route path='/login' element={<Login />} />
           <Route path='/cadastro' element={<Registration />} />
+          <Route path='/order' element={<ListOrder />} />
         </Routes>
         <Footer />
       </Router >
