@@ -13,7 +13,7 @@ function Home() {
                 background: `url(https://imgur.com/cps58Bf.jpg)`,
                 backgroundRepeat:'no-repeat', width: '100%' , height: '100vh' , backgroundSize: 'cover'}}> 
                 <div className="navbarmenu">
-                    <Link to='/Home2gambiarra'>
+                    <Link to='/Home'>
                         <IconButton edge="start" aria-label="menu">
                             <MenuIcon />
                         </IconButton>
@@ -31,7 +31,16 @@ function Home() {
                     </div>
                 </div>
                 <div>
-                    <img className="logo" src="https://imgur.com/fqAed38.png" alt="" width="250"/>
+                    <Link to='/kits'>
+                    <p className="gambiarra">Kits</p>
+                    </Link>
+                    <p className="gambiarra">Parceiros</p>
+                    <Link to='/sobrenos'>
+                    <p className="gambiarra">Sobre nós</p>
+                    </Link>
+                    <p className="gambiarra">Equipe</p>
+                    <p className="gambiarra">Contato</p>
+                    <p className="gambiarra">Logout</p>
                 </div>
             </Grid>
         </>

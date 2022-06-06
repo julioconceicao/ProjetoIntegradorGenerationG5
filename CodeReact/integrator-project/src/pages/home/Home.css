@@ -9,13 +9,13 @@
     position: sticky;
     padding-top: 10px;
     padding-left: 40px;
-}
+}   
 .navbarbutton{
     display: flex;
     width: 550px;
     background-color: transparent;
     justify-content: right;
-    padding-left: 870px;
+    padding-left: 480px;
     padding-top: 10px;
 }
 
@@ -35,4 +35,11 @@ button:hover{
 .logo{
     padding-left: 170px;
     padding-top: 50px;
+}
+.gambiarra{
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+    font-size: x-large;
+    text-decoration: none;
 }
