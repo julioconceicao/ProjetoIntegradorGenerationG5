@@ -15,14 +15,15 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path='/' element={<Home />} />
+        <Route path='/' element={<Home />} />
+          <Route path='/home' element={<Home />} />
           <Route path='/login' element={<Login />} />
           <Route path='/cadastro' element={<Registration />} />
-</Routes>
-<Footer />
-</Router >
-</>
-);
+        </Routes>
+        <Footer />
+      </Router >
+    </>
+  );
 }
 
 export default App;
