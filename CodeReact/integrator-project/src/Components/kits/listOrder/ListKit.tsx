@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import Order from '../../../models/Order';
+import Kit from '../../../models/Kit';
 import { busca } from '../../../services/Services'
 import { Card, CardActions, CardContent, Button, Typography } from '@material-ui/core';
-import './ListOrder.css';
+import './ListKit.css';
 import useLocalStorage from 'react-use-localstorage';
 import { useNavigate } from 'react-router-dom'
 import { Box } from '@mui/material';
 import { useSelector } from "react-redux";
 import { TokenState } from '../../../store/tokens/tokensReducer';
 
-function ListOrder() {
+function ListKit() {
 
-    const [orders, setOrders] = useState<Order[]>([]);
+    const [kits, setKits] = useState<Kit[]>([]);
     let navigate = useNavigate();
     const token = useSelector<TokenState, TokenState["tokens"]>(
         (state) => state.tokens
@@ -26,8 +26,8 @@ function ListOrder() {
         }
     }, [token])
 
-    async function getOrder() {
-        await busca("/api/Order", setOrders, {
+    async function getKit() {
+        await busca("/api/Order", setKits, {
             headers: {
                 'Authorization': token
             }
@@ -35,40 +35,45 @@ function ListOrder() {
     }
 
     useEffect(() => {
-        getOrder()
-    }, [orders.length])
+        getKit()
+    }, [kits.length])
 
     return (
         <>
             {
-                orders.map(order => (
+                kits.map(kit => (
                     <Box m={2} >
                         <Card variant="outlined">
                             <CardContent>
                                 <Typography color="textSecondary" gutterBottom>
-                                    Pedidos
+                                    Kits
                                 </Typography>
                                 <Typography variant="h5" component="h2">
-                                   {order.id}
+                                   {kit.id}
                                 </Typography>
                                 <Typography variant="body2" component="p">
-                                    {order.text}
+                                    {kit.Name}
                                 </Typography>
                                 <Typography variant="body2" component="p">
-                                    {order.title}
+                                    {kit.ProductClass}
+                                </Typography>
+                                <Typography variant="body2" component="p">
+                                    {kit.Price}
+                                </Typography>
+                                <Typography variant="body2" component="p">
+                                    {kit.ExpirationDate}
                                 </Typography>
                             </CardContent>
                             <CardActions>
                                 <Box display="flex" justifyContent="center" mb={1.5}>
-
-                                    <Link to={`/formularioOrder/${order.id}`} className="text-decorator-none" >
+                                    <Link to={`/formularioKit/${kit.id}`} className="text-decorator-none" >
                                         <Box mx={1}>
                                             <Button variant="contained" className="marginLeft" size='small' color="primary" >
                                                 adicionar
                                             </Button>
                                         </Box>
                                     </Link>
-                                    <Link to={`/deletarPostagem/${order.id}`} className="text-decorator-none">
+                                    <Link to={`/deletarKit/${kit.id}`} className="text-decorator-none">
                                         <Box mx={1}>
                                             <Button variant="contained" size='small' color="secondary">
                                                 deletar
@@ -85,4 +90,4 @@ function ListOrder() {
     )
 }
 
-export default ListOrder;
+export default ListKit;
