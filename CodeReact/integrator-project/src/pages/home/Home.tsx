@@ -24,12 +24,12 @@ function Home() {
                             <button> Login</button>
                         </Link>
                         <Link to='/Cadastro'>
-                            <button>Cadastre-se</button>
+                            <button>Cadastre</button>
                         </Link>
                     </div>
                 </div>
                 <div>
-                    <img className="logo" src="https://imgur.com/fqAed38.png" alt="" width="250" />
+                    <img className="logo" src="https://imgur.com/fqAed38.png" alt="" width="400" />
                 </div>
             </Grid>
         </>

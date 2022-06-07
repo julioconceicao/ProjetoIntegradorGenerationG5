@@ -1,30 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .body{
-    background-color: "#frfrfr"
-}
-
-.titulo{
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    font-size: medium;
-    padding: 20px;
-}
-
-.card{
     display: flex;
-    flex-direction: row;
-    align-itemns: center;
-    margin-right: 30px;
-    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+    background: black;
 }
-
-.card h5{
-    display: flex;
-    justify-content: end;
-    margin-left: 30px;
-}
-
-.card img{
-    padding-left: 30px;
+input[type=radio]{
+    display: none;
 }

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
-.navbarmenu{
+.thanksnav{
     height: 80px;
     display: flex;
     background-color: transparent; 
@@ -10,16 +10,15 @@
     padding-top: 10px;
     padding-left: 40px;
 }   
-.navbarbutton2{
+.tanksbutton{
     display: flex;
     width: 550px;
     background-color: transparent;
     justify-content: right;
-    padding-left: 875px;
+    padding-left: 1145px;
     padding-top: 10px;
 }
-
-.navbarmenu button{
+.thanksnav button{
     border: none;
     background-color: transparent;
     font-family: 'Montserrat', sans-serif;
@@ -29,7 +28,9 @@
     border-radius: 10px;
     padding: 10px 5px;
 }
-
+button:hover{
+    background-color: rgba(160, 159, 159, 0.397);
+}
 .backThanks {
     background-color: #E3DFDC;
 }
