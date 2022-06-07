@@ -7,6 +7,7 @@ import Login from './pages/login/Login';
 import Team from './pages/team/Team';
 import AboutUs from './pages/aboutUs/AboutUs';
 import Kit from './pages/kit/Kit';
+import Thanks from './pages/thanks/Thanks';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path='/sobrenos' element={<AboutUs />} />
           <Route path='/team' element={<Team />} />
           <Route path='/kits' element={<Kit />} />
+          <Route path='/thanks' element={<Thanks />} />
         </Routes>
       </Router >
     </>

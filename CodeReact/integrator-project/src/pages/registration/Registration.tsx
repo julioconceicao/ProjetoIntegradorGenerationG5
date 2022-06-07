@@ -19,8 +19,7 @@ function Registration(){
             password: "",
             adress: "",
             NameAgent: "",
-            type: ""
-          
+            type: ""         
         }
     );
 
