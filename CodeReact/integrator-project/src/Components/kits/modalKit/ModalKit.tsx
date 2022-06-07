@@ -1,9 +1,9 @@
-import React from 'react'
-import { makeStyles, Theme, createStyles } from '@material-ui/core/style';
+import React from 'react';
+import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import { Button } from "@material-ui/core"
-import CloseIcon from '@material-ui/icons/CloseIcon';
+import CloseIcon from '@material-ui/icons/Close';
 import './ModalKit.css';
-import CadastroPostagem from '../cadastroPostagem/CadastroPostagem';
+import ListKit from '../listKits/ListKit';
 import { Box, Modal } from '@mui/material';
 
 
@@ -52,7 +52,7 @@ function ModalKit() {
 
             </Box>
 
-            <CadastroPostagem />
+            <ListKit />
 
         </div>
     );

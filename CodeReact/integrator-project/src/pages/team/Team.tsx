@@ -8,7 +8,7 @@ import IconButton from '@material-ui/core/IconButton';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import MenuIcon from '@material-ui/icons/Menu';
-import "./Team.css";
+import './Team.css';
 
 function Team() {
     return (

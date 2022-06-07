@@ -1,10 +1,10 @@
-import React, { ChangeEvent, useEffect, useState }  from "react";
+import React, { ChangeEvent, useEffect, useState }  from 'react';
 import { Link, useNavigate} from 'react-router-dom';
 import { Grid, Typography, Button, TextField, FormControl,InputLabel,Select } from '@material-ui/core';
 import { Box } from "@mui/material";
-import "./Registration.css";
-import RegisterUser from "../../models/RegisterUser";
-import {registerUser} from "../../services/Services"
+import './Registration.css';
+import RegisterUser from '../../models/RegisterUser';
+import {registerUser} from '../../services/Services';
 
 function Registration(){
 

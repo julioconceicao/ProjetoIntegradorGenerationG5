@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { AppBar, Tab, Tabs, Typography } from '@material-ui/core';
 import { TabContext, TabPanel } from '@material-ui/lab';
 import { Box } from "@mui/system";
@@ -19,7 +19,7 @@ function TabKit() {
             <TabContext value={value}>
                 <AppBar position="static">
                     <Tabs centered indicatorColor="secondary" onChange={handleChange}>
-                        <Tab label="Todas os kits" value="1" />
+                        <Tab label="Todos os seus Kits" value="1" />
                         <Tab label="Sobre-nós" value="2" />
                     </Tabs>
                 </AppBar>

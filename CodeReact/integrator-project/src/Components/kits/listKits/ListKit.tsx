@@ -4,7 +4,6 @@ import Kit from '../../../models/Kit';
 import { busca } from '../../../services/Services'
 import { Card, CardActions, CardContent, Button, Typography } from '@material-ui/core';
 import './ListKit.css';
-import useLocalStorage from 'react-use-localstorage';
 import { useNavigate } from 'react-router-dom'
 import { Box } from '@mui/material';
 import { useSelector } from "react-redux";
