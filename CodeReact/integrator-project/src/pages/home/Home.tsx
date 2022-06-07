@@ -13,7 +13,7 @@ function Home() {
                 background: `url(https://imgur.com/cps58Bf.jpg)`,
                 backgroundRepeat:'no-repeat', width: '100%' , height: '100vh' , backgroundSize: 'cover'}}> 
                 <div className="navbarmenu">
-                    <Link to='/Home2gambiarra'>
+                    <Link to='/Home2'>
                         <IconButton edge="start" aria-label="menu">
                             <MenuIcon />
                         </IconButton>
