@@ -10,12 +10,12 @@
     padding-top: 10px;
     padding-left: 40px;
 }   
-.navbarbutton{
+.navbarbutton2{
     display: flex;
     width: 550px;
     background-color: transparent;
     justify-content: right;
-    padding-left: 720px;
+    padding-left: 875px;
     padding-top: 10px;
 }
 
@@ -29,12 +29,8 @@
     border-radius: 10px;
     padding: 10px 5px;
 }
-button:hover{
-    background-color: rgba(160, 159, 159, 0.397);
-}
-.logo{
-    padding-left: 170px;
-    padding-top: 50px;
-}
 
+.backThanks {
+    background-color: #E3DFDC;
+}
 
