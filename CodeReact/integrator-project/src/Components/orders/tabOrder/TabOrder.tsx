@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 import React, {useState} from 'react';
 import { AppBar, Tab, Tabs, Typography, Box } from '@material-ui/core';
+=======
+import React, {useState} from 'react'
+import { AppBar, Tab, Tabs, Typography } from '@material-ui/core';
+import {Box} from '@mui/material'
+>>>>>>> bdfb84c6441de006a0f4beeaf126cd736644a80c
 import { TabContext, TabPanel } from '@material-ui/lab';
 import ListOrder from '../listOrder/ListOrder';
 import './TabPostagem.css';

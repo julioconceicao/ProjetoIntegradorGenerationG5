@@ -14,11 +14,9 @@
     display: flex;
     width: 550px;
     background-color: transparent;
-    justify-content: right;
-    padding-left: 720px;
+    padding-left: 905px;
     padding-top: 10px;
 }
-
 .navbarmenu button{
     border: none;
     background-color: transparent;

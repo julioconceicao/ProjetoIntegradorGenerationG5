@@ -16,19 +16,19 @@ function Thanks() {
                 background: `url(https://i.imgur.com/QXVXP1v.png)`,
                 backgroundRepeat: 'no-repeat', width: '100%', height: '100vh', backgroundSize: 'cover'
             }}>
-                <div className="navbarmenu">
+                <div className="thanksnav">
                     <MenuNavBar />
-                    <div className="navbarbutton2">
+                    <div className="tanksbutton">
                         <Link to='/Login'>
                             <button> Login</button>
                         </Link>
                         <Link to='/Cadastro'>
-                            <button>Cadastre-se</button>
+                            <button>Cadastre</button>
                         </Link>
                     </div>
                 </div>
             </Grid>
-            </div>
+        </div>
         </>
     );
 }
