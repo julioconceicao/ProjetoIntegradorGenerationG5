@@ -1,26 +1,24 @@
 import React from "react";
-import {Link} from 'react-router-dom';
-import {Typography, Box, Grid, Button} from '@material-ui/core';
+import { Link } from 'react-router-dom';
+import { Typography, Box, Grid, Button } from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import "./Home.css";
+import MenuNavBar from "../../Components/statics/menuNavBar/MenuNavBar";
 
 
 function Home() {
+
     return (
         <>
             <Grid item xs={12} style={{
                 background: `url(https://imgur.com/cps58Bf.jpg)`,
-                backgroundRepeat:'no-repeat', width: '100%' , height: '100vh' , backgroundSize: 'cover'}}> 
+                backgroundRepeat: 'no-repeat', width: '100%', height: '100vh', backgroundSize: 'cover'
+            }}>
                 <div className="navbarmenu">
-                    <Link to='/Home2'>
-                        <IconButton edge="start" aria-label="menu">
-                            <MenuIcon />
-                        </IconButton>
-                    </Link>
-                    <Typography variant="h6">
-                    MENU
-                    </Typography>
+
+                    <MenuNavBar />
+
                     <div className="navbarbutton">
                         <Link to='/Login'>
                             <button> Login</button>
@@ -31,7 +29,7 @@ function Home() {
                     </div>
                 </div>
                 <div>
-                    <img className="logo" src="https://imgur.com/fqAed38.png" alt="" width="250"/>
+                    <img className="logo" src="https://imgur.com/fqAed38.png" alt="" width="250" />
                 </div>
             </Grid>
         </>
