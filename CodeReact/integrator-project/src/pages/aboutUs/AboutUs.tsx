@@ -2,12 +2,13 @@ import React from "react";
 import {Typography, Box, Grid, Button} from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import MenuNavBar from "../../Components/statics/menuNavBar/MenuNavBar";
 import "./AboutUs.css";
 
 function AboutUs() {
     return (
       <>
-        
+        <MenuNavBar />
         <div className='body'>
           <Typography variant="h3" gutterBottom color="textPrimary" component="h1" text-align="center" className='titulo'>Sobre nós</Typography>
             <section className='card'>

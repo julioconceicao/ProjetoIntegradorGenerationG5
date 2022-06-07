@@ -7,24 +7,19 @@ import Home from './pages/home/Home';
 import Footer from './Components/statics/footer/Footer'
 import Login from './pages/login/Login';
 import Team from './pages/team/Team';
-import Kit from './pages/kit/Kit';
+import MenuNavBar from './Components/statics/menuNavBar/MenuNavBar';
 import AboutUs from './pages/aboutUs/AboutUs';
-import Home2 from './pages/home/Home2'
-
 
 function App() {
   return (
     <>
       <Router>
-      <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/home' element={<Home />} />
           <Route path='/login' element={<Login />} />
           <Route path='/cadastro' element={<Registration />} />
-          <Route path='/home2' element={<Home2 />} />
           <Route path='/sobrenos' element={<AboutUs />} />
-          <Route path='/kits' element={<Kit />} />
           <Route path='/registration' element={<Registration />} />
           <Route path='/sobrenos' element={<AboutUs />} />
           <Route path='/team' element={<Team />} />
