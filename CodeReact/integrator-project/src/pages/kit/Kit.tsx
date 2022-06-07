@@ -6,3 +6,5 @@ function Kit() {
         </>
     );
 }
+
+export default Kit;
