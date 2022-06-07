@@ -9,8 +9,7 @@ import Login from './pages/login/Login';
 import Team from './pages/team/Team';
 import Kit from './pages/kit/Kit';
 import AboutUs from './pages/aboutUs/AboutUs';
-import ListOrder from './Components/orders/listOrder/ListOrder';
-import Home2gambiarra from './pages/home/Home2gambiarra'
+import Home2 from './pages/home/Home2'
 
 function App() {
   return (
@@ -21,9 +20,9 @@ function App() {
           <Route path='/home' element={<Home />} />
           <Route path='/login' element={<Login />} />
           <Route path='/cadastro' element={<Registration />} />
-          <Route path='/order' element={<ListOrder />} />
-          <Route path='/Home2gambiarra' element={<Home2gambiarra />} />
+          <Route path='/Home2' element={<Home2 />} />
           <Route path='/sobrenos' element={<AboutUs />} />
+          <Route path='/kits' element={<Kit />} />
         </Routes>
         <Footer />
       </Router >
