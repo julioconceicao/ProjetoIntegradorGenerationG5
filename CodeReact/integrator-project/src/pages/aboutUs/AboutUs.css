@@ -5,17 +5,10 @@
 }
 .body{
     display: flex;
-<<<<<<< HEAD
-    flex-direction: row;
-    align-items: center;
-    margin-right: 30px;
-    margin-bottom: 20px;
-=======
     align-items: center;
     justify-content: center;
     padding: 30px 10px;
     background: black;
->>>>>>> bdfb84c6441de006a0f4beeaf126cd736644a80c
 }
 input[type=radio]{
     display: none;
