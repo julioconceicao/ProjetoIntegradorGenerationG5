@@ -2,6 +2,7 @@ Projeto integrador feito para o bootcamp de .NET da Generation Brasil.
 
 
 Sobre o Projeto:
+<b>
 Um e-commerce que facilita o processo de doação para ONGs através da compra 
 de kits já predefinidos pela loja, que por sua vez serão distribuídos conforme a necessidade dos beneficiários.
 
