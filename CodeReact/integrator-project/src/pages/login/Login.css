@@ -1,14 +1,20 @@
-.foto{
-    background: url(https://i.imgur.com/qwrG3eW.jpg);
-    background-repeat:no-repeat !important;
-    width: 100%;
-    height: 100vh;
-    background-size: cover !important;
-}
 .textos1{
     font-weight: bold !important;
-}
+ }
+ 
+ .imagem{
+     background-image: url(https://imgur.com/cps58Bf.jpg) !important;
+     background-repeat: no-repeat !important;
+     width: 100vh !important;
+     min-height: 100vh !important;
+     background-size: cover !important;
+     background-position: center!important;
+ }
+ 
+ .text-decorator-none{
+     text-decoration: none;
+ }
 
-.decorator{
-    text-decoration: none !important;
-}
+ .text-decorator-none Button {
+     width: 100%;
+ }

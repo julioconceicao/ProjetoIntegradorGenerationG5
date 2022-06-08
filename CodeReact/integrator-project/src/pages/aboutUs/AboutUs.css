@@ -14,7 +14,7 @@
 .card{
     display: flex;
     flex-direction: row;
-    align-itemns: center;
+    align-items: center;
     margin-right: 30px;
     margin-bottom: 20px;
 }
