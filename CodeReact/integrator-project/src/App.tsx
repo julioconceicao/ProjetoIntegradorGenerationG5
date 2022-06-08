@@ -6,8 +6,11 @@ import Home from './pages/home/Home';
 import Login from './pages/login/Login';
 import Team from './pages/team/Team';
 import AboutUs from './pages/aboutUs/AboutUs';
+import ListOrder from './Components/orders/listOrder/ListOrder';
+import Cart from './pages/cart/Cart';
 import Kit from './pages/kit/Kit';
 import Thanks from './pages/thanks/Thanks';
+
 
 function App() {
   return (
@@ -18,6 +21,8 @@ function App() {
           <Route path='/home' element={<Home />} />
           <Route path='/login' element={<Login />} />
           <Route path='/cadastro' element={<Registration />} />
+          {/* <Route path='/order' element={<ListOrder />} /> */}
+          <Route path='/cart' element={<Cart />} />
           <Route path='/sobrenos' element={<AboutUs />} />
           <Route path='/sobrenos' element={<AboutUs />} />
           <Route path='/team' element={<Team />} />
