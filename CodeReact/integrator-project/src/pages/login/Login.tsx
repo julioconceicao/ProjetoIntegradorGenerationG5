@@ -49,7 +49,7 @@ function Login() {
         <Grid xs={6}>
           <Box paddingX={20}>
             <form onSubmit={onSubmit}>
-              <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos1'>Entrar</Typography>
+              <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos'>Entrar</Typography>
 
               <TextField
                 value={loginDTO.email}

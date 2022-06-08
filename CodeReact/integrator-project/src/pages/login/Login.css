@@ -1,18 +1,25 @@
 .textos1{
     font-weight: bold !important;
+    text-decoration: none !important;
+    color:#C3935E !important;
+ }
+ .textos{
+    font-weight: bold !important;
  }
  
  .imagem{
-     background-image: url(https://imgur.com/cps58Bf.jpg) !important;
-     background-repeat: no-repeat !important;
-     width: 100vh !important;
-     min-height: 100vh !important;
-     background-size: cover !important;
-     background-position: center!important;
+    background-image: url(https://imgur.com/cps58Bf.jpg) !important;
+    background-repeat: no-repeat !important;
+    width: 100vh !important;
+    height: 100vh !important;
+    background-size: cover !important;
+    background-position: center!important;
+    padding-right: 50% !important ;
  }
  
  .text-decorator-none{
      text-decoration: none;
+
  }
 
  .text-decorator-none Button {
