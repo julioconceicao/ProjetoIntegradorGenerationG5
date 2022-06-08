@@ -59,12 +59,7 @@ function Login() {
               <TextField
                 value={loginDTO.password}
                 onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-<<<<<<< HEAD
-                id='password' label='senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
-=======
                 id='password' label='password' variant='outlined' name='password' margin='normal' type='password' fullWidth />
->>>>>>> 249d45151f50c033762c35dabe7fdadee5acbc98
-
               <Box marginTop={2} textAlign='center'>
                 <Button type='submit' variant='contained' color='primary'>
                   Logar
