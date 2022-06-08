@@ -3,23 +3,22 @@ import { Link } from 'react-router-dom';
 import { Typography, Box, Grid, Button } from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
-import "./Home.css";
+import "./Thanks.css";
 import MenuNavBar from "../../Components/statics/menuNavBar/MenuNavBar";
 
 
-function Home() {
+function Thanks() {
 
     return (
         <>
+        <div className="backThanks">
             <Grid item xs={12} style={{
-                background: `url(https://imgur.com/cps58Bf.jpg)`,
+                background: `url(https://i.imgur.com/QXVXP1v.png)`,
                 backgroundRepeat: 'no-repeat', width: '100%', height: '100vh', backgroundSize: 'cover'
             }}>
-                <div className="navbarmenu">
-
+                <div className="thanksnav">
                     <MenuNavBar />
-
-                    <div className="navbarbutton">
+                    <div className="tanksbutton">
                         <Link to='/Login'>
                             <button> Login</button>
                         </Link>
@@ -28,11 +27,9 @@ function Home() {
                         </Link>
                     </div>
                 </div>
-                <div>
-                    <img className="logo" src="https://imgur.com/fqAed38.png" alt="" width="400" />
-                </div>
             </Grid>
+        </div>
         </>
     );
 }
-export default Home;
+export default Thanks;

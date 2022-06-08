@@ -1,30 +1,34 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Navbar from './Components/statics/navbar/Navbar';
 import Registration from './pages/registration/Registration';
 import Home from './pages/home/Home';
-import Footer from './Components/statics/footer/Footer'
 import Login from './pages/login/Login';
 import Team from './pages/team/Team';
-import Kit from './pages/kit/Kit';
 import AboutUs from './pages/aboutUs/AboutUs';
 import ListOrder from './Components/orders/listOrder/ListOrder';
 import Cart from './pages/cart/Cart';
+import Kit from './pages/kit/Kit';
+import Thanks from './pages/thanks/Thanks';
+
 
 function App() {
   return (
     <>
       <Router>
         <Routes>
-        <Route path='/' element={<Home />} />
+          <Route path='/' element={<Home />} />
           <Route path='/home' element={<Home />} />
           <Route path='/login' element={<Login />} />
           <Route path='/cadastro' element={<Registration />} />
           {/* <Route path='/order' element={<ListOrder />} /> */}
           <Route path='/cart' element={<Cart />} />
+          <Route path='/sobrenos' element={<AboutUs />} />
+          <Route path='/sobrenos' element={<AboutUs />} />
+          <Route path='/team' element={<Team />} />
+          <Route path='/kits' element={<Kit />} />
+          <Route path='/thanks' element={<Thanks />} />
         </Routes>
-        <Footer />
       </Router >
     </>
   );

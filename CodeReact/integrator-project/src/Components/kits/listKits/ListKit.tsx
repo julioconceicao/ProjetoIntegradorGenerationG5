@@ -1,19 +1,18 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import Postagem from '../../../models/Order';
+import Kit from '../../../models/Kit';
 import { busca } from '../../../services/Services'
 import { Card, CardActions, CardContent, Button, Typography } from '@material-ui/core';
-import './ListaPostagem.css';
+import './ListKit.css';
 import useLocalStorage from 'react-use-localstorage';
 import { useNavigate } from 'react-router-dom'
 import { Box } from '@mui/material';
 import { useSelector } from "react-redux";
 import { TokenState } from '../../../store/tokens/tokensReducer';
-import Order from '../../../models/Order';
 
-function ListOrder() {
+function ListKit() {
 
-    const [orders, setOrders] = useState<Order[]>([]);
+    const [kits, setKits] = useState<Kit[]>([]);
     let navigate = useNavigate();
     const token = useSelector<TokenState, TokenState["tokens"]>(
         (state) => state.tokens
@@ -27,8 +26,8 @@ function ListOrder() {
         }
     }, [token])
 
-    async function getAllOrders() {
-        await busca("/api/Orders", setOrders, {
+    async function getKit() {
+        await busca("/api/Order", setKits, {
             headers: {
                 'Authorization': token
             }
@@ -36,48 +35,48 @@ function ListOrder() {
     }
 
     useEffect(() => {
-
-        getAllOrders()
-
-    }, [orders.length])
+        getKit()
+    }, [kits.length])
 
     return (
         <>
             {
-                orders.map(orders => (
+                kits.map(kit => (
                     <Box m={2} >
                         <Card variant="outlined">
                             <CardContent>
                                 <Typography color="textSecondary" gutterBottom>
-                                    Pedido
+                                    Kits
                                 </Typography>
                                 <Typography variant="h5" component="h2">
-                                    {orders.id}
+                                   {kit.id}
                                 </Typography>
                                 <Typography variant="body2" component="p">
-                                    {orders.title}
+                                    {kit.Name}
                                 </Typography>
                                 <Typography variant="body2" component="p">
-                                    {orders.text}
+                                    {kit.ProductClass}
                                 </Typography>
                                 <Typography variant="body2" component="p">
-                                    {orders.ProductClass}
+                                    {kit.Price}
+                                </Typography>
+                                <Typography variant="body2" component="p">
+                                    {kit.ExpirationDate}
                                 </Typography>
                             </CardContent>
                             <CardActions>
                                 <Box display="flex" justifyContent="center" mb={1.5}>
-
-                                    <Link to={`/formularioPostagem/${orders.id}`} className="text-decorator-none" >
+                                    <Link to={`/formularioKit/${kit.id}`} className="text-decorator-none" >
                                         <Box mx={1}>
                                             <Button variant="contained" className="marginLeft" size='small' color="primary" >
-                                                Atualizar
+                                                adicionar
                                             </Button>
                                         </Box>
                                     </Link>
-                                    <Link to={`/deletarPostagem/${orders.id}`} className="text-decorator-none">
+                                    <Link to={`/deletarKit/${kit.id}`} className="text-decorator-none">
                                         <Box mx={1}>
                                             <Button variant="contained" size='small' color="secondary">
-                                                Deletar
+                                                deletar
                                             </Button>
                                         </Box>
                                     </Link>
@@ -91,4 +90,4 @@ function ListOrder() {
     )
 }
 
-export default ListOrder;
+export default ListKit;
