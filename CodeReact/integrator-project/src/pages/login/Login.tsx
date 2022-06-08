@@ -49,7 +49,7 @@ function Login() {
         <Grid xs={6}>
           <Box paddingX={20}>
             <form onSubmit={onSubmit}>
-              <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos1'>Entrar</Typography>
+              <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos'>Entrar</Typography>
 
               <TextField
                 value={loginDTO.email}
@@ -61,8 +61,8 @@ function Login() {
                 onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
                 id='password' label='password' variant='outlined' name='password' margin='normal' type='password' fullWidth />
 
-              <Box marginTop={2} textAlign='center'>
-                <Button type='submit' variant='contained' color='primary'>
+              <Box marginTop={2} textAlign='center' >
+                <Button  type='submit' variant='contained' style={{ borderColor: "black", backgroundColor: "#C3935E", color: "#fff" }}>
                   Logar
                 </Button>
               </Box>
@@ -71,8 +71,8 @@ function Login() {
               <Box marginRight={1}>
                 <Typography variant='subtitle1' gutterBottom align='center'>Não tem uma conta?</Typography>
               </Box>
-              <Link to='/cadastrousuario'>
-                <Typography variant='subtitle1' gutterBottom align='center' className='textos1'>Cadastre-se</Typography>
+              <Link to='/cadastrousuario' className="textos1">
+                <Typography variant='subtitle1' gutterBottom align='center' fontWeight="bold" >Cadastre-se</Typography>
               </Link>
             </Box>
           </Box>
