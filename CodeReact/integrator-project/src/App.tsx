@@ -10,6 +10,7 @@ import Team from './pages/team/Team';
 import Kit from './pages/kit/Kit';
 import AboutUs from './pages/aboutUs/AboutUs';
 import ListOrder from './Components/orders/listOrder/ListOrder';
+import Cart from './pages/cart/Cart';
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
           <Route path='/home' element={<Home />} />
           <Route path='/login' element={<Login />} />
           <Route path='/cadastro' element={<Registration />} />
-          <Route path='/order' element={<ListOrder />} />
+          {/* <Route path='/order' element={<ListOrder />} /> */}
+          <Route path='/cart' element={<Cart />} />
         </Routes>
         <Footer />
       </Router >
