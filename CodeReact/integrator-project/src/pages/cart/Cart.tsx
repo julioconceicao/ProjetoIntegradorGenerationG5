@@ -3,15 +3,17 @@ import { Link } from 'react-router-dom';
 import { Typography, Box, Grid, Button } from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import CreateOrder from "../../Components/orders/createOrder/CreateOrder";
 
 import './Cart.css';
 
 function Cart() {
     return(
     <>
-        <Grid item xs={12} className="page" style={{
-            backgroundColor: '',
-            backgroundRepeat: 'no-repeat', width: '100%', height: '100vh', backgroundSize: 'cover'
+
+        <Grid item xs={12} className="page" alignItems= 'center' justifyContent='center' style={{
+            backgroundRepeat: 'no-repeat', width: '100%', height: '100vh', backgroundSize: 'cover',
+            
         }}>
             {/* NAVBAR */}
             <div className="navbarmenu">
@@ -30,8 +32,12 @@ function Cart() {
                     </Link>
                 </div>
             </div>
+            
+            <div className="title">
+                <h3>CARRINHO</h3>
+            </div>
 
-
+            
         </Grid>
     </>
     )
