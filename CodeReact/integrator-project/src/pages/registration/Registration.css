@@ -1,16 +1,51 @@
-.image2{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+.navbarmenuregistration{
+    height: 80px;
+    display: flex;
+    background-color: transparent; 
+    justify-content: left;
+    align-items: center;
+    position: sticky;
+    padding-top: 10px;
+    padding-left: 40px;
+} 
+
+.navbarmenuregistration button{
+    border: none;
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    font-size: medium;
+    transition: 200ms;
+    border-radius: 10px;
+    padding: 10px 5px;
+}
+
+button:hover{
+    background-color: rgba(136, 136, 136, 0.185) !important;
+}
+
+.image2 {
     background-image: url(https://imgur.com/cps58Bf.jpg);
     background-repeat: no-repeat;
-    width: 150vh;
-    min-height: 150vh;
+    min-height: 854px;
     background-size: cover;
     background-position: center;
 }
 
-.text2{
+.text2 {
     font-weight: bold !important;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.btnCancel{
+.btnCancelar {
+    text-decoration: none !important;
     margin-right: 20px !important;
+
+}
+
+.btnCadastrar {
+    background-color: #8A6035 !important;
+    font-weight: bold !important;
 }
