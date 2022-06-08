@@ -1,27 +1,55 @@
 import React from "react";
-import "./AboutUs.css";
+import { Grid } from '@material-ui/core';
+import { Link } from 'react-router-dom';
+import MenuNavBar from "../../Components/statics/menuSidebar/MenuSidebar";
+import "./gallery.min.css";
+import "./gallery.theme.css";
 
 function AboutUs() {
-    return (
-      <>
-      <div className="body">
-        <div className='container'>
-          <input type="radio" name="slider" id="item-1"/>
-          <input type="radio" name="slider" id="item-2"/>
-          <input type="radio" name="slider" id="item-3"/>
-          <div className='cards'>
-              <label className="card" htmlFor="item-1" id="song-1">
-                <img src="https://imgur.com/cps58Bf.jpg"></img>
-              </label>
-              <label className="card" htmlFor="item-1" id="song-1">
-                <img src="https://imgur.com/cps58Bf.jpg"></img>
-              </label>
-              <label className="card" htmlFor="item-1" id="song-1">
-                <img src="https://imgur.com/cps58Bf.jpg"></img>
-              </label>
+  return (
+    <>
+      <Grid item xs={12} style={{
+        background: '#f5f5f5',
+        backgroundRepeat: 'no-repeat', width: '100%', height: '100vh', backgroundSize: 'cover'
+      }}>
+        <div className="navbarmenu">
+          <MenuNavBar />
+          <div className="navbarbuttonaboutus">
+            <Link to='/Login'>
+              <button> Login</button>
+            </Link>
+            <Link to='/Cadastro'>
+              <button>Cadastre</button>
+            </Link>
           </div>
         </div>
-      </div>
+        <div className="gallery autoplay items-4">
+
+          <div id="item-1" className="control-operator"></div>
+          <div id="item-2" className="control-operator"></div>
+          <div id="item-3" className="control-operator"></div>
+
+          <figure className="item">
+            <h1></h1>
+          </figure>
+          <figure className="item">
+            <h1><img src="https://i.imgur.com/RBm9VZH.png" width="1150px" /></h1>
+          </figure>
+          <figure className="item">
+            <h1><img src="https://i.imgur.com/SlU2IOX.png" width="1150px" /></h1>
+          </figure>
+          <figure className="item">
+            <h1><img src="https://i.imgur.com/d7uvvtn.png" width="1150px" /></h1>
+          </figure>
+
+          <div className="controls">
+            <a href="#item-1" className="control-button">.</a>
+            <a href="#item-2" className="control-button">.</a>
+            <a href="#item-3" className="control-button">.</a>
+            <a href="#item-4" className="control-button">.</a>
+          </div>
+        </div>
+      </Grid>
     </>
   );
 }

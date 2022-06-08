@@ -1,6 +1,6 @@
 import React, { ChangeEvent, useEffect, useState } from "react";
 import { Typography, Box, Grid, Button, TextField } from '@mui/material';
-import MenuNavBar from "../../Components/statics/menuNavBar/MenuNavBar";
+import MenuNavBar from "../../Components/statics/menuSidebar/MenuSidebar";
 import { Link, useNavigate } from 'react-router-dom';
 import "./Login.css";
 import { login } from "../../services/Services"
@@ -59,10 +59,16 @@ function Login() {
               <TextField
                 value={loginDTO.password}
                 onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
+<<<<<<< HEAD
                 id='password' label='password' variant='outlined' name='password' margin='normal' type='password' fullWidth />
 
               <Box marginTop={2} textAlign='center' >
                 <Button  type='submit' variant='contained' style={{ borderColor: "black", backgroundColor: "#C3935E", color: "#fff" }}>
+=======
+                id='password' label='senha' variant='outlined' name='password' margin='normal' type='password' fullWidth />
+              <Box marginTop={2} textAlign='center'>
+                <Button type='submit' variant='contained' color='primary'>
+>>>>>>> 6eb16d1df5b891ae4b88f2539622141a77bb1b35
                   Logar
                 </Button>
               </Box>
@@ -71,8 +77,13 @@ function Login() {
               <Box marginRight={1}>
                 <Typography variant='subtitle1' gutterBottom align='center'>Não tem uma conta?</Typography>
               </Box>
+<<<<<<< HEAD
               <Link to='/cadastrousuario' className="textos1">
                 <Typography variant='subtitle1' gutterBottom align='center' fontWeight="bold" >Cadastre-se</Typography>
+=======
+              <Link to='/cadastro'>
+                <Typography variant='subtitle1' gutterBottom align='center' className='textos1'>Cadastre-se</Typography>
+>>>>>>> 6eb16d1df5b891ae4b88f2539622141a77bb1b35
               </Link>
             </Box>
           </Box>

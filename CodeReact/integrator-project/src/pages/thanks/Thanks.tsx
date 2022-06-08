@@ -4,7 +4,7 @@ import { Typography, Box, Grid, Button } from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import "./Thanks.css";
-import MenuNavBar from "../../Components/statics/menuNavBar/MenuNavBar";
+import MenuNavBar from "../../Components/statics/menuSidebar/MenuSidebar";
 
 
 function Thanks() {
