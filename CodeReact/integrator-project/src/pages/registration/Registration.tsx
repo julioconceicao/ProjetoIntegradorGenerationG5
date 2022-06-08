@@ -73,19 +73,11 @@ function Registration() {
 
         <Grid container direction='row' justifyContent='center' alignItems='center'>
 
-            <Grid item xs={6} className='image2'> 
-            
-            <div className="navbarmenu">
-                <MenuSidebar />
-                <div className="navbarbutton">
-                    <Link to='/Login'>
-                        <button> Login</button>
-                    </Link>
-                    <Link to='/Cadastro'>
-                        <button>Cadastre-se</button>
-                    </Link>
+            <Grid item xs={6} className='image2'>
+
+                <div className="navbarmenuregistration">
+                    <MenuSidebar />
                 </div>
-            </div>   
             </Grid>
             <Grid item xs={6} alignItems='center'>
 
@@ -151,12 +143,12 @@ function Registration() {
                             <Box marginY={2} textAlign='center'>
                                 <Link to='/login'>
                                     <Button variant='outlined' className='btnCancel'>
-                                        Cancelar
+                                    Cancelar
                                     </Button>
                                 </Link>
                             </Box>
                             <Box marginY={2} textAlign='center'>
-                                <Button type='submit' variant='contained' className="btnCadastrar">
+                                <Button  type='submit' variant='contained' color='primary' className='btnCadastrar'>
                                     Cadastrar
                                 </Button>
                             </Box>
