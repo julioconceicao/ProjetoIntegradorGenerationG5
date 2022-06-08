@@ -1,16 +1,41 @@
-.image2{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+.image2 {
     background-image: url(https://imgur.com/cps58Bf.jpg);
     background-repeat: no-repeat;
-    width: 150vh;
-    min-height: 150vh;
+    min-height: 854px;
     background-size: cover;
     background-position: center;
 }
 
-.text2{
+.text2 {
     font-weight: bold !important;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.btnCancel{
+.btnCancel {
     margin-right: 20px !important;
+    background-color: #D3A77B !important;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btnCadastrar {
+background-color: #D3A77B!important;
+font-family: 'Montserrat', sans-serif;
+}
+
+.btnCancel button {
+    border: none;
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    font-size: medium;
+    transition: 200ms;
+    border-radius: 10px;
+    padding: 10px 5px;
+    text-decoration: none !important;
+}
+
+button:hover {
+    background-color: #E3DFDC !important;
 }
