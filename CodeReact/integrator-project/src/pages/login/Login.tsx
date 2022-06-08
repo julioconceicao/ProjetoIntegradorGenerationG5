@@ -44,6 +44,7 @@ function Login() {
 
   return (
     <>
+<<<<<<< HEAD
      <MenuNavBar />
       <Grid container direction='row' justifyContent='center' alignItems='center'> 
         <Grid xs={6}>
@@ -65,6 +66,36 @@ function Login() {
                 <Button type='submit' variant='contained' color='primary'>
                   Logar
                 </Button>
+=======
+      <Grid className="foto" >
+        <Grid container direction='row' justifyContent='center' alignItems='center'>
+          <Grid alignItems='center' xs={6}>
+            <Box paddingX={15}>
+              <form onSubmit={onSubmit}>
+                <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos1'>Entrar</Typography>
+              
+                <TextField 
+                onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)}
+                id='email' label='Email' variant='outlined' name='email' margin='normal' fullWidth />
+                
+                <TextField 
+                onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)}
+                id='password' label='Senha' variant='outlined' name='password' margin='normal' type='password' fullWidth />
+                
+                <Box marginTop={2} textAlign='center'>
+                  <Button type='submit' variant='contained' color='primary'>
+                    Logar
+                  </Button>
+                </Box>
+              </form>
+              <Box display='flex' justifyContent='center' marginTop={2}>
+                <Box marginRight={1}>
+                  <Typography variant='subtitle1' gutterBottom align='center'>Não tem uma conta?</Typography>
+                </Box>
+                <Link to='/cadastro'>
+                  <Typography variant='subtitle1' gutterBottom align='center' className='textos1'>Cadastre-se</Typography>
+                </Link>
+>>>>>>> bdfb84c6441de006a0f4beeaf126cd736644a80c
               </Box>
             </form>
             <Box display='flex' justifyContent='center' marginTop={2}>
