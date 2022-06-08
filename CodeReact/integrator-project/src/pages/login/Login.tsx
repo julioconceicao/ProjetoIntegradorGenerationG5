@@ -59,8 +59,12 @@ function Login() {
               <TextField
                 value={loginDTO.password}
                 onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
+<<<<<<< HEAD
                 id='password' label='senha' variant='outlined' name='password' margin='normal' type='password' fullWidth />
 
+=======
+                id='password' label='password' variant='outlined' name='password' margin='normal' type='password' fullWidth />
+>>>>>>> 5c375e2d7e63dca58b73ad1d9e456243ad04c858
               <Box marginTop={2} textAlign='center'>
                 <Button type='submit' variant='contained' color='primary'>
                   Logar
@@ -71,7 +75,7 @@ function Login() {
               <Box marginRight={1}>
                 <Typography variant='subtitle1' gutterBottom align='center'>Não tem uma conta?</Typography>
               </Box>
-              <Link to='/cadastrousuario'>
+              <Link to='/cadastro'>
                 <Typography variant='subtitle1' gutterBottom align='center' className='textos1'>Cadastre-se</Typography>
               </Link>
             </Box>
