@@ -45,7 +45,6 @@ export default function TemporaryDrawer() {
           <IconButton onClick={toggleDrawer(anchor, true)} edge="start" aria-label="menu">
             <MenuIcon />
           </IconButton>
-          <Button>Menu</Button>
           <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
           <div className='Sidebar'>
             <List>

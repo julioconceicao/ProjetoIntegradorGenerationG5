@@ -29,7 +29,7 @@ function Home() {
                     </div>
                 </div>
                 <div>
-                    <img className="logo" src="https://imgur.com/fqAed38.png" alt="" width="400" />
+                    <img className="logo" src="https://imgur.com/fqAed38.png" alt="" width="250" />
                 </div>
             </Grid>
         </>
