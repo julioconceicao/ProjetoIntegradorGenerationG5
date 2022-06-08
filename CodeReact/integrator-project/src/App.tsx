@@ -19,7 +19,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/home' element={<Home />} />
-          <Route path='/login' element={<Login />} />
+          <Route path='/Login' element={<Login />} />
           <Route path='/cadastro' element={<Registration />} />
           {/* <Route path='/order' element={<ListOrder />} /> */}
           <Route path='/cart' element={<Cart />} />
