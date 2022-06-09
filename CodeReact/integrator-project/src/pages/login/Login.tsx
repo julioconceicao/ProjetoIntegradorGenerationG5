@@ -1,6 +1,6 @@
 import React, { ChangeEvent, useEffect, useState } from "react";
 import { Typography, Box, Grid, Button, TextField } from '@mui/material';
-import MenuNavBar from "../../Components/statics/menuSidebar/MenuSidebar";
+import MenuSidebar from "../../Components/statics/menuSidebar/MenuSidebar";
 import { Link, useNavigate } from 'react-router-dom';
 import "./Login.css";
 import { login } from "../../services/Services"
@@ -44,7 +44,7 @@ function Login() {
 
   return (
     <>
-     <MenuNavBar />
+    <div><MenuSidebar />
       <Grid container direction='row' justifyContent='center' alignItems='center'> 
         <Grid xs={6}>
           <Box paddingX={20}>
@@ -54,14 +54,14 @@ function Login() {
               <TextField
                 value={loginDTO.email}
                 onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                id='email' label='email' variant='outlined' name='email' margin='normal' fullWidth />
+                id='email' label='Email' variant='outlined' name='email' margin='normal' fullWidth />
 
               <TextField
                 value={loginDTO.password}
                 onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                id='password' label='senha' variant='outlined' name='password' margin='normal' type='password' fullWidth />
+                id='password' label='Senha' variant='outlined' name='password' margin='normal' type='password' fullWidth />
               <Box marginTop={2} textAlign='center'>
-                <Button type='submit' variant='contained' color='primary'>
+                <Button type='submit' variant='contained' color='primary' className="btnCadastrar">
                   Logar
                 </Button>
               </Box>
@@ -70,15 +70,15 @@ function Login() {
               <Box marginRight={1}>
                 <Typography variant='subtitle1' gutterBottom align='center'>Não tem uma conta?</Typography>
               </Box>
-              <Link to='/cadastro'>
+              <Link to='/cadastro' className="cadastre-se">
                 <Typography variant='subtitle1' gutterBottom align='center' className='textos1'>Cadastre-se</Typography>
               </Link>
             </Box>
           </Box>
         </Grid>
-        <Grid xs={6} className='imagem'>
-        </Grid>
+        <Grid xs={6} className='imagem'></Grid>
       </Grid>
+      </div>
     </>
   );
 }
