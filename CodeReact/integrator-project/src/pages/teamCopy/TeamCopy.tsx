@@ -18,18 +18,18 @@ function Team() {
                 <h1 className='equipe'>Equipe Desenvolvedora - Planeta Solidário</h1>
                 <div className='all-cards'>
 
-                    {/* Julio Conceição*/}
+                    {/* João Victor*/}
                     <Card sx={{ maxWidth: 345 }} className='maincontainer'>
                         <Box className="card">
                             <Box className='front'>
                                 <CardMedia className='card-img'
                                     component="img"
-                                    alt="JulioPic"
-                                    image="https://cdn.discordapp.com/attachments/966414382747754577/981948402826899466/JULIO_CESAR_GONCALVES_CONCEICAO-removebg-preview.png"
+                                    alt="JoaoPic"
+                                    image="https://cdn.discordapp.com/attachments/966414382747754577/981948401283387423/JOAO_VICTOR_MENEZES_DE_SOUZA-removebg-preview.png"
                                 />
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="div" className='namefont'>
-                                        Julio César G. Conceição
+                                        João M. de Souza
                                     </Typography>
 
                                     <h5>Full-stack developer</h5>
@@ -40,19 +40,62 @@ function Team() {
 
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="div" className='namefont'>
-                                        Julio César G. Conceição
+                                        João M. de Souza
                                     </Typography>
                                     <ul className='infos'>
-                                        <li>Cursando: BC&T e Ciência da Computação na Universidade Federal do ABC(UFABC)</li>
-                                        <li>Moro em: Mauá-SP</li>
-                                        <li>Linguagens: Inglês- Escrita, fala e compreensão</li>
+                                        <li>Eu faço site e formato pc's</li>
+                                        <li>linguages: html é linguagem de programação</li>
+                                        <li>Soft-skills: Apresendizado ativo, Colaborativo e Comunicativo
+</li>
                                     </ul>
                                     <Box className='icons'>
-                                    <h5>Links:</h5>
-                                        <a className='avataricon' href="https://www.linkedin.com/in/juliocesargoncalvesconceicao/" target="_blank">
+                                        <h5>Links:</h5>
+                                        <a className='avataricon' href="https://www.linkedin.com/in/joaovictormenezesdesouza/" target="_blank">
                                             <LinkedInIcon className='redes' />
                                         </a>
-                                        <a className='avataricon' href="https://github.com/julioconceicao" target="_blank">
+                                        <a className='avataricon' href="https://github.com/Joaoms98" target="_blank">
+                                            <GitHubIcon className='redes' />
+                                        </a>
+                                    </Box>
+                                </CardContent>
+                            </Box>
+                        </Box>
+                    </Card>
+                    {/* José Vinicius */}
+                    <Card sx={{ maxWidth: 345 }} className='maincontainer'>
+                        <Box className="card">
+                            <Box className='front'>
+                                <CardMedia className='card-img'
+                                    component="img"
+                                    alt="JosePic"
+                                    image="https://cdn.discordapp.com/attachments/966414382747754577/981948403233722428/JOSE_VINICIUS_SILVA_DE_SOUZA-removebg-preview.png"
+                                />
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
+                                        José Vinicius S. de Souza
+                                    </Typography>
+
+                                    <h5>Full-stack developer</h5>
+                                </CardContent>
+                            </Box>
+
+                            <Box className='back'>
+
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
+                                        José Vinicius S. de Souza
+                                    </Typography>
+                                    <ul className='infos'>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                    <Box className='icons'>
+                                        <h5>Links:</h5>
+                                        <a className='avataricon' href="https://www.linkedin.com/in/josevinicius53/" target="_blank">
+                                            <LinkedInIcon className='redes' />
+                                        </a>
+                                        <a className='avataricon' href="https://github.com/Josevinicius53" target="_blank">
                                             <GitHubIcon className='redes' />
                                         </a>
                                     </Box>
@@ -85,268 +128,9 @@ function Team() {
                                         Julio César G. Conceição
                                     </Typography>
                                     <ul className='infos'>
-                                        <li>Cursando: BC&T e Ciência da Computação na Universidade Federal do ABC(UFABC)</li>
-                                        <li>Moro em: Mauá-SP</li>
-                                        <li>Linguagens: Inglês- Escrita, fala e compreensão</li>
-                                    </ul>
-                                    <Box className='icons'>
-                                    <h5>Links:</h5>
-                                        <a className='avataricon' href="https://www.linkedin.com/in/juliocesargoncalvesconceicao/" target="_blank">
-                                            <LinkedInIcon className='redes' />
-                                        </a>
-                                        <a className='avataricon' href="https://github.com/julioconceicao" target="_blank">
-                                            <GitHubIcon className='redes' />
-                                        </a>
-                                    </Box>
-                                </CardContent>
-                            </Box>
-                        </Box>
-                    </Card>
-
-                    {/* Julio Conceição*/}
-                    <Card sx={{ maxWidth: 345 }} className='maincontainer'>
-                        <Box className="card">
-                            <Box className='front'>
-                                <CardMedia className='card-img'
-                                    component="img"
-                                    alt="JulioPic"
-                                    image="https://cdn.discordapp.com/attachments/966414382747754577/981948402826899466/JULIO_CESAR_GONCALVES_CONCEICAO-removebg-preview.png"
-                                />
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
-                                        Julio César G. Conceição
-                                    </Typography>
-
-                                    <h5>Full-stack developer</h5>
-                                </CardContent>
-                            </Box>
-
-                            <Box className='back'>
-
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
-                                        Julio César G. Conceição
-                                    </Typography>
-                                    <ul className='infos'>
-                                        <li>Cursando: BC&T e Ciência da Computação na Universidade Federal do ABC(UFABC)</li>
-                                        <li>Moro em: Mauá-SP</li>
-                                        <li>Linguagens: Inglês- Escrita, fala e compreensão</li>
-                                    </ul>
-                                    <Box className='icons'>
-                                    <h5>Links:</h5>
-                                        <a className='avataricon' href="https://www.linkedin.com/in/juliocesargoncalvesconceicao/" target="_blank">
-                                            <LinkedInIcon className='redes' />
-                                        </a>
-                                        <a className='avataricon' href="https://github.com/julioconceicao" target="_blank">
-                                            <GitHubIcon className='redes' />
-                                        </a>
-                                    </Box>
-                                </CardContent>
-                            </Box>
-                        </Box>
-                    </Card>
-
-                    {/* Julio Conceição*/}
-                    <Card sx={{ maxWidth: 345 }} className='maincontainer'>
-                        <Box className="card">
-                            <Box className='front'>
-                                <CardMedia className='card-img'
-                                    component="img"
-                                    alt="JulioPic"
-                                    image="https://cdn.discordapp.com/attachments/966414382747754577/981948402826899466/JULIO_CESAR_GONCALVES_CONCEICAO-removebg-preview.png"
-                                />
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
-                                        Julio César G. Conceição
-                                    </Typography>
-
-                                    <h5>Full-stack developer</h5>
-                                </CardContent>
-                            </Box>
-
-                            <Box className='back'>
-
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
-                                        Julio César G. Conceição
-                                    </Typography>
-                                    <ul className='infos'>
-                                        <li>Cursando: BC&T e Ciência da Computação na Universidade Federal do ABC(UFABC)</li>
-                                        <li>Moro em: Mauá-SP</li>
-                                        <li>Linguagens: Inglês- Escrita, fala e compreensão</li>
-                                    </ul>
-                                    <Box className='icons'>
-                                    <h5>Links:</h5>
-                                        <a className='avataricon' href="https://www.linkedin.com/in/juliocesargoncalvesconceicao/" target="_blank">
-                                            <LinkedInIcon className='redes' />
-                                        </a>
-                                        <a className='avataricon' href="https://github.com/julioconceicao" target="_blank">
-                                            <GitHubIcon className='redes' />
-                                        </a>
-                                    </Box>
-                                </CardContent>
-                            </Box>
-                        </Box>
-                    </Card>
-
-                    {/* Julio Conceição*/}
-                    <Card sx={{ maxWidth: 345 }} className='maincontainer'>
-                        <Box className="card">
-                            <Box className='front'>
-                                <CardMedia className='card-img'
-                                    component="img"
-                                    alt="JulioPic"
-                                    image="https://cdn.discordapp.com/attachments/966414382747754577/981948402826899466/JULIO_CESAR_GONCALVES_CONCEICAO-removebg-preview.png"
-                                />
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
-                                        Julio César G. Conceição
-                                    </Typography>
-
-                                    <h5>Full-stack developer</h5>
-                                </CardContent>
-                            </Box>
-
-                            <Box className='back'>
-
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
-                                        Julio César G. Conceição
-                                    </Typography>
-                                    <ul className='infos'>
-                                        <li>Cursando: BC&T e Ciência da Computação na Universidade Federal do ABC(UFABC)</li>
-                                        <li>Moro em: Mauá-SP</li>
-                                        <li>Linguagens: Inglês- Escrita, fala e compreensão</li>
-                                    </ul>
-                                    <Box className='icons'>
-                                    <h5>Links:</h5>
-                                        <a className='avataricon' href="https://www.linkedin.com/in/juliocesargoncalvesconceicao/" target="_blank">
-                                            <LinkedInIcon className='redes' />
-                                        </a>
-                                        <a className='avataricon' href="https://github.com/julioconceicao" target="_blank">
-                                            <GitHubIcon className='redes' />
-                                        </a>
-                                    </Box>
-                                </CardContent>
-                            </Box>
-                        </Box>
-                    </Card>
-
-                    {/* Julio Conceição*/}
-                    <Card sx={{ maxWidth: 345 }} className='maincontainer'>
-                        <Box className="card">
-                            <Box className='front'>
-                                <CardMedia className='card-img'
-                                    component="img"
-                                    alt="JulioPic"
-                                    image="https://cdn.discordapp.com/attachments/966414382747754577/981948402826899466/JULIO_CESAR_GONCALVES_CONCEICAO-removebg-preview.png"
-                                />
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
-                                        Julio César G. Conceição
-                                    </Typography>
-
-                                    <h5>Full-stack developer</h5>
-                                </CardContent>
-                            </Box>
-
-                            <Box className='back'>
-
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
-                                        Julio César G. Conceição
-                                    </Typography>
-                                    <ul className='infos'>
-                                        <li>Cursando: BC&T e Ciência da Computação na Universidade Federal do ABC(UFABC)</li>
-                                        <li>Moro em: Mauá-SP</li>
-                                        <li>Linguagens: Inglês- Escrita, fala e compreensão</li>
-                                    </ul>
-                                    <Box className='icons'>
-                                    <h5>Links:</h5>
-                                        <a className='avataricon' href="https://www.linkedin.com/in/juliocesargoncalvesconceicao/" target="_blank">
-                                            <LinkedInIcon className='redes' />
-                                        </a>
-                                        <a className='avataricon' href="https://github.com/julioconceicao" target="_blank">
-                                            <GitHubIcon className='redes' />
-                                        </a>
-                                    </Box>
-                                </CardContent>
-                            </Box>
-                        </Box>
-                    </Card>
-
-                    {/* Julio Conceição*/}
-                    <Card sx={{ maxWidth: 345 }} className='maincontainer'>
-                        <Box className="card">
-                            <Box className='front'>
-                                <CardMedia className='card-img'
-                                    component="img"
-                                    alt="JulioPic"
-                                    image="https://cdn.discordapp.com/attachments/966414382747754577/981948402826899466/JULIO_CESAR_GONCALVES_CONCEICAO-removebg-preview.png"
-                                />
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
-                                        Julio César G. Conceição
-                                    </Typography>
-
-                                    <h5>Full-stack developer</h5>
-                                </CardContent>
-                            </Box>
-
-                            <Box className='back'>
-
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
-                                        Julio César G. Conceição
-                                    </Typography>
-                                    <ul className='infos'>
-                                        <li>Cursando: BC&T e Ciência da Computação na Universidade Federal do ABC(UFABC)</li>
-                                        <li>Moro em: Mauá-SP</li>
-                                        <li>Linguagens: Inglês- Escrita, fala e compreensão</li>
-                                    </ul>
-                                    <Box className='icons'>
-                                    <h5>Links:</h5>
-                                        <a className='avataricon' href="https://www.linkedin.com/in/juliocesargoncalvesconceicao/" target="_blank">
-                                            <LinkedInIcon className='redes' />
-                                        </a>
-                                        <a className='avataricon' href="https://github.com/julioconceicao" target="_blank">
-                                            <GitHubIcon className='redes' />
-                                        </a>
-                                    </Box>
-                                </CardContent>
-                            </Box>
-                        </Box>
-                    </Card>
-
-                    {/* Julio Conceição*/}
-                    <Card sx={{ maxWidth: 345 }} className='maincontainer'>
-                        <Box className="card">
-                            <Box className='front'>
-                                <CardMedia className='card-img'
-                                    component="img"
-                                    alt="JulioPic"
-                                    image="https://cdn.discordapp.com/attachments/966414382747754577/981948402826899466/JULIO_CESAR_GONCALVES_CONCEICAO-removebg-preview.png"
-                                />
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
-                                        Julio César G. Conceição
-                                    </Typography>
-
-                                    <h5>Full-stack developer</h5>
-                                </CardContent>
-                            </Box>
-
-                            <Box className='back'>
-
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
-                                        Julio César G. Conceição
-                                    </Typography>
-                                    <ul className='infos'>
-                                        <li>Cursando: BC&T e Ciência da Computação na Universidade Federal do ABC(UFABC)</li>
-                                        <li>Moro em: Mauá-SP</li>
-                                        <li>Idiomas: Inglês- Escrita, fala e compreensão</li>
-
+                                        <li>DEV. Jr.- C#/ASP.NET/React</li>
+                                        <li>Cursando: BC&T e Ciência da Computação na Universidade Federal do ABC (UFABC)</li>
+                                        <li>Idioma: Inglês- Escrita, fala e compreensão</li>
                                     </ul>
                                     <Box className='icons'>
                                         <h5>Links:</h5>
@@ -361,6 +145,223 @@ function Team() {
                             </Box>
                         </Box>
                     </Card>
+
+                    {/* Lethicya Lopes*/}
+                    <Card sx={{ maxWidth: 345 }} className='maincontainer'>
+                        <Box className="card">
+                            <Box className='front'>
+                                <CardMedia className='card-img'
+                                    component="img"
+                                    alt="LethLopesPic"
+                                    image="https://cdn.discordapp.com/attachments/966414382747754577/981948402558455808/LETHICYA_DA_SILVA_LOPES-removebg-preview.png"
+                                />
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
+                                        Lethicya Lopes
+                                    </Typography>
+
+                                    <h5>Full-stack developer</h5>
+                                </CardContent>
+                            </Box>
+
+                            <Box className='back'>
+
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
+                                        Lethicya Lopes
+                                    </Typography>
+                                    <ul className='infos'>
+                                        <li>Dev .NET Junior Fullstack - C#/ SQL Server/ASP.NET/ React</li>
+                                        <li>Idioma: Inglês Fluente</li>
+                                        <li>Soft-skills:  Boa comunicação, proatividade, trabalho em equipe, organização e foco.</li>
+                                    </ul>
+                                    <Box className='icons'>
+                                        <h5>Links:</h5>
+                                        <a className='avataricon' href="https://www.linkedin.com/in/lethicyaslopes/" target="_blank">
+                                            <LinkedInIcon className='redes' />
+                                        </a>
+                                        <a className='avataricon' href="https://github.com/LethicyasLopes" target="_blank">
+                                            <GitHubIcon className='redes' />
+                                        </a>
+                                    </Box>
+                                </CardContent>
+                            </Box>
+                        </Box>
+                    </Card>
+
+                    {/* Letícia Zimerer*/}
+                    <Card sx={{ maxWidth: 345 }} className='maincontainer'>
+                        <Box className="card">
+                            <Box className='front'>
+                                <CardMedia className='card-img'
+                                    component="img"
+                                    alt="ZimererPic"
+                                    image="https://cdn.discordapp.com/attachments/966414382747754577/981948402269061240/LETICIA_ZIMERER_FORNAROLO-removebg-preview.png"
+                                />
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
+                                        Letícia Z. Fornarolo
+                                    </Typography>
+
+                                    <h5>Full-stack developer</h5>
+                                </CardContent>
+                            </Box>
+
+                            <Box className='back'>
+
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
+                                        Letícia Z. Fornarolo
+                                    </Typography>
+                                    <ul className='infos'>
+                                        <li>Dev .NET Junior Fullstack - C#/ SQL Server/ASP.NET/ React</li>
+                                        <li>Formada em Design e em transição de carreira para minha verdadeira paixão, a Tecnologia</li>
+                                        <li>Soft Skills: Proativa e em constante aprendizado.</li>
+                                        <li>Inglês intermediário</li>
+                                    </ul>
+                                    <Box className='icons'>
+                                        <h5>Links:</h5>
+                                        <a className='avataricon' href="https://www.linkedin.com/in/leticiazimerer/" target="_blank">
+                                            <LinkedInIcon className='redes' />
+                                        </a>
+                                        <a className='avataricon' href="https://github.com/leticiazimerer" target="_blank">
+                                            <GitHubIcon className='redes' />
+                                        </a>
+                                    </Box>
+                                </CardContent>
+                            </Box>
+                        </Box>
+                    </Card>
+
+                    {/* Matheus Rodrigues*/}
+                    <Card sx={{ maxWidth: 345 }} className='maincontainer'>
+                        <Box className="card">
+                            <Box className='front'>
+                                <CardMedia className='card-img'
+                                    component="img"
+                                    alt="MatheusPic"
+                                    image="https://cdn.discordapp.com/attachments/966414382747754577/981948401958674482/MATHEUS_RODRIGUES_DA_SILVA-removebg-preview.png"
+                                />
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
+                                        Matheus R. da Silva
+                                    </Typography>
+
+                                    <h5>Full-stack developer</h5>
+                                </CardContent>
+                            </Box>
+
+                            <Box className='back'>
+
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
+                                        Matheus R. da Silva
+                                    </Typography>
+                                    <ul className='infos'>
+                                        <li>Developer .Net Júnior Fullstack </li>
+                                        <li>ASP.NET Core, C#, SQL Server, SCRUM</li>
+                                        <li>Português e inglês</li>
+                                    </ul>
+                                    <Box className='icons'>
+                                        <h5>Links:</h5>
+                                        <a className='avataricon' href="https://www.linkedin.com/in/matheusrodriguesdasilva23/" target="_blank">
+                                            <LinkedInIcon className='redes' />
+                                        </a>
+                                        <a className='avataricon' href="https://github.com/MatheusRodriguesSilva" target="_blank">
+                                            <GitHubIcon className='redes' />
+                                        </a>
+                                    </Box>
+                                </CardContent>
+                            </Box>
+                        </Box>
+                    </Card>
+
+                    {/* Michelli O. Cordeiro */}
+                    <Card sx={{ maxWidth: 345 }} className='maincontainer'>
+                        <Box className="card">
+                            <Box className='front'>
+                                <CardMedia className='card-img'
+                                    component="img"
+                                    alt="MichelliPic"
+                                    image="https://cdn.discordapp.com/attachments/966414382747754577/981948401748934666/MICHELLI_OLIVEIRA_CORDEIRO-removebg-preview.png"
+                                />
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
+                                        Michelli O. Cordeiro
+                                    </Typography>
+
+                                    <h5>Full-stack developer</h5>
+                                </CardContent>
+                            </Box>
+
+                            <Box className='back'>
+
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
+                                        Michelli O. Cordeiro
+                                    </Typography>
+                                    <ul className='infos'>
+                                        <li>Formada em Administração de empresas .</li>
+                                        <li>Cursando Análise e desenvolvimento de sistemas.</li>
+                                        <li>Soft skills: comunicativa, organizada e disciplinada.</li>
+                                    </ul>
+                                    <Box className='icons'>
+                                        <h5>Links:</h5>
+                                        <a className='avataricon' href="https://www.linkedin.com/in/michellicordeiro/" target="_blank">
+                                            <LinkedInIcon className='redes' />
+                                        </a>
+                                        <a className='avataricon' href="https://github.com/MichelliOCordeiro" target="_blank">
+                                            <GitHubIcon className='redes' />
+                                        </a>
+                                    </Box>
+                                </CardContent>
+                            </Box>
+                        </Box>
+                    </Card>
+
+                    {/* Paulo Almeida*/}
+                    <Card sx={{ maxWidth: 345 }} className='maincontainer'>
+                        <Box className="card">
+                            <Box className='front'>
+                                <CardMedia className='card-img'
+                                    component="img"
+                                    alt="PauloPic"
+                                    image="https://cdn.discordapp.com/attachments/966414382747754577/981948401509875712/PAULO_VICTOR_ALMEIDA_DE_SOUSA-removebg-preview.png"
+                                />
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
+                                        Paulo Almeida
+                                    </Typography>
+
+                                    <h5>Full-stack developer</h5>
+                                </CardContent>
+                            </Box>
+
+                            <Box className='back'>
+
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
+                                        Paulo Almeida
+                                    </Typography>
+                                    <ul className='infos'>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                    <Box className='icons'>
+                                        <h5>Links:</h5>
+                                        <a className='avataricon' href="https://www.linkedin.com/in/almeidaapauloo/" target="_blank">
+                                            <LinkedInIcon className='redes' />
+                                        </a>
+                                        <a className='avataricon' href="https://github.com/AlmeidaaPauloo" target="_blank">
+                                            <GitHubIcon className='redes' />
+                                        </a>
+                                    </Box>
+                                </CardContent>
+                            </Box>
+                        </Box>
+                    </Card>
+
 
                 </div>
             </div>
