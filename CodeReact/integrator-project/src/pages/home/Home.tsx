@@ -4,7 +4,7 @@ import { Typography, Box, Grid, Button } from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import "./Home.css";
-import MenuNavBar from "../../Components/statics/menuNavBar/MenuNavBar";
+import MenuSidebar from "../../Components/statics/menuSidebar/MenuSidebar";
 
 
 function Home() {
@@ -17,7 +17,7 @@ function Home() {
             }}>
                 <div className="navbarmenu">
 
-                    <MenuNavBar />
+                    <MenuSidebar />
 
                     <div className="navbarbutton">
                         <Link to='/Login'>

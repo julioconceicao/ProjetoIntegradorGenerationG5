@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid } from '@material-ui/core';
 import { Link } from 'react-router-dom';
-import MenuNavBar from "../../Components/statics/menuNavBar/MenuNavBar";
+import MenuNavBar from "../../Components/statics/menuSidebar/MenuSidebar";
 import "./gallery.min.css";
 import "./gallery.theme.css";
 
