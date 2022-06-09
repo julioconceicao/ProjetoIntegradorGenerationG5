@@ -24,7 +24,7 @@ function Home() {
                             <button> Login</button>
                         </Link>
                         <Link to='/Cadastro'>
-                            <button>Cadastre</button>
+                            <button>Cadastre-se</button>
                         </Link>
                     </div>
                 </div>

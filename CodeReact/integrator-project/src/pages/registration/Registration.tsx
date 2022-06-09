@@ -5,6 +5,7 @@ import { Box } from "@mui/material";
 import "./Registration.css";
 import RegisterUser from "../../models/RegisterUser";
 import {registerUser} from "../../services/Services"
+import MenuSidebar from "../../Components/statics/menuSidebar/MenuSidebar";
 
 function Registration(){
 
@@ -68,7 +69,7 @@ function Registration(){
 
     return (
         <Grid container direction='row' justifyContent='center' alignItems='center'>
-            <Grid item xs={6} className='image2'></Grid>
+            <Grid item xs={6} className='image2'>   <MenuSidebar /></Grid>
             <Grid item xs={6} alignItems='center'>
                 <Box paddingX={10}>
                     <form onSubmit={onSubmit}>
@@ -77,7 +78,7 @@ function Registration(){
                         <TextField 
                         value={userRegisterDTO.name}
                         onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                        id='name' label='Nome' variant='outlined' name='name' margin='normal' fullWidth />
+                        id='name' label='Nome' variant='outlined' name='name' margin='normal' fullWidth/>
                         
                         <TextField
                         value={userRegisterDTO.cpf_cnpj}
@@ -129,15 +130,15 @@ function Registration(){
                         </FormControl>
 
                         <Grid container direction="row" justifyContent="space-between" alignItems="center">
-                            <Box marginY={2} textAlign='center'>
+                            <Box marginY={2} textAlign='center' className='btnCancelar'>
                                 <Link to='/login'>
-                                    <Button variant='outlined' className='btnCancel'>
+                                    <Button variant='outlined' className='btnCancelar'>
                                     Cancelar
                                     </Button>
                                 </Link>
                             </Box>
                             <Box marginY={2} textAlign='center'>
-                                <Button  type='submit' variant='contained' color='primary'>
+                                <Button  type='submit' variant='contained' color='primary' className="btnCadastrar">
                                     Cadastrar
                                 </Button>
                             </Box>

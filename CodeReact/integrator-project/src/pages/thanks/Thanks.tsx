@@ -4,7 +4,7 @@ import { Typography, Box, Grid, Button } from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import "./Thanks.css";
-import MenuNavBar from "../../Components/statics/menuSidebar/MenuSidebar";
+import MenuSidebar from "../../Components/statics/menuSidebar/MenuSidebar";
 
 
 function Thanks() {
@@ -17,7 +17,7 @@ function Thanks() {
                 backgroundRepeat: 'no-repeat', width: '100%', height: '100vh', backgroundSize: 'cover'
             }}>
                 <div className="thanksnav">
-                    <MenuNavBar />
+                    <MenuSidebar />
                     <div className="tanksbutton">
                         <Link to='/Login'>
                             <button> Login</button>
