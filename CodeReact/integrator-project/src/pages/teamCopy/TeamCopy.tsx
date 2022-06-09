@@ -43,10 +43,9 @@ function Team() {
                                         João M. de Souza
                                     </Typography>
                                     <ul className='infos'>
-                                        <li>Eu faço site e formato pc's</li>
-                                        <li>linguages: html é linguagem de programação</li>
-                                        <li>Soft-skills: Apresendizado ativo, Colaborativo e Comunicativo
-</li>
+                                        <li>Dev .NET Junior Fullstack</li>
+                                        <li>Linguages: C#/ SQL Server/ASP.NET/ React</li>
+                                        <li>Soft-skills: Aprendizado ativo, colaborativo e comunicativo</li>
                                     </ul>
                                     <Box className='icons'>
                                         <h5>Links:</h5>
@@ -61,6 +60,7 @@ function Team() {
                             </Box>
                         </Box>
                     </Card>
+
                     {/* José Vinicius */}
                     <Card sx={{ maxWidth: 345 }} className='maincontainer'>
                         <Box className="card">
@@ -103,6 +103,7 @@ function Team() {
                             </Box>
                         </Box>
                     </Card>
+
                     {/* Julio Conceição*/}
                     <Card sx={{ maxWidth: 345 }} className='maincontainer'>
                         <Box className="card">
@@ -131,6 +132,7 @@ function Team() {
                                         <li>DEV. Jr.- C#/ASP.NET/React</li>
                                         <li>Cursando: BC&T e Ciência da Computação na Universidade Federal do ABC (UFABC)</li>
                                         <li>Idioma: Inglês- Escrita, fala e compreensão</li>
+                                        <li>Responsável, proativo e um bom co-worker</li>
                                     </ul>
                                     <Box className='icons'>
                                         <h5>Links:</h5>
