@@ -1,0 +1,46 @@
+.image2{
+    background-image: url(https://imgur.com/cps58Bf.jpg);
+    background-repeat: no-repeat;
+    width: 1200vh;
+    min-height: 1200;
+    background-size: cover;
+    background-position: center;
+}
+.gambiarra{
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+    font-size: x-large;
+    text-decoration: none;
+}
+.navbarmenu{
+    height: 80px;
+    display: flex;
+    background-color: transparent; 
+    justify-content: left;
+    align-items: center;
+    position: sticky;
+    padding-top: 10px;
+    padding-left: 40px;
+}   
+.navbarbutton{
+    display: flex;
+    width: 550px;
+    background-color: transparent;
+    padding-left: 905px;
+    padding-top: 10px;
+}
+.navbarmenu button{
+    border: none;
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    font-size: medium;
+    transition: 200ms;
+    border-radius: 10px;
+    padding: 10px 5px;
+}
+.login {
+    background-color: #875e35 !important;
+    font-weight: bold !important;
+}

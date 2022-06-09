@@ -12,7 +12,7 @@ import Cart from './pages/cart/Cart';
 import Kit from './pages/kit/Kit';
 import Thanks from './pages/thanks/Thanks';
 import Homelog from './pages/home/Homelog';
-
+import Contact from './pages/contact/Contact';
 
 function App() {
   return (
@@ -31,6 +31,7 @@ function App() {
           <Route path='/teamCopy' element={<TeamCopy />} />
           <Route path='/kits' element={<Kit />} />
           <Route path='/thanks' element={<Thanks />} />
+          <Route path='/contact' element={<Contact />} />
         </Routes>
       </Router >
     </>
