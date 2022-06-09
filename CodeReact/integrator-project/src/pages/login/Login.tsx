@@ -38,7 +38,7 @@ function Login() {
 
   useEffect(() => {
     if (token !== '') {
-      navigate('/home');
+      navigate('/homelog');
     }
   }, [token, navigate]);
 
