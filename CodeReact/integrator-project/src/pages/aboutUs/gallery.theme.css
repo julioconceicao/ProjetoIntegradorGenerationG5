@@ -13,8 +13,7 @@
 */
 .gallery {
   position: relative;
-  padding-right: 100px;
-  width: 1220px;
+
 }
 .gallery .item {
   height: 75vh;
@@ -34,7 +33,7 @@
   font-size: 3em;
   text-align: center;
   text-decoration: none;
-  transition: color .1s;
+  transition: color 0.1s;
 }
 .navbarbuttonaboutus{
   display: flex;

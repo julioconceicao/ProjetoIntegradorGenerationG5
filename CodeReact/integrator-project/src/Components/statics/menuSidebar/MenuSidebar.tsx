@@ -8,7 +8,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import MenuIcon from '@material-ui/icons/Menu';
 import HomeIcon from '@material-ui/icons/Home';
-import "./MenuSidebr.css";
+import "./MenuSidebar.css";
 import { IconButton, Typography } from '@material-ui/core';
 import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
 import RedeemIcon from '@material-ui/icons/Redeem';

@@ -23,17 +23,14 @@ function AboutUs() {
             </Link>
           </div>
         </div>
-        <div className="gallery autoplay items-4">
+        <div className="gallery autoplay items-3">
 
           <div id="item-1" className="control-operator"></div>
           <div id="item-2" className="control-operator"></div>
           <div id="item-3" className="control-operator"></div>
 
           <figure className="item">
-            <h1></h1>
-          </figure>
-          <figure className="item">
-            <h1><img src="https://i.imgur.com/RBm9VZH.png" width="1150px" /></h1>
+            <h1> <img src="https://i.imgur.com/RBm9VZH.png" width="1150px" /></h1>
           </figure>
           <figure className="item">
             <h1><img src="https://i.imgur.com/SlU2IOX.png" width="1150px" /></h1>

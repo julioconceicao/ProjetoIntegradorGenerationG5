@@ -5,7 +5,7 @@ import Registration from './pages/registration/Registration';
 import Home from './pages/home/Home';
 import Login from './pages/login/Login';
 import Team from './pages/team/Team';
-import TeamCopy from './pages/team copy/TeamCopy';
+import TeamCopy from './pages/teamCopy/TeamCopy';
 import AboutUs from './pages/aboutUs/AboutUs';
 import ListOrder from './Components/orders/listOrder/ListOrder';
 import Cart from './pages/cart/Cart';
@@ -20,11 +20,10 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/home' element={<Home />} />
-          <Route path='/Login' element={<Login />} />
+          <Route path='/login' element={<Login />} />
           <Route path='/cadastro' element={<Registration />} />
           {/* <Route path='/order' element={<ListOrder />} /> */}
           <Route path='/cart' element={<Cart />} />
-          <Route path='/sobrenos' element={<AboutUs />} />
           <Route path='/sobrenos' element={<AboutUs />} />
           <Route path='/team' element={<Team />} />
           <Route path='/teamCopy' element={<TeamCopy />} />
