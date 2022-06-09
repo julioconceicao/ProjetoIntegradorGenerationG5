@@ -11,7 +11,8 @@ import ListOrder from './Components/orders/listOrder/ListOrder';
 import Cart from './pages/cart/Cart';
 import Kit from './pages/kit/Kit';
 import Thanks from './pages/thanks/Thanks';
-
+import Homelog from './pages/home/Homelog';
+import Contact from './pages/contact/Contact';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/home' element={<Home />} />
+          <Route path='/homelog' element={<Homelog />} />
           <Route path='/login' element={<Login />} />
           <Route path='/cadastro' element={<Registration />} />
           {/* <Route path='/order' element={<ListOrder />} /> */}
@@ -29,6 +31,7 @@ function App() {
           <Route path='/teamCopy' element={<TeamCopy />} />
           <Route path='/kits' element={<Kit />} />
           <Route path='/thanks' element={<Thanks />} />
+          <Route path='/contact' element={<Contact />} />
         </Routes>
       </Router >
     </>

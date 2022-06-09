@@ -1,14 +1,22 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 import { Typography, Box, Grid, Button } from '@material-ui/core';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
 import "./Home.css";
 import MenuSidebar from "../../Components/statics/menuSidebar/MenuSidebar";
+import useLocalStorage from "react-use-localstorage";
 
+function Homelog() {
+    const [token, setToken] = useLocalStorage('token');
+    const [id, setId] = useLocalStorage('id');
 
-function Home() {
+    let navigate = useNavigate();
 
+    function goLogout() {
+        setToken('')
+        setId('')
+        alert("Usuário deslogado")
+        navigate('/login')
+    }  
     return (
         <>
             <Grid item xs={12} style={{
@@ -20,12 +28,8 @@ function Home() {
                     <MenuSidebar />
 
                     <div className="navbarbutton">
-                        <Link to='/Login'>
-                            <button> Login</button>
-                        </Link>
-                        <Link to='/Cadastro'>
-                            <button>Cadastre-se</button>
-                        </Link>
+                            <button>Carrinho</button>
+                            <button onClick={goLogout}> Logout</button>
                     </div>
                 </div>
                 <div>
@@ -35,4 +39,4 @@ function Home() {
         </>
     );
 }
-export default Home;
+export default Homelog;
