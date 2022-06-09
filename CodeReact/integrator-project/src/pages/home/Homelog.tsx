@@ -28,7 +28,9 @@ function Homelog() {
                     <MenuSidebar />
 
                     <div className="navbarbutton">
+                            <Link to={'/Order'}>
                             <button>Carrinho</button>
+                            </Link>
                             <button onClick={goLogout}> Logout</button>
                     </div>
                 </div>

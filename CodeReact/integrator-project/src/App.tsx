@@ -11,12 +11,8 @@ import Cart from './pages/cart/Cart';
 import Kit from './pages/kit/Kit';
 import Thanks from './pages/thanks/Thanks';
 import Homelog from './pages/home/Homelog';
-<<<<<<< HEAD
 import CreateOrder from './Components/orders/createOrder/CreateOrder';
-
-=======
 import Contact from './pages/contact/Contact';
->>>>>>> a28ad5dae4d74334c08deefcf0e1da01c78a4dd2
 
 function App() {
   return (
@@ -34,11 +30,8 @@ function App() {
           <Route path='/teamCopy' element={<TeamCopy />} />
           <Route path='/kits' element={<Kit />} />
           <Route path='/thanks' element={<Thanks />} />
-<<<<<<< HEAD
           <Route path="/Order" element={<CreateOrder />} />
-=======
           <Route path='/contact' element={<Contact />} />
->>>>>>> a28ad5dae4d74334c08deefcf0e1da01c78a4dd2
         </Routes>
       </Router >
     </>
