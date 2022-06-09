@@ -14,14 +14,14 @@ export const registerUser = async(url: any, _data: any, setData: any) => {
     setData(result.data)  
 }
 
-export const busca = async(url: any, setDado: any, header: any) => { 
-    const resposta = await api.get(url, header)
-    setDado(resposta.data)
+export const search = async(url: any, setData: any, header: any) => { 
+    const result = await api.get(url, header)
+    setData(result.data)
 }
 
-export const buscaId = async(url: any, setDado: any, header: any) => { 
-    const resposta = await api.get(url, header)
-    setDado(resposta.data)
+export const searchId = async(url: any, setDada: any, header: any) => { 
+    const result = await api.get(url, header)
+    setDada(result.data)
 }
 
 export const post = async(url: any, dados: any, setDado: any, header: any) => { 

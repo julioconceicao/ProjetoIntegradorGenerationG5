@@ -7,11 +7,11 @@ import Login from './pages/login/Login';
 import Team from './pages/team/Team';
 import TeamCopy from './pages/teamCopy/TeamCopy';
 import AboutUs from './pages/aboutUs/AboutUs';
-import ListOrder from './Components/orders/listOrder/ListOrder';
 import Cart from './pages/cart/Cart';
 import Kit from './pages/kit/Kit';
 import Thanks from './pages/thanks/Thanks';
 import Homelog from './pages/home/Homelog';
+import CreateOrder from './Components/orders/createOrder/CreateOrder';
 import Contact from './pages/contact/Contact';
 
 function App() {
@@ -24,13 +24,13 @@ function App() {
           <Route path='/homelog' element={<Homelog />} />
           <Route path='/login' element={<Login />} />
           <Route path='/cadastro' element={<Registration />} />
-          {/* <Route path='/order' element={<ListOrder />} /> */}
           <Route path='/cart' element={<Cart />} />
           <Route path='/sobrenos' element={<AboutUs />} />
           <Route path='/team' element={<Team />} />
           <Route path='/teamCopy' element={<TeamCopy />} />
           <Route path='/kits' element={<Kit />} />
           <Route path='/thanks' element={<Thanks />} />
+          <Route path="/Order" element={<CreateOrder />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
       </Router >

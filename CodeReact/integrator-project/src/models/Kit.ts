@@ -1,10 +1,9 @@
-interface Kit{
-    id: number;
-    Name: string;
-    ProductClass: string;
-    Price: number;
-    ExpirationDate: string;
-
+interface Kit 
+{
+    name?: string | null;
+    productClass?: string | null;
+    price?: number | null;
+    expirationDate?: string | null;
 }
 
 export default Kit;

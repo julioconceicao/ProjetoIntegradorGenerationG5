@@ -1,5 +1,6 @@
-import { Grid, Box, Typography, TextField, Button } from '@material-ui/core';
+import { Grid, Typography, TextField, Button } from '@material-ui/core';
 import { Link } from 'react-router-dom';
+import {Box} from '@mui/material';
 import React from 'react';
 import './Contact.css';
 import MenuSidebar from "../../Components/statics/menuSidebar/MenuSidebar";
