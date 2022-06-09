@@ -5,6 +5,7 @@ import Registration from './pages/registration/Registration';
 import Home from './pages/home/Home';
 import Login from './pages/login/Login';
 import Team from './pages/team/Team';
+import TeamCopy from './pages/team copy/TeamCopy';
 import AboutUs from './pages/aboutUs/AboutUs';
 import ListOrder from './Components/orders/listOrder/ListOrder';
 import Cart from './pages/cart/Cart';
@@ -26,6 +27,7 @@ function App() {
           <Route path='/sobrenos' element={<AboutUs />} />
           <Route path='/sobrenos' element={<AboutUs />} />
           <Route path='/team' element={<Team />} />
+          <Route path='/teamCopy' element={<TeamCopy />} />
           <Route path='/kits' element={<Kit />} />
           <Route path='/thanks' element={<Thanks />} />
         </Routes>

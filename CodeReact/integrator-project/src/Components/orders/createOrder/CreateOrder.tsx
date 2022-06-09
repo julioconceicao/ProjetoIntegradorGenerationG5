@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Typography, Box, Grid, Button } from '@material-ui/core';
+import { Typography, Grid, Button } from '@material-ui/core';
+import {Box} from '@mui/material';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 
@@ -15,6 +16,9 @@ function Cart() {
             backgroundRepeat: 'no-repeat', width: '500px', height: '250px', backgroundSize: 'cover',
             textAlign: 'center',
         }}>
+            <Box className='SelectKit'>
+
+            </Box>
             
         </Grid>
     </>
