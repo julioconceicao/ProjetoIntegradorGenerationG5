@@ -11,6 +11,7 @@ import ListOrder from './Components/orders/listOrder/ListOrder';
 import Cart from './pages/cart/Cart';
 import Kit from './pages/kit/Kit';
 import Thanks from './pages/thanks/Thanks';
+import Homelog from './pages/home/Homelog';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/home' element={<Home />} />
+          <Route path='/homelog' element={<Homelog />} />
           <Route path='/login' element={<Login />} />
           <Route path='/cadastro' element={<Registration />} />
           {/* <Route path='/order' element={<ListOrder />} /> */}

@@ -1,13 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 import { Typography, Box, Grid, Button } from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
-import CreateOrder from "../../Components/orders/createOrder/CreateOrder";
-
+import useLocalStorage from "react-use-localstorage";
 import './Cart.css';
 
-function Cart() {
+
+function Cart() {  
     return(
     <>
 
@@ -27,9 +27,7 @@ function Cart() {
                     <Link to='/Login'>
                         <button>Login </button>
                     </Link>
-                    <Link to='/Cadastro'>
                         <button>Cadastre-se</button>
-                    </Link>
                 </div>
             </div>
             
