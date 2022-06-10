@@ -130,13 +130,13 @@ function Registration(){
                         </FormControl>
 
                         <Grid container direction="row" justifyContent="space-between" alignItems="center">
-                            <Box marginY={2} textAlign='center' className='btnCancelar'>
+                            <div className='buttons'>
                                 <Link to='/login'>
-                                    <Button variant='outlined' className='btnCancelar'>
+                                <Button variant='outlined' className="btnCancelar">
                                     Cancelar
                                     </Button>
                                 </Link>
-                            </Box>
+                            </div>
                             <Box marginY={2} textAlign='center'>
                                 <Button  type='submit' variant='contained' color='primary' className="btnCadastrar">
                                     Cadastrar
