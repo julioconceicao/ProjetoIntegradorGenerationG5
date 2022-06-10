@@ -17,6 +17,7 @@
 }
 .gallery .item {
   height: 75vh;
+  width: 130vh;
   overflow: hidden;
   text-align: center;
   background: #f5f5f5;
