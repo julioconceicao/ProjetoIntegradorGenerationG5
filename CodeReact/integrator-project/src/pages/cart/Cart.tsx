@@ -12,8 +12,8 @@ function Cart() {
     <>
 
         <Grid item xs={12} className="page" alignItems= 'center' justifyContent='center' style={{
+            background: 'url(https://i.imgur.com/9IOxMwE.png)',
             backgroundRepeat: 'no-repeat', width: '100%', height: '100vh', backgroundSize: 'cover',
-            
         }}>
             {/* NAVBAR */}
             <div className="navbarmenu">

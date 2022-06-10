@@ -9,7 +9,7 @@ function AboutUs() {
   return (
     <>
       <Grid item xs={12} style={{
-        background: '#f5f5f5',
+        background: 'url(https://i.imgur.com/9IOxMwE.png)',
         backgroundRepeat: 'no-repeat', width: '100%', height: '100vh', backgroundSize: 'cover'
       }}>
         <div className="navbarmenu">
