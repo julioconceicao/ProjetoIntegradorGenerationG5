@@ -4,9 +4,10 @@ export const api = axios.create({
     baseURL: 'https://planeta-solidario-gen.herokuapp.com'
 })
 
-export const login = async(url: any, _data: any, setData: any) => {
+export const login = async(url: any, _data: any, setToken: any, setEmail: any) => {
     const result = await api.post(url, _data)
-    setData(result.data.token)
+    setEmail(result.data.email)
+    setToken('Bearer ' + result.data.token)
 }
 
 export const registerUser = async(url: any, _data: any, setData: any) => {

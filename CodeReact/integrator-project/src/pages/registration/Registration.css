@@ -1,81 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
-.navbarmenuregistration{
-    height: 80px;
-    display: flex;
-    background-color: transparent; 
-    justify-content: left;
-    align-items: center;
-    position: sticky;
-    padding-top: 10px;
-    padding-left: 40px;
-} 
+    .navbarmenuregistration {
+        height: 80px;
+        display: flex;
+        background-color: transparent;
+        justify-content: left;
+        align-items: center;
+        position: sticky;
+        padding-top: 10px;
+        padding-left: 40px;
+    }
 
-.navbarmenuregistration button{
-    border: none;
-    background-color: transparent;
-    font-family: 'Montserrat', sans-serif;
-    cursor: pointer;
-    font-size: medium;
-    transition: 200ms;
-    border-radius: 10px;
-    padding: 10px 5px;
-}
+    .navbarmenuregistration button {
+        border: none;
+        background-color: transparent;
+        font-family: 'Montserrat', sans-serif;
+        cursor: pointer;
+        font-size: medium;
+        transition: 200ms;
+        border-radius: 10px;
+        padding: 10px 5px;
+    }
 
-button:hover{
-    background-color: rgba(136, 136, 136, 0.185) !important;
-}
+    .text2 {
+        font-weight: bold !important;
+        font-family: 'Montserrat', sans-serif;
+    }
 
 .image2 {
-    background-image: url(https://i.imgur.com/zmn6mNE.jpg);
+    background-image: url(https://i.imgur.com/qtJ1QFE.jpg) !important;
     background-repeat: no-repeat;
     min-height: 854px;
     background-size: cover;
     background-position: center;
 }
 
-.text2 {
-    font-weight: bold !important;
-    font-family: 'Montserrat', sans-serif;
-}
 
-/*.btnCancelar {
-    text-decoration: none !important;
-    margin-right: 20px !important;
-    font-weight: bold !important;
+    .btnCadastrar {
+        background-color: #8A6035 !important;
+        font-weight: bold !important;
+    }
 
-}*/
+    .btnCadastrar:hover {
+        background-color: #8A6035 !important;
+        font-weight: bold !important;
+        cursor: pointer;
+        -webkit-filter: drop-shadow(1px 1px 1px #d3a77b);
+        filter: drop-shadow(1px 1px 1px #585858);
+        opacity: 2000;
+    }
 
-.btnCadastrar {
-    background-color: #8A6035 !important;
-    font-weight: bold !important;
-}
+    div .btnCancelar {
+        color: white !important;
+        border-radius: 5px;
+        background-color: #555555ed !important;
+        font-weight: bold !important;
+        text-decoration: none !important;
 
-.btnCadastrar:hover {
-    background-color: #8A6035 !important;
-    font-weight: bold !important;
-    cursor: pointer;
-    -webkit-filter: drop-shadow(1px 1px 1px #d3a77b);
-    filter: drop-shadow(1px 1px 1px #585858);
-    opacity: 2000;
-}
+    }
 
-.btnCancelar {
-    color: white !important;
-    text-decoration: none !important;
-    border-radius: 5px;
-    background-color: #7a7a7aa4 !important;
-    font-weight: bold !important;
-    
-}
-
-.btnCancelar:hover {
-    font-weight: bold !important;
-    cursor: pointer;
-    -webkit-filter: drop-shadow(1px 1px 1px #d3a77b);
-    filter: drop-shadow(1px 1px 1px #585858);
-    opacity: 2000;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
+    #btnCancelar:hover {
+        font-weight: bold !important;
+        cursor: pointer;
+        -webkit-filter: drop-shadow(1px 1px 1px #d3a77b);
+        filter: drop-shadow(1px 1px 1px #585858);
+        opacity: 2000;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }

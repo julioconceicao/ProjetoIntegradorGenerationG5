@@ -72,7 +72,7 @@ export default function TemporaryDrawer() {
                 </ListItem>
               ))}
               </Link>
-              <Link className='Sidebar' to='/teamCopy'>
+              <Link className='Sidebar' to='/team'>
               {['Equipe'].map((text) => (
                 <ListItem button key={text}>
                   <ListItemIcon> <LinkIcon /></ListItemIcon>
