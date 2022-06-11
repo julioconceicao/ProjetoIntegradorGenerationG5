@@ -147,7 +147,7 @@ function Kit() {
                     </Card>                                                       
                 </div>  
                 <Box className="btn">
-                    <Button href='./Cart'>
+                    <Button href='./Donation'>
                         <h1>Comprar</h1>
                     </Button>
                 </Box>             
