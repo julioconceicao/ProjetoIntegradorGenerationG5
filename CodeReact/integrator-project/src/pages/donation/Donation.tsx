@@ -4,10 +4,10 @@ import { Typography, Box, Grid, Button } from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import useLocalStorage from "react-use-localstorage";
-import './Cart.css';
+import './Donation.css';
 
 
-function Cart() {  
+function Donation() {  
     return(
     <>
 
@@ -32,7 +32,7 @@ function Cart() {
             </div>
             
             <div className="title">
-                <h3>CARRINHO</h3>
+                <h3>Doação</h3>
             </div>
 
             
@@ -40,4 +40,4 @@ function Cart() {
     </>
     )
 }
-export default Cart;
+export default Donation;
