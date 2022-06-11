@@ -25,7 +25,11 @@ function App() {
           <Route path='/cadastro' element={<Registration />} />
           <Route path='/donation' element={<Donation />} />
           <Route path='/sobrenos' element={<AboutUs />} />
+<<<<<<< HEAD
           <Route path='/team' element={<Team />} />          
+=======
+          <Route path='/team' element={<Team />} />
+>>>>>>> 53517a5295f78812d0557f4523a75c45787ddd9e
           <Route path='/kits' element={<Kit />} />
           <Route path='/thanks' element={<Thanks />} />
           <Route path="/Order" element={<CreateOrder />} />

@@ -15,6 +15,7 @@ function Team() {
     return (
         <>
             <div className='body'>
+                <h1 className='teste'>Testando</h1>
                 <h1 className='equipe'>Equipe Desenvolvedora - Planeta Solidário</h1>
                 <div className='all-cards'>
 
@@ -87,7 +88,7 @@ function Team() {
                                     </Typography>
                                     <ul className='infos'>
                                         <li>Desenvolvedor Web- Full-stack- Jr</li>
-                                        <li>Tecnólogo em Analise e Desenvolvimento de sistemas</li>
+                                        <li>Tecnologo em Análise e Desenvolvimento de Sistemas</li>
                                         <li>Movido pela curiosidade</li>
                                         <li>Soft-skills: Persistência e proatividade</li>
                                     </ul>

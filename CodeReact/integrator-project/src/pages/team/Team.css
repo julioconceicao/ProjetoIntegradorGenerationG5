@@ -6,6 +6,11 @@
     height: 100%;
 }
 
+.teste {
+    -webkit-text-security: disc;
+    text-security: disc;
+}
+
 h1 {
     display: flex;
     justify-content: center;
