@@ -69,7 +69,11 @@ function Registration(){
 
     return (
         <Grid container direction='row' justifyContent='center' alignItems='center'>
-            <Grid item xs={6} className='image2'>   <MenuSidebar /></Grid>
+            
+            <Grid item xs={6} className='image2'> 
+            <MenuSidebar />
+            </Grid>
+            
             <Grid item xs={6} alignItems='center'>
                 <Box paddingX={10}>
                     <form onSubmit={onSubmit}>
