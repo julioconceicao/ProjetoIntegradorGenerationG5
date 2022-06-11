@@ -15,7 +15,6 @@ function Team() {
     return (
         <>
             <div className='body'>
-                <h1 className='teste'>Testando</h1>
                 <h1 className='equipe'>Equipe Desenvolvedora - Planeta Solidário</h1>
                 <div className='all-cards'>
 
@@ -181,10 +180,10 @@ function Team() {
                                     </ul>
                                     <Box className='icons'>
                                         <h5>Links:</h5>
-                                        <a className='avataricon' href="https://www.linkedin.com/in/lethicyaslopes/" target="_blank">
+                                        <a className='redes' href="https://www.linkedin.com/in/lethicyaslopes/" target="_blank">
                                             <LinkedInIcon className='redes' />
                                         </a>
-                                        <a className='avataricon' href="https://github.com/LethicyasLopes" target="_blank">
+                                        <a className='redes' href="https://github.com/LethicyasLopes" target="_blank">
                                             <GitHubIcon className='redes' />
                                         </a>
                                     </Box>
@@ -372,90 +371,91 @@ function Team() {
                 <div className="leaders">
                     <h1>Instructors and Leaders</h1>
                     <div className='all-cards'>
-                    {/* Gustavo Boaz*/}
-                    <Card sx={{ maxWidth: 345 }} className='maincontainer'>
-                        <Box className="card">
-                            <Box className='front'>
-                                <CardMedia className='card-img'
-                                    component="img"
-                                    alt="BoazPic"
-                                    image="https://cdn.discordapp.com/attachments/966414382747754577/981948401509875712/PAULO_VICTOR_ALMEIDA_DE_SOUSA-removebg-preview.png"
-                                />
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
-                                        Gustavo Boaz
-                                    </Typography>
+                        
+                        {/* Gustavo Boaz*/}
+                        <Card sx={{ maxWidth: 345 }} className='maincontainer'>
+                            <Box className="card">
+                                <Box className='front'>
+                                    <CardMedia className='card-img'
+                                        component="img"
+                                        alt="BoazPic"
+                                        image="https://cdn.discordapp.com/attachments/966414382747754577/981948401509875712/PAULO_VICTOR_ALMEIDA_DE_SOUSA-removebg-preview.png"
+                                    />
+                                    <CardContent>
+                                        <Typography gutterBottom variant="h5" component="div" className='namefont'>
+                                            Gustavo Boaz
+                                        </Typography>
 
-                                    <h5>Tech-Lead - Instrutor - Mentor</h5>
-                                </CardContent>
+                                        <h5>Tech-Lead - Instrutor - Mentor</h5>
+                                    </CardContent>
+                                </Box>
+
+                                <Box className='back'>
+
+                                    <CardContent>
+                                        <Typography gutterBottom variant="h5" component="div" className='namefont'>
+                                            Gustavo Boaz
+                                        </Typography>
+                                        <ul className='infos'>
+                                            <p>
+                                            </p>
+                                        </ul>
+                                        <Box className='icons'>
+                                            <h5>Links:</h5>
+                                            <a className='avataricon' href="https://www.linkedin.com/in/gustavoboaz/" target="_blank">
+                                                <LinkedInIcon className='redes' />
+                                            </a>
+                                            <a className='avataricon' href="https://github.com/GustavoBoaz" target="_blank">
+                                                <GitHubIcon className='redes' />
+                                            </a>
+                                        </Box>
+                                    </CardContent>
+                                </Box>
                             </Box>
+                        </Card>
 
-                            <Box className='back'>
+                        {/*Clauber Assis*/}
+                        <Card sx={{ maxWidth: 345 }} className='maincontainer'>
+                            <Box className="card">
+                                <Box className='front'>
+                                    <CardMedia className='card-img'
+                                        component="img"
+                                        alt="BinhoPic"
+                                        image="https://cdn.discordapp.com/attachments/966414382747754577/981948401509875712/PAULO_VICTOR_ALMEIDA_DE_SOUSA-removebg-preview.png"
+                                    />
+                                    <CardContent>
+                                        <Typography gutterBottom variant="h5" component="div" className='namefont'>
+                                            Clauber Costa
+                                        </Typography>
 
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
-                                        Gustavo Boaz
-                                    </Typography>
-                                    <ul className='infos'>
-                                       <p>
-                                       </p>
-                                    </ul>
-                                    <Box className='icons'>
-                                        <h5>Links:</h5>
-                                        <a className='avataricon' href="https://www.linkedin.com/in/gustavoboaz/" target="_blank">
-                                            <LinkedInIcon className='redes' />
-                                        </a>
-                                        <a className='avataricon' href="https://github.com/GustavoBoaz" target="_blank">
-                                            <GitHubIcon className='redes' />
-                                        </a>
-                                    </Box>
-                                </CardContent>
+                                        <h5>Journey-Lead - Instrutor - Mentor</h5>
+                                    </CardContent>
+                                </Box>
+
+                                <Box className='back'>
+
+                                    <CardContent>
+                                        <Typography gutterBottom variant="h5" component="div" className='namefont'>
+                                            Clauber Costa
+                                        </Typography>
+                                        <ul className='infos'>
+                                            <p>
+
+                                            </p>
+                                        </ul>
+                                        <Box className='icons'>
+                                            <h5>Links:</h5>
+                                            <a className='avataricon' href="https://www.linkedin.com/in/clauber-costa-684381218/" target="_blank">
+                                                <LinkedInIcon className='redes' />
+                                            </a>
+                                            <a className='avataricon' href="https://github.com/ClauberAssis" target="_blank">
+                                                <GitHubIcon className='redes' />
+                                            </a>
+                                        </Box>
+                                    </CardContent>
+                                </Box>
                             </Box>
-                        </Box>
-                    </Card>
-
-                                        {/*Clauber Assis*/}
-                                        <Card sx={{ maxWidth: 345 }} className='maincontainer'>
-                        <Box className="card">
-                            <Box className='front'>
-                                <CardMedia className='card-img'
-                                    component="img"
-                                    alt="BinhoPic"
-                                    image="https://cdn.discordapp.com/attachments/966414382747754577/981948401509875712/PAULO_VICTOR_ALMEIDA_DE_SOUSA-removebg-preview.png"
-                                />
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
-                                        Clauber Costa
-                                    </Typography>
-
-                                    <h5>Journey-Lead - Instrutor - Mentor</h5>
-                                </CardContent>
-                            </Box>
-
-                            <Box className='back'>
-
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
-                                        Clauber Costa
-                                    </Typography>
-                                    <ul className='infos'>
-                                       <p>
-
-                                       </p>
-                                    </ul>
-                                    <Box className='icons'>
-                                        <h5>Links:</h5>
-                                        <a className='avataricon' href="https://www.linkedin.com/in/clauber-costa-684381218/" target="_blank">
-                                            <LinkedInIcon className='redes' />
-                                        </a>
-                                        <a className='avataricon' href="https://github.com/ClauberAssis" target="_blank">
-                                            <GitHubIcon className='redes' />
-                                        </a>
-                                    </Box>
-                                </CardContent>
-                            </Box>
-                        </Box>
-                    </Card>
+                        </Card>
                     </div>
                 </div>
 
