@@ -116,7 +116,7 @@ function Login() {
                 </Link>
               </Box>
 
-            </form>
+            </Box>
 
             <Box display='flex' justifyContent='center' marginTop={2}>
               <Box marginRight={1}>
