@@ -8,20 +8,15 @@ import Ong from '../../../models/Ong';
 import { search, searchId, post, put, } from '../../../services/Services';
 import Order from '../../../models/Order';
 import OrderDTO from '../../../models/dtos/OrderDTO';
-import { type } from 'os';
-
-
-// const api = 'https://planeta-solidario-gen.herokuapp.com/index.html/api';
 
 function CreateOrder() {
 
     let navigate = useNavigate();
     const [token, setToken] = useLocalStorage('token');
-    const [email, setEmail] = useLocalStorage('email');
     const [kits, setKits] = useState<Kit[]>([]);
-    const [Ongs, setOngs] = useState<Ong[]>([]);
+    const [ongs, setOngs] = useState<Ong[]>([]);                            
 
-    const [Ong, setOng] = useState<Ong>({
+    const [ong, setOng] = useState<Ong>({
         id: 0,
         email:'',
         password:'',
@@ -37,13 +32,10 @@ function CreateOrder() {
         expirationDate: ''
     });
 
-    
     const [orderDTO, setOrderDTO] = useState<OrderDTO>({
-        emailCreator: email,
+        emailCreator: ong.email,
         idKit: kit.id
     })
-
-    //user?filter[UserType]=ONG
 
     useEffect(() => {
         getKits()
@@ -54,23 +46,21 @@ function CreateOrder() {
     }, [token]);
 
     useEffect(() => {
+        getOngs()
+        if (token === "") {
+            alert("Você precisa estar logado")
+            navigate("/login")
+        }
+    }, [token]);
+
+    useEffect(() => {
         setOrderDTO({
             ...orderDTO,
+            emailCreator: ong.email,
             idKit: kit.id
         })
     }, [orderDTO])
 
-    //// useEffect(() => {
-    ////     if(text){
-    ////         fetch('${api}users?filter[ONG]=${text}')
-    ////           .then((response) => response.json())
-                
-
-    ////     }
-
-    //// }, [text]);
-
-    
     async function getKits() {
         await search("/api/Kit", setKits, {
             headers: {
@@ -86,7 +76,6 @@ function CreateOrder() {
             }
         })
     }
- 
 
     async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
         e.preventDefault()
@@ -101,20 +90,19 @@ function CreateOrder() {
         back()
     }
     
-
     function back() {
         navigate('/homelog')
     }
 
     return (
-        <Container maxWidth="sm">
+        <div className='donation' style={{
+            background: `url(https://i.imgur.com/uWxFuxx.jpg)`,
+            backgroundRepeat: 'no-repeat', width: '100%', height: '100vh', backgroundSize: 'cover'}} >
+        <Container maxWidth="sm" className='doacao'>
+             <Typography variant="h3" color="textSecondary" component="h1" align="center" className='doar'>Doar</Typography>
             <form onSubmit={onSubmit}>
-                <Typography variant="h3" color="textSecondary" component="h1" align="center" >Compra</Typography>
-                <TextField value={email} id="emailCreator" label="Email" variant="outlined" name="emailCreator" margin="normal" fullWidth />
-
-                <FormControl >
-                    <InputLabel id="demo-simple-select-helper-label">Kit </InputLabel>
-                    <Select
+                <FormControl>
+                    <Select 
                         labelId="demo-simple-select-helper-label"
                         id="demo-simple-select-helper"
                         onChange={(e) => searchId(`/api/Kit/id/${e.target.value}`, setKit, {
@@ -129,27 +117,29 @@ function CreateOrder() {
                         }
                     </Select>
                     <FormHelperText>Escolha o Kit</FormHelperText> 
+                   
                     <Select
                         labelId="demo-simple-select-helper-label"
                         id="demo-simple-select-helper"
-                        onChange={(e) => searchId(`/api/User/${e.target.value}`, setOng, {
+                        onChange={(e) => search(`/api/Users/id/${e.target.value}`, setOng, {
                             headers: {
                                 'Authorization': token
                             }
-                        })}>
+                        })}>    
                             {   
-                                Ongs.map(unit => (
-                                    <MenuItem value={unit.id}>{unit.type}</MenuItem>
+                                ongs.map(unit => (
+                                    <MenuItem value={unit.id}>{unit.name}</MenuItem>
                                 ))
                             }
                     </Select>
-                    <FormHelperText>Escolha a ong</FormHelperText>                                        
-                    <Button type="submit" variant="contained" color="primary">
+                    <FormHelperText>Escolha a ONG</FormHelperText>                                        
+                    <Button type="submit" variant="contained" color="primary" className='btnCadastrar2'>
                         Finalizar
                     </Button>
                 </FormControl>
             </form>
         </Container>
+        </div>
     )
 }
 export default CreateOrder;

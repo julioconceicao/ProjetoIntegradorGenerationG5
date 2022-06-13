@@ -19,6 +19,7 @@ function Login() {
   let navigate = useNavigate();
   const [token, setToken] = useLocalStorage('token');
   const [email, setEmail] = useLocalStorage('email');
+  const [type, setType] = useLocalStorage('type');
 
   const [loginDTO, setAuthenticationDTO] = useState<UserLogin>(
     {
@@ -60,11 +61,6 @@ function Login() {
     }
   }, [token, navigate]);
 
-  // function UserTypeRedirect()
-  // if(UserType == Ong)
-  // {
-  //   Ong
-  // }
   return (
     <>
       <Grid container direction='row'>
