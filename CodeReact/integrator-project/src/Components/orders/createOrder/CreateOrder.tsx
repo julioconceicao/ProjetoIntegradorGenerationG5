@@ -4,9 +4,11 @@ import { useNavigate, useParams } from 'react-router-dom';
 import useLocalStorage from 'react-use-localstorage';
 import './CreateOrder.css';
 import Kit from '../../../models/Kit';
+import Ong from '../../../models/Ong';
 import { search, searchId, post, put, } from '../../../services/Services';
 import Order from '../../../models/Order';
 import OrderDTO from '../../../models/dtos/OrderDTO';
+import { type } from 'os';
 
 
 function CreateOrder() {
@@ -15,6 +17,15 @@ function CreateOrder() {
     const [token, setToken] = useLocalStorage('token');
     const [email, setEmail] = useLocalStorage('email');
     const [kits, setKits] = useState<Kit[]>([]);
+    const [Ongs, setOngs] = useState<Ong[]>([]);
+
+    const [Ong, setOng] = useState<Ong>({
+        id: 0,
+        email:'',
+        password:'',
+        NameAgent:'',
+        type:'',
+    });
 
     const [kit, setKit] = useState<Kit>({
         id:0,
@@ -24,6 +35,7 @@ function CreateOrder() {
         expirationDate: ''
     });
 
+    
     const [orderDTO, setOrderDTO] = useState<OrderDTO>({
         emailCreator: email,
         idKit: kit.id
@@ -52,6 +64,15 @@ function CreateOrder() {
         })
     }
 
+    async function getOngs(){
+        await search("/api/Users", setOngs, {
+            headers: {
+                'Authorization': token
+            }
+        })
+    }
+ 
+
     async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
         e.preventDefault()
 
@@ -60,10 +81,11 @@ function CreateOrder() {
                 'Authorization': token
             }
         })
-        alert('Compra cadastrada com sucesso');
+        alert('Doação cadastrada com sucesso');
 
         back()
     }
+    
 
     function back() {
         navigate('/homelog')
@@ -91,7 +113,22 @@ function CreateOrder() {
                                 ))
                             }
                     </Select>
-                    <FormHelperText>Escolha o Kit</FormHelperText>
+                    <FormHelperText>Escolha o Kit</FormHelperText> 
+                    <Select
+                        labelId="demo-simple-select-helper-label"
+                        id="demo-simple-select-helper"
+                        onChange={(e) => searchId(`/api/User/${e.target.value}`, setOng, {
+                            headers: {
+                                'Authorization': token
+                            }
+                        })}>
+                            {   
+                                Ongs.map(unit => (
+                                    <MenuItem value={unit.id}>{unit.type}</MenuItem>
+                                ))
+                            }
+                    </Select>
+                    <FormHelperText>Escolha a ong</FormHelperText>                                        
                     <Button type="submit" variant="contained" color="primary">
                         Finalizar
                     </Button>
