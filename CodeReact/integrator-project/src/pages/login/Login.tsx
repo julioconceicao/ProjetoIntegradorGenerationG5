@@ -67,57 +67,48 @@ function Login() {
   // }
   return (
     <>
-      <div><MenuSidebar />
-        <Grid container direction='row' justifyContent='center' alignItems='center'>
-          <Grid xs={6}>
-            <Box paddingX={20}>
-              <form onSubmit={onSubmit}>
-                <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos'>Entrar</Typography>
+      <Grid container direction='row'>
+        <Grid xs={6}>
+          <Grid className="alignsidebarohyes">
+            <MenuSidebar />
+          </Grid>
+          <Box paddingX={21.5}>
+            <form onSubmit={onSubmit}>
+              <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos'>Entrar</Typography>
 
-                <TextField
-                  value={loginDTO.email}
-                  onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                  id='email' label='Email' variant='outlined' name='email' margin='normal' fullWidth />
+              <TextField
+                value={loginDTO.email}
+                onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
+                id='email' label='Email' variant='outlined' name='email' margin='normal' fullWidth />
 
-                <FormControl  className='root' variant="outlined">
-                  <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
-                  <OutlinedInput
-                    id="outlined-adornment-password"
-                    type={loginDTO.showPassword ? 'text' : 'password'}
-                    value={loginDTO.password}
-                    onChange={handleChange('password')}
-                    endAdornment={
-                      <InputAdornment position="end">
-                        <IconButton
-                          aria-label="toggle password visibility"
-                          onClick={handleClickShowPassword}
-                          onMouseDown={handleMouseDownPassword}
-                          edge="end"
-                        >
-                          {loginDTO.showPassword ? <Visibility /> : <VisibilityOff />}
-                        </IconButton>
-                      </InputAdornment>
-                    }
-                    labelWidth={70}
-                  />
-                </FormControl>
-                <Box marginTop={2} textAlign='center'>
-                  <Button type='submit' variant='contained' color='primary' className="btnCadastrar">
-                    Logar
-                  </Button>
-                </Box>
-              </form>
-              <Box display='flex' justifyContent='center' marginTop={2}>
-                <Box marginRight={1}>
-                  <Typography variant='subtitle1' gutterBottom align='center'>Não tem uma conta?</Typography>
-                </Box>
-                <Link to='/cadastro' className="cadastre-se">
-                  <Typography variant='subtitle1' gutterBottom align='center' className='textos1'>Cadastre-se</Typography>
-                </Link>
+              <FormControl className='root' variant="outlined">
+                <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
+                <OutlinedInput
+                  id="outlined-adornment-password"
+                  type={loginDTO.showPassword ? 'text' : 'password'}
+                  value={loginDTO.password}
+                  onChange={handleChange('password')}
+                  endAdornment={
+                    <InputAdornment position="end">
+                      <IconButton
+                        aria-label="toggle password visibility"
+                        onClick={handleClickShowPassword}
+                        onMouseDown={handleMouseDownPassword}
+                        edge="end"
+                      >
+                        {loginDTO.showPassword ? <Visibility /> : <VisibilityOff />}
+                      </IconButton>
+                    </InputAdornment>
+                  }
+                  labelWidth={80}
+                />
+              </FormControl>
+              <Box marginTop={2} textAlign='center'>
+                <Button type='submit' variant='contained' color='primary' className="btnCadastrar">
+                  Logar
+                </Button>
               </Box>
-
-            </Box>
-
+            </form>
             <Box display='flex' justifyContent='center' marginTop={2}>
               <Box marginRight={1}>
                 <Typography variant='subtitle1' gutterBottom align='center'>Não tem uma conta?</Typography>
@@ -126,10 +117,11 @@ function Login() {
                 <Typography variant='subtitle1' gutterBottom align='center' className='textos1'>Cadastre-se</Typography>
               </Link>
             </Box>
-          </Grid>
-          <Grid xs={6} className='imagem'></Grid>
+          </Box>
         </Grid>
-      </div>
+        <Grid xs={6} className='imagem'>
+        </Grid>
+      </Grid>
     </>
   );
 }

@@ -13,7 +13,6 @@
 */
 .gallery {
   position: relative;
-
 }
 .gallery .item {
   height: 75vh;
@@ -42,4 +41,7 @@
   background-color: transparent;
   padding-left: 1075px;
   padding-top: 10px;
+}
+.centerabout{
+  padding-left: 150px;
 }
