@@ -23,8 +23,8 @@
     padding: 3px;
 }
 .card-img{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 300px;
 }
 
 .maincontainer {
@@ -111,6 +111,7 @@
 
     transform: rotateY(180deg);
 
+    margin-bottom: 10px;
 }
 
 .infos li {

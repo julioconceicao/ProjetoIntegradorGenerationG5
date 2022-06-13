@@ -44,9 +44,9 @@ function TeamCopy() {
                                         João M. de Souza
                                     </Typography>
                                     <ul className='infos'>
-                                        <li>Eu faço site e formato pc's</li>
-                                        <li>linguages: html é linguagem de programação</li>
-                                        <li>Soft-skills: Apresendizado ativo, Colaborativo e Comunicativo</li>
+                                        <li>Dev .NET Junior Fullstack</li>
+                                        <li>Linguages: C#/ SQL Server/ASP.NET/ React</li>
+                                        <li>Soft-skills: Aprendizado ativo, colaborativo e comunicativo</li>
                                     </ul>
                                     <Box className='icons'>
                                         <h5>Links:</h5>
@@ -86,9 +86,11 @@ function TeamCopy() {
                                         José Vinicius S. de Souza
                                     </Typography>
                                     <ul className='infos'>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
+                                        <li>Desenvolvedor Web- Full-stack- Jr</li>
+                                        <li>Tecnologo em Análise e Desenvolvimento de Sistemas</li>
+                                        <li>Movido pela curiosidade</li>
+                                        <li>Soft-skills: Persistência e proatividade</li>
+
                                     </ul>
                                     <Box className='icons'>
                                         <h5>Links:</h5>
@@ -119,7 +121,7 @@ function TeamCopy() {
                                         Julio César G. Conceição
                                     </Typography>
 
-                                    <h5>Full-stack developer</h5>
+                                    <h5>Full-stack .NET Developer</h5>
                                 </CardContent>
                             </Box>
 
@@ -344,9 +346,10 @@ function TeamCopy() {
                                         Paulo Almeida
                                     </Typography>
                                     <ul className='infos'>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
+                                        <li>Full Stack Developer JR. | .NET | REACT | SQL |</li>
+                                        <li>Inglês intermediário</li>
+                                        <li>Softskills: Persistência, trabalho em equipe e curiosidade</li>
+                                        <li>Habilidades: Contabilidade</li>
                                     </ul>
                                     <Box className='icons'>
                                         <h5>Links:</h5>
