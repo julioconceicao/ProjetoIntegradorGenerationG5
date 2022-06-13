@@ -60,6 +60,11 @@ function Login() {
     }
   }, [token, navigate]);
 
+  // function UserTypeRedirect()
+  // if(UserType == Ong)
+  // {
+  //   Ong
+  // }
   return (
     <>
       <div><MenuSidebar />
@@ -110,6 +115,16 @@ function Login() {
                   <Typography variant='subtitle1' gutterBottom align='center' className='textos1'>Cadastre-se</Typography>
                 </Link>
               </Box>
+
+            </Box>
+
+            <Box display='flex' justifyContent='center' marginTop={2}>
+              <Box marginRight={1}>
+                <Typography variant='subtitle1' gutterBottom align='center'>Não tem uma conta?</Typography>
+              </Box>
+              <Link to='/cadastro' className="cadastre-se">
+                <Typography variant='subtitle1' gutterBottom align='center' className='textos1'>Cadastre-se</Typography>
+              </Link>
             </Box>
           </Grid>
           <Grid xs={6} className='imagem'></Grid>

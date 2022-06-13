@@ -11,6 +11,8 @@ import OrderDTO from '../../../models/dtos/OrderDTO';
 import { type } from 'os';
 
 
+// const api = 'https://planeta-solidario-gen.herokuapp.com/index.html/api';
+
 function CreateOrder() {
 
     let navigate = useNavigate();
@@ -28,7 +30,7 @@ function CreateOrder() {
     });
 
     const [kit, setKit] = useState<Kit>({
-        id:0,
+        id: 0,
         name: '',
         productClass: '',
         price: 0,
@@ -40,7 +42,9 @@ function CreateOrder() {
         emailCreator: email,
         idKit: kit.id
     })
-    
+
+    //user?filter[UserType]=ONG
+
     useEffect(() => {
         getKits()
         if (token === "") {
@@ -56,7 +60,18 @@ function CreateOrder() {
         })
     }, [orderDTO])
 
-    async function getKits(){
+    //// useEffect(() => {
+    ////     if(text){
+    ////         fetch('${api}users?filter[ONG]=${text}')
+    ////           .then((response) => response.json())
+                
+
+    ////     }
+
+    //// }, [text]);
+
+    
+    async function getKits() {
         await search("/api/Kit", setKits, {
             headers: {
                 'Authorization': token
@@ -91,7 +106,7 @@ function CreateOrder() {
         navigate('/homelog')
     }
 
-    return(
+    return (
         <Container maxWidth="sm">
             <form onSubmit={onSubmit}>
                 <Typography variant="h3" color="textSecondary" component="h1" align="center" >Compra</Typography>
@@ -107,11 +122,11 @@ function CreateOrder() {
                                 'Authorization': token
                             }
                         })}>
-                            {   
-                                kits.map(unit => (
-                                    <MenuItem value={unit.id}>{unit.name}</MenuItem>
-                                ))
-                            }
+                        {
+                            kits.map(unit => (
+                                <MenuItem value={unit.id}>{unit.name}</MenuItem>
+                            ))
+                        }
                     </Select>
                     <FormHelperText>Escolha o Kit</FormHelperText> 
                     <Select
