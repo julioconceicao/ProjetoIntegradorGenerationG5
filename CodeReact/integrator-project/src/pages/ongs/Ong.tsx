@@ -15,7 +15,8 @@ function Ong() {
 
   return (
     <>
-    <div><MenuSidebar />
+    <div>
+      <MenuSidebar />
       <Grid container direction='row' justifyContent='center' alignItems='center'> 
         <Grid xs={6}>          
         <Grid xs={6}></Grid>

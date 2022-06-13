@@ -10,10 +10,12 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import MenuIcon from '@material-ui/icons/Menu';
 import "./Team.css";
+import MenuSidebar from "../../Components/statics/menuSidebar/MenuSidebar";
 
 function Team() {
     return (
         <>
+            <MenuSidebar/>
             <div className='body'>
                 <h1 className='equipe'>Equipe Desenvolvedora - Planeta Solidário</h1>
                 <div className='all-cards'>
