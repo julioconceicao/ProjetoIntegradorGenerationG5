@@ -135,7 +135,7 @@ function Registration(){
 
                         <Grid container direction="row" justifyContent="space-between" alignItems="center">
                             <div className='buttons'>
-                                <Link to='/login'>
+                                <Link to='/Login'>
                                 <Button variant='outlined' className="btnCancelar">
                                     Cancelar
                                     </Button>

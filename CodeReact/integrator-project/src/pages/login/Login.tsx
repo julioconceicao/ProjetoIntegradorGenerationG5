@@ -19,6 +19,7 @@ function Login() {
   let navigate = useNavigate();
   const [token, setToken] = useLocalStorage('token');
   const [email, setEmail] = useLocalStorage('email');
+  const [type, setType] = useLocalStorage('type');
 
   const [loginDTO, setAuthenticationDTO] = useState<UserLogin>(
     {
@@ -47,7 +48,7 @@ function Login() {
   async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
     e.preventDefault();
     try {
-      await login(`/api/Authentication`, loginDTO, setToken, setEmail);
+      await login(`/api/Authentication`, loginDTO, setToken, setEmail, setType);
       alert('Logado');
     } catch (error) {
       alert('Email ou senha incorretos');

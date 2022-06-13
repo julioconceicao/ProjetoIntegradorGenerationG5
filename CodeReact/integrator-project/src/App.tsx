@@ -12,6 +12,7 @@ import Homelog from './pages/home/Homelog';
 import CreateOrder from './Components/orders/createOrder/CreateOrder';
 import Contact from './pages/contact/Contact';
 import Donation from './pages/donation/Donation';
+import Ongs from './pages/ongs/Ong'
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path='/thanks' element={<Thanks />} />
           <Route path="/Order" element={<CreateOrder />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/ongs' element={<Ongs />} />
         </Routes>
       </Router >
     </>

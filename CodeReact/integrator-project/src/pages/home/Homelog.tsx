@@ -1,5 +1,6 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Link,useNavigate } from 'react-router-dom';
+import { login } from "../../services/Services"
 import { Typography, Box, Grid, Button } from '@material-ui/core';
 import "./Home.css";
 import MenuSidebar from "../../Components/statics/menuSidebar/MenuSidebar";
@@ -8,6 +9,7 @@ import useLocalStorage from "react-use-localstorage";
 function Homelog() {
     const [token, setToken] = useLocalStorage('token');
     const [id, setId] = useLocalStorage('id');
+    const [type, setType] = useLocalStorage('type');
 
     let navigate = useNavigate();
 
@@ -17,6 +19,13 @@ function Homelog() {
         alert("Usuário deslogado")
         navigate('/login')
     }  
+
+    useEffect(() => {
+        if (type == 'ONG') {
+          navigate('/ongs');
+        }
+      }, [token, navigate]);
+      
     return (
         <>
             <Grid item xs={12} style={{
