@@ -91,7 +91,7 @@ function CreateOrder() {
     }
     
     function back() {
-        navigate('/homelog')
+        navigate('/thanks')
     }
 
     return (
