@@ -6,12 +6,15 @@ import CardMedia from '@mui/material/CardMedia';
 import { Typography, Grid, Button } from '@material-ui/core';
 import { Box } from '@mui/material';
 import "./Kit.css";
+import MenuSidebar from "../../Components/statics/menuSidebar/MenuSidebar";
 
 
 function Kit() {
     return (
-        <>
-            <div className='body'>                
+        <>        
+            <div className="navbarmenu"> 
+            <div className='body'>             
+            <MenuSidebar/>              
                 <div className='all-cards'>
 
                     {/*Cesta Básica*/}
@@ -84,23 +87,23 @@ function Kit() {
                                     </Typography>
                                     <ul className='infos'>
                                         <h4>FRUTAS</h4>
-                                        <li>6 Limões</li>
-                                        <li>3 Maçãs</li>
-                                        <li>3 Peras</li>
-                                        <li>1dz de Laranja Pera</li>
-                                        <li>1 kg Banana Nanica ou Prata</li>
-                                        <li>1 Tipo de fruta a escolher </li>
-                                        <h4>LEGUMES E VERDURAS</h4>
-                                        <li>1/2 kg Cebola</li>
+                                        <li> 6 Limões</li>
+                                        <li> 3 Maçãs</li>
+                                        <li> 3 Peras</li>
+                                        <li> 1dz de Laranja Pera</li>
+                                        <li> 1 kg Banana Nanica ou Prata</li>
+                                        <li> 1 Tipo de fruta a escolher </li>
+                                        <h4> LEGUMES E VERDURAS</h4>
+                                        <li> 1/2 kg Cebola</li>
                                         <li> 1/2 kg Tomate</li>
                                         <li> 1 kg Batata</li>
                                         <li> 1 pc Cenoura ou Vagem</li>
-                                        <li>  1 pc Chuchu ou Batata Doce</li>
-                                        <li>  1 pc Berinjela ou Beterraba</li>
-                                        <li>  1 pc Alho ou Pimentão</li>
-                                        <li>  2 mç Alface Lisa ou Crespa</li>
-                                        <li>  1 mç Salsa</li>
-                                        <li>  1 mç Couve ou Escarola</li>
+                                        <li> 1 pc Chuchu ou Batata Doce</li>
+                                        <li> 1 pc Berinjela ou Beterraba</li>
+                                        <li> 1 pc Alho ou Pimentão</li>
+                                        <li> 2 mç Alface Lisa ou Crespa</li>
+                                        <li> 1 mç Salsa</li>
+                                        <li> 1 mç Couve ou Escarola</li>
                                     </ul>                                    
                                 </CardContent>
                             </Box>
@@ -130,16 +133,16 @@ function Kit() {
                                         Mais Informações
                                     </Typography>
                                     <ul className='infos'>
-                                        <li>1 sutiã</li>
-                                        <li>1 escova de dentes</li>
+                                        <li> 1 sutiã</li>
+                                        <li> 1 escova de dentes</li>
                                         <li> 1 fio dental </li>
-                                        <li>1 sabonete intimo</li>
+                                        <li> 1 sabonete intimo</li>
                                         <li> 1 desodorante</li>
                                         <li> 1 shampoo</li>
                                         <li> 1 condicionador</li>
-                                        <li> 1 pcte de cotonete</li>
-                                        <li>1 creme hidratante</li>
-                                        <li> 1 pcte de Lenço umedecido</li>
+                                        <li> 1 pacote de cotonete</li>
+                                        <li> 1 creme hidratante</li>
+                                        <li> 1 pacote de Lenço umedecido</li>
                                     </ul>                                    
                                 </CardContent>
                             </Box>
@@ -151,7 +154,8 @@ function Kit() {
                         <h1>Doar</h1>
                     </Button>
                 </Box>             
-            </div>           
+            </div>   
+            </div>        
         </>
     );
 }

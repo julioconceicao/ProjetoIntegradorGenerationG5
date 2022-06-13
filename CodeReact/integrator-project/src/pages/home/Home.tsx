@@ -12,7 +12,7 @@ function Home() {
     return (
         <>
             <Grid item xs={12} style={{
-                background: `url(https://imgur.com/cps58Bf.jpg)`,
+                background: `url(https://i.imgur.com/9ayuO27.jpg)`,
                 backgroundRepeat: 'no-repeat', width: '100%', height: '100vh', backgroundSize: 'cover'
             }}>
                 <div className="navbarmenu">

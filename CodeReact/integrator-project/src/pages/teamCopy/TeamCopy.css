@@ -1,17 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
-
-.body {
-    background-color: #F5F5F5;
-    width: 100%;
-    height: 100%;
-}
-
-h1 {
-    display: flex;
-    justify-content: center;
-    font-family: 'Montserrat', sans-serif;
-}
-
 .namefont {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -21,33 +7,7 @@ h1 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-}
-
-.card {
-    margin: 10px;
-    border-radius: none;
-    box-shadow: 30px;
-    justify-content: space-between;
-    justify-content: space-around;
-    height: 400px !important;
-    backface-visibility: hidden;
-    overflow: hidden;
-    
-}
-
-.card:hover {
-    background-color: #c0cdf1;
-    width: 50;
-}
-
-.card-img {
-    margin-top: none;
-    width: 100%;
-    height: 70%;
-}
-
-.card-img:hover {
-    margin-top: none;
+	
 }
 
 #avataricon {
@@ -61,6 +21,10 @@ h1 {
     height: 50px !important;
     color: black !important;
     padding: 3px;
+}
+.card-img{
+    width: 100px;
+    height: 100px;
 }
 
 .maincontainer {

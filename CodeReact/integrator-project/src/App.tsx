@@ -12,6 +12,7 @@ import Homelog from './pages/home/Homelog';
 import CreateOrder from './Components/orders/createOrder/CreateOrder';
 import Contact from './pages/contact/Contact';
 import Donation from './pages/donation/Donation';
+import TeamCopy from './pages/teamCopy/TeamCopy';
 import Ongs from './pages/ongs/Ong'
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path='/home' element={<Home />} />
           <Route path='/homelog' element={<Homelog />} />
           <Route path='/login' element={<Login />} />
+          <Route path='/teamCopy' element={<TeamCopy />} />
           <Route path='/cadastro' element={<Registration />} />
           <Route path='/donation' element={<Donation />} />
           <Route path='/sobrenos' element={<AboutUs />} />

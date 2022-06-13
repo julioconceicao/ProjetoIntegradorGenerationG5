@@ -9,23 +9,18 @@ import IconButton from '@material-ui/core/IconButton';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import MenuIcon from '@material-ui/icons/Menu';
-import "./Team.css";
+import "./TeamCopy.css";
 import MenuSidebar from "../../Components/statics/menuSidebar/MenuSidebar";
 
-function Team() {
+function TeamCopy() {
     return (
         <>
-            <Grid item xs={12} style={{
-
-                backgroundRepeat: 'no-repeat', width: '100%', height: '100vh', backgroundSize: 'cover'
-            }}>
-                <MenuSidebar />
-
+            <Grid>
                 <h1 className='equipe'>Equipe Desenvolvedora - Planeta Solidário</h1>
                 <div className='all-cards'>
 
                     {/* João Victor*/}
-                    <Card sx={{ maxWidth: 400, maxHeight: 900 }} className='maincontainer'>
+                    <Card sx={{ maxWidth: 345 }} className='maincontainer'>
                         <Box className="card">
                             <Box className='front'>
                                 <CardMedia className='card-img'
@@ -39,19 +34,19 @@ function Team() {
                                     </Typography>
 
                                     <h5>Full-stack developer</h5>
+
                                 </CardContent>
                             </Box>
 
                             <Box className='back'>
-
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="div" className='namefont'>
                                         João M. de Souza
                                     </Typography>
                                     <ul className='infos'>
-                                        <li>Dev .NET Junior Fullstack</li>
-                                        <li>Linguages: C#/ SQL Server/ASP.NET/ React</li>
-                                        <li>Soft-skills: Aprendizado ativo, colaborativo e comunicativo</li>
+                                        <li>Eu faço site e formato pc's</li>
+                                        <li>linguages: html é linguagem de programação</li>
+                                        <li>Soft-skills: Apresendizado ativo, Colaborativo e Comunicativo</li>
                                     </ul>
                                     <Box className='icons'>
                                         <h5>Links:</h5>
@@ -68,7 +63,7 @@ function Team() {
                     </Card>
 
                     {/* José Vinicius */}
-                    <Card sx={{ maxWidth: 400 }} className='maincontainer'>
+                    <Card sx={{ maxWidth: 345 }} className='maincontainer'>
                         <Box className="card">
                             <Box className='front'>
                                 <CardMedia className='card-img'
@@ -91,10 +86,9 @@ function Team() {
                                         José Vinicius S. de Souza
                                     </Typography>
                                     <ul className='infos'>
-                                        <li>Desenvolvedor Web- Full-stack- Jr</li>
-                                        <li>Tecnologo em Análise e Desenvolvimento de Sistemas</li>
-                                        <li>Movido pela curiosidade</li>
-                                        <li>Soft-skills: Persistência e proatividade</li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
                                     </ul>
                                     <Box className='icons'>
                                         <h5>Links:</h5>
@@ -106,12 +100,13 @@ function Team() {
                                         </a>
                                     </Box>
                                 </CardContent>
+
                             </Box>
                         </Box>
                     </Card>
 
                     {/* Julio Conceição*/}
-                    <Card sx={{ maxWidth: 400 }} className='maincontainer'>
+                    <Card sx={{ maxWidth: 345 }} className='maincontainer'>
                         <Box className="card">
                             <Box className='front'>
                                 <CardMedia className='card-img'
@@ -155,7 +150,7 @@ function Team() {
                     </Card>
 
                     {/* Lethicya Lopes*/}
-                    <Card sx={{ maxWidth: 400 }} className='maincontainer'>
+                    <Card sx={{ maxWidth: 345 }} className='maincontainer'>
                         <Box className="card">
                             <Box className='front'>
                                 <CardMedia className='card-img'
@@ -171,7 +166,6 @@ function Team() {
                                     <h5>Full-stack developer</h5>
                                 </CardContent>
                             </Box>
-
                             <Box className='back'>
 
                                 <CardContent>
@@ -185,20 +179,21 @@ function Team() {
                                     </ul>
                                     <Box className='icons'>
                                         <h5>Links:</h5>
-                                        <a className='redes' href="https://www.linkedin.com/in/lethicyaslopes/" target="_blank">
+                                        <a className='avataricon' href="https://www.linkedin.com/in/lethicyaslopes/" target="_blank">
                                             <LinkedInIcon className='redes' />
                                         </a>
-                                        <a className='redes' href="https://github.com/LethicyasLopes" target="_blank">
+                                        <a className='avataricon' href="https://github.com/LethicyasLopes" target="_blank">
                                             <GitHubIcon className='redes' />
                                         </a>
                                     </Box>
                                 </CardContent>
+
                             </Box>
                         </Box>
                     </Card>
 
                     {/* Letícia Zimerer*/}
-                    <Card sx={{ maxWidth: 400 }} className='maincontainer'>
+                    <Card sx={{ maxWidth: 345 }} className='maincontainer'>
                         <Box className="card">
                             <Box className='front'>
                                 <CardMedia className='card-img'
@@ -214,7 +209,6 @@ function Team() {
                                     <h5>Full-stack developer</h5>
                                 </CardContent>
                             </Box>
-
                             <Box className='back'>
 
                                 <CardContent>
@@ -242,7 +236,7 @@ function Team() {
                     </Card>
 
                     {/* Matheus Rodrigues*/}
-                    <Card sx={{ maxWidth: 400 }} className='maincontainer'>
+                    <Card sx={{ maxWidth: 345 }} className='maincontainer'>
                         <Box className="card">
                             <Box className='front'>
                                 <CardMedia className='card-img'
@@ -260,7 +254,6 @@ function Team() {
                             </Box>
 
                             <Box className='back'>
-
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="div" className='namefont'>
                                         Matheus R. da Silva
@@ -280,12 +273,13 @@ function Team() {
                                         </a>
                                     </Box>
                                 </CardContent>
+
                             </Box>
                         </Box>
                     </Card>
 
                     {/* Michelli O. Cordeiro */}
-                    <Card sx={{ maxWidth: 400 }} className='maincontainer'>
+                    <Card sx={{ maxWidth: 345 }} className='maincontainer'>
                         <Box className="card">
                             <Box className='front'>
                                 <CardMedia className='card-img'
@@ -303,7 +297,6 @@ function Team() {
                             </Box>
 
                             <Box className='back'>
-
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="div" className='namefont'>
                                         Michelli O. Cordeiro
@@ -328,7 +321,7 @@ function Team() {
                     </Card>
 
                     {/* Paulo Almeida*/}
-                    <Card sx={{ maxWidth: 400 }} className='maincontainer'>
+                    <Card sx={{ maxWidth: 345 }} className='maincontainer'>
                         <Box className="card">
                             <Box className='front'>
                                 <CardMedia className='card-img'
@@ -344,7 +337,6 @@ function Team() {
                                     <h5>Full-stack developer</h5>
                                 </CardContent>
                             </Box>
-
                             <Box className='back'>
 
                                 <CardContent>
@@ -352,10 +344,9 @@ function Team() {
                                         Paulo Almeida
                                     </Typography>
                                     <ul className='infos'>
-                                        <li>Full Stack Developer JR. | .NET | REACT | SQL |</li>
-                                        <li>Inglês intermediário</li>
-                                        <li>Softskills: Persistência, trabalho em equipe e curiosidade</li>
-                                        <li>Habilidades: Contabilidade</li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
                                     </ul>
                                     <Box className='icons'>
                                         <h5>Links:</h5>
@@ -367,105 +358,13 @@ function Team() {
                                         </a>
                                     </Box>
                                 </CardContent>
-                            </Box>
-                        </Box>
-                    </Card>
 
-<Typography className="tipo">
-Escreve aí pa nois ve
-
-</Typography>
-
-                    {/* Gustavo Boaz*/}
-                    <Card sx={{ maxWidth: 400 }} className='maincontainer'>
-                        <Box className="card">
-                            <Box className='front'>
-                                <CardMedia className='card-img'
-                                    component="img"
-                                    alt="BoazPic"
-                                    image="https://cdn.discordapp.com/attachments/966414382747754577/981948401509875712/PAULO_VICTOR_ALMEIDA_DE_SOUSA-removebg-preview.png"
-                                />
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
-                                        Gustavo Boaz
-                                    </Typography>
-
-                                    <h5>Tech-Lead - Instrutor - Mentor</h5>
-                                </CardContent>
-                            </Box>
-
-                            <Box className='back'>
-
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
-                                        Gustavo Boaz
-                                    </Typography>
-                                    <ul className='infos'>
-                                        <p>
-                                        </p>
-                                    </ul>
-                                    <Box className='icons'>
-                                        <h5>Links:</h5>
-                                        <a className='avataricon' href="https://www.linkedin.com/in/gustavoboaz/" target="_blank">
-                                            <LinkedInIcon className='redes' />
-                                        </a>
-                                        <a className='avataricon' href="https://github.com/GustavoBoaz" target="_blank">
-                                            <GitHubIcon className='redes' />
-                                        </a>
-                                    </Box>
-                                </CardContent>
-                            </Box>
-                        </Box>
-                    </Card>
-
-                    {/*Clauber Assis*/}
-                    <Card sx={{ maxWidth: 400 }} className='maincontainer'>
-                        <Box className="card">
-                            <Box className='front'>
-                                <CardMedia className='card-img'
-                                    component="img"
-                                    alt="BinhoPic"
-                                    image="https://cdn.discordapp.com/attachments/966414382747754577/981948401509875712/PAULO_VICTOR_ALMEIDA_DE_SOUSA-removebg-preview.png"
-                                />
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
-                                        Clauber Costa
-                                    </Typography>
-
-                                    <h5>Journey-Lead - Instrutor - Mentor</h5>
-                                </CardContent>
-                            </Box>
-
-                            <Box className='back'>
-
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
-                                        Clauber Costa
-                                    </Typography>
-                                    <ul className='infos'>
-                                        <p>
-
-                                        </p>
-                                    </ul>
-                                    <Box className='icons'>
-                                        <h5>Links:</h5>
-                                        <a className='avataricon' href="https://www.linkedin.com/in/clauber-costa-684381218/" target="_blank">
-                                            <LinkedInIcon className='redes' />
-                                        </a>
-                                        <a className='avataricon' href="https://github.com/ClauberAssis" target="_blank">
-                                            <GitHubIcon className='redes' />
-                                        </a>
-                                    </Box>
-                                </CardContent>
                             </Box>
                         </Box>
                     </Card>
                 </div>
-            
-        </Grid>
-
+            </Grid>
         </>
     );
 }
-
-export default Team;
+export default TeamCopy;

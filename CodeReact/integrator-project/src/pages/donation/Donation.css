@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
+.navbarmenu{
+    height: 80px;
+    display: flex;
+    background-color: transparent; 
+    justify-content: left;
+    align-items: center;
+    position: sticky;
+    padding-top: 10px;
+    padding-left: 40px;
+}   
+
 .page{
     background-color: #E3DFDC;
     background-repeat: no-repeat; 

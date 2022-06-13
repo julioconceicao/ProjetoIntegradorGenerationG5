@@ -14,11 +14,6 @@ h1 {
     font-family: 'Montserrat', sans-serif;
 }
 
-.namefont {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-}
-
 .all-cards {
     display: flex;
     justify-content: center;
@@ -26,24 +21,73 @@ h1 {
 
 }
 
+.maincontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    margin: 20px;
+    border: #333;
+    width: 400px;
+    height: 420px;
+}
+
 .card {
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    transition: all 0.30s ease;
+    cursor: auto;
     margin: 10px;
     border-radius: none;
     box-shadow: 30px;
-    justify-content: space-between;
     justify-content: space-around;
-    
+    border-radius: 5px;
 }
 
 .card:hover {
+
+    transform: rotateY(180deg);
     background-color: #c0cdf1;
-    width: 50;
+    width: 100%;
+
 }
 
-Box .card-img {
+.front {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+}
+
+.back {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: #E2EBC8;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    transform: rotateY(180deg);
+}
+
+.namefont {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+
+.card-img {
     margin-top: none;
-    width: 50%;
-    height: 50%;
+    width: 200px;
+    height: 250px;
 }
 
 .card-img:hover {
@@ -63,92 +107,6 @@ Box .card-img {
     padding: 3px;
 }
 
-.maincontainer {
-
-    display: flex;
-
-    flex-wrap: wrap;
-
-    justify-content: center;
-
-    position: relative;
-
-    margin: 20px;
-
-    border: #333;
-
-    width: 400px;
-
-    height: 420px;
-}
-
-.card {
-    font-family: 'Montserrat', sans-serif;
-
-    align-items: center;
-
-    position: relative;
-
-    width: 100%;
-
-    height: 100%;
-
-    transform-style: preserve-3d;
-
-    transition: all 0.30s ease;
-
-    cursor: auto;
-
-   
-
-    border-radius: 5px;
-
-}
-
-.card:hover {
-
-    transform: rotateY(180deg);
-
-}
-
-.front {
-    font-family: 'Montserrat', sans-serif;
-
-    position: absolute;
-
-    width: 100%;
-
-    height: 100%;
-
-    backface-visibility: hidden;
-
-    background-size: cover;
-
-    color: rgb(0, 0, 0);
-
-}
-
-.back {
-    font-family: 'Montserrat', sans-serif;
-
-    position: absolute;
-
-    width: 100%;
-
-    height: 100%;
-
-    backface-visibility: hidden;
-
-    background-color: #E2EBC8;
-
-    background-size: cover;
-
-    color: rgb(0, 0, 0);
-
-    transform: rotateY(180deg);
-
-}
-
 .infos li {
     font-weight: 700;
     padding: 4px;
@@ -159,12 +117,18 @@ Box .card-img {
     font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-wrap: wrap;
-
     justify-content: last baseline;
     align-items: center;
     padding-bottom: 5px;
 }
+
 .leaders{
     display: flex;
     flex-wrap: wrap;
+}
+
+.tipo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }

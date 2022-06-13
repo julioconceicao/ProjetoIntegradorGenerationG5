@@ -61,11 +61,6 @@ function Login() {
     }
   }, [token, navigate]);
 
-  // function UserTypeRedirect()
-  // if(UserType == Ong)
-  // {
-  //   Ong
-  // }
   return (
     <>
       <Grid container direction='row'>
