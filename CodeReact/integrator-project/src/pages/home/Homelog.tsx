@@ -9,7 +9,6 @@ import useLocalStorage from "react-use-localstorage";
 function Homelog() {
     const [token, setToken] = useLocalStorage('token');
     const [id, setId] = useLocalStorage('id');
-    const [type, setType] = useLocalStorage('type');
 
     let navigate = useNavigate();
 
@@ -19,12 +18,6 @@ function Homelog() {
         alert("Usuário deslogado")
         navigate('/login')
     }  
-
-    useEffect(() => {
-        if (type == 'ONG') {
-          navigate('/ongs');
-        }
-      }, [token, navigate]);
       
     return (
         <>

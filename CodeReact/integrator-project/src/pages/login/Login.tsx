@@ -56,6 +56,12 @@ function Login() {
   }
 
   useEffect(() => {
+    if (type == 'ong') {
+      navigate('/ongs');
+    }
+  }, [token, navigate]);
+
+  useEffect(() => {
     if (token !== '') {
       navigate('/homelog');
     }
