@@ -75,7 +75,7 @@ function Login() {
           <Grid className="alignsidebarohyes">
             <MenuSidebar />
           </Grid>
-          <Box paddingX={21.5}>
+          <Box paddingX={22.7}>
             <form onSubmit={onSubmit}>
               <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos'>Entrar</Typography>
 

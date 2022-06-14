@@ -32,6 +32,7 @@ h1 {
     height: 420px;
 }
 
+
 .card {
     font-family: 'Montserrat', sans-serif;
     align-items: center;
@@ -39,7 +40,7 @@ h1 {
     width: 100px;
     height: 100px;
     transform-style: preserve-3d;
-    transition: all 0.30s ease;
+    transition: all 0.10s ease;
     cursor: auto;
     margin: 10px;
     border-radius: none;
@@ -128,6 +129,12 @@ h1 {
 }
 
 .tipo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.instructors{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
