@@ -2,6 +2,7 @@ import React, { ChangeEvent, useEffect, useState } from "react";
 import { Typography, Box, Grid, Button, TextField } from '@mui/material';
 import MenuSidebar from "../../Components/statics/menuSidebar/MenuSidebar";
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
+import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 import MenuItem from '@material-ui/core/MenuItem';
 import Home from '../../pages/home/Home';
 import "./Ong.css";
@@ -9,8 +10,8 @@ import useLocalStorage from "react-use-localstorage";
 
 const currencies = [
   {
-    value: 'REAL',
-    label: 'kitId',
+    value: '',
+    label: '',
   },
 ];
 
@@ -30,14 +31,13 @@ const currencies = [
             <MenuSidebar />
           </div>
           <div>
-            <TextField
-              id="outlined-select-currency"
-              select
-              label="Select"
+            <TextField   
+              select   
               value={currency}
               onChange={handleChange}
               helperText="Please select your Kit"
               variant="outlined"
+              className="select"
             >
               {currencies.map((option) => (
                 <MenuItem key={option.value} value={option.value}>
