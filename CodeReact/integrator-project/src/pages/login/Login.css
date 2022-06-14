@@ -3,11 +3,11 @@
     text-decoration: none !important;
     color:#C3935E !important;
  }
- .textos{
+.textos{
     font-weight: bold !important;
  }
  
- .imagem{
+.imagem{
     background-image: url(https://i.imgur.com/mLC0R5i.jpg) !important;
     background-repeat: no-repeat !important;
     width: 100vh !important;
@@ -17,12 +17,12 @@
     padding-right: 50% !important ;
  }
  
- .text-decorator-none{
+.text-decorator-none{
      text-decoration: none;
 
  }
 
- .text-decorator-none Button {
+.text-decorator-none Button {
      width: 100%;
  }
 
@@ -34,7 +34,7 @@ display: 'flex';
 flex-wrap: 'wrap';
 margin: 100px;
 margin-top: 100px;
-width: 352px;
+width: 336px;
 }
 .alignsidebarohyes{
     padding-left:30px;

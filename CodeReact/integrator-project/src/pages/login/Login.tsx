@@ -48,12 +48,18 @@ function Login() {
   async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
     e.preventDefault();
     try {
-      await login(`/api/Authentication`, loginDTO, setToken, setEmail);
+      await login(`/api/Authentication`, loginDTO, setToken, setEmail, setType);
       alert('Logado');
     } catch (error) {
       alert('Email ou senha incorretos');
     }
   }
+
+  useEffect(() => {
+    if (type == 'ong') {
+      navigate('/ongs');
+    }
+  }, [token, navigate]);
 
   useEffect(() => {
     if (token !== '') {

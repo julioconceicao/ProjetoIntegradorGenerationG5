@@ -1,29 +1,54 @@
 import React, { ChangeEvent, useEffect, useState } from "react";
 import { Typography, Box, Grid, Button, TextField } from '@mui/material';
 import MenuSidebar from "../../Components/statics/menuSidebar/MenuSidebar";
-import { Link, useNavigate } from 'react-router-dom';
+import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
+import MenuItem from '@material-ui/core/MenuItem';
+import Home from '../../pages/home/Home';
 import "./Ong.css";
 import useLocalStorage from "react-use-localstorage";
 
-function Ong() {
+const currencies = [
+  {
+    value: 'REAL',
+    label: 'kitId',
+  },
+];
 
-  let history = useNavigate();
-  const [token, setToken] = useLocalStorage('token');
-  const [email, setEmail] = useLocalStorage('email');
-
+  function Ong() {
+    const [currency, setCurrency] = React.useState('EUR');
   
-
-  return (
-    <>
-    <div>
-      <MenuSidebar />
-      <Grid container direction='row' justifyContent='center' alignItems='center'> 
-        <Grid xs={6}>          
-        <Grid xs={6}></Grid>
-      </Grid>
-      </Grid>
-      </div>
-    </>
-  );
-}
-export default Ong;
+    const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+      setCurrency(event.target.value);
+    };
+    return (
+      <>
+        <Grid item xs={12} style={{
+          background: `url(https://i.imgur.com/X7h4cHt.png)`,
+          backgroundRepeat: 'no-repeat', width: '100%', height: '100vh', backgroundSize: 'cover'
+        }}>
+          <div className="navbarmenu">
+            <MenuSidebar />
+          </div>
+          <div>
+            <TextField
+              id="outlined-select-currency"
+              select
+              label="Select"
+              value={currency}
+              onChange={handleChange}
+              helperText="Please select your Kit"
+              variant="outlined"
+            >
+              {currencies.map((option) => (
+                <MenuItem key={option.value} value={option.value}>
+                  {option.label}
+                </MenuItem>
+              ))}
+            </TextField>
+          </div>  
+        </Grid>
+      </>
+    );
+  }
+  export default Ong;
+ 

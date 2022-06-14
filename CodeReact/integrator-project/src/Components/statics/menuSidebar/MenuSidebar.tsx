@@ -88,11 +88,13 @@ export default function TemporaryDrawer() {
                 </ListItem>
               ))}
               </Link>
-              {[''].map((text) => (
+              <Link className='Sidebar' to='/ongs'>
+              {['Ongs'].map((text) => (
                 <ListItem button key={text}>
                   <ListItemText primary={text} />
                 </ListItem>
               ))}
+              </Link>
               {[''].map((text) => (
                 <ListItem button key={text}>
                   <ListItemText primary={text} />
