@@ -9,7 +9,7 @@ function Contact() {
     return (
 
         <Grid item xs={12} style={{
-            background: `url(https://imgur.com/cps58Bf.jpg)`,
+            background: `url(https://i.imgur.com/LzWtT0n.jpg)`,
             backgroundRepeat: 'no-repeat', width: '100%', height: '100vh', backgroundSize: 'cover'
         }}>
 
