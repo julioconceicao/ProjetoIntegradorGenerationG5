@@ -21,7 +21,7 @@ function Team() {
             }}>
                 <MenuSidebar />
 
-                <h1 className='equipe'>Equipe Desenvolvedora - Planeta Solidário</h1>
+                <h1 className='team-title'>Equipe Desenvolvedora - Planeta Solidário</h1>
                 <div className='all-cards'>
 
                     {/* João Victor*/}
@@ -371,98 +371,100 @@ function Team() {
                         </Box>
                     </Card>
 
-<Typography className="tipo">
-Escreve aí pa nois ve
 
-</Typography>
+                 
+                        <div className='instructors'>
+                            <h1 className='equipe'>Orientadores - Generation</h1>
 
-                    {/* Gustavo Boaz*/}
-                    <Card sx={{ maxWidth: 400 }} className='maincontainer'>
-                        <Box className="card">
-                            <Box className='front'>
-                                <CardMedia className='card-img'
-                                    component="img"
-                                    alt="BoazPic"
-                                    image="https://cdn.discordapp.com/attachments/966414382747754577/981948401509875712/PAULO_VICTOR_ALMEIDA_DE_SOUSA-removebg-preview.png"
-                                />
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
-                                        Gustavo Boaz
-                                    </Typography>
 
-                                    <h5>Tech-Lead - Instrutor - Mentor</h5>
-                                </CardContent>
-                            </Box>
+                            {/* Gustavo Boaz*/}
+                            <Card sx={{ maxWidth: 400 }} className='maincontainer'>
+                                <Box className="card">
+                                    <Box className='front'>
+                                        <CardMedia className='card-img'
+                                            component="img"
+                                            alt="BoazPic"
+                                            image="https://cdn.discordapp.com/attachments/966414382747754577/981948401509875712/PAULO_VICTOR_ALMEIDA_DE_SOUSA-removebg-preview.png"
+                                        />
+                                        <CardContent>
+                                            <Typography gutterBottom variant="h5" component="div" className='namefont'>
+                                                Gustavo Boaz
+                                            </Typography>
 
-                            <Box className='back'>
-
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
-                                        Gustavo Boaz
-                                    </Typography>
-                                    <ul className='infos'>
-                                        <p>
-                                        </p>
-                                    </ul>
-                                    <Box className='icons'>
-                                        <h5>Links:</h5>
-                                        <a className='avataricon' href="https://www.linkedin.com/in/gustavoboaz/" target="_blank">
-                                            <LinkedInIcon className='redes' />
-                                        </a>
-                                        <a className='avataricon' href="https://github.com/GustavoBoaz" target="_blank">
-                                            <GitHubIcon className='redes' />
-                                        </a>
+                                            <h5>Tech-Lead - Instrutor - Mentor</h5>
+                                        </CardContent>
                                     </Box>
-                                </CardContent>
-                            </Box>
-                        </Box>
-                    </Card>
 
-                    {/*Clauber Assis*/}
-                    <Card sx={{ maxWidth: 400 }} className='maincontainer'>
-                        <Box className="card">
-                            <Box className='front'>
-                                <CardMedia className='card-img'
-                                    component="img"
-                                    alt="BinhoPic"
-                                    image="https://cdn.discordapp.com/attachments/966414382747754577/981948401509875712/PAULO_VICTOR_ALMEIDA_DE_SOUSA-removebg-preview.png"
-                                />
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
-                                        Clauber Costa
-                                    </Typography>
+                                    <Box className='back'>
 
-                                    <h5>Journey-Lead - Instrutor - Mentor</h5>
-                                </CardContent>
-                            </Box>
-
-                            <Box className='back'>
-
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
-                                        Clauber Costa
-                                    </Typography>
-                                    <ul className='infos'>
-                                        <p>
-
-                                        </p>
-                                    </ul>
-                                    <Box className='icons'>
-                                        <h5>Links:</h5>
-                                        <a className='avataricon' href="https://www.linkedin.com/in/clauber-costa-684381218/" target="_blank">
-                                            <LinkedInIcon className='redes' />
-                                        </a>
-                                        <a className='avataricon' href="https://github.com/ClauberAssis" target="_blank">
-                                            <GitHubIcon className='redes' />
-                                        </a>
+                                        <CardContent>
+                                            <Typography gutterBottom variant="h5" component="div" className='namefont'>
+                                                Gustavo Boaz
+                                            </Typography>
+                                            <ul className='infos'>
+                                                <p>
+                                                </p>
+                                            </ul>
+                                            <Box className='icons'>
+                                                <h5>Links:</h5>
+                                                <a className='avataricon' href="https://www.linkedin.com/in/gustavoboaz/" target="_blank">
+                                                    <LinkedInIcon className='redes' />
+                                                </a>
+                                                <a className='avataricon' href="https://github.com/GustavoBoaz" target="_blank">
+                                                    <GitHubIcon className='redes' />
+                                                </a>
+                                            </Box>
+                                        </CardContent>
                                     </Box>
-                                </CardContent>
-                            </Box>
-                        </Box>
-                    </Card>
+                                </Box>
+                            </Card>
+
+                            {/*Clauber Assis*/}
+                            <Card sx={{ maxWidth: 400 }} className='maincontainer'>
+                                <Box className="card">
+                                    <Box className='front'>
+                                        <CardMedia className='card-img'
+                                            component="img"
+                                            alt="BinhoPic"
+                                            image="https://cdn.discordapp.com/attachments/966414382747754577/981948401509875712/PAULO_VICTOR_ALMEIDA_DE_SOUSA-removebg-preview.png"
+                                        />
+                                        <CardContent>
+                                            <Typography gutterBottom variant="h5" component="div" className='namefont'>
+                                                Clauber Costa
+                                            </Typography>
+
+                                            <h5>Journey-Lead - Instrutor - Mentor</h5>
+                                        </CardContent>
+                                    </Box>
+
+                                    <Box className='back'>
+
+                                        <CardContent>
+                                            <Typography gutterBottom variant="h5" component="div" className='namefont'>
+                                                Clauber Costa
+                                            </Typography>
+                                            <ul className='infos'>
+                                                <p>
+
+                                                </p>
+                                            </ul>
+                                            <Box className='icons'>
+                                                <h5>Links:</h5>
+                                                <a className='avataricon' href="https://www.linkedin.com/in/clauber-costa-684381218/" target="_blank">
+                                                    <LinkedInIcon className='redes' />
+                                                </a>
+                                                <a className='avataricon' href="https://github.com/ClauberAssis" target="_blank">
+                                                    <GitHubIcon className='redes' />
+                                                </a>
+                                            </Box>
+                                        </CardContent>
+                                    </Box>
+                                </Box>
+                            </Card>
+                        </div>
+                    
                 </div>
-            
-        </Grid>
+            </Grid>
 
         </>
     );
