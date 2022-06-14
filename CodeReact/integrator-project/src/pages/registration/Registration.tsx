@@ -56,7 +56,10 @@ function Registration() {
         if (confirmPassword === userRegisterDTO.password) {
             try {
                 await registerUser(`/api/Users`, userRegisterDTO, setUserResult)
-                alert('Usuario cadastrado com sucesso')
+                alert('Usuario cadastrado com sucesso'); 
+                {
+                    navigate('/login')
+                }
             } catch (error) {
                 alert(error)
                 alert('erro no formulário, tente novamente!')
@@ -142,11 +145,9 @@ function Registration() {
                                 </Link>
                             </div>
                             <Box marginY={2} textAlign='center'>
-                                <Link to='/Login'>
-                                    <Button type='submit' variant='contained' color='primary' className="btnCadastrar">
-                                        Cadastrar
-                                    </Button>
-                                </Link>
+                                <Button type='submit' variant='contained' color='primary' className="btnCadastrar">
+                                    Cadastrar
+                                </Button>
                             </Box>
                         </Grid>
                     </form>
