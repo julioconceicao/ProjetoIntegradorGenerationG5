@@ -4,18 +4,13 @@
     height: 80px;
     display: flex;
     background-color: transparent; 
-    justify-content: left;
     align-items: center;
     position: sticky;
-    padding-top: 10px;
-    padding-left: 40px;
 }   
 .navbarbutton{
     display: flex;
     width: 550px;
     background-color: transparent;
-    padding-left: 905px;
-    padding-top: 10px;
 }
 .navbarmenu button{
     border: none;

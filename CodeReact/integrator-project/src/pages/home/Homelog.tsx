@@ -1,5 +1,5 @@
-import React, {useEffect} from "react";
-import { Link,useNavigate } from 'react-router-dom';
+import React, { useEffect } from "react";
+import { Link, useNavigate } from 'react-router-dom';
 import { login } from "../../services/Services"
 import { Typography, Box, Grid, Button } from '@material-ui/core';
 import "./Home.css";
@@ -17,8 +17,8 @@ function Homelog() {
         setId('')
         alert("Usuário deslogado")
         navigate('/login')
-    }  
-      
+    }
+
     return (
         <>
             <Grid item xs={12} style={{
@@ -30,10 +30,10 @@ function Homelog() {
                     <MenuSidebar />
 
                     <div className="navbarbutton">
-                            <Link to={'/Order'}>
-                            <button>Carrinho</button>
-                            </Link>
-                            <button onClick={goLogout}> Logout</button>
+                        <Link to={'/Order'}>
+                            <button>Doações</button>
+                        </Link>
+                        <button onClick={goLogout}> Logout</button>
                     </div>
                 </div>
                 <div>
