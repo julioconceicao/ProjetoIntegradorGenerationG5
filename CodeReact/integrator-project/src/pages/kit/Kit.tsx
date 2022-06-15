@@ -11,9 +11,9 @@ import MenuSidebar from "../../Components/statics/menuSidebar/MenuSidebar";
 
 function Kit() {
     return (
-        <>        
-            <div className="navbarmenu"> 
-            <div className='body'>             
+        <>
+            <div className='body'>   
+            <div className="navbarmenu">             
             <MenuSidebar/>              
                 <div className='all-cards'>
                     {/*Cesta Básica*/}
