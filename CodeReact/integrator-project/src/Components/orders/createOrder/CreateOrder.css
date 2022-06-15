@@ -3,49 +3,44 @@
 .donation {
     margin: auto;
     display: flex;
-    flex-direction: row;
-   
+    flex-direction: row;   
     align-items: center;
+    justify-content: center;
+    justify-items: center;
     font-size: 100px;
 }
 
 .doar {
     font-family: 'Montserrat', sans-serif;
-    margin-top: 100px;
+    color: #000000;
+    margin: 200px;
     display: flex;
     flex-direction: row;
     justify-content: center;  
 }
 
-.escolher {
-    font-size: 1000px;
+.alinhar{
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    
-
-}
-
-.FormHelperText {
-font-size: 100px;
+    align-items: center;
+    padding: 20px;
 }
 
 .doacao {
     background-color: rgba(255, 255, 255, 0.857);
     border-radius: 5px;
-    width: 10px;
-    height: 230px;
+    width: 150px;
+    height: 250px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-
-    
+    align-items: center;
 }
 
 .btnCadastrar2 {
     background-color: #8A6035 !important;
     font-weight: bold !important;
-  margin: 100px;
+    margin: 100px;
+    padding: 50px;
 }
 
 .btnCadastrar2:hover {
