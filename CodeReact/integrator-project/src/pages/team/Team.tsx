@@ -384,7 +384,7 @@ function Team() {
                                         <CardMedia className='card-img'
                                             component="img"
                                             alt="BoazPic"
-                                            image="https://cdn.discordapp.com/attachments/966414382747754577/981948401509875712/PAULO_VICTOR_ALMEIDA_DE_SOUSA-removebg-preview.png"
+                                            image="https://cdn.discordapp.com/attachments/966414382747754577/986442712704237568/avatarboaz-removebg-preview.png"
                                         />
                                         <CardContent>
                                             <Typography gutterBottom variant="h5" component="div" className='namefont'>
@@ -403,6 +403,7 @@ function Team() {
                                             </Typography>
                                             <ul className='infos'>
                                                 <p>
+                                                    "Nem tudo são flores"
                                                 </p>
                                             </ul>
                                             <Box className='icons'>
@@ -426,7 +427,7 @@ function Team() {
                                         <CardMedia className='card-img'
                                             component="img"
                                             alt="BinhoPic"
-                                            image="https://cdn.discordapp.com/attachments/966414382747754577/981948401509875712/PAULO_VICTOR_ALMEIDA_DE_SOUSA-removebg-preview.png"
+                                            image="https://cdn.discordapp.com/attachments/966414382747754577/986442751266664448/AvatarClaubinho-removebg-preview.png"
                                         />
                                         <CardContent>
                                             <Typography gutterBottom variant="h5" component="div" className='namefont'>
@@ -445,7 +446,7 @@ function Team() {
                                             </Typography>
                                             <ul className='infos'>
                                                 <p>
-
+                                                    Está nos devendo um açaí!!
                                                 </p>
                                             </ul>
                                             <Box className='icons'>
