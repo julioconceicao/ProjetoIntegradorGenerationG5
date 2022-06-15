@@ -11,6 +11,7 @@
     display: flex;
     width: 550px;
     background-color: transparent;
+    padding-left: 80%;
 }
 .navbarmenu button{
     border: none;
