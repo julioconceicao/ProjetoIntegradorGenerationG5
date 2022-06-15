@@ -112,6 +112,14 @@ function Registration() {
                             onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
                             id='adress' label='Endereço' variant='outlined' name='adress' margin='normal' fullWidth />
 
+<<<<<<< HEAD
+=======
+                        <TextField
+                            value={userRegisterDTO.NameAgent}
+                            onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
+                            id='NameAgent' label='NomeAgente' variant='outlined' name='NameAgent' margin='normal' fullWidth />
+
+>>>>>>> 25fd6b507ee852acf4fdd40b86c6217e91db95fe
                         <FormControl
                             onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
                             variant="outlined">
@@ -125,6 +133,7 @@ function Registration() {
                                     id: 'outlined-age-native-simple',
                                 }}
                             >
+<<<<<<< HEAD
 
                                 <TextField
                                     value={userRegisterDTO.NameAgent}
@@ -132,6 +141,8 @@ function Registration() {
                                     id='NameAgent' label='Nome do agente' variant='outlined' name='NameAgent' margin='normal' fullWidth />
 
 
+=======
+>>>>>>> 25fd6b507ee852acf4fdd40b86c6217e91db95fe
                                 <option aria-label="None" value="" />
                                 <option value="USER">Usuário</option>
                                 <option value="ONG">Ong</option>

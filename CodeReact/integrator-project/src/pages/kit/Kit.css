@@ -32,10 +32,13 @@ h1 {
 }
 
 .all-cards {
+    padding-top: 10%;
+    padding-left: 17%;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    height: 950px !important;
+    align-items: flex-end;
+    flex-wrap: row;    
+    justify-content: center;    
+    height: 950px ;
 }
 
 .card {
@@ -124,11 +127,10 @@ h1 {
 }
 
 .btn{
-    display: flex;    
-    align-items: flex-start;  
-    justify-content: center;
-    border: none;
-    padding: none; 
+    padding-left: 100px;
+    align-items: end;  
+    justify-content: end;  
+    align-self: baseline;  
     transition: background 0.3s;
     border-radius: 5px;
 }
