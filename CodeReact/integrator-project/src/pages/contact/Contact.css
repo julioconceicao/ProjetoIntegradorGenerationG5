@@ -26,7 +26,7 @@
 .navbarbutton100{
     display: flex;
     width: 550px;
-    background-color: transparent;
+    background-color:  ;
     padding-left: 80%;
     padding-top: 10px;
 }
@@ -46,4 +46,23 @@
 }
 .alinharcontato{
     padding-left: 30%;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+
+
+#telefone{
+    background-color: white;
+    border-radius: 5px;
+}
+
+#email{
+    background-color: white;
+    border-radius: 5px;
+}
+
+#mandesuamensagem{
+    background-color: white;
+    border-radius: 5px;
 }
