@@ -26,6 +26,7 @@ function Login() {
       email: "",
       password: "",
       showPassword: false,
+      type: "",
     }
   );
   const handleChange = (prop: keyof UserLogin) => (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -56,10 +57,10 @@ function Login() {
   }
 
   useEffect(() => {
-    if (type == 'ong') {
+    if (type == 'ONG') {
       navigate('/ongs');
     }
-  }, [token, navigate]);
+  }, [type, navigate]);
 
   useEffect(() => {
     if (token !== '') {

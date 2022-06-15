@@ -9,13 +9,13 @@ function Contact() {
     return (
 
         <Grid item xs={12} style={{
-            background: `url(https://imgur.com/cps58Bf.jpg)`,
+            background: `url(https://i.imgur.com/LzWtT0n.jpg)`,
             backgroundRepeat: 'no-repeat', width: '100%', height: '100vh', backgroundSize: 'cover'
         }}>
 
-            <div className="navbarmenu">
+            <div className="navbarmenu100">
                 <MenuSidebar />
-                <div className="navbarbutton">
+                <div className="navbarbutton100">
                     <Link to='/Login'>
                         <button> Login</button>
                     </Link>
@@ -24,9 +24,8 @@ function Contact() {
                     </Link>
                 </div>
             </div>
-            <Grid justifyContent='center' alignItems='center'>
+            <div className='alinharcontato'>
                 <Grid xs={6}>
-                    <Box paddingX={20}>
                         <form>
                             <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center'>Contato</Typography>
 
@@ -45,9 +44,8 @@ function Contact() {
                                 </Button>
                             </Box>
                         </form>
-                    </Box>
                 </Grid>
-            </Grid>
+            </div>
         </Grid>
     );
 }
