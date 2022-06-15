@@ -56,7 +56,7 @@ function Registration() {
         if (confirmPassword === userRegisterDTO.password) {
             try {
                 await registerUser(`/api/Users`, userRegisterDTO, setUserResult)
-                alert('Usuario cadastrado com sucesso'); 
+                alert('Usuario cadastrado com sucesso');
                 {
                     navigate('/login')
                 }
@@ -112,7 +112,12 @@ function Registration() {
                             onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
                             id='adress' label='Endereço' variant='outlined' name='adress' margin='normal' fullWidth />
 
-<FormControl
+                        <TextField
+                            value={userRegisterDTO.NameAgent}
+                            onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
+                            id='NameAgent' label='NomeAgente' variant='outlined' name='NameAgent' margin='normal' fullWidth />
+
+                        <FormControl
                             onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
                             variant="outlined">
                             <InputLabel htmlFor="outlined-age-native-simple">Tipo</InputLabel>
@@ -125,13 +130,6 @@ function Registration() {
                                     id: 'outlined-age-native-simple',
                                 }}
                             >
-
-                        <TextField
-                            value={userRegisterDTO.NameAgent}
-                            onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                            id='NameAgent' label='Nome do agente' variant='outlined' name='NameAgent' margin='normal' fullWidth />
-
-
                                 <option aria-label="None" value="" />
                                 <option value="USER">Usuário</option>
                                 <option value="ONG">Ong</option>
