@@ -17,7 +17,7 @@ function Home() {
                 <div className="navbarmenu">
                     <MenuSidebar />
                     <div className="navbarbutton">
-                        <Link to='/Login'>
+                        <Link to='/login'>
                             <button> Login</button>
                         </Link>
                         <Link to='/Cadastro'>
@@ -26,6 +26,7 @@ function Home() {
                     </div>
                 </div>
                 <div>
+                    
                     <img className="logo" src="https://imgur.com/fqAed38.png" alt="" width="250" />
                 </div>
             </Grid>

@@ -10,8 +10,14 @@ import MenuSidebar from "../../Components/statics/menuSidebar/MenuSidebar";
 
 function Kit() {
     return (
+<<<<<<< HEAD
         <>                     
             <div className='body'>             
+=======
+        <>
+            <div className='body'>   
+            <div className="navbarmenu">             
+>>>>>>> 07934c71d3802e78a30bd56d19d5da76a164bd15
             <MenuSidebar/>              
                 <div className='all-cards'>
                     {/*Cesta Básica*/}
