@@ -8,6 +8,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import MenuIcon from '@material-ui/icons/Menu';
 import HomeIcon from '@material-ui/icons/Home';
+import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 import "./MenuSidebar.css";
 import { IconButton, Typography } from '@material-ui/core';
 import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
@@ -89,8 +90,9 @@ export default function TemporaryDrawer() {
               ))}
               </Link>
               <Link className='Sidebar' to='/ongs'>
-              {['Ongs'].map((text) => (
+                {['Doaões recebidas'].map((text) => (
                 <ListItem button key={text}>
+                  <ListItemIcon> <VolunteerActivismIcon /></ListItemIcon>
                   <ListItemText primary={text} />
                 </ListItem>
               ))}
