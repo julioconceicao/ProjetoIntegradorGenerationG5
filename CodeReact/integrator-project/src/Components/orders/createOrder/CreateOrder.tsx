@@ -1,12 +1,12 @@
 import React, { ChangeEvent, useEffect, useState } from 'react'
-import { Container, Typography, TextField, Button, Select, InputLabel, FormControl, Grid, FormHelperText, MenuItem } from "@material-ui/core"
-import { useNavigate, useParams } from 'react-router-dom';
+import { Container, Typography, Button, Select, FormControl, Grid, FormHelperText, MenuItem } from "@material-ui/core"
+import { useNavigate } from 'react-router-dom';
+import MenuSidebar from "../../statics/menuSidebar/MenuSidebar";
 import useLocalStorage from 'react-use-localstorage';
 import './CreateOrder.css';
 import Kit from '../../../models/Kit';
 import Ong from '../../../models/Ong';
-import { search, searchId, post, put, } from '../../../services/Services';
-import Order from '../../../models/Order';
+import { search, searchId, post } from '../../../services/Services';
 import OrderDTO from '../../../models/dtos/OrderDTO';
 
 function CreateOrder() {
@@ -14,14 +14,14 @@ function CreateOrder() {
     let navigate = useNavigate();
     const [token, setToken] = useLocalStorage('token');
     const [kits, setKits] = useState<Kit[]>([]);
-    const [ongs, setOngs] = useState<Ong[]>([]);                            
+    const [ongs, setOngs] = useState<Ong[]>([]);
 
     const [ong, setOng] = useState<Ong>({
         id: 0,
-        email:'',
-        password:'',
-        NameAgent:'',
-        type:'',
+        email: '',
+        password: '',
+        NameAgent: '',
+        type: '',
     });
 
     const [kit, setKit] = useState<Kit>({
@@ -69,7 +69,7 @@ function CreateOrder() {
         })
     }
 
-    async function getOngs(){
+    async function getOngs() {
         await search("/api/Users", setOngs, {
             headers: {
                 'Authorization': token
@@ -89,60 +89,69 @@ function CreateOrder() {
 
         back()
     }
-    
+
     function back() {
         navigate('/thanks')
     }
 
     return (
+
+
         <div className='donation' style={{
             background: `url(https://i.imgur.com/uWxFuxx.jpg)`,
-            backgroundRepeat: 'no-repeat', width: '100%', height: '100vh', backgroundSize: 'cover'}} >
-        <Container maxWidth="sm" className='doacao'>
-             <Typography variant="h3" color="textSecondary" component="h1" align="center" className='doar'>Doar</Typography>
-             <Grid className="alinhar">
-            <form onSubmit={onSubmit}>
-                <FormControl>
-                    <Select 
-                        labelId="demo-simple-select-helper-label"
-                        id="demo-simple-select-helper"
-                        onChange={(e) => searchId(`/api/Kit/id/${e.target.value}`, setKit, {
-                            headers: {
-                                'Authorization': token
-                            }
-                        })}>
-                        {
-                            kits.map(unit => (
-                                <MenuItem value={unit.id}>{unit.name}</MenuItem>
-                            ))
-                        }
-                    </Select>
-                    
-                    <FormHelperText>Escolha o Kit</FormHelperText> 
-                   
-                    <Select
-                        labelId="demo-simple-select-helper-label"
-                        id="demo-simple-select-helper"
-                        onChange={(e) => search(`/api/Users/id/${e.target.value}`, setOng, {
-                            headers: {
-                                'Authorization': token
-                            }
-                        })}>    
-                            {   
-                                ongs.map(unit => (
-                                    <MenuItem value={unit.id}>{unit.name}</MenuItem>
-                                ))
-                            }
-                    </Select>
-                    <FormHelperText>Escolha a ONG</FormHelperText>                                        
-                    <Button type="submit" variant="contained" color="primary" className='btnCadastrar2'>
-                        Finalizar
-                    </Button>
-                </FormControl>
-            </form>
+            backgroundRepeat: 'no-repeat', width: '100%', height: '100vh', backgroundSize: 'cover'
+        }} >
+            <Grid className="align">
+                <MenuSidebar />
             </Grid>
-        </Container>
-        </div>
+
+            <Container maxWidth="sm" className='doacao'>
+                <Typography variant="h3" color="textSecondary" component="h1" align="center" className='doar'>Doar</Typography>
+                <Grid className="alinhar">
+
+                    <form onSubmit={onSubmit}>
+                        <FormControl>
+                            <Select
+                                labelId="demo-simple-select-helper-label"
+                                id="demo-simple-select-helper"
+                                onChange={(e) => searchId(`/api/Kit/id/${e.target.value}`, setKit, {
+                                    headers: {
+                                        'Authorization': token
+                                    }
+                                })}>
+                                {
+                                    kits.map(unit => (
+                                        <MenuItem value={unit.id}>{unit.name}</MenuItem>
+                                    ))
+                                }
+                            </Select>
+
+                            <FormHelperText>Escolha o Kit</FormHelperText>
+
+                            <Select
+                                labelId="demo-simple-select-helper-label"
+                                id="demo-simple-select-helper"
+                                onChange={(e) => search(`/api/Users/id/${e.target.value}`, setOng, {
+                                    headers: {
+                                        'Authorization': token
+                                    }
+                                })}>
+                                {
+                                    ongs.map(unit => (
+                                        <MenuItem value={unit.id}>{unit.name}</MenuItem>
+                                    ))
+                                }
+                            </Select>
+                            <FormHelperText>Escolha a ONG</FormHelperText>
+                            <Button type="submit" variant="contained" color="primary" className='btnCadastrar2'>
+                                Finalizar
+                            </Button>
+                        </FormControl>
+                    </form>
+                </Grid>
+            </Container>
+        </div >
+
     )
 }
 export default CreateOrder;

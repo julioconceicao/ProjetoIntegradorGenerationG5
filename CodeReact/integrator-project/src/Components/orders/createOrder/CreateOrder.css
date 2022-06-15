@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
+.align{
+    flex-wrap: wrap ;
+    justify-content: flex-end ;
+    align-items: flex-end ; 
+
+}
+
 .donation {
     margin: auto;
     display: flex;
@@ -50,4 +57,9 @@
     -webkit-filter: drop-shadow(1px 1px 1px #d3a77b);
     filter: drop-shadow(1px 1px 1px #000000);
     opacity: 2000;
+}
+
+.align{
+    padding-left:30px;
+    padding-top: 10px;
 }
