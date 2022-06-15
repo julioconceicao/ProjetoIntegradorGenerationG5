@@ -34,7 +34,7 @@ display: 'flex';
 flex-wrap: 'wrap';
 margin: 100px;
 margin-top: 100px;
-width: 336px;
+width: 336px !important;
 }
 .alignsidebarohyes{
     padding-left:30px;

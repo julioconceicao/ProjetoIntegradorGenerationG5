@@ -10,24 +10,8 @@
 }
 
 .doar {
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;  
-}
-
-.escolher {
-    font-size: 1000px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
-
-}
-
-.FormHelperText {
-font-size: 100px;
+    font-family: 'Montserrat', sans-serif  !important;
+    background-color: rgba(255, 255, 255, 0.857);
 }
 
 .doacao {
@@ -37,9 +21,7 @@ font-size: 100px;
     height: 230px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-
-    
+    justify-content: center;  
 }
 
 .btnCadastrar2 {
