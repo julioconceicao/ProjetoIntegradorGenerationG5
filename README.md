@@ -33,7 +33,7 @@
 
 ## About The Project
 
-![Screen Shot](images/screenshot.png)
+![Screen Shot](https://cdn.discordapp.com/attachments/966414382747754577/986665187899768912/unknown.png)
 
 EN. An e-commerce that facilitates the donation process for NGOs through the purchase of kits already predefined by the store, which in turn will be distributed according to the needs of the beneficiaries.
 
