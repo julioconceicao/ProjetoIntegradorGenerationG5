@@ -27,7 +27,7 @@ function Contact() {
             <div className='alinharcontato'>
                 <Grid xs={6}>
                         <form>
-                            <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center'>Contato</Typography>
+                            <Typography variant='h3' id='title' component='h3' align='center'>Contato</Typography>
 
                             <TextField
                                 id='telefone' label='Telefone:' variant='outlined' name='telefone' margin='normal' fullWidth />
