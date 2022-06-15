@@ -8,7 +8,6 @@ import MenuSidebar from "../../Components/statics/menuSidebar/MenuSidebar";
 
 
 function Home() {
-
     return (
         <>
             <Grid item xs={12} style={{
@@ -16,11 +15,9 @@ function Home() {
                 backgroundRepeat: 'no-repeat', width: '100%', height: '100vh', backgroundSize: 'cover'
             }}>
                 <div className="navbarmenu">
-
                     <MenuSidebar />
-
                     <div className="navbarbutton">
-                        <Link to='/Login'>
+                        <Link to='/login'>
                             <button> Login</button>
                         </Link>
                         <Link to='/Cadastro'>
@@ -29,6 +26,7 @@ function Home() {
                     </div>
                 </div>
                 <div>
+                    
                     <img className="logo" src="https://imgur.com/fqAed38.png" alt="" width="250" />
                 </div>
             </Grid>

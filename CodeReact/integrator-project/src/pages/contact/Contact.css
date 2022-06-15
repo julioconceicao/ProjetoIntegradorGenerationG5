@@ -13,7 +13,7 @@
     font-size: x-large;
     text-decoration: none;
 }
-.navbarmenu{
+.navbarmenu100{
     height: 80px;
     display: flex;
     background-color: transparent; 
@@ -23,14 +23,14 @@
     padding-top: 10px;
     padding-left: 40px;
 }   
-.navbarbutton{
+.navbarbutton100{
     display: flex;
     width: 550px;
     background-color: transparent;
-    padding-left: 905px;
+    padding-left: 80%;
     padding-top: 10px;
 }
-.navbarmenu button{
+.navbarmenu100 button{
     border: none;
     background-color: transparent;
     font-family: 'Montserrat', sans-serif;
@@ -43,4 +43,7 @@
 .login {
     background-color: #875e35 !important;
     font-weight: bold !important;
+}
+.alinharcontato{
+    padding-left: 30%;
 }

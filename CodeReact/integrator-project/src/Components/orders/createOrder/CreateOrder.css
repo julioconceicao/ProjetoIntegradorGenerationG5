@@ -3,31 +3,53 @@
 .donation {
     margin: auto;
     display: flex;
-    flex-direction: row;
-   
+    flex-direction: row;   
     align-items: center;
+    justify-content: center;
+    justify-items: center;
     font-size: 100px;
 }
 
 .doar {
+<<<<<<< HEAD
     font-family: 'Montserrat', sans-serif  !important;
     background-color: rgba(255, 255, 255, 0.857);
-}
-
-.doacao {
-    background-color: rgba(255, 255, 255, 0.857);
-    border-radius: 5px;
-    width: 10px;
-    height: 230px;
+=======
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    margin: 200px;
     display: flex;
     flex-direction: row;
     justify-content: center;  
 }
 
+.alinhar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+>>>>>>> 07934c71d3802e78a30bd56d19d5da76a164bd15
+}
+
+.doacao {
+    background-color: rgba(255, 255, 255, 0.857);
+    border-radius: 5px;
+    width: 150px;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+<<<<<<< HEAD
+    justify-content: center;  
+=======
+    align-items: center;
+>>>>>>> 07934c71d3802e78a30bd56d19d5da76a164bd15
+}
+
 .btnCadastrar2 {
     background-color: #8A6035 !important;
     font-weight: bold !important;
-  margin: 100px;
+    margin: 100px;
+    padding: 50px;
 }
 
 .btnCadastrar2:hover {

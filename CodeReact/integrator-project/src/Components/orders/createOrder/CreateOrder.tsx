@@ -1,5 +1,5 @@
 import React, { ChangeEvent, useEffect, useState } from 'react'
-import { Container, Typography, TextField, Button, Select, InputLabel, FormControl, FormHelperText, MenuItem } from "@material-ui/core"
+import { Container, Typography, TextField, Button, Select, InputLabel, FormControl, Grid, FormHelperText, MenuItem } from "@material-ui/core"
 import { useNavigate, useParams } from 'react-router-dom';
 import useLocalStorage from 'react-use-localstorage';
 import './CreateOrder.css';
@@ -100,6 +100,7 @@ function CreateOrder() {
             backgroundRepeat: 'no-repeat', width: '100%', height: '100vh', backgroundSize: 'cover'}} >
         <Container maxWidth="sm" className='doacao'>
              <Typography variant="h3" color="textSecondary" component="h1" align="center" className='doar'>Doar</Typography>
+             <Grid className="alinhar">
             <form onSubmit={onSubmit}>
                 <FormControl>
                     <Select 
@@ -116,6 +117,7 @@ function CreateOrder() {
                             ))
                         }
                     </Select>
+                    
                     <FormHelperText>Escolha o Kit</FormHelperText> 
                    
                     <Select
@@ -138,6 +140,7 @@ function CreateOrder() {
                     </Button>
                 </FormControl>
             </form>
+            </Grid>
         </Container>
         </div>
     )
