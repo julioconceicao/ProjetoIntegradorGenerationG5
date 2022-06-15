@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { Typography, Box, Grid, TextField } from '@mui/material';
 import MenuSidebar from "../../Components/statics/menuSidebar/MenuSidebar";
 import MenuItem from '@material-ui/core/MenuItem';
-import Home from '../../pages/home/Home';
+
 import "./Ong.css";
 import useLocalStorage from "react-use-localstorage";
 
@@ -19,12 +19,14 @@ function Ong() {
   const [currency, setCurrency] = React.useState('EUR');
   const [token, setToken] = useLocalStorage('token');
   const [id, setId] = useLocalStorage('id');
+  const [type, setType] = useLocalStorage('type');
 
   let navigate = useNavigate();
 
   function goLogout() {
     setToken('')
     setId('')
+    setType('type')
     alert("Usuário deslogado")
     navigate('/login')
   }
@@ -38,7 +40,7 @@ function Ong() {
         background: `url(https://i.imgur.com/X7h4cHt.png)`,
         backgroundRepeat: 'no-repeat', width: '100%', height: '100vh', backgroundSize: 'cover'
       }}>
-        <div className="navbarmenu">
+        <div className="menu">
           <MenuSidebar />
         </div>
         <div>
