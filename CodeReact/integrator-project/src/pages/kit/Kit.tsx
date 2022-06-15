@@ -16,7 +16,6 @@ function Kit() {
             <div className='body'>             
             <MenuSidebar/>              
                 <div className='all-cards'>
-
                     {/*Cesta Básica*/}
                     <Card sx={{ maxWidth: 345 }} className='maincontainer'>
                         <Box className="card">
@@ -30,6 +29,7 @@ function Kit() {
                                     <Typography gutterBottom variant="h5" component="div" className='namefont'>
                                         Cesta Básica
                                     </Typography>
+                                    <p className="p">R$89,99</p>
                                 </CardContent>
                             </Box>
 
@@ -74,8 +74,9 @@ function Kit() {
                                 />
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="div" className='namefont'>
-                                        Kit Feira
-                                    </Typography>                                   
+                                        Kit Feira                                        
+                                    </Typography>
+                                    <p className="p">R$139,99</p>                                   
                                 </CardContent>
                             </Box>
 
@@ -95,15 +96,7 @@ function Kit() {
                                         <li> 1 Tipo de fruta a escolher </li>
                                         <h4> LEGUMES E VERDURAS</h4>
                                         <li> 1/2 kg Cebola</li>
-                                        <li> 1/2 kg Tomate</li>
-                                        <li> 1 kg Batata</li>
-                                        <li> 1 pc Cenoura ou Vagem</li>
-                                        <li> 1 pc Chuchu ou Batata Doce</li>
-                                        <li> 1 pc Berinjela ou Beterraba</li>
-                                        <li> 1 pc Alho ou Pimentão</li>
-                                        <li> 2 mç Alface Lisa ou Crespa</li>
-                                        <li> 1 mç Salsa</li>
-                                        <li> 1 mç Couve ou Escarola</li>
+                                        <li> 1/2 kg Tomate</li>                                        
                                     </ul>                                    
                                 </CardContent>
                             </Box>
@@ -122,7 +115,8 @@ function Kit() {
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="div" className='namefont'>
                                         Kit Mulher
-                                    </Typography>                                   
+                                    </Typography>
+                                    <p className="p">R$179,99</p>                                   
                                 </CardContent>
                             </Box>
 
