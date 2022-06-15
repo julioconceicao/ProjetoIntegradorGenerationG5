@@ -1,6 +1,5 @@
 import * as React from 'react';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import { Typography, Grid, Button } from '@material-ui/core';
@@ -11,8 +10,7 @@ import MenuSidebar from "../../Components/statics/menuSidebar/MenuSidebar";
 
 function Kit() {
     return (
-        <>        
-            <div className="navbarmenu"> 
+        <>                     
             <div className='body'>             
             <MenuSidebar/>              
                 <div className='all-cards'>
@@ -23,7 +21,7 @@ function Kit() {
                                 <CardMedia className='card-img'
                                     component="img"
                                     alt="Imagem de uma cesta basica tipicamente brasileira"
-                                    image="https://cdn.discordapp.com/attachments/966414382747754577/983461851356594176/original-b884fc81bd2324a672e4b7ced64661b3.jpg"
+                                    image="https://cdn.discordapp.com/attachments/966414382747754577/983461851356594176/original-b884fc81bd2324a672e4b7ced64661b3.jpg" width={90}
                                 />
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="div" className='namefont'>
@@ -36,7 +34,7 @@ function Kit() {
                             <Box className='back'>
 
                                 <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
+                                    <Typography gutterBottom variant="h5" component="div" className='namefonte'>
                                         Mais Informações
                                     </Typography>
                                     <ul className='infos'>                                        
@@ -50,11 +48,7 @@ function Kit() {
                                         <li>Farinha de Mandioca Temperada</li>
                                         <li>Sal Refinado</li>
                                         <li>Sabonete</li>
-                                        <li>Papel Higiênico 4 X 30</li> 
-                                        <li>Sabão em Pedra Individual</li>       
-                                        <li>Creme Dental</li>
-                                        <li>Embalagem Papelão</li>
-                                        <li>Embalagem Plástica Kit Limpeza</li>                                
+                                        <li>Papel Higiênico 4 X 30</li>                                                                      
                                     </ul>
                                     <Box >                                    
                                     </Box>
@@ -140,16 +134,16 @@ function Kit() {
                                     </ul>                                    
                                 </CardContent>
                             </Box>
-                        </Box>
+                        </Box>                
                     </Card>                                                       
-                </div>  
-                <Box className="btn">
-                    <Button href='./Order'>
+                </div> 
+                <Box className="btn">                        
+                    <Button className="btn" href='./Order'>
                         <h1>Doar</h1>
                     </Button>
-                </Box>             
+                </Box>                            
             </div>   
-            </div>        
+                    
         </>
     );
 }
