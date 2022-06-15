@@ -84,7 +84,7 @@ function Login() {
                 onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
                 id='email' label='Email' variant='outlined' name='email' margin='normal' fullWidth />
 
-              <FormControl className='root' variant="outlined">
+              <FormControl variant="outlined" fullWidth>
                 <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
                 <OutlinedInput
                   id="outlined-adornment-password"
