@@ -13,7 +13,7 @@ import CreateOrder from './Components/orders/createOrder/CreateOrder';
 import Contact from './pages/contact/Contact';
 import Donation from './pages/donation/Donation';
 import TeamCopy from './pages/teamCopy/TeamCopy';
-import Ongs from './pages/ongs/Ong'
+import ListOng from './pages/ongs/ListOng'
 
 function App() {
   return (
@@ -33,7 +33,7 @@ function App() {
           <Route path='/thanks' element={<Thanks />} />
           <Route path="/Order" element={<CreateOrder />} />
           <Route path='/contact' element={<Contact />} />
-          <Route path='/ongs' element={<Ongs />} />
+          <Route path='/ongs' element={<ListOng/>} />
         </Routes>
       </Router >
     </>
