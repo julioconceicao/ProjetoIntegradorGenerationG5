@@ -1,31 +1,32 @@
 import { Grid, Typography, TextField, Button } from '@material-ui/core';
 import { Link } from 'react-router-dom';
-import {Box} from '@mui/material';
+import { Box } from '@mui/material';
 import React from 'react';
 import './Contact.css';
 import MenuSidebar from "../../Components/statics/menuSidebar/MenuSidebar";
+import Footer from '../../Components/statics/footer/Footer';
 
 function Contact() {
     return (
+        <>
+            <Grid item xs={12} style={{
+                background: `url(https://i.imgur.com/LzWtT0n.jpg)`,
+                backgroundRepeat: 'no-repeat', width: '100%', height: '100vh', backgroundSize: 'cover'
+            }}>
 
-        <Grid item xs={12} style={{
-            background: `url(https://i.imgur.com/LzWtT0n.jpg)`,
-            backgroundRepeat: 'no-repeat', width: '100%', height: '100vh', backgroundSize: 'cover'
-        }}>
-
-            <div className="navbarmenu100">
-                <MenuSidebar />
-                <div className="navbarbutton100">
-                    <Link to='/Login'>
-                        <button> Login</button>
-                    </Link>
-                    <Link to='/Cadastro'>
-                        <button>Cadastre</button>
-                    </Link>
+                <div className="navbarmenu100">
+                    <MenuSidebar />
+                    <div className="navbarbutton100">
+                        <Link to='/Login'>
+                            <button> Login</button>
+                        </Link>
+                        <Link to='/Cadastro'>
+                            <button>Cadastre</button>
+                        </Link>
+                    </div>
                 </div>
-            </div>
-            <div className='alinharcontato'>
-                <Grid xs={6}>
+                <div className='alinharcontato'>
+                    <Grid xs={6}>
                         <form>
                             <Typography variant='h3' id='title' component='h3' align='center'>Contato</Typography>
 
@@ -44,9 +45,11 @@ function Contact() {
                                 </Button>
                             </Box>
                         </form>
-                </Grid>
-            </div>
-        </Grid>
+                    </Grid>
+                </div>
+            </Grid>
+            <Footer />
+        </>
     );
 }
 export default Contact;

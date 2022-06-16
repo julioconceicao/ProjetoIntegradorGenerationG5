@@ -16,7 +16,7 @@
 .gallery .item:first-of-type {
     position: static;
     pointer-events: auto;
-    opacity: 1
+    opacity: 1;
 }
 
 .gallery .item {
@@ -27,7 +27,7 @@
     height: 100%;
     pointer-events: none;
     opacity: 0;
-    transition: opacity .5s
+    transition: opacity .5s;
 }
 
 .gallery .control-operator {
