@@ -8,7 +8,6 @@ import MenuSidebar from "../../Components/statics/menuSidebar/MenuSidebar";
 import Footer from '../../Components/statics/footer/Footer';
 import Home from '../../pages/home/Home';
 import Purpose from "../purpose/Purpose";
-import AboutUs from "../aboutUs/AboutUs";
 import Kit from "../kit/Kit";
 import Donation from "../donation/Donation";
 
@@ -17,7 +16,6 @@ function SinglePage() {
         <>
             <Home />
             <Purpose />
-            <AboutUs />
             <Kit />
             <Donation />
             <Footer />
