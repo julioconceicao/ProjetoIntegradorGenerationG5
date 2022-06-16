@@ -1,0 +1,17 @@
+.box1{
+    background-image: url(https://cdn.discordapp.com/attachments/966414382747754577/986761651812462683/18.png);
+    height: 220px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.redes{
+    font-size: 60px !important;
+    color: rgb(0, 0, 0);
+}
+
+.textos{
+   color: rgb(0, 0, 0);
+}
