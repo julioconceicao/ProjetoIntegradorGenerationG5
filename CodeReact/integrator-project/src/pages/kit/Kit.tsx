@@ -12,7 +12,7 @@ import MenuSidebar from "../../Components/statics/menuSidebar/MenuSidebar";
 function Kit() {
     return (
         <>
-            <Grid item xs={12} style={{ backgroundRepeat: 'no-repeat', width: '100%', height: '100vh', backgroundSize: 'cover' }}>
+            <Grid item xs={12} style={{ backgroundRepeat: 'no-repeat', width: '100%', height: '100vh', backgroundSize: 'cover', backgroundColor: '#C9ACA0'}} className='backgroundrosa'>
                 <div className='body'>
                     <div className="navbarmenu">
                         <MenuSidebar />

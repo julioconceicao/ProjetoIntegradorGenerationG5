@@ -21,11 +21,11 @@ function Home() {
                             <button className="distancia">Login</button>
                         </Link>
                     </div>
-
-                    <Link to='/Cadastro'>
-                        <button>Cadastre-se</button>
-                    </Link>
-
+                    
+                        <Link to='/Cadastro'>
+                            <button>Cadastre-se</button>
+                        </Link>
+                    
                 </div>
                 <div>
                     <img className="logo" src="https://imgur.com/fqAed38.png" alt="" width="250" />

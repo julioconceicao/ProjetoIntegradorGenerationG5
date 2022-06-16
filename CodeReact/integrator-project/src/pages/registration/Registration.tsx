@@ -71,7 +71,7 @@ function Registration() {
     }
 
     return (
-        <Grid container direction='row' justifyContent='center' alignItems='center'>
+        <Grid container direction='row' justifyContent='center' alignItems='center' className="backgroundrosa">
 
             <Grid item xs={6} className='image2'>
                 <MenuSidebar />
@@ -81,45 +81,44 @@ function Registration() {
                 <Box paddingX={10}>
                     <form onSubmit={onSubmit}>
                         <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='text2'>Cadastrar</Typography>
-
                         <TextField
                             value={userRegisterDTO.name}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                            id='name' label='Nome' variant='outlined' name='name' margin='normal' fullWidth />
+                            id='name' label='Nome' variant='outlined' name='name' margin='normal' fullWidth className="colorbut2" />
 
                         <TextField
                             value={userRegisterDTO.cpf_cnpj}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                            id='cpf_cnpj' label='CPF ou CNPJ' variant='outlined' name='cpf_cnpj' margin='normal' type='cpf_cnpj' fullWidth />
+                            id='cpf_cnpj' label='CPF ou CNPJ' variant='outlined' name='cpf_cnpj' margin='normal' type='cpf_cnpj' fullWidth className="colorbut2" />
 
                         <TextField
                             value={userRegisterDTO.email}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                            id='email' label='Email' variant='outlined' name='email' margin='normal' type='email' fullWidth />
+                            id='email' label='Email' variant='outlined' name='email' margin='normal' type='email' fullWidth className="colorbut2" />
 
                         <TextField
                             value={userRegisterDTO.password}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                            id='password' label='Senha' variant='outlined' name='password' margin='normal' type='password' fullWidth />
+                            id='password' label='Senha' variant='outlined' name='password' margin='normal' type='password' fullWidth className="colorbut2" />
 
                         <TextField
                             value={confirmPassword}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => confirmPasswordHandle(e)}
-                            id='confirmPassword' label='ConfirmarSenha' variant='outlined' name='confirmPassword' margin='normal' type='password' fullWidth />
+                            id='confirmPassword' label='ConfirmarSenha' variant='outlined' name='confirmPassword' margin='normal' type='password' fullWidth className="colorbut2" />
 
                         <TextField
                             value={userRegisterDTO.adress}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                            id='adress' label='Endereço' variant='outlined' name='adress' margin='normal' fullWidth />
+                            id='adress' label='Endereço' variant='outlined' name='adress' margin='normal' fullWidth className="colorbut2" />
 
                         <TextField
                             value={userRegisterDTO.NameAgent}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                            id='NameAgent' label='NomeAgente' variant='outlined' name='NameAgent' margin='normal' fullWidth />
+                            id='NameAgent' label='NomeAgente' variant='outlined' name='NameAgent' margin='normal' fullWidth className="colorbut2" />
 
                         <FormControl
                             onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                            variant="outlined">
+                            variant="outlined" className="colorbut2">
                             <InputLabel htmlFor="outlined-age-native-simple">Tipo</InputLabel>
                             <Select
                                 value={userRegisterDTO.type}
@@ -137,15 +136,15 @@ function Registration() {
                         </FormControl>
 
                         <Grid container direction="row" justifyContent="space-between" alignItems="center">
-                            <div className='buttons'>
-                                <Link to='/Login'>
-                                    <Button variant='outlined' className="btnCancelar">
+                            <Box marginY={2} textAlign='center'>
+                                <Link to='/Login' className="none">
+                                    <Button variant='contained' className="btnCancelarCadastrar">
                                         Cancelar
                                     </Button>
                                 </Link>
-                            </div>
+                            </Box>
                             <Box marginY={2} textAlign='center'>
-                                <Button type='submit' variant='contained' color='primary' className="btnCadastrar">
+                                <Button type='submit' variant='contained' className="btnCancelarCadastrar">
                                     Cadastrar
                                 </Button>
                             </Box>

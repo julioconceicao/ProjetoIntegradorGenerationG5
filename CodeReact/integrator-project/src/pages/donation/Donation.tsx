@@ -6,8 +6,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import useLocalStorage from "react-use-localstorage";
 import './Donation.css';
 import MenuSidebar from "../../Components/statics/menuSidebar/MenuSidebar";
-
-
+import Footer from '../../Components/statics/footer/Footer';
 
 function Donation() {  
     return(
@@ -22,7 +21,8 @@ function Donation() {
             </div>
 
             
-        </Grid>        
+        </Grid>  
+        <Footer />      
     </>
     )
 }

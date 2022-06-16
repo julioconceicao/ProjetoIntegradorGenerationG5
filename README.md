@@ -35,9 +35,9 @@
 
 ![Screen Shot](https://cdn.discordapp.com/attachments/966414382747754577/986665187899768912/unknown.png)
 
-EN. An e-commerce that facilitates the donation process for NGOs through the purchase of kits already predefined by the store, which in turn will be distributed according to the needs of the beneficiaries.
+EN. An e-commerce that facilitates the donation process for NGOs through the purchase of kits already predefined by the store, which in turn will be distributed according to the donors choices.
 
-BR. Um e-commerce que facilita o processo de doação para ONGs através da compra de kits já predefinidos pela loja, que por sua vez serão distribuídos conforme a necessidade dos beneficiários.
+BR. Um e-commerce que facilita o processo de doação para ONGs através da compra de kits já predefinidos pela loja, que por sua vez serão distribuídos conforme a escolha dos clientes doadores.
 
 
 ## Built With

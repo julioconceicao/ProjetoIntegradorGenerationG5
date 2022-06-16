@@ -3,7 +3,7 @@
 .navbarmenu{
     height: 80px;
     display: flex;
-    background-color: transparent; 
+    background-color: transparent !important; 
     align-items: center;
     position: sticky;
 }   
@@ -15,13 +15,14 @@
 }
 .navbarmenu button{
     border: 1px;
-    background-color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
     font-size: medium;
-    transition: 200ms;
     border-radius: 5px;
     padding: 0px 5px;
+    font-weight: bold !important;
+    -webkit-filter: drop-shadow(1px 1px 1px #d3a77b) !important;
+    filter: drop-shadow(1px 1px 1px #585858) !important;
 }
 
 .logo{
