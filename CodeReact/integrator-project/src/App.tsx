@@ -14,17 +14,19 @@ import Contact from './pages/contact/Contact';
 import Donation from './pages/donation/Donation';
 import ListOng from './pages/ongs/ListOng'
 import SinglePage from './pages/singlePageAplication/SinglePage';
+import Footer from './Components/statics/footer/Footer';
+import MenuSidebar from './Components/statics/menuSidebar/MenuSidebar';
 
 function App() {
   return (
     <>
       <Router>
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/home' element={<Home />} />
+          <Route path='/' element={<SinglePage />} />
+          <Route path='/home' element={<SinglePage />} />
           <Route path='/homelog' element={<Homelog />} />
-          <Route path='/login' element={<Login />} />
-          <Route path='/team' element={<Team />} />
+          <Route path='/login'  element={<Login />} />
+          <Route path='/spapp' element={<SinglePage />} />
           <Route path='/cadastro' element={<Registration />} />
           <Route path='/donation' element={<Donation />} />
           <Route path='/purpose' element={<Purpose />} />
@@ -35,8 +37,8 @@ function App() {
           <Route path='/contact' element={<Contact />} />
           <Route path='/ongs' element={<ListOng/>} />
           <Route path='/single' element={<SinglePage/>} />
-
-        </Routes>
+         </Routes>
+        <Footer />
       </Router >
     </>
   );
