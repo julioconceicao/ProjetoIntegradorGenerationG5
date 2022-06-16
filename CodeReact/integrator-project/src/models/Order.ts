@@ -1,9 +1,10 @@
-import Kit from './Kit'
-import RegisterUser from './RegisterUser'
+import KitModel from './KitModel';
+import UserModel from './UserModel';
 
 interface Order{
-    emailCreator?: RegisterUser| null;
-    idKit?: Kit| null;
+    id: number;
+    emailCreator: UserModel; 
+    idKit?: KitModel;
 }
 
 export default Order;
