@@ -4,6 +4,11 @@ import { login } from "../../services/Services"
 import { Typography, Box, Grid, Button } from '@material-ui/core';
 import "./Home.css";
 import MenuSidebar from "../../Components/statics/menuSidebar/MenuSidebar";
+import Footer from '../../Components/statics/footer/Footer';
+import Home from '../../pages/home/Home';
+import Purpose from "../purpose/Purpose";
+import Kit from "../kit/Kit";
+import Donation from "../donation/Donation";
 import useLocalStorage from "react-use-localstorage";
 import Swal from 'sweetalert2';
 
@@ -53,6 +58,10 @@ function Homelog() {
                     <img className="logo" src="https://imgur.com/fqAed38.png" alt="" width="250" />
                 </div>
             </Grid>
+            <Purpose />
+            <Kit />
+            <Donation />
+            <Footer />
         </>
     );
 }
