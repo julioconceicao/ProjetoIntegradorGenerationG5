@@ -7,12 +7,15 @@ import "./SinglePage.css";
 import MenuSidebar from "../../Components/statics/menuSidebar/MenuSidebar";
 import Footer from '../../Components/statics/footer/Footer';
 import Home from '../../pages/home/Home';
+import Purpose from "../purpose/Purpose";
 
 function SinglePage() {
     return (
         <>
             <Home />
+            <Purpose />
             <Footer />
+
         </>
     );
 }

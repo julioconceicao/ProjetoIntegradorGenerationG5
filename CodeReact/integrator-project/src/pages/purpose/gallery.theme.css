@@ -1,3 +1,4 @@
+
 .gallery .control-button {
   color: #ccc;
   color: rgba(255, 255, 255, 0.4);
@@ -19,7 +20,7 @@
   width: 130vh;
   overflow: hidden;
   text-align: center;
-  background: #f5f5f5;
+  background: #C9ACA0;
 }
 .gallery .controls {
   position: absolute;
@@ -28,7 +29,7 @@
   text-align: center;
 }
 .gallery .control-button {
-  display: inline-block;
+  display: inline;
   margin: 0 .02em;
   font-size: 3em;
   text-align: center;
@@ -40,8 +41,8 @@
   width: 550px;
   background-color: transparent;
   padding-left: 80%;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 .centerabout{
-  padding-left: 150px;
+  padding-left: 250px;
 }

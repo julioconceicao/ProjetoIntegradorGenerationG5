@@ -57,18 +57,20 @@ export default function TemporaryDrawer() {
                 </ListItem>
               ))}
               </Link>
-              <Link className='Sidebar' to='/kits'>
-              {['Kits'].map((text) => (
+
+              <Link className='Sidebar' to='/purpose'>
+              {['Propósito'].map((text) => (
                 <ListItem button key={text}>
-                  <ListItemIcon> <RedeemIcon /></ListItemIcon>
+                  <ListItemIcon> <PeopleAltIcon /></ListItemIcon>
                   <ListItemText primary={text} />
                 </ListItem>
               ))}
               </Link>
-              <Link className='Sidebar' to='/sobrenos'>
-              {['Sobre nós'].map((text) => (
+
+              <Link className='Sidebar' to='/kits'>
+              {['Kits'].map((text) => (
                 <ListItem button key={text}>
-                  <ListItemIcon> <PeopleAltIcon /></ListItemIcon>
+                  <ListItemIcon> <RedeemIcon /></ListItemIcon>
                   <ListItemText primary={text} />
                 </ListItem>
               ))}
