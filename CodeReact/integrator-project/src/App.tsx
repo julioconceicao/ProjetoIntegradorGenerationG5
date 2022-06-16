@@ -12,7 +12,6 @@ import Homelog from './pages/home/Homelog';
 import CreateOrder from './Components/orders/createOrder/CreateOrder';
 import Contact from './pages/contact/Contact';
 import Donation from './pages/donation/Donation';
-import TeamCopy from './pages/teamCopy/TeamCopy';
 import ListOng from './pages/ongs/ListOng'
 import SinglePage from './pages/singlePageAplication/SinglePage';
 
@@ -24,8 +23,8 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/home' element={<Home />} />
           <Route path='/homelog' element={<Homelog />} />
-          <Route path='/spapp' element={<SinglePage />} />
-          <Route path='/teamCopy' element={<TeamCopy />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/team' element={<Team />} />
           <Route path='/cadastro' element={<Registration />} />
           <Route path='/donation' element={<Donation />} />
           <Route path='/purpose' element={<Purpose />} />
@@ -35,8 +34,6 @@ function App() {
           <Route path="/Order" element={<CreateOrder />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/ongs' element={<ListOng/>} />
-
-
           <Route path='/single' element={<SinglePage/>} />
 
         </Routes>
