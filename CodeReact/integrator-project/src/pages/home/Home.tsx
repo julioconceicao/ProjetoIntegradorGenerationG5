@@ -18,12 +18,14 @@ function Home() {
                     <MenuSidebar />
                     <div className="navbarbutton">
                         <Link to='/login'>
-                            <button> Login</button>
-                        </Link>
-                        <Link to='/Cadastro'>
-                            <button>Cadastre-se</button>
+                            <button className="distancia">Login</button>
                         </Link>
                     </div>
+
+                    <Link to='/Cadastro'>
+                        <button>Cadastre-se</button>
+                    </Link>
+
                 </div>
                 <div>
                     <img className="logo" src="https://imgur.com/fqAed38.png" alt="" width="250" />
