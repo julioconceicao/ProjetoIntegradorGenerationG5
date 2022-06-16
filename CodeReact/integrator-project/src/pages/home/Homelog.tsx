@@ -61,7 +61,6 @@ function Homelog() {
             <Purpose />
             <Kit />
             <Donation />
-            <Footer />
         </>
     );
 }

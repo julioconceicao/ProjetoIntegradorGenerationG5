@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid } from '@material-ui/core';
+import { AppBar, Grid } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import MenuNavBar from "../../Components/statics/menuSidebar/MenuSidebar";
 import "./gallery.min.css";
@@ -12,17 +12,11 @@ function Purpose() {
         background: 'url(https://i.imgur.com/DLWHlqe.png)',
         backgroundRepeat: 'no-repeat', width: '100%', height: '100vh', backgroundSize: 'cover'
       }}>
+        <AppBar position="sticky" style={{ background: 'transparent', boxShadow: 'none'}}>
         <div className="navbarmenu">
           <MenuNavBar />
-          <div className="navbarbuttonaboutus">
-            <Link to='/Login'>
-              <button> Login</button>
-            </Link>
-            <Link to='/Cadastro'>
-              <button>Cadastre</button>
-            </Link>
-          </div>
         </div>
+        </AppBar>
         <div className="centerabout">
           <div className="gallery autoplay items-3">
 

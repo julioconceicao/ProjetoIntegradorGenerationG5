@@ -25,13 +25,8 @@ function App() {
           <Route path='/' element={<SinglePage />} />
           <Route path='/home' element={<SinglePage />} />
           <Route path='/homelog' element={<Homelog />} />
-<<<<<<< HEAD
           <Route path='/login'  element={<Login />} />
           <Route path='/spapp' element={<SinglePage />} />
-=======
-          <Route path='/login' element={<Login />} />
-          <Route path='/team' element={<Team />} />
->>>>>>> ee226ba3bd77a1f13ca6203fe98cc3e6cd25e94f
           <Route path='/cadastro' element={<Registration />} />
           <Route path='/donation' element={<Donation />} />
           <Route path='/purpose' element={<Purpose />} />
@@ -42,7 +37,7 @@ function App() {
           <Route path='/contact' element={<Contact />} />
           <Route path='/ongs' element={<ListOng/>} />
           <Route path='/single' element={<SinglePage/>} />
-        </Routes>
+         </Routes>
         <Footer />
       </Router >
     </>
