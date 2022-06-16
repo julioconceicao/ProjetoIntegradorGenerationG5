@@ -39,7 +39,7 @@ function Contact() {
                                 id='mandesuamensagem' label='Mande sua mensagem:' variant='outlined' name='mandesuamensagem' margin='normal' fullWidth />
 
                             <Box marginTop={2} textAlign='left'>
-                                <Button type='submit' variant='contained' color='primary' className="login">
+                                <Button type='submit' variant='contained' color='primary' className="btnCadastrar">
                                     Enviar
                                 </Button>
                             </Box>
