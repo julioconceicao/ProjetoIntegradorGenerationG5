@@ -11,14 +11,12 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import MenuIcon from '@material-ui/icons/Menu';
 import "./Team.css";
 import MenuSidebar from "../../Components/statics/menuSidebar/MenuSidebar";
+import Footer from '../../Components/statics/footer/Footer';
 
 function Team() {
     return (
         <>
-            <Grid item xs={12} className='body' style={{
-
-                backgroundRepeat: 'no-repeat', width: '100%', height: '100vh', backgroundSize: 'cover'
-            }}>
+            <Grid item xs={12} className='body'>
                 <MenuSidebar />
 
                 <h1 className='team-title'>Equipe Desenvolvedora - Planeta Solidário</h1>
@@ -372,6 +370,7 @@ function Team() {
                     </Card>
                 </div>
             </Grid>
+            <Footer />
         </>
     );
 }
