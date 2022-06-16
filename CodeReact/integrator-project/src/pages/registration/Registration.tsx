@@ -71,7 +71,7 @@ function Registration() {
     }
 
     return (
-        <Grid container direction='row' justifyContent='center' alignItems='center'>
+        <Grid className="backgroundrosa" container direction='row' justifyContent='center' alignItems='center'>
 
             <Grid item xs={6} className='image2'>
                 <MenuSidebar />

@@ -24,7 +24,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/home' element={<Home />} />
           <Route path='/homelog' element={<Homelog />} />
-          <Route path='/login' element={<Login />} />
+          <Route path='/spapp' element={<SinglePage />} />
           <Route path='/teamCopy' element={<TeamCopy />} />
           <Route path='/cadastro' element={<Registration />} />
           <Route path='/donation' element={<Donation />} />
