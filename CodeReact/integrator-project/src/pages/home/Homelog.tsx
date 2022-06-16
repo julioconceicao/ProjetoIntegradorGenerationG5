@@ -20,15 +20,15 @@ function Homelog() {
 
     useEffect(() => {
         if (token == '') {
-          navigate('/login');
-          Swal.fire({
-            position: 'center',
-            icon: 'error',
-            title: 'Oops...',
-            text: 'Acesso negado, você precisa estar logado',
-          })
+            navigate('/login');
+            Swal.fire({
+                position: 'center',
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Acesso negado, você precisa estar logado',
+            })
         }
-      }, [token, navigate]);
+    }, [token, navigate]);
 
     function goLogout() {
         setToken('')
@@ -44,15 +44,14 @@ function Homelog() {
                 backgroundRepeat: 'no-repeat', width: '100%', height: '100vh', backgroundSize: 'cover'
             }}>
                 <div className="navbarmenu">
-
                     <MenuSidebar />
-
                     <div className="navbarbutton">
                         <Link to={'/Order'}>
-                            <button>Doações</button>
+                            <button className="distancia">Doações</button>
                         </Link>
-                        <button onClick={goLogout}> Logout</button>
                     </div>
+
+                    <button onClick={goLogout}> Logout</button>
                 </div>
                 <div>
                     <img className="logo" src="https://imgur.com/fqAed38.png" alt="" width="250" />

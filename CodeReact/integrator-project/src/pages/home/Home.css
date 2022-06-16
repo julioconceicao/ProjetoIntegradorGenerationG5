@@ -3,32 +3,34 @@
 .navbarmenu{
     height: 80px;
     display: flex;
-    background-color: transparent; 
+    background-color: transparent !important; 
     align-items: center;
     position: sticky;
 }   
+
 .navbarbutton{
     display: flex;
-    width: 550px;
-    background-color: transparent;
-    padding-left: 80%;
+    width: 90px;
+    padding-left: 70%;
 }
 .navbarmenu button{
-    border: none;
-    background-color: transparent;
     font-family: 'Montserrat', sans-serif;
+    border: 1px;
     cursor: pointer;
     font-size: medium;
-    transition: 200ms;
-    border-radius: 10px;
-    padding: 10px 5px;
+    border-radius: 5px;
+    padding: 0px 5px;
+    font-weight: bold !important;
+    -webkit-filter: drop-shadow(1px 1px 1px #d3a77b) !important;
+    filter: drop-shadow(1px 1px 1px #585858) !important;
 }
-button:hover{
-    background-color: rgba(160, 159, 159, 0.397);
-}
+
 .logo{
     padding-left: 170px;
     padding-top: 50px;
 }
+
+
+
 
 

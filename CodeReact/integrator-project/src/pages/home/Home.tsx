@@ -14,21 +14,21 @@ function Home() {
                 background: `url(https://i.imgur.com/9ayuO27.jpg)`,
                 backgroundRepeat: 'no-repeat', width: '100%', height: '100vh', backgroundSize: 'cover'
             }}>
-                <AppBar position="sticky" style={{ background: 'transparent', boxShadow: 'none'}}>
+                <AppBar position="sticky" style={{ background: 'transparent', boxShadow: 'none' }}>
                     <div className="navbarmenu">
                         <MenuSidebar />
                         <div className="navbarbutton">
                             <Link to='/login'>
-                                <button> Login</button>
-                            </Link>
-                            <Link to='/Cadastro'>
-                                <button>Cadastre-se</button>
+                                <button className="distancia">Login</button>
                             </Link>
                         </div>
+                        <Link to='/Cadastro'>
+                            <button>Cadastre-se</button>
+                        </Link>
                     </div>
                 </AppBar>
                 <div>
-                    <img className="logo" src="https://imgur.com/fqAed38.png" alt="" width="250" />
+                    <img src="https://imgur.com/fqAed38.png" alt="" width="250" className="logo" />
                 </div>
             </Grid>
         </>

@@ -1,3 +1,4 @@
+
 import React, { ChangeEvent, useEffect, useState } from "react";
 import { Typography, Box, Grid, Button, TextField } from '@mui/material';
 import MenuSidebar from "../../Components/statics/menuSidebar/MenuSidebar";
@@ -77,20 +78,21 @@ function Login() {
 
   return (
     <>
-      <Grid container direction='row' className="backgroundrosa">
+
+      <Grid container direction='row' className="fundo-da-pagina">
         <Grid xs={6}>
-          <Grid className="alignsidebarohyes">
+          <div className="alignsidebarohyes">
             <MenuSidebar />
-          </Grid>
+          </div>
           <Box paddingX={22.7}>
             <form onSubmit={onSubmit}>
               <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos'>Entrar</Typography>
-
-              <TextField 
-                value={loginDTO.email}
-                onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                id='email' label='Email' variant='outlined' name='email' margin='normal' fullWidth />
-
+              
+                <TextField
+                  value={loginDTO.email}
+                  onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
+                  id='email' label='Email' variant='outlined' name='email' margin='normal' fullWidth className="logar" />
+            
               <FormControl variant="outlined" fullWidth>
                 <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
                 <OutlinedInput
@@ -109,12 +111,13 @@ function Login() {
                         {loginDTO.showPassword ? <Visibility /> : <VisibilityOff />}
                       </IconButton>
                     </InputAdornment>
-                  }
+                  } className="colorbut"
                   labelWidth={80}
+
                 />
               </FormControl>
               <Box marginTop={2} textAlign='center'>
-                <Button type='submit' variant='contained' color='primary' className="btnCadastrar">
+                <Button type='submit' variant='contained' color='primary' className="logar">
                   Logar
                 </Button>
               </Box>

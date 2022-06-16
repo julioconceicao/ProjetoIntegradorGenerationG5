@@ -95,8 +95,7 @@ function CreateOrder() {
     }
 
     return (
-
-
+        
         <div className='donation' style={{
             background: `url(https://i.imgur.com/uWxFuxx.jpg)`,
             backgroundRepeat: 'no-repeat', width: '100%', height: '100vh', backgroundSize: 'cover'
