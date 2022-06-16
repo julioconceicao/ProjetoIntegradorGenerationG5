@@ -8,8 +8,6 @@ import './Donation.css';
 import MenuSidebar from "../../Components/statics/menuSidebar/MenuSidebar";
 import Footer from '../../Components/statics/footer/Footer';
 
-
-
 function Donation() {  
     return(
     <>
