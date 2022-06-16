@@ -14,8 +14,8 @@
     padding-left: 70%;
 }
 .navbarmenu button{
-    border: 1px;
     font-family: 'Montserrat', sans-serif;
+    border: 1px;
     cursor: pointer;
     font-size: medium;
     border-radius: 5px;
