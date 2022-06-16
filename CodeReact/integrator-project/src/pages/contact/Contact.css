@@ -26,7 +26,7 @@
 .navbarbutton100{
     display: flex;
     width: 550px;
-    background-color:  ;
+    background-color: transparent ;
     padding-left: 80%;
     padding-top: 10px;
 }

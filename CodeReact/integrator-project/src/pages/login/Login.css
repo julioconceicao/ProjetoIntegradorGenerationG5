@@ -1,7 +1,7 @@
 .textos1{
     font-weight: bold !important;
     text-decoration: none !important;
-    color:#C3935E !important;
+    color:#ffffff !important;
  }
 .textos{
     font-weight: bold !important;
@@ -31,4 +31,7 @@
 .alignsidebarohyes{
     padding-left:30px;
     padding-top: 10px;
+}
+.backgroundrosa {
+    background-color: #C9ACA0;
 }

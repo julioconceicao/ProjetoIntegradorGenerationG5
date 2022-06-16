@@ -77,7 +77,7 @@ function Login() {
 
   return (
     <>
-      <Grid container direction='row'>
+      <Grid container direction='row' className="backgroundrosa">
         <Grid xs={6}>
           <Grid className="alignsidebarohyes">
             <MenuSidebar />
@@ -86,7 +86,7 @@ function Login() {
             <form onSubmit={onSubmit}>
               <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos'>Entrar</Typography>
 
-              <TextField
+              <TextField 
                 value={loginDTO.email}
                 onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
                 id='email' label='Email' variant='outlined' name='email' margin='normal' fullWidth />
