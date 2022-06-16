@@ -5,11 +5,11 @@ import MenuNavBar from "../../Components/statics/menuSidebar/MenuSidebar";
 import "./gallery.min.css";
 import "./gallery.theme.css";
 
-function AboutUs() {
+function Purpose() {
   return (
     <>
       <Grid item xs={12} style={{
-        background: 'url(https://i.imgur.com/9IOxMwE.png)',
+        background: 'url(https://i.imgur.com/DLWHlqe.png)',
         backgroundRepeat: 'no-repeat', width: '100%', height: '100vh', backgroundSize: 'cover'
       }}>
         <div className="navbarmenu">
@@ -31,13 +31,13 @@ function AboutUs() {
             <div id="item-3" className="control-operator"></div>
 
             <figure className="item">
-              <h1> <img src="https://i.imgur.com/RBm9VZH.png" width="1150px" /></h1>
+              <h1> <img src="https://i.imgur.com/pZEtAI6.png" width="100%"/></h1>
             </figure>
             <figure className="item">
-              <h1><img src="https://i.imgur.com/SlU2IOX.png" width="1150px" /></h1>
+              <h1><img src="https://i.imgur.com/DsyCFmP.png" width="100%" /></h1>
             </figure>
             <figure className="item">
-              <h1><img src="https://i.imgur.com/d7uvvtn.png" width="1150px" /></h1>
+              <h1><img src="https://i.imgur.com/2fbJEdw.png" width="100%" /></h1>
             </figure>
 
             <div className="controls">
@@ -53,4 +53,4 @@ function AboutUs() {
   );
 }
 
-export default AboutUs;
+export default Purpose;
