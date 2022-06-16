@@ -13,5 +13,7 @@ padding-top: 50px;
     padding: 10px 5px;
     border-radius: 5px;
     background-color: transparent;
-  
+}
+alinh{
+     flex-direction: inline;
 }

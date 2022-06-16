@@ -4,7 +4,7 @@ import UserModel from './UserModel';
 interface Order{
     id: number;
     emailCreator: UserModel; 
-    idKit?: KitModel;
+    idKit: KitModel;
 }
 
 export default Order;
