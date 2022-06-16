@@ -5,12 +5,25 @@ import { Typography, Box, Grid, Button } from '@material-ui/core';
 import "./Home.css";
 import MenuSidebar from "../../Components/statics/menuSidebar/MenuSidebar";
 import useLocalStorage from "react-use-localstorage";
+import Swal from 'sweetalert2';
 
 function Homelog() {
     const [token, setToken] = useLocalStorage('token');
     const [id, setId] = useLocalStorage('id');
 
     let navigate = useNavigate();
+
+    useEffect(() => {
+        if (token == '') {
+          navigate('/login');
+          Swal.fire({
+            position: 'center',
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Acesso negado, você precisa estar logado',
+          })
+        }
+      }, [token, navigate]);
 
     function goLogout() {
         setToken('')

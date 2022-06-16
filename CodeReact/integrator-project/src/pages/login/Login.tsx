@@ -13,6 +13,7 @@ import "./Login.css";
 import { login } from "../../services/Services"
 import UserLogin from "../../models/UserLogin"
 import useLocalStorage from "react-use-localstorage";
+import Swal from 'sweetalert2';
 
 function Login() {
 
@@ -50,7 +51,13 @@ function Login() {
     e.preventDefault();
     try {
       await login(`/api/Authentication`, loginDTO, setToken, setEmail, setType);
-      alert('Logado');
+      Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Usuário logado com sucesso!',
+        showConfirmButton: false,
+        timer: 1500
+      })
     } catch (error) {
       alert('Email ou senha incorretos');
     }
