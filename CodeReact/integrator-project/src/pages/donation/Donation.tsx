@@ -19,10 +19,7 @@ function Donation() {
             <div className="title">
                 <h3>Doação</h3>
             </div>
-
-            
-        </Grid>  
-        <Footer />      
+        </Grid>       
     </>
     )
 }
