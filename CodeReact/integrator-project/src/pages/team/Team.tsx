@@ -370,7 +370,6 @@ function Team() {
                     </Card>
                 </div>
             </Grid>
-            <Footer />
         </>
     );
 }

@@ -15,7 +15,7 @@ h1 {
 }
 
 .all-cards {
-    display: flex;
+    display: block;
     justify-content: center;
     flex-wrap: wrap;
     position: absolute;
@@ -89,7 +89,7 @@ h1 {
 .card-img {
     margin-top: none;
     width: 200px;
-    height: 250px;
+    height: 220px;
 }
 
 .card-img:hover {
