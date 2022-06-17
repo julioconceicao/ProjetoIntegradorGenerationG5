@@ -59,7 +59,6 @@ function Homelog() {
             </Grid>
             <Purpose />
             <Kit />
-            <Donation />
         </>
     );
 }
