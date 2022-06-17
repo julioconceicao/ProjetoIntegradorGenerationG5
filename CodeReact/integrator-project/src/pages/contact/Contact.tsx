@@ -13,18 +13,17 @@ function Contact() {
                 background: `url(https://i.imgur.com/LzWtT0n.jpg)`,
                 backgroundRepeat: 'no-repeat', width: '100%', height: '100vh', backgroundSize: 'cover'
             }}>
-
-                <div className="navbarmenu100">
-                    <MenuSidebar />
-                    <div className="navbarbutton100">
-                        <Link to='/Login'>
-                            <button> Login</button>
-                        </Link>
+                    <div className="navbarmenu">
+                        <MenuSidebar />
+                        <div className="navbarbutton">
+                            <Link to='/login'>
+                                <button className="distancia">Login</button>
+                            </Link>
+                        </div>
                         <Link to='/Cadastro'>
-                            <button>Cadastre</button>
+                            <button>Cadastre-se</button>
                         </Link>
                     </div>
-                </div>
                 <div className='alinharcontato'>
                     <Grid xs={6}>
                         <form>

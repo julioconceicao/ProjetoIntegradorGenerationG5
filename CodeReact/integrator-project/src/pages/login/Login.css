@@ -26,6 +26,7 @@
  }
 
  .fundo-da-pagina{
+    border-radius: 5px;
     background-color: #C9ACA0;
  }
  
@@ -38,6 +39,9 @@
     background-position: center!important;
     padding-right: 50% !important ;
     border-radius: 5px;
+    background-position: center;
+    padding-top: 10px;
+    filter: drop-shadow(1px 1px 1px #585858) !important;
  }
  
 .text-decorator-none{
@@ -51,9 +55,10 @@
 .cadastre-se {
     text-decoration: none;
 }
+
 .alignsidebarohyes{
-    padding-left:30px;
-    padding-top: 10px;
+    padding-left:30px !important;
+    padding-top: 10px !important;
     -webkit-filter: drop-shadow(1px 1px 1px #d3a77b) !important;
     filter: drop-shadow(1px 1px 1px #585858) !important;
 }

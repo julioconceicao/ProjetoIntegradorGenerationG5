@@ -87,14 +87,14 @@ function Login() {
           <Box paddingX={22.7}>
             <form onSubmit={onSubmit}>
               <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos'>Entrar</Typography>
-              
-                <TextField
-                  value={loginDTO.email}
-                  onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                  id='email' label='Email' variant='outlined' name='email' margin='normal' fullWidth className="logar" />
-            
+
+              <TextField
+                value={loginDTO.email}
+                onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
+                id='email' label='Email' variant='outlined' name='email' margin='normal' fullWidth className="logar" />
+
               <FormControl variant="outlined" fullWidth>
-                <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
+                <InputLabel htmlFor="outlined-adornment-senha">Senha</InputLabel>
                 <OutlinedInput
                   id="outlined-adornment-password"
                   type={loginDTO.showPassword ? 'text' : 'password'}
