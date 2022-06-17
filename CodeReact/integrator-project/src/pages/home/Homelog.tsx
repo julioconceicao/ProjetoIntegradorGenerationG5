@@ -47,11 +47,10 @@ function Homelog() {
                     <MenuSidebar />
                     <div className="navbarbutton">
                         <Link to={'/Order'}>
-                            <button className="distancia">Doações</button>
+                            <button className="distancia">Doar</button>
                         </Link>
                     </div>
-
-                    <button onClick={goLogout}> Logout</button>
+                    <button onClick={goLogout}>Logout</button>
                 </div>
                 <div>
                     <img className="logo" src="https://imgur.com/fqAed38.png" alt="" width="250" />
