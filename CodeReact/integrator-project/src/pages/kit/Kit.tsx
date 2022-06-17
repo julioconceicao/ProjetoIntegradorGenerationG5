@@ -7,6 +7,7 @@ import { Typography, Grid, Button, AppBar } from '@material-ui/core';
 import { Box } from '@mui/material';
 import "./Kit.css";
 import MenuSidebar from "../../Components/statics/menuSidebar/MenuSidebar";
+import { Link } from 'react-router-dom';
 
 
 function Kit() {
@@ -148,6 +149,11 @@ function Kit() {
                             </Box>
                         </Box>
                     </Card>
+                    <div className='botaodoarkitnone'>
+                        <Link className='botaodoarkitnone' to='/order'>
+                            <Button variant="outlined" style={{ backgroundColor: '#f0cdbe' }}>Doar</Button>
+                        </Link>
+                    </div>
                 </div>
             </Grid>
         </>

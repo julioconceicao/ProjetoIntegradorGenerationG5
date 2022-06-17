@@ -1,13 +1,23 @@
-import React from "react";
-import { Link } from 'react-router-dom';
+import React, { useEffect } from "react";
+import { Link, useNavigate } from 'react-router-dom';
 import { Typography, Box, Grid, Button, AppBar } from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import "./Home.css";
 import MenuSidebar from "../../Components/statics/menuSidebar/MenuSidebar";
+import useLocalStorage from "react-use-localstorage";
 
 
 function Home() {
+    let navigate = useNavigate();
+    const [token, setToken] = useLocalStorage('token');
+
+    useEffect(() => {
+        if (token !== '') {
+            navigate('/homelog');
+        }
+    }, [token, navigate]);
+
     return (
         <>
             <Grid item xs={12} style={{
