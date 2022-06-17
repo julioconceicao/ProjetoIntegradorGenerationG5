@@ -10,6 +10,7 @@ import Home from '../../pages/home/Home';
 import Purpose from "../purpose/Purpose";
 import Kit from "../kit/Kit";
 import Donation from "../donation/Donation";
+import ReactDOM from 'react-dom'
 
 function SinglePage() {
     return (

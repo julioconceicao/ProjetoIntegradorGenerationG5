@@ -6,6 +6,7 @@ import "./Registration.css";
 import RegisterUser from "../../models/RegisterUser";
 import { registerUser } from "../../services/Services"
 import MenuSidebar from "../../Components/statics/menuSidebar/MenuSidebar";
+import Swal from 'sweetalert2';
 
 function Registration() {
 
@@ -56,7 +57,13 @@ function Registration() {
         if (confirmPassword === userRegisterDTO.password) {
             try {
                 await registerUser(`/api/Users`, userRegisterDTO, setUserResult)
-                alert('Usuario cadastrado com sucesso');
+                Swal.fire({
+                    position: 'center',
+                    icon: 'success',
+                    title: 'Usuário cadastrado com sucesso',
+                    showConfirmButton: false,
+                    timer: 1500
+                  })
                 {
                     navigate('/login')
                 }
