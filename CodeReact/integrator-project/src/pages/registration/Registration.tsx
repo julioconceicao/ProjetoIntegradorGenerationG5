@@ -1,5 +1,11 @@
 import React, { ChangeEvent, useEffect, useState } from "react";
 import { Link, useNavigate } from 'react-router-dom';
+
+import Visibility from '@material-ui/icons/Visibility';
+import VisibilityOff from '@material-ui/icons/VisibilityOff';
+import OutlinedInput from '@material-ui/core/OutlinedInput';
+import InputAdornment from '@material-ui/core/InputAdornment';
+import IconButton from '@material-ui/core/IconButton';
 import { Grid, Typography, Button, TextField, FormControl, InputLabel, Select } from '@material-ui/core';
 import { Box } from "@mui/material";
 import "./Registration.css";
@@ -18,9 +24,10 @@ function Registration() {
             cpf_cnpj: "",
             email: "",
             password: "",
+            showPassword: false,
             adress: "",
             NameAgent: "",
-            type: ""
+            type: "",
         }
     );
 
@@ -30,12 +37,24 @@ function Registration() {
             cpf_cnpj: "",
             email: "",
             password: "",
+            showPassword: false,
             adress: "",
             NameAgent: "",
-            type: ""
+            type: "",
         }
     );
 
+    const handleChange = (prop: keyof RegisterUser) => (event: React.ChangeEvent<HTMLInputElement>) => {
+        setUserRegisterDTO({ ...userRegisterDTO, [prop]: event.target.value });
+    };
+
+    const handleClickShowPassword = () => {
+        setUserRegisterDTO({ ...userRegisterDTO, showPassword: !userRegisterDTO.showPassword });
+    };
+
+    const handleMouseDownPassword = (event: React.MouseEvent<HTMLButtonElement>) => {
+        event.preventDefault();
+    };
 
     function confirmPasswordHandle(e: ChangeEvent<HTMLInputElement>) {
         setConfirmPassword(e.target.value)
@@ -74,7 +93,9 @@ function Registration() {
         <Grid container direction='row' justifyContent='center' alignItems='center' className="backgroundrosa">
 
             <Grid item xs={6} className='image2'>
-                <MenuSidebar />
+                <div className="alignsidebarohyes2">
+                    <MenuSidebar />
+                </div>
             </Grid>
 
             <Grid item xs={6} alignItems='center'>
@@ -96,10 +117,28 @@ function Registration() {
                             onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
                             id='email' label='Email' variant='outlined' name='email' margin='normal' type='email' fullWidth className="colorbut2" />
 
-                        <TextField
-                            value={userRegisterDTO.password}
-                            onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                            id='password' label='Senha' variant='outlined' name='password' margin='normal' type='password' fullWidth className="colorbut2" />
+                        <FormControl variant="outlined" fullWidth className="none">
+                            <InputLabel htmlFor="outlined-adornment-password" className="none" >password</InputLabel>
+                            <OutlinedInput
+                                id="outlined-adornment-password"
+                                type={userRegisterDTO.showPassword ? 'text' : 'password'}
+                                value={userRegisterDTO.password}
+                                onChange={handleChange('password')}
+                                endAdornment={
+                                    <InputAdornment position="end">
+                                        <IconButton
+                                            aria-label="toggle password visibility"
+                                            onClick={handleClickShowPassword}
+                                            onMouseDown={handleMouseDownPassword}
+                                            edge="end"
+                                        >
+                                            {userRegisterDTO.showPassword ? <Visibility /> : <VisibilityOff />}
+                                        </IconButton>
+                                    </InputAdornment>
+                                } className="colorbut2"
+                                labelWidth={80}
+                            />
+                        </FormControl>
 
                         <TextField
                             value={confirmPassword}

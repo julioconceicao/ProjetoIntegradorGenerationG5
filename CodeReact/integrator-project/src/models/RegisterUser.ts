@@ -3,6 +3,7 @@ interface RegisterUser {
     cpf_cnpj?: string| null;
     email?: string| null;
     password?: string| null;
+    showPassword?: boolean;
     adress?: string| null;
     NameAgent?: string| null;
     type?: string| null;
