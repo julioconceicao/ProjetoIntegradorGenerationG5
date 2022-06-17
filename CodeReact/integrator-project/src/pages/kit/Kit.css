@@ -62,11 +62,11 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     position: relative;
-    margin: 40px;
+    margin: 35px;
     border: #333;
     width: 900px;
     height: 535px;
-    padding-bottom: 15px;    
+    padding-bottom: 6px;    
 }
 
 .card {
@@ -127,4 +127,10 @@ h1 {
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: flex-end; 
+}
+.botaodoarkitnone{
+    text-decoration: none !important;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    font-size: medium;
 }
