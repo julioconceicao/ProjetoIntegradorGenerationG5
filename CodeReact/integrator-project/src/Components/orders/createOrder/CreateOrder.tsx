@@ -2,6 +2,7 @@ import React, { ChangeEvent, useEffect, useState } from 'react'
 import { Container, Typography, Button, Select, FormControl, Grid, FormHelperText, MenuItem } from "@material-ui/core"
 import { useNavigate } from 'react-router-dom';
 import MenuSidebar from "../../statics/menuSidebar/MenuSidebar";
+import { AppBar } from '@material-ui/core';
 import useLocalStorage from 'react-use-localstorage';
 import './CreateOrder.css';
 import Kit from '../../../models/Kit';
@@ -95,15 +96,11 @@ function CreateOrder() {
     }
 
     return (
-        
+
         <div className='donation' style={{
-            background: `url(https://i.imgur.com/uWxFuxx.jpg)`,
+            background: `url(https://i.imgur.com/7SHSOlx.png)`,
             backgroundRepeat: 'no-repeat', width: '100%', height: '100vh', backgroundSize: 'cover'
         }} >
-            <Grid className="align">
-                <MenuSidebar />
-            </Grid>
-
             <Container maxWidth="sm" className='doacao'>
                 <Typography variant="h3" color="textSecondary" component="h1" align="center" className='doar'>Doar</Typography>
                 <Grid className="alinhar">

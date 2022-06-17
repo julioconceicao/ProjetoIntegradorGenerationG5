@@ -52,11 +52,16 @@
     flex-wrap: wrap;
     justify-content: center;
     position: relative;
-    margin: 40px;
+    margin: 35px;
     border: #333;
     width: 900px;
+<<<<<<< HEAD
     height: 705px;
     padding-bottom: 15px;    
+=======
+    height: 535px;
+    padding-bottom: 6px;    
+>>>>>>> fd98932ab41f7a95f682ea2ce6d479654d478912
 }
 
 .cartões {
@@ -125,6 +130,7 @@
     justify-content: flex-end;
     align-items: flex-end; 
 }
+<<<<<<< HEAD
 
 h1 {
     display: flex;
@@ -138,4 +144,11 @@ h1 {
     font-weight: 600;
     flex-wrap: wrap;
     justify-content: center;
+=======
+.botaodoarkitnone{
+    text-decoration: none !important;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    font-size: medium;
+>>>>>>> fd98932ab41f7a95f682ea2ce6d479654d478912
 }

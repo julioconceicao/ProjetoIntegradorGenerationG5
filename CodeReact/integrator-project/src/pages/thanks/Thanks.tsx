@@ -15,23 +15,13 @@ function Thanks() {
         <div className="backThanks">
             <Grid item xs={12} style={{
                 background: `url(https://i.imgur.com/Me47fhL.png)`,
-                backgroundRepeat: 'no-repeat', width: '100%', height: '100vh', backgroundSize: 'cover'
+                backgroundRepeat: 'no-repeat', width: '1500px', height: '100vh', backgroundSize: 'cover'
             }}>
                 <div className="thanksnav">
                     <MenuSidebar />
-                    <div className="tanksbutton">
-                        <Link to='/Login'>
-                            <button> Login</button>
-                        </Link>
-                        <Link to='/Cadastro'>
-                            <button>Cadastre</button>
-                        </Link>
-                    </div>
                 </div>
             </Grid>
         </div>
-        
-        <Footer />
         </>
     );
 }
