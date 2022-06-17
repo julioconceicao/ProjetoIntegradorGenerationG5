@@ -27,7 +27,7 @@
     box-shadow: 30px;
     justify-content: space-between;
     justify-content: space-around;
-    height: 700px !important;
+    height: 800px !important;
     margin-bottom: 10px;
 }
 
@@ -55,13 +55,11 @@
     margin: 35px;
     border: #333;
     width: 900px;
-<<<<<<< HEAD
-    height: 705px;
-    padding-bottom: 15px;    
-=======
-    height: 535px;
+    height: 05px;
+    padding-bottom: 15px; 
+    height: 805px;
     padding-bottom: 6px;    
->>>>>>> fd98932ab41f7a95f682ea2ce6d479654d478912
+
 }
 
 .cartões {
@@ -69,7 +67,7 @@
     align-items: center;
     position: relative;
     width: 100%;
-    height: 108%!important;
+    height: 110%!important;
     transform-style: preserve-3d;
     transition: all 0.30s ease;
     cursor: auto;
@@ -130,7 +128,6 @@
     justify-content: flex-end;
     align-items: flex-end; 
 }
-<<<<<<< HEAD
 
 h1 {
     display: flex;
@@ -144,11 +141,11 @@ h1 {
     font-weight: 600;
     flex-wrap: wrap;
     justify-content: center;
-=======
+}
+
 .botaodoarkitnone{
     text-decoration: none !important;
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
     font-size: medium;
->>>>>>> fd98932ab41f7a95f682ea2ce6d479654d478912
 }
