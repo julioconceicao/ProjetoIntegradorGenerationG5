@@ -21,28 +21,28 @@ function Kit() {
                         <MenuSidebar />
                     </div>
                 </AppBar>
-                <div className='all-cards'>
+                <div className='todos-cartões'>
                     {/*Cesta Básica*/}
-                    <Card sx={{ maxWidth: 345 }} className='maincontainer' style={{ backgroundColor: '#f0cdbe' }}>
-                        <Box className="card">
-                            <Box className='front'>
-                                <CardMedia className='card-img'
+                    <Card sx={{ maxWidth: 345 }} className='maincontainer'>
+                        <Box className="cartões">
+                            <Box className='frente'>
+                                <CardMedia className='cartão-img'
                                     component="img"
                                     alt="Imagem de uma cesta basica tipicamente brasileira"
                                     image="https://cdn.discordapp.com/attachments/966414382747754577/983461851356594176/original-b884fc81bd2324a672e4b7ced64661b3.jpg"
                                 />
                                 <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
+                                    <Typography gutterBottom variant="h5" component="div" className='namefonte'>
                                         Cesta Básica
                                     </Typography>
                                     <p className="p">R$89,99</p>
                                 </CardContent>
                             </Box>
 
-                            <Box className='back'>
+                            <Box className='costas'>
 
                                 <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
+                                    <Typography gutterBottom variant="h5" component="div" className='namefonte'>
                                         Mais Informações
                                     </Typography>
                                     <ul className='infos'>
@@ -70,26 +70,26 @@ function Kit() {
                     </Card>
 
                     {/* Kit Feira */}
-                    <Card sx={{ maxWidth: 345 }} className='maincontainer' style={{ backgroundColor: '#f0cdbe' }}>
-                        <Box className="card">
-                            <Box className='front'>
-                                <CardMedia className='card-img'
+                    <Card sx={{ maxWidth: 345 }} className='maincontainer'>
+                        <Box className="cartões">
+                            <Box className='frente'>
+                                <CardMedia className='cartão-img'
                                     component="img"
                                     alt="Imagem de frutas, verduras e legumes tipicamente brasileiros"
                                     image="https://cdn.discordapp.com/attachments/966414382747754577/983461850744238100/david-vazquez-32DLZHRbInw-unsplash.jpg"
                                 />
                                 <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
+                                    <Typography gutterBottom variant="h5" component="div" className='namefonte'>
                                         Kit Feira
-                                    </Typography>
-                                    <p className="p">R$139,99</p>
-                                </CardContent>
+                                    </Typography>                               
+                                    <p className="p">R$139,99</p>                                                                      
+                                </CardContent>                                
                             </Box>
 
-                            <Box className='back'>
+                            <Box className='costas'>
 
                                 <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
+                                    <Typography gutterBottom variant="h5" component="div" className='namefonte'>
                                         Mais Informações
                                     </Typography>
                                     <ul className='infos'>
@@ -103,6 +103,14 @@ function Kit() {
                                         <h4> LEGUMES E VERDURAS</h4>
                                         <li> 1/2 kg Cebola</li>
                                         <li> 1/2 kg Tomate</li>
+                                        <li> 1 kg Batata</li>
+                                        <li> 1 pc Cenoura ou Vagem</li>
+                                        <li> 1 pc Chuchu ou Batata Doce</li>
+                                        <li> 1 pc Berinjela ou Beterraba</li>
+                                        <li> 1 pc Alho ou Pimentão</li>
+                                        <li> 2 mç Alface Lisa ou Crespa</li>
+                                        <li> 1 mç Salsa</li>
+                                        <li> 1 mç Couve ou Escarola</li>
                                     </ul>
                                 </CardContent>
                             </Box>
@@ -110,26 +118,26 @@ function Kit() {
                     </Card>
 
                     {/* Kit Mulher*/}
-                    <Card sx={{ maxWidth: 345 }} className='maincontainer' style={{ backgroundColor: '#f0cdbe' }}>
-                        <Box className="card">
-                            <Box className='front'>
-                                <CardMedia className='card-img'
+                    <Card sx={{ maxWidth: 345 }} className='maincontainer'>
+                        <Box className="cartões">
+                            <Box className='frente'>
+                                <CardMedia className='cartão-img'
                                     component="img"
                                     alt="Imagens de produtos especificos para mulheres"
                                     image="https://cdn.discordapp.com/attachments/966414382747754577/983461850341580800/aregEARH.PNG"
                                 />
                                 <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
+                                    <Typography gutterBottom variant="h5" component="div" className='namefonte'>
                                         Kit Mulher
                                     </Typography>
                                     <p className="p">R$179,99</p>
                                 </CardContent>
                             </Box>
 
-                            <Box className='back'>
+                            <Box className='costas'>
 
                                 <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
+                                    <Typography gutterBottom variant="h5" component="div" className='namefonte'>
                                         Mais Informações
                                     </Typography>
                                     <ul className='infos'>

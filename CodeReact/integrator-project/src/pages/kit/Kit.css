@@ -9,51 +9,41 @@
     position: sticky;
     padding-top: 10px;
     padding-left: 10px;
-}   
-
-h1 {
-    display: flex;
-    justify-content: center;
-    font-family: 'Montserrat', sans-serif;
 }
 
-.namefont {
-    display: flex;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.all-cards {
+.todos-cartões {
+    padding-top: 150px;
     padding-left: 70px;
     display: flex;
+    justify-content: center;
+    flex-wrap: row;
+    height: 590px !important;
     align-items: center;
-    flex-wrap: row;    
-    justify-content: center;    
 }
 
-.card {
+.cartões {
     margin: 10px;
     border-radius: none;
     box-shadow: 30px;
     justify-content: space-between;
     justify-content: space-around;
-    height: 690px !important;
+    height: 700px !important;
     margin-bottom: 10px;
 }
 
-.card:hover {
+.cartões:hover {
     background-color: #c0cdf1;
     width: 50;
 }
 
-.card-img {
+.cartão-img {
     margin-top: none;
-    height: 65%;
+    width: 100%;
+    height: 90%!important;
+    
 }
 
-.card-img:hover {
+.cartões-img:hover {
     margin-top: none;
 }
 
@@ -65,16 +55,16 @@ h1 {
     margin: 40px;
     border: #333;
     width: 900px;
-    height: 535px;
+    height: 705px;
     padding-bottom: 15px;    
 }
 
-.card {
+.cartões {
     font-family: 'Montserrat', sans-serif;
     align-items: center;
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 108%!important;
     transform-style: preserve-3d;
     transition: all 0.30s ease;
     cursor: auto;
@@ -82,29 +72,32 @@ h1 {
     border-radius: 5px;
 }
 
-.card:hover {
+.cartões:hover {
     transform: rotateY(180deg);
 
 }
 
-.front {
+.frente {
     font-family: 'Montserrat', sans-serif;
     position: absolute;
+    width: 100%;
+    height: 90%;
     backface-visibility: hidden;
     background-size: cover;
     color: rgb(0, 0, 0);
 }
 
-.back {
+.costas {
     font-family: 'Montserrat', sans-serif;
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    background-color: #ffffff;
+    background-color: #E2EBC8;
     background-size: cover;
     color: rgb(0, 0, 0);
-    transform: rotateY(180deg);
+    transform: rotateY(180deg);    
+
 }
 
 .infos li {
@@ -114,9 +107,13 @@ h1 {
 }
 
 .btn{
-    padding-left: 150px;
-    align-self: baseline;  
-    transition: background 0.3s;
+    position: relative;
+    padding-top: 1% !important;
+    display: flex !important;    
+    align-items: flex-start;  
+    justify-content: center;
+    border: none;
+    padding: none;     
     border-radius: 5px;
 }
 
@@ -127,4 +124,18 @@ h1 {
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: flex-end; 
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.namefonte {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    flex-wrap: wrap;
+    justify-content: center;
 }
