@@ -1,53 +1,43 @@
 import { Grid, Typography, TextField, Button } from '@material-ui/core';
-import { Link } from 'react-router-dom';
 import { Box } from '@mui/material';
 import React from 'react';
 import './Contact.css';
 import MenuSidebar from "../../Components/statics/menuSidebar/MenuSidebar";
-import Footer from '../../Components/statics/footer/Footer';
 
 function Contact() {
     return (
         <>
-            <Grid item xs={12} style={{
-                background: `url(https://i.imgur.com/LzWtT0n.jpg)`,
-                backgroundRepeat: 'no-repeat', width: '100%', height: '100vh', backgroundSize: 'cover'
-            }}>
-                    <div className="navbarmenu">
+
+            <Grid container direction='row' className="fundo-da-pagina-contato">
+
+                <Grid xs={6}className='alinhacontato2'>
+                    <div className="alignsidebarohyescontato">
                         <MenuSidebar />
-                        <div className="navbarbutton">
-                            <Link to='/login'>
-                                <button className="distancia">Login</button>
-                            </Link>
-                        </div>
-                        <Link to='/Cadastro'>
-                            <button>Cadastre-se</button>
-                        </Link>
                     </div>
-                <div className='alinharcontato'>
-                    <Grid xs={6}>
-                        <form>
+                    <Box paddingX={22.7} >
+                        <form >
                             <Typography variant='h3' id='title' component='h3' align='center'>Contato</Typography>
 
                             <TextField
-                                id='telefone' label='Telefone:' variant='outlined' name='telefone' margin='normal' fullWidth />
+                                label='Email:' variant='outlined' name='email' margin='normal' fullWidth className='telefone' />
 
                             <TextField
-                                id='email' label='Email:' variant='outlined' name='email' margin='normal' fullWidth />
+                                label='Telefone:' variant='outlined' name='telefone' margin='normal' fullWidth className='telefone' />
 
                             <TextField
                                 id='mandesuamensagem' label='Mande sua mensagem:' variant='outlined' name='mandesuamensagem' margin='normal' fullWidth />
 
                             <Box marginTop={2} textAlign='left'>
-                                <Button type='submit' variant='contained' color='primary' className="btnCadastrar">
+                                <Button type='submit' variant='contained' color='primary' className="btnenviar">
                                     Enviar
                                 </Button>
                             </Box>
                         </form>
-                    </Grid>
-                </div>
+                    </Box>
+                </Grid>
+                <Grid xs={6} >
+                </Grid>
             </Grid>
-            <Footer />
         </>
     );
 }
