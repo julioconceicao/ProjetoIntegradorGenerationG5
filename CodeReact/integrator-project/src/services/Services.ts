@@ -39,3 +39,8 @@ export const put = async(url: any, dados: any, setDado: any, header: any) => {
 export const deleteId = async(url: any, header: any) => { 
     await api.delete(url, header)
 }
+
+export const searchorder = async(url: any, setData: any, header: any) => { 
+    const result = await api.get(url, header)
+    setData(result.data)
+}

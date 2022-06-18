@@ -6,12 +6,12 @@ import MenuSidebar from "../../Components/statics/menuSidebar/MenuSidebar";
 import MenuItem from '@material-ui/core/MenuItem';
 import "./Ong.css";
 import useLocalStorage from "react-use-localstorage";
-import { search } from "../../services/Services";
+import {searchorder} from "../../services/Services";
 import Order from "../../models/Order";
 import UserModel from "../../models/UserModel";
 import Swal from 'sweetalert2';
 import KitModel from "../../models/KitModel";
-
+import OrderDTO from "../../models/dtos/OrderDTO";
 
 function ListOng() {
 
@@ -22,7 +22,7 @@ function ListOng() {
   let navigate = useNavigate();
 
   async function getOrders() {
-    await search("/api/Users", setOrders, {
+    await searchorder("/api/Orders", setOrders,{
       headers: {
         'Authorization': token
       }
@@ -39,7 +39,6 @@ function ListOng() {
     if (token == "") {
       alert("Você precisa estar logado")
       navigate("/login")
-
     }
   }, [token])
 
