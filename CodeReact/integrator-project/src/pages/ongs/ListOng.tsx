@@ -39,7 +39,6 @@ function ListOng() {
     if (token == "") {
       alert("Você precisa estar logado")
       navigate("/login")
-
     }
   }, [token])
 

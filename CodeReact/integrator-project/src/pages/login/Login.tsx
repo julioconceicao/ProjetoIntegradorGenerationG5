@@ -1,4 +1,3 @@
-
 import React, { ChangeEvent, useEffect, useState } from "react";
 import { Typography, Box, Grid, Button, TextField } from '@mui/material';
 import MenuSidebar from "../../Components/statics/menuSidebar/MenuSidebar";
@@ -91,7 +90,7 @@ function Login() {
               <TextField
                 value={loginDTO.email}
                 onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                id='email' label='Email' variant='outlined' name='email' margin='normal' fullWidth className="logar" />
+                id='email' label='Email' variant='outlined' name='email' margin='normal' fullWidth className="colorbut" />
 
               <FormControl variant="outlined" fullWidth>
                 <InputLabel htmlFor="outlined-adornment-senha">Senha</InputLabel>

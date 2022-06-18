@@ -1,66 +1,58 @@
+.fundo-da-pagina-contato{
+    background-image: url(https://i.imgur.com/hiYmlOK.png) !important;
+    padding-top: 50px;
+    filter: drop-shadow(1px 1px 1px #585858) !important;
+}
+.alinhacontato2{
+    padding-left: 1px !important;
+    margin-bottom: 5%;
+}
+
 .image2{
-    background-image: url(https://i.imgur.com/LzWtT0n.jpg);
-    background-repeat: no-repeat;
-    width: 1200vh;
-    min-height: 1200;
-    background-size: cover;
+
+    background-repeat: no-repeat !important;
+    width: 100vh !important;
+    height: 100vh !important;
+    background-size: cover !important;
+    background-position: center!important;
+    padding-right: 50% !important ;
+    align-items: center !important;
+    border-radius: 5px;
     background-position: center;
-}
-.gambiarra{
-    display: flex;
-    align-items: center;
-    padding-left: 35px;
-    font-size: x-large;
-    text-decoration: none;
-}
-.navbarmenu100{
-    height: 80px;
-    display: flex;
-    background-color: transparent; 
-    justify-content: left;
-    align-items: center;
-    position: sticky;
     padding-top: 10px;
-    padding-left: 40px;
-}   
-.navbarbutton100{
-    display: flex;
-    width: 550px;
-    background-color: transparent ;
-    padding-left: 80%;
-    padding-top: 10px;
+    filter: drop-shadow(1px 1px 1px #585858) !important;
 }
-.navbarmenu100 button{
-    border: none;
-    background-color: transparent;
-    font-family: 'Montserrat', sans-serif;
-    cursor: pointer;
-    font-size: medium;
-    transition: 200ms;
-    border-radius: 10px;
-    padding: 10px 5px;
-}
-.login {
-    background-color: #875e35 !important;
+
+.btnenviar{
+    font-family: 'Montserrat', sans-serif !important;
+    border-color: #a46609 !important;
+    background-color: #a46609 !important;
+    color: #ffffff !important;
+    border-radius: 5px !important;
     font-weight: bold !important;
-}
-.alinharcontato{
-    padding-left: 30%;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
+    cursor: pointer;
+    filter: drop-shadow(1px 1px 1px #585858) !important;
 }
 
-#telefone{
-    background-color: white;
-    border-radius: 5px;
-}
-
-#email{
-    background-color: white;
-    border-radius: 5px;
+.telefone{
+    font-family: 'Montserrat', sans-serif !important;
+    background-color: white !important;
+    border-radius: 5px !important;
+    filter: drop-shadow(1px 1px 1px #585858) !important;
 }
 
 #mandesuamensagem{
-    background-color: white;
-    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif !important;
+    background-color: white !important;
+    border-radius: 5px !important;
+    height: 80px !important;
+    padding-top: 10px !important;
+    padding-left: 40px !important;
+    filter: drop-shadow(1px 1px 1px #585858) !important;
+}
+.alignsidebarohyescontato{
+    padding-left:30px !important;
+    padding-top: 10px !important;
+    -webkit-filter: drop-shadow(1px 1px 1px #d3a77b) !important;
+    filter: drop-shadow(1px 1px 1px #585858) !important;
 }
