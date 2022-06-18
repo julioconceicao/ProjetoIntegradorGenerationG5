@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import { Link, useNavigate } from 'react-router-dom';
 import { login } from "../../services/Services"
-import { Typography, Box, Grid, Button } from '@material-ui/core';
+import { Typography, Box, Grid, Button, AppBar } from '@material-ui/core';
 import "./Home.css";
 import MenuSidebar from "../../Components/statics/menuSidebar/MenuSidebar";
 import Footer from '../../Components/statics/footer/Footer';
@@ -44,6 +44,7 @@ function Homelog() {
                 background: `url(https://i.imgur.com/t9fgIbC.jpg)`,
                 backgroundRepeat: 'no-repeat', width: '100%', height: '100vh', backgroundSize: 'cover'
             }}>
+                <AppBar position="sticky" style={{ background: 'transparent', boxShadow: 'none' }}>
                 <div className="navbarmenu">
                     <MenuSidebar />
                     <div className="navbarbutton">
@@ -53,6 +54,7 @@ function Homelog() {
                     </div>
                     <button onClick={goLogout}>Logout</button>
                 </div>
+                </AppBar>
                 <div>
                     <img className="logo" src="https://imgur.com/fqAed38.png" alt="" width="250" />
                 </div>
