@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+.body {
+    background-color: #C9ACA0;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.all-cards {
+    display: block;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    background-color: #C9ACA0;
+
+}
+
+.maincontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    margin: 20px;
+    border: #333;
+    width: 100px;
+    height: 250px;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    border-radius: none;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+}
+
+.cardcontent{
+    ;
+}
+
+
+.titleFont{
+    font-family: 'Montserrat', sans-serif;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.nameFont {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.card-img {
+    
+    width: 200px;
+    height: 380px;
+    background-image: url(https://cdn.discordapp.com/attachments/966414382747754577/986761651812462683/18.png);
+}
+
+#avataricon {
+    width: 100px !important;
+    height: 100px !important;
+    color: black !important;
+}
+
+.redes {
+    width: 50px !important;
+    height: 50px !important;
+    color: black !important;
+    
+}
+.
+
+
+.icons {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.leaders{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tipo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
