@@ -12,9 +12,7 @@
     font-family: 'Montserrat', sans-serif !important;
     border-color: #a46609 !important;
     background-color: #a46609 !important;
-    color: #ffffff !important;
     border-radius: 5px !important;
-    background-color: #8A6035 !important;
     font-weight: bold !important;
     cursor: pointer;
     filter: drop-shadow(1px 1px 1px #585858) !important;
@@ -22,7 +20,7 @@
 .colorbut{
     background-color: #fafafa !important;
     filter: drop-shadow(1px 1px 1px #585858) !important;
-    opacity: 2000 !important;
+    border-radius: 5px !important;
  }
 
  .fundo-da-pagina{

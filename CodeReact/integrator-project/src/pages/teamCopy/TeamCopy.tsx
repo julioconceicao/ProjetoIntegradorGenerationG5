@@ -9,60 +9,45 @@ import IconButton from '@material-ui/core/IconButton';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import MenuIcon from '@material-ui/icons/Menu';
-import "./Team.css";
+import "./TeamCopy.css";
 import MenuSidebar from "../../Components/statics/menuSidebar/MenuSidebar";
 import Footer from '../../Components/statics/footer/Footer';
 
 function Team() {
     return (
         <>
+        <h1 color='red'>Página em manutenção</h1>
             <Grid item xs={12} className='body'>
                 <MenuSidebar />
 
                 <h1 className='team-title'>Equipe Desenvolvedora - Planeta Solidário</h1>
-                <div className='all-cards'>
+                <Grid className='all-cards'>
 
                     {/* João Victor*/}
-                    <Card sx={{ maxWidth: 400, maxHeight: 900 }} className='maincontainer'>
-                        <Box className="card">
-                            <Box className='front'>
-                                <CardMedia className='card-img'
-                                    component="img"
-                                    alt="JoaoPic"
-                                    image="https://cdn.discordapp.com/attachments/966414382747754577/981948401283387423/JOAO_VICTOR_MENEZES_DE_SOUZA-removebg-preview.png"
-                                />
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
-                                        João M. de Souza
-                                    </Typography>
+                    <Card sx={{ maxWidth: 400, maxHeight: 600 }} className='maincontainer'>
+                        <CardMedia className='card-img'
+                            component="img"
+                            alt="JoaoPic"
+                            image="https://cdn.discordapp.com/attachments/966414382747754577/981948401283387423/JOAO_VICTOR_MENEZES_DE_SOUZA-removebg-preview.png"
+                        />
+                        <CardContent className='cardcontent'>
+                            <Typography gutterBottom variant="h4" component="div" className='nameFont' align='center'>
+                                João M. de Souza
+                            </Typography>
+                            <Typography gutterBottom variant="h6" component="div" className='titleFont' align='center'>
+                                Full-Stack Developer
+                            </Typography>
 
-                                    <h5>Full-stack developer</h5>
-                                </CardContent>
+
+                            <Box className='icons'>
+                                <a className='avataricon' href="https://www.linkedin.com/in/joaovictormenezesdesouza/" target="_blank">
+                                    <LinkedInIcon className='redes' />
+                                </a>
+                                <a className='avataricon' href="https://github.com/Joaoms98" target="_blank">
+                                    <GitHubIcon className='redes' />
+                                </a>
                             </Box>
-
-                            <Box className='back'>
-
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div" className='namefont'>
-                                        João M. de Souza
-                                    </Typography>
-                                    <ul className='infos'>
-                                        <li>Dev .NET Junior Fullstack</li>
-                                        <li>Linguages: C#/ SQL Server/ASP.NET/ React</li>
-                                        <li>Soft-skills: Aprendizado ativo, colaborativo e comunicativo</li>
-                                    </ul>
-                                    <Box className='icons'>
-                                        <h5>Links:</h5>
-                                        <a className='avataricon' href="https://www.linkedin.com/in/joaovictormenezesdesouza/" target="_blank">
-                                            <LinkedInIcon className='redes' />
-                                        </a>
-                                        <a className='avataricon' href="https://github.com/Joaoms98" target="_blank">
-                                            <GitHubIcon className='redes' />
-                                        </a>
-                                    </Box>
-                                </CardContent>
-                            </Box>
-                        </Box>
+                        </CardContent>
                     </Card>
 
                     {/* José Vinicius */}
@@ -81,6 +66,15 @@ function Team() {
 
                                     <h5>Full-stack developer</h5>
                                 </CardContent>
+                                <Box className='icons'>
+                                    <h5>Links:</h5>
+                                    <a className='avataricon' href="https://www.linkedin.com/in/josevinicius53/" target="_blank">
+                                        <LinkedInIcon className='redes' />
+                                    </a>
+                                    <a className='avataricon' href="https://github.com/Josevinicius53" target="_blank">
+                                        <GitHubIcon className='redes' />
+                                    </a>
+                                </Box>
                             </Box>
 
                             <Box className='back'>
@@ -94,15 +88,7 @@ function Team() {
                                         <li>Movido pela curiosidade</li>
                                         <li>Soft-skills: Persistência e proatividade</li>
                                     </ul>
-                                    <Box className='icons'>
-                                        <h5>Links:</h5>
-                                        <a className='avataricon' href="https://www.linkedin.com/in/josevinicius53/" target="_blank">
-                                            <LinkedInIcon className='redes' />
-                                        </a>
-                                        <a className='avataricon' href="https://github.com/Josevinicius53" target="_blank">
-                                            <GitHubIcon className='redes' />
-                                        </a>
-                                    </Box>
+
                                 </CardContent>
                             </Box>
                         </Box>
@@ -368,8 +354,9 @@ function Team() {
                             </Box>
                         </Box>
                     </Card>
-                </div>
-            </Grid>
+                </Grid>
+            </Grid >
+
         </>
     );
 }
