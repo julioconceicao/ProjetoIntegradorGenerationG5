@@ -92,7 +92,7 @@ export default function TemporaryDrawer() {
               ))}
               </Link>
               <Link className='Sidebar' to='/ongs'>
-                {['Doações recebidas'].map((text) => (
+                {['Conheça as ONGS'].map((text) => (
                 <ListItem button key={text}>
                   <ListItemIcon> <VolunteerActivismIcon /></ListItemIcon>
                   <ListItemText primary={text} />
