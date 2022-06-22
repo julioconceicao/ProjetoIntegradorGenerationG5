@@ -13,7 +13,7 @@
     <a href="https://github.com/julioconceicao/ProjetoIntegradorGenerationG5"><strong>Explore the docs »</strong></a>
     <br/>
     <br/>
-    <a href="https://github.com/julioconceicao/ProjetoIntegradorGenerationG5">View Demo</a>
+    <a href="https://planetasolidario.netlify.app/">View Demo</a>
     .
     <a href="https://github.com/julioconceicao/ProjetoIntegradorGenerationG5/issues">Report Bug</a>
     .
