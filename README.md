@@ -58,8 +58,10 @@ Languages, frameworks and libraries:
 * [JWT Security](https://jwt.io/introduction/)
 * [SQL Server](https://docs.microsoft.com/pt-br/sql/sql-server/?view=sql-server-ver16)
 * [Swagger](https://swagger.io/docs/)
-* [Heroku](https://devcenter.heroku.com/categories/reference)
+* [Heroku (API deploy)](https://devcenter.heroku.com/categories/reference)
+* [Netlify (front-end deploy)]()
 * [IDES: VScode and VS]()
+
 
 ## Contributing
 
