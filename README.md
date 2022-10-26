@@ -83,7 +83,7 @@ Contributions are what make the open source community such an amazing place to b
 
 * **João Victor M. de Souza** - *Fullstack Dev.* - [Linkedin](https://www.linkedin.com/in/joaovictormenezesdesouza/)
 * **José Vinicius S. de Souza** - *Fullstack Dev.* - [Linkedin](https://www.linkedin.com/in/josevinicius53/)
-* **Julio César G. Conceição** - *Comp Sci Student/Fullstack Dev.* - [Linkedin](https://www.linkedin.com/in/juliocesargoncalvesconceicao/) 
+* **Julio César G. Conceição** - *Sci&Tech Student/Fullstack Dev.* - [Linkedin](https://www.linkedin.com/in/juliocesargoncalvesconceicao/) 
 * **Lethicya da S. Lopes** - *Fullstack Dev.* - [Linkedin](https://www.linkedin.com/in/lethicyaslopes/)
 * **Letícia Z. Fornarolo** - *Fullstack Dev.* - [Linkedin](https://www.linkedin.com/in/leticiazimerer/)
 * **Mateus R. da Silva** - *Fullstack Dev.* - [Linkedin](https://www.linkedin.com/in/matheusrodriguesdasilva23/)
